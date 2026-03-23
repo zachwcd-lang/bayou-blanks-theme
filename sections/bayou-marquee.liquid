@@ -1,0 +1,104 @@
+{%- style -%}
+  .bayou-marquee {
+    background-color: var(--color-bayou-dark);
+    overflow: hidden;
+    padding: 1.4rem 0;
+    position: relative;
+  }
+
+  .bayou-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: bayou-marquee-scroll {{ section.settings.speed }}s linear infinite;
+  }
+
+  .bayou-marquee:hover .bayou-marquee__track {
+    animation-play-state: paused;
+  }
+
+  .bayou-marquee__item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 0 2.4rem;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-bayou-cream);
+  }
+
+  .bayou-marquee__separator {
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-bayou-moss);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  @keyframes bayou-marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+{%- endstyle -%}
+
+<section class="bayou-marquee" id="bayou-marquee-{{ section.id }}">
+  <div class="bayou-marquee__track" aria-hidden="true">
+    {%- for i in (1..10) -%}
+      {%- for block in section.blocks -%}
+        <div class="bayou-marquee__item">
+          <span>{{ block.settings.text }}</span>
+          <span class="bayou-marquee__separator"></span>
+        </div>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Marquee",
+  "tag": "section",
+  "class": "bayou-marquee-section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "label": "Scroll speed (seconds)",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "FREE SHIPPING $75+"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Marquee",
+      "blocks": [
+        { "type": "text", "settings": { "text": "FREE SHIPPING $75+" } },
+        { "type": "text", "settings": { "text": "PREMIUM BLANKS" } },
+        { "type": "text", "settings": { "text": "HATTIESBURG, MS" } },
+        { "type": "text", "settings": { "text": "LIVE ON TIKTOK" } },
+        { "type": "text", "settings": { "text": "FANATICS QUALITY" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

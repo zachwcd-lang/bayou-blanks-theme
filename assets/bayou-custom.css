@@ -1,0 +1,413 @@
+/* ==========================================================================
+   BAYOU BLANKS — Custom Theme Overrides
+   ========================================================================== */
+
+/* --- Brand Color Palette --- */
+:root {
+  --color-bayou-dark: #1A2415;
+  --color-bayou-forest: #2D3B1E;
+  --color-bayou-moss: #5C7A3A;
+  --color-bayou-sage: #A4B47A;
+  --color-bayou-cream: #E8DFC4;
+  --color-bayou-offwhite: #FAF8F2;
+  --color-bayou-white: #FFFFFF;
+  --color-bayou-gold: #C9B96B;
+  --color-bayou-charcoal: #2C2C2C;
+}
+
+/* --- Typography Override (DM Sans loaded via Google Fonts in theme.liquid) --- */
+:root {
+  --font-body-family: 'DM Sans', sans-serif !important;
+  --font-heading-family: 'DM Sans', sans-serif !important;
+  --font-body-weight: 400;
+  --font-body-weight-bold: 700;
+  --font-heading-weight: 700;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--color-bayou-charcoal);
+  background-color: var(--color-bayou-offwhite);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: var(--color-bayou-charcoal);
+}
+
+.h0 { font-weight: 800; }
+
+/* --- Uppercase Labels --- */
+.caption,
+.caption-large,
+.subtitle,
+.badge,
+[class*="label"] {
+  letter-spacing: 0.1em;
+}
+
+/* --- Remove All Border Radius --- */
+.button,
+.shopify-challenge__button,
+.customer button,
+button.shopify-payment-button__button--unbranded,
+.cart__checkout-button,
+.shopify-payment-button__button,
+.field__input,
+.select__select,
+.search__input,
+.form__input,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+.card,
+.card--card,
+.card--standard,
+.card-wrapper,
+.product-card-wrapper .card,
+.collection-card-wrapper .card,
+.article-card-wrapper .card,
+.global-media-settings,
+.content-container,
+img,
+.media,
+details[open] > summary + *,
+.disclosure__list,
+.popup-modal__content,
+.menu-drawer,
+.cart-notification,
+.header__icon .icon-caret {
+  border-radius: 0 !important;
+}
+
+:root {
+  --buttons-radius: 0px !important;
+  --buttons-radius-outset: 0px !important;
+  --inputs-radius: 0px !important;
+  --inputs-radius-outset: 0px !important;
+  --product-card-corner-radius: 0rem !important;
+  --collection-card-corner-radius: 0rem !important;
+  --blog-card-corner-radius: 0rem !important;
+  --media-radius: 0px !important;
+  --badge-corner-radius: 0rem !important;
+  --popup-corner-radius: 0px !important;
+  --variant-pills-radius: 0px !important;
+  --text-boxes-radius: 0px !important;
+}
+
+/* --- Buttons --- */
+.button,
+.shopify-challenge__button,
+.customer button,
+button.shopify-payment-button__button--unbranded {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  background-color: var(--color-bayou-dark);
+  color: var(--color-bayou-offwhite);
+  border: none;
+  padding: 1.4rem 3rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button:hover,
+.shopify-challenge__button:hover,
+.customer button:hover,
+button.shopify-payment-button__button--unbranded:hover {
+  background-color: var(--color-bayou-moss);
+  color: var(--color-bayou-offwhite);
+}
+
+.button--secondary {
+  background-color: transparent;
+  color: var(--color-bayou-dark);
+  border: 1px solid var(--color-bayou-dark);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-bayou-dark);
+  color: var(--color-bayou-offwhite);
+}
+
+/* --- Links --- */
+a {
+  color: var(--color-bayou-moss);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-bayou-dark);
+}
+
+/* --- Borders --- */
+.card,
+.card--card {
+  --border-opacity: 0.08;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* --- Card Shadows --- */
+.card {
+  box-shadow: none;
+  transition: box-shadow 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Product Card Refinements --- */
+.card__heading a {
+  color: var(--color-bayou-charcoal);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.price-item--regular,
+.price-item--sale {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.price-item--sale {
+  color: var(--color-bayou-moss);
+}
+
+/* --- Form Inputs --- */
+.field__input,
+.select__select,
+.search__input,
+.form__input,
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: var(--color-bayou-white);
+  font-family: 'DM Sans', sans-serif;
+  padding: 1.2rem 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.field__input:focus,
+.select__select:focus,
+.search__input:focus,
+.form__input:focus,
+textarea:focus {
+  border-color: var(--color-bayou-moss);
+  box-shadow: 0 0 0 1px var(--color-bayou-moss);
+}
+
+/* --- Announcement Bar Override --- */
+.announcement-bar {
+  background-color: var(--color-bayou-dark) !important;
+  color: var(--color-bayou-cream) !important;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.announcement-bar a {
+  color: var(--color-bayou-cream) !important;
+}
+
+/* --- Header Refinements --- */
+.section-header {
+  transition: box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.shopify-section-header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.scrolled-past-header .section-header {
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header__heading-logo-image {
+  max-width: 160px;
+}
+
+/* --- Footer Override --- */
+.footer {
+  background-color: var(--color-bayou-dark) !important;
+  color: var(--color-bayou-cream) !important;
+}
+
+.footer a {
+  color: var(--color-bayou-cream) !important;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--color-bayou-sage) !important;
+}
+
+.footer h2,
+.footer .footer__heading,
+.footer .h4 {
+  color: var(--color-bayou-white) !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1.2rem;
+}
+
+.footer .footer-block__newsletter .field__input {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-bayou-cream);
+}
+
+.footer .footer-block__newsletter .field__input::placeholder {
+  color: rgba(232, 223, 196, 0.5);
+}
+
+.footer .footer-block__newsletter .button,
+.footer .newsletter-form__button {
+  background-color: var(--color-bayou-moss);
+  color: var(--color-bayou-offwhite);
+}
+
+.footer .footer-block__newsletter .button:hover,
+.footer .newsletter-form__button:hover {
+  background-color: var(--color-bayou-sage);
+}
+
+.footer .copyright {
+  color: rgba(232, 223, 196, 0.4);
+  font-size: 1.1rem;
+}
+
+.footer .list-social__link {
+  color: var(--color-bayou-cream) !important;
+}
+
+.footer .list-social__link:hover {
+  color: var(--color-bayou-sage) !important;
+}
+
+/* --- Product Page Refinements --- */
+.product__title h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 750px) {
+  .product__title h1 {
+    font-size: 3.6rem;
+  }
+}
+
+.product__info-wrapper .price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Variant pills/chips */
+.product-form__input--pill .product-form__input,
+variant-selects .product-form__input {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.8rem 1.6rem;
+  font-weight: 500;
+  min-width: 4.8rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.product-form__input--pill .product-form__input:hover,
+variant-selects .product-form__input:hover {
+  border-color: var(--color-bayou-dark);
+}
+
+.product-form__input--pill input:checked + .product-form__input,
+variant-selects input:checked + .product-form__input {
+  background-color: var(--color-bayou-dark);
+  color: var(--color-bayou-offwhite);
+  border-color: var(--color-bayou-dark);
+}
+
+/* Full-width add to cart */
+.product-form__buttons {
+  max-width: 100%;
+}
+
+.product-form__buttons .button {
+  width: 100%;
+}
+
+/* Accordion-style description */
+.product__accordion summary {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* --- Collection Grid --- */
+.collection-product-list .grid__item {
+  padding-bottom: 2rem;
+}
+
+/* --- Cart Page --- */
+.cart__checkout-button {
+  background-color: var(--color-bayou-dark) !important;
+  color: var(--color-bayou-offwhite) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.cart__checkout-button:hover {
+  background-color: var(--color-bayou-moss) !important;
+}
+
+.quantity__button {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* --- Utility Classes --- */
+.bayou-bg-dark { background-color: var(--color-bayou-dark); color: var(--color-bayou-cream); }
+.bayou-bg-cream { background-color: var(--color-bayou-cream); }
+.bayou-bg-offwhite { background-color: var(--color-bayou-offwhite); }
+.bayou-bg-white { background-color: var(--color-bayou-white); }
+.bayou-text-moss { color: var(--color-bayou-moss); }
+.bayou-text-gold { color: var(--color-bayou-gold); }
+.bayou-text-cream { color: var(--color-bayou-cream); }
+
+/* --- Smooth Scroll --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Selection Color --- */
+::selection {
+  background-color: var(--color-bayou-sage);
+  color: var(--color-bayou-dark);
+}
+
+/* --- Focus states --- */
+*:focus-visible {
+  outline: 2px solid var(--color-bayou-moss);
+  outline-offset: 2px;
+}

@@ -1,0 +1,192 @@
+{%- style -%}
+  .bayou-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-split {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .bayou-split__image {
+    overflow: hidden;
+    min-height: 40rem;
+  }
+
+  .bayou-split__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bayou-split__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 2.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-split__content {
+      padding: 6rem 5rem;
+    }
+  }
+
+  .bayou-split__label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-bayou-moss);
+    margin: 0 0 1.2rem;
+  }
+
+  .bayou-split__heading {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: var(--color-bayou-charcoal);
+    margin: 0 0 1.6rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-split__heading {
+      font-size: 3.6rem;
+    }
+  }
+
+  .bayou-split__text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: rgba(44, 44, 44, 0.75);
+    margin: 0 0 2.4rem;
+    max-width: 48rem;
+  }
+
+  .bayou-split__button {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1.4rem 3rem;
+    background-color: var(--color-bayou-dark);
+    color: var(--color-bayou-offwhite);
+    text-decoration: none;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+  }
+
+  .bayou-split__button:hover {
+    background-color: var(--color-bayou-moss);
+    color: var(--color-bayou-offwhite);
+  }
+
+  .bayou-split--reversed .bayou-split__image {
+    order: 1;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-split--reversed .bayou-split__image {
+      order: 2;
+    }
+    .bayou-split--reversed .bayou-split__content {
+      order: 1;
+    }
+  }
+{%- endstyle -%}
+
+<section class="bayou-split{% if section.settings.reverse_layout %} bayou-split--reversed{% endif %}" id="bayou-split-{{ section.id }}">
+  <div class="bayou-split__image">
+    {%- if section.settings.image != blank -%}
+      {{ section.settings.image | image_url: width: 1200 | image_tag:
+        loading: 'lazy',
+        sizes: '(min-width: 750px) 50vw, 100vw',
+        widths: '400,600,800,1000,1200'
+      }}
+    {%- else -%}
+      <div style="width:100%;height:100%;background-color:var(--color-bayou-forest);min-height:40rem;"></div>
+    {%- endif -%}
+  </div>
+
+  <div class="bayou-split__content">
+    {%- if section.settings.label != blank -%}
+      <p class="bayou-split__label">{{ section.settings.label }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="bayou-split__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    {%- if section.settings.text != blank -%}
+      <p class="bayou-split__text">{{ section.settings.text }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link }}" class="bayou-split__button">
+        {{ section.settings.button_label }}
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Split",
+  "tag": "section",
+  "class": "bayou-split-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "About Us"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Bayou Blanks?"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Premium Fanatics blanks sourced and shipped from Hattiesburg, Mississippi. Built for screen printers, embroiderers, and anyone who wants quality blank apparel without the markup."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_layout",
+      "label": "Reverse layout (text left, image right)",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Split"
+    }
+  ]
+}
+{% endschema %}
