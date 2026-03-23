@@ -1,5 +1,6 @@
 /* ==========================================================================
    BAYOU BLANKS — Custom Theme Overrides
+   Frosty / rounded / premium streetwear aesthetic
    ========================================================================== */
 
 /* --- Brand Color Palette --- */
@@ -13,6 +14,37 @@
   --color-bayou-white: #FFFFFF;
   --color-bayou-gold: #C9B96B;
   --color-bayou-charcoal: #2C2C2C;
+
+  /* Frosty glass tokens */
+  --frost-bg: rgba(255, 255, 255, 0.55);
+  --frost-bg-strong: rgba(255, 255, 255, 0.72);
+  --frost-border: rgba(255, 255, 255, 0.35);
+  --frost-blur: 16px;
+  --frost-dark-bg: rgba(26, 36, 21, 0.65);
+  --frost-dark-border: rgba(255, 255, 255, 0.08);
+
+  /* Rounded corner system */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 100px;
+}
+
+/* --- Global Rounded Corners --- */
+:root {
+  --buttons-radius: 10px !important;
+  --buttons-radius-outset: 11px !important;
+  --inputs-radius: 10px !important;
+  --inputs-radius-outset: 11px !important;
+  --product-card-corner-radius: 1.2rem !important;
+  --collection-card-corner-radius: 1.2rem !important;
+  --blog-card-corner-radius: 1.2rem !important;
+  --media-radius: 12px !important;
+  --badge-corner-radius: 0.6rem !important;
+  --popup-corner-radius: 16px !important;
+  --variant-pills-radius: 10px !important;
+  --text-boxes-radius: 12px !important;
 }
 
 /* --- Typography Override (DM Sans loaded via Google Fonts in theme.liquid) --- */
@@ -37,7 +69,7 @@ h1, h2, h3, h4, h5, h6,
 .h0, .h1, .h2, .h3, .h4, .h5 {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
-  color: var(--color-bayou-charcoal);
+  color: var(--color-bayou-dark);
 }
 
 .h0 { font-weight: 800; }
@@ -46,65 +78,11 @@ h1, h2, h3, h4, h5, h6,
 .caption,
 .caption-large,
 .subtitle,
-.badge,
-[class*="label"] {
+.badge {
   letter-spacing: 0.1em;
 }
 
-/* --- Remove All Border Radius --- */
-.button,
-.shopify-challenge__button,
-.customer button,
-button.shopify-payment-button__button--unbranded,
-.cart__checkout-button,
-.shopify-payment-button__button,
-.field__input,
-.select__select,
-.search__input,
-.form__input,
-textarea,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-input[type="number"],
-input[type="search"],
-.card,
-.card--card,
-.card--standard,
-.card-wrapper,
-.product-card-wrapper .card,
-.collection-card-wrapper .card,
-.article-card-wrapper .card,
-.global-media-settings,
-.content-container,
-img,
-.media,
-details[open] > summary + *,
-.disclosure__list,
-.popup-modal__content,
-.menu-drawer,
-.cart-notification,
-.header__icon .icon-caret {
-  border-radius: 0 !important;
-}
-
-:root {
-  --buttons-radius: 0px !important;
-  --buttons-radius-outset: 0px !important;
-  --inputs-radius: 0px !important;
-  --inputs-radius-outset: 0px !important;
-  --product-card-corner-radius: 0rem !important;
-  --collection-card-corner-radius: 0rem !important;
-  --blog-card-corner-radius: 0rem !important;
-  --media-radius: 0px !important;
-  --badge-corner-radius: 0rem !important;
-  --popup-corner-radius: 0px !important;
-  --variant-pills-radius: 0px !important;
-  --text-boxes-radius: 0px !important;
-}
-
-/* --- Buttons --- */
+/* --- Buttons — Rounded + Frosted --- */
 .button,
 .shopify-challenge__button,
 .customer button,
@@ -115,10 +93,11 @@ button.shopify-payment-button__button--unbranded {
   text-transform: uppercase;
   font-size: 1.3rem;
   background-color: var(--color-bayou-dark);
-  color: var(--color-bayou-offwhite);
+  color: var(--color-bayou-cream);
   border: none;
+  border-radius: var(--radius-md) !important;
   padding: 1.4rem 3rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .button:hover,
@@ -126,18 +105,24 @@ button.shopify-payment-button__button--unbranded {
 .customer button:hover,
 button.shopify-payment-button__button--unbranded:hover {
   background-color: var(--color-bayou-moss);
-  color: var(--color-bayou-offwhite);
+  color: var(--color-bayou-white);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(92, 122, 58, 0.25);
 }
 
 .button--secondary {
-  background-color: transparent;
+  background-color: var(--frost-bg);
   color: var(--color-bayou-dark);
-  border: 1px solid var(--color-bayou-dark);
+  border: 1px solid var(--frost-border);
+  backdrop-filter: blur(var(--frost-blur));
+  -webkit-backdrop-filter: blur(var(--frost-blur));
 }
 
 .button--secondary:hover {
   background-color: var(--color-bayou-dark);
-  color: var(--color-bayou-offwhite);
+  color: var(--color-bayou-cream);
+  border-color: var(--color-bayou-dark);
+  backdrop-filter: none;
 }
 
 /* --- Links --- */
@@ -151,53 +136,91 @@ a:hover {
 }
 
 /* --- Borders --- */
-.card,
-.card--card {
-  --border-opacity: 0.08;
-}
-
 hr {
-  border-color: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.06);
 }
 
-/* --- Card Shadows --- */
-.card {
-  box-shadow: none;
-  transition: box-shadow 0.25s ease;
+/* --- Cards — Frosted Glass --- */
+.card,
+.card--card,
+.card--standard {
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden;
+  background: var(--frost-bg-strong);
+  backdrop-filter: blur(var(--frost-blur));
+  -webkit-backdrop-filter: blur(var(--frost-blur));
+  border: 1px solid var(--frost-border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
 }
 
-.card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+.card:hover,
+.card--card:hover,
+.card--standard:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-wrapper,
+.product-card-wrapper .card,
+.collection-card-wrapper .card,
+.article-card-wrapper .card {
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden;
+}
+
+.card__media,
+.card__inner,
+.media {
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+}
+
+img {
+  border-radius: var(--radius-md) !important;
 }
 
 /* --- Product Card Refinements --- */
 .card__heading a {
-  color: var(--color-bayou-charcoal);
+  color: var(--color-bayou-dark);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .price-item--regular,
 .price-item--sale {
   font-weight: 600;
   font-variant-numeric: tabular-nums;
+  color: var(--color-bayou-dark);
 }
 
 .price-item--sale {
   color: var(--color-bayou-moss);
 }
 
-/* --- Form Inputs --- */
+/* --- Form Inputs — Frosted --- */
 .field__input,
 .select__select,
 .search__input,
 .form__input,
-textarea {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  background-color: var(--color-bayou-white);
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="search"] {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--frost-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   font-family: 'DM Sans', sans-serif;
   padding: 1.2rem 1.5rem;
-  transition: border-color 0.2s ease;
+  border-radius: var(--radius-md) !important;
+  transition: all 0.2s ease;
+  color: var(--color-bayou-dark);
 }
 
 .field__input:focus,
@@ -206,7 +229,8 @@ textarea {
 .form__input:focus,
 textarea:focus {
   border-color: var(--color-bayou-moss);
-  box-shadow: 0 0 0 1px var(--color-bayou-moss);
+  box-shadow: 0 0 0 3px rgba(92, 122, 58, 0.12);
+  background: var(--frost-bg-strong);
 }
 
 /* --- Announcement Bar Override --- */
@@ -223,9 +247,9 @@ textarea:focus {
   color: var(--color-bayou-cream) !important;
 }
 
-/* --- Header Refinements --- */
+/* --- Header — Frosted Glass on Scroll --- */
 .section-header {
-  transition: box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  transition: all 0.35s ease;
 }
 
 .shopify-section-header-sticky {
@@ -235,19 +259,22 @@ textarea:focus {
 }
 
 .scrolled-past-header .section-header {
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--frost-bg-strong) !important;
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--frost-border);
 }
 
 .header__heading-logo-image {
   max-width: 160px;
 }
 
-/* --- Footer Override --- */
+/* --- Footer — Dark with Frost Elements --- */
 .footer {
   background-color: var(--color-bayou-dark) !important;
   color: var(--color-bayou-cream) !important;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 .footer a {
@@ -256,7 +283,7 @@ textarea:focus {
 }
 
 .footer a:hover {
-  color: var(--color-bayou-sage) !important;
+  color: var(--color-bayou-gold) !important;
 }
 
 .footer h2,
@@ -270,19 +297,22 @@ textarea:focus {
 }
 
 .footer .footer-block__newsletter .field__input {
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--color-bayou-cream);
+  border-radius: var(--radius-md) !important;
 }
 
 .footer .footer-block__newsletter .field__input::placeholder {
-  color: rgba(232, 223, 196, 0.5);
+  color: rgba(232, 223, 196, 0.45);
 }
 
 .footer .footer-block__newsletter .button,
 .footer .newsletter-form__button {
   background-color: var(--color-bayou-moss);
-  color: var(--color-bayou-offwhite);
+  color: var(--color-bayou-white);
+  border-radius: var(--radius-md) !important;
 }
 
 .footer .footer-block__newsletter .button:hover,
@@ -291,22 +321,24 @@ textarea:focus {
 }
 
 .footer .copyright {
-  color: rgba(232, 223, 196, 0.4);
+  color: rgba(232, 223, 196, 0.35);
   font-size: 1.1rem;
 }
 
 .footer .list-social__link {
   color: var(--color-bayou-cream) !important;
+  transition: color 0.2s ease;
 }
 
 .footer .list-social__link:hover {
-  color: var(--color-bayou-sage) !important;
+  color: var(--color-bayou-gold) !important;
 }
 
 /* --- Product Page Refinements --- */
 .product__title h1 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 2.8rem;
+  color: var(--color-bayou-dark);
 }
 
 @media screen and (min-width: 750px) {
@@ -318,28 +350,32 @@ textarea:focus {
 .product__info-wrapper .price {
   font-size: 2rem;
   font-weight: 600;
+  color: var(--color-bayou-dark);
 }
 
-/* Variant pills/chips */
+/* Variant pills/chips — rounded */
 .product-form__input--pill .product-form__input,
 variant-selects .product-form__input {
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-md) !important;
   padding: 0.8rem 1.6rem;
   font-weight: 500;
   min-width: 4.8rem;
   text-align: center;
   transition: all 0.2s ease;
+  background: var(--frost-bg);
 }
 
 .product-form__input--pill .product-form__input:hover,
 variant-selects .product-form__input:hover {
-  border-color: var(--color-bayou-dark);
+  border-color: var(--color-bayou-moss);
+  background: var(--frost-bg-strong);
 }
 
 .product-form__input--pill input:checked + .product-form__input,
 variant-selects input:checked + .product-form__input {
   background-color: var(--color-bayou-dark);
-  color: var(--color-bayou-offwhite);
+  color: var(--color-bayou-cream);
   border-color: var(--color-bayou-dark);
 }
 
@@ -350,6 +386,9 @@ variant-selects input:checked + .product-form__input {
 
 .product-form__buttons .button {
   width: 100%;
+  border-radius: var(--radius-md) !important;
+  padding: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* Accordion-style description */
@@ -359,7 +398,8 @@ variant-selects input:checked + .product-form__input {
   letter-spacing: 0.05em;
   font-size: 1.2rem;
   padding: 1.6rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: var(--color-bayou-dark);
 }
 
 /* --- Collection Grid --- */
@@ -370,20 +410,51 @@ variant-selects input:checked + .product-form__input {
 /* --- Cart Page --- */
 .cart__checkout-button {
   background-color: var(--color-bayou-dark) !important;
-  color: var(--color-bayou-offwhite) !important;
+  color: var(--color-bayou-cream) !important;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 1.6rem;
   width: 100%;
+  border-radius: var(--radius-md) !important;
 }
 
 .cart__checkout-button:hover {
   background-color: var(--color-bayou-moss) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(92, 122, 58, 0.25);
 }
 
 .quantity__button {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-sm) !important;
+}
+
+/* --- Popup / Modal / Drawer — Rounded + Frosted --- */
+.popup-modal__content,
+.menu-drawer,
+.cart-notification,
+.cart-drawer {
+  border-radius: var(--radius-xl) !important;
+  background: var(--frost-bg-strong);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--frost-border);
+}
+
+details[open] > summary + *,
+.disclosure__list {
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+}
+
+/* --- Badge Styling --- */
+.badge {
+  border-radius: var(--radius-sm) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
 }
 
 /* --- Utility Classes --- */
@@ -395,6 +466,14 @@ variant-selects input:checked + .product-form__input {
 .bayou-text-gold { color: var(--color-bayou-gold); }
 .bayou-text-cream { color: var(--color-bayou-cream); }
 
+.bayou-frost {
+  background: var(--frost-bg);
+  backdrop-filter: blur(var(--frost-blur));
+  -webkit-backdrop-filter: blur(var(--frost-blur));
+  border: 1px solid var(--frost-border);
+  border-radius: var(--radius-lg);
+}
+
 /* --- Smooth Scroll --- */
 html {
   scroll-behavior: smooth;
@@ -402,12 +481,13 @@ html {
 
 /* --- Selection Color --- */
 ::selection {
-  background-color: var(--color-bayou-sage);
+  background-color: rgba(92, 122, 58, 0.25);
   color: var(--color-bayou-dark);
 }
 
 /* --- Focus states --- */
 *:focus-visible {
   outline: 2px solid var(--color-bayou-moss);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
 }

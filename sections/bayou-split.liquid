@@ -14,12 +14,15 @@
   .bayou-split__image {
     overflow: hidden;
     min-height: 40rem;
+    border-radius: var(--radius-xl, 20px);
+    margin: 1.5rem;
   }
 
   .bayou-split__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: var(--radius-xl, 20px) !important;
   }
 
   .bayou-split__content {
@@ -77,15 +80,18 @@
     letter-spacing: 0.1em;
     padding: 1.4rem 3rem;
     background-color: var(--color-bayou-dark);
-    color: var(--color-bayou-offwhite);
+    color: var(--color-bayou-cream);
     text-decoration: none;
     align-self: flex-start;
-    transition: background-color 0.2s ease;
+    border-radius: var(--radius-md, 12px);
+    transition: all 0.25s ease;
   }
 
   .bayou-split__button:hover {
     background-color: var(--color-bayou-moss);
-    color: var(--color-bayou-offwhite);
+    color: var(--color-bayou-white);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(92, 122, 58, 0.25);
   }
 
   .bayou-split--reversed .bayou-split__image {

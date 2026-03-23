@@ -1,6 +1,12 @@
 {%- style -%}
   .bayou-wholesale {
-    background-color: {{ section.settings.bg_color }};
+    {%- if section.settings.bg_color == '#1A2415' -%}
+      background: linear-gradient(160deg, #1A2415 0%, #2D3B1E 100%);
+    {%- elsif section.settings.bg_color == '#2D3B1E' -%}
+      background: linear-gradient(160deg, #2D3B1E 0%, #3a4d28 100%);
+    {%- else -%}
+      background-color: {{ section.settings.bg_color }};
+    {%- endif -%}
     padding: 6rem 0;
   }
 
@@ -83,9 +89,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: var(--radius-md, 12px);
     background-color: rgba(92, 122, 58, 0.12);
     {%- if section.settings.bg_color == '#1A2415' or section.settings.bg_color == '#2D3B1E' -%}
-      background-color: rgba(92, 122, 58, 0.25);
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
     {%- endif -%}
   }
 
@@ -130,12 +139,15 @@
     color: var(--color-bayou-dark);
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.2s ease;
+    border-radius: var(--radius-md, 12px);
+    transition: all 0.25s ease;
   }
 
   .bayou-wholesale__cta-button:hover {
-    background-color: #b5a55d;
+    background-color: #d4c87a;
     color: var(--color-bayou-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(201, 185, 107, 0.35);
   }
 
   /* Inline form styles */
@@ -150,18 +162,37 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 1.4rem;
     padding: 1.2rem 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     color: var(--color-bayou-cream);
     width: 100%;
+    border-radius: var(--radius-md, 12px);
+    transition: all 0.2s ease;
+  }
+
+  .bayou-wholesale__form input:focus,
+  .bayou-wholesale__form textarea:focus {
+    border-color: var(--color-bayou-gold);
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(201, 185, 107, 0.15);
   }
 
   {%- if section.settings.bg_color != '#1A2415' and section.settings.bg_color != '#2D3B1E' -%}
     .bayou-wholesale__form input,
     .bayou-wholesale__form textarea {
-      border-color: rgba(0, 0, 0, 0.12);
-      background-color: var(--color-bayou-white);
+      border-color: rgba(0, 0, 0, 0.08);
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
       color: var(--color-bayou-charcoal);
+      border-radius: var(--radius-md, 12px);
+    }
+    .bayou-wholesale__form input:focus,
+    .bayou-wholesale__form textarea:focus {
+      border-color: var(--color-bayou-moss);
+      box-shadow: 0 0 0 3px rgba(92, 122, 58, 0.12);
     }
   {%- endif -%}
 
@@ -189,12 +220,15 @@
     background-color: var(--color-bayou-gold);
     color: var(--color-bayou-dark);
     border: none;
+    border-radius: var(--radius-md, 12px);
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.25s ease;
   }
 
   .bayou-wholesale__form button:hover {
-    background-color: #b5a55d;
+    background-color: #d4c87a;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(201, 185, 107, 0.35);
   }
 {%- endstyle -%}
 

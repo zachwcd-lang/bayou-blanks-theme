@@ -1,6 +1,6 @@
 {%- style -%}
   .bayou-tiktok {
-    background-color: var(--color-bayou-dark);
+    background: linear-gradient(160deg, var(--color-bayou-dark) 0%, var(--color-bayou-forest) 100%);
     padding: 6rem 0;
   }
 
@@ -25,7 +25,9 @@
     aspect-ratio: 9/16;
     max-height: 50rem;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: var(--radius-xl, 20px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .bayou-tiktok__media img,
@@ -93,15 +95,22 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1.5rem 3.5rem;
-    background-color: var(--color-bayou-offwhite);
-    color: var(--color-bayou-dark);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--color-bayou-cream);
     text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: var(--radius-md, 12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.25s ease;
   }
 
   .bayou-tiktok__button:hover {
-    background-color: var(--color-bayou-moss);
-    color: var(--color-bayou-offwhite);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: var(--color-bayou-white);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   }
 {%- endstyle -%}
 
