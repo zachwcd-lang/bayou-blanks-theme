@@ -143,6 +143,8 @@
         widths: '600,900,1200,1800,2000',
         class: 'bayou-hero__image'
       }}
+    {%- elsif section.settings.image_asset != blank -%}
+      <img src="{{ section.settings.image_asset | asset_url }}" alt="{{ section.settings.heading | escape }}" loading="eager" class="bayou-hero__image">
     {%- else -%}
       <div style="width:100%;height:100%;background-color:var(--color-bayou-forest);"></div>
     {%- endif -%}
@@ -189,6 +191,12 @@
       "type": "url",
       "id": "video_url",
       "label": "Background video URL (external mp4)"
+    },
+    {
+      "type": "text",
+      "id": "image_asset",
+      "label": "Image asset filename (from assets folder)",
+      "info": "e.g. wh image.png"
     },
     {
       "type": "text",

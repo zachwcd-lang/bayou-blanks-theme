@@ -119,6 +119,10 @@
     <div class="bayou-tiktok__media">
       {%- if section.settings.video != blank -%}
         {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+      {%- elsif section.settings.video_asset != blank -%}
+        <video autoplay loop muted playsinline>
+          <source src="{{ section.settings.video_asset | asset_url }}" type="video/mp4">
+        </video>
       {%- elsif section.settings.image != blank -%}
         {{ section.settings.image | image_url: width: 800 | image_tag:
           loading: 'lazy',
@@ -164,6 +168,12 @@
       "type": "video",
       "id": "video",
       "label": "Video (Shopify-hosted)"
+    },
+    {
+      "type": "text",
+      "id": "video_asset",
+      "label": "Video asset filename (from assets folder)",
+      "info": "e.g. hattiesburg-hero.mov"
     },
     {
       "type": "image_picker",

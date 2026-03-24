@@ -7,6 +7,7 @@
         "subheading": "Fanatics-quality blanks built for printing, embroidery, or wearing as-is. Shipped from Hattiesburg, MS.",
         "button_label": "Shop All",
         "button_link": "shopify:\/\/collections\/all",
+        "image_asset": "wh image.png",
         "overlay_opacity": 50,
         "height_desktop": 85,
         "height_mobile": 70,
@@ -107,6 +108,7 @@
     "bayou_tiktok": {
       "type": "bayou-tiktok-cta",
       "settings": {
+        "video_asset": "hattiesburg-hero.mov",
         "label": "Live Shopping",
         "heading": "Shop Live on TikTok",
         "text": "Catch our live drops, exclusive deals, and behind-the-scenes looks at the blanks you love. Follow us on TikTok Shop.",
