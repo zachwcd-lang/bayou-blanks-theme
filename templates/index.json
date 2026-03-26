@@ -3,16 +3,16 @@
     "bayou_hero": {
       "type": "bayou-hero",
       "settings": {
-        "heading": "Premium Blank Apparel",
-        "subheading": "Fanatics-quality blanks built for printing, embroidery, or wearing as-is. Shipped from Hattiesburg, MS.",
+        "heading": "The Cheapest Wholesale Apparel Prices. Period.",
+        "subheading": "Premium blanks built for printing, embroidery, or wearing as-is. Shipped from Hattiesburg, MS.",
         "button_label": "Shop All",
         "button_link": "shopify:\/\/collections\/all",
         "image_asset": "newhero.JPG",
         "overlay_opacity": 50,
         "height_desktop": 85,
         "height_mobile": 70,
-        "content_position": "flex-end",
-        "text_alignment": "left"
+        "content_position": "center",
+        "text_alignment": "center"
       }
     },
     "bayou_marquee": {
