@@ -41,7 +41,7 @@
       },
       "block_order": ["text_1", "text_2", "text_3", "text_4", "text_5"],
       "settings": {
-        "speed": 30
+        "speed": 60
       }
     },
     "featured_collection": {
