@@ -5,32 +5,40 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-0": {
+        "footer-about": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "About",
+            "menu": "about"
           }
         },
-        "footer-1": {
+        "footer-support": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Customer Service",
+            "menu": "customer-service"
           }
         },
-        "footer-2": {
+        "footer-shop": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "shop"
+          }
+        },
+        "footer-social": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Premium Fanatics blanks shipped from Hattiesburg, MS.<\/p>"
+            "heading": "Follow Us",
+            "subtext": "<p><a href=\"https://www.tiktok.com/@bayou.blanks\" target=\"_blank\" title=\"TikTok\">TikTok</a></p>"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "footer-2"
+        "footer-about",
+        "footer-support",
+        "footer-shop",
+        "footer-social"
       ],
       "settings": {
         "color_scheme": "scheme-1",

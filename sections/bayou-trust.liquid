@@ -1,0 +1,228 @@
+{%- style -%}
+  .bayou-trust {
+    padding: 6rem 0;
+    background-color: var(--color-bayou-offwhite, #FAF8F2);
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-trust {
+      padding: 8rem 0;
+    }
+  }
+
+  .bayou-trust__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .bayou-trust__label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-bayou-moss);
+    margin: 0 0 1.2rem;
+  }
+
+  .bayou-trust__title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: var(--color-bayou-charcoal);
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-trust__title {
+      font-size: 3.6rem;
+    }
+  }
+
+  .bayou-trust__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-trust__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3.5rem;
+    }
+  }
+
+  .bayou-trust__card {
+    background: #fff;
+    border-radius: var(--radius-xl, 20px);
+    padding: 3rem 2.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+  }
+
+  .bayou-trust__card-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: var(--radius-md, 12px);
+    background: rgba(92, 122, 58, 0.1);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--color-bayou-moss);
+    margin-bottom: 2rem;
+  }
+
+  .bayou-trust__card-heading {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: var(--color-bayou-charcoal);
+    margin: 0 0 1.2rem;
+  }
+
+  .bayou-trust__card-text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: rgba(44, 44, 44, 0.7);
+    margin: 0;
+  }
+
+  .bayou-trust__card-link {
+    display: inline-block;
+    margin-top: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--color-bayou-moss);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .bayou-trust__card-link:hover {
+    color: var(--color-bayou-dark);
+  }
+{%- endstyle -%}
+
+<section class="bayou-trust" id="bayou-trust-{{ section.id }}">
+  <div class="page-width">
+    {%- if section.settings.label != blank or section.settings.heading != blank -%}
+      <div class="bayou-trust__header">
+        {%- if section.settings.label != blank -%}
+          <p class="bayou-trust__label">{{ section.settings.label }}</p>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="bayou-trust__title">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="bayou-trust__grid">
+      {%- for block in section.blocks -%}
+        <div class="bayou-trust__card" {{ block.shopify_attributes }}>
+          <div class="bayou-trust__card-number">{{ forloop.index }}</div>
+          {%- if block.settings.heading != blank -%}
+            <h3 class="bayou-trust__card-heading">{{ block.settings.heading }}</h3>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            <p class="bayou-trust__card-text">{{ block.settings.text }}</p>
+          {%- endif -%}
+          {%- if block.settings.link_label != blank -%}
+            <a href="{{ block.settings.link_url }}" class="bayou-trust__card-link" {% if block.settings.link_external %}target="_blank" rel="noopener"{% endif %}>
+              {{ block.settings.link_label }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Trust Explainer",
+  "tag": "section",
+  "class": "bayou-trust-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "How It Works"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Trust Bayou Blanks?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Premium Quality"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Body text",
+          "default": "Description of this trust point."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label (optional)"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "link_external",
+          "label": "Open link in new tab",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Trust Explainer",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "heading": "Premium Blanks. Liquidation Prices.",
+            "text": "Every season, Fanatics produces more blank apparel than retailers can move. We buy authentic overstock directly through licensed liquidation channels and pass the savings to you."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "heading": "Inspected In Our Warehouse",
+            "text": "Every shipment is received, scanned, and quality-checked by our team in Hattiesburg, MS before it ever hits the site."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "heading": "Watch Us Work",
+            "text": "We stream daily flash sales on TikTok Shop. Come see the product in person before you buy."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

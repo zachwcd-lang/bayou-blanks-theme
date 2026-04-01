@@ -1,0 +1,127 @@
+{%- style -%}
+  .bayou-stats {
+    background: linear-gradient(160deg, var(--color-bayou-dark) 0%, var(--color-bayou-forest) 100%);
+    padding: 4rem 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-stats {
+      padding: 5rem 0;
+    }
+  }
+
+  .bayou-stats__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 2rem;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-stats__grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  .bayou-stats__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bayou-stats__number {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1;
+    color: var(--color-bayou-gold);
+    margin: 0 0 0.6rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-stats__number {
+      font-size: 4.2rem;
+    }
+  }
+
+  .bayou-stats__label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-bayou-offwhite);
+    margin: 0 0 0.4rem;
+  }
+
+  .bayou-stats__sublabel {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-bayou-sage);
+    line-height: 1.4;
+    max-width: 18rem;
+  }
+{%- endstyle -%}
+
+<section class="bayou-stats" id="bayou-stats-{{ section.id }}">
+  <div class="page-width">
+    <div class="bayou-stats__grid">
+      {%- for block in section.blocks -%}
+        <div class="bayou-stats__item" {{ block.shopify_attributes }}>
+          <span class="bayou-stats__number">{{ block.settings.number }}</span>
+          <span class="bayou-stats__label">{{ block.settings.label }}</span>
+          {%- if block.settings.sublabel != blank -%}
+            <span class="bayou-stats__sublabel">{{ block.settings.sublabel }}</span>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Stats Banner",
+  "tag": "section",
+  "class": "bayou-stats-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "100K+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Units Sold"
+        },
+        {
+          "type": "text",
+          "id": "sublabel",
+          "label": "Sublabel",
+          "default": "and counting"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Stats Banner",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "100K+", "label": "Units Sold", "sublabel": "in our first 4 weeks on TikTok" } },
+        { "type": "stat", "settings": { "number": "1000s", "label": "5-Star Reviews", "sublabel": "across TikTok, Whatnot, Amazon & more" } },
+        { "type": "stat", "settings": { "number": "10K+", "label": "Sq. Ft. Warehouse", "sublabel": "Hattiesburg, Mississippi" } },
+        { "type": "stat", "settings": { "number": "2026", "label": "Powered by WCS", "sublabel": "backed by West Coast Deals" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
