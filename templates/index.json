@@ -111,8 +111,9 @@
         "video_asset": "hattiesburg-hero.mov",
         "label": "Live Shopping",
         "heading": "Shop Live on TikTok",
-        "text": "Catch our live drops, exclusive deals, and behind-the-scenes looks at the blanks you love. Follow us on TikTok Shop.",
-        "button_label": "Shop Live"
+        "text": "Daily flash sales on blank apparel. Catch our live drops, exclusive deals, and behind-the-scenes looks at the blanks you love. Follow us on TikTok Shop.",
+        "button_label": "Shop Live",
+        "button_link": "https:\/\/www.tiktok.com\/@bayou.blanks"
       }
     }
   },
