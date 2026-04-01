@@ -26,16 +26,12 @@
           "type": "stat",
           "settings": { "number": "1000s", "label": "5-Star Reviews", "sublabel": "across TikTok, Whatnot, Amazon & more" }
         },
-        "stat_3": {
-          "type": "stat",
-          "settings": { "number": "10K+", "label": "Sq. Ft. Warehouse", "sublabel": "Hattiesburg, Mississippi" }
-        },
         "stat_4": {
           "type": "stat",
-          "settings": { "number": "2026", "label": "Powered by WCS", "sublabel": "backed by West Coast Deals" }
+          "settings": { "number": "2026", "label": "Powered by WCD", "sublabel": "backed by West Coast Deals" }
         }
       },
-      "block_order": ["stat_1", "stat_2", "stat_3", "stat_4"],
+      "block_order": ["stat_1", "stat_2", "stat_4"],
       "settings": {}
     },
     "bayou_marquee": {
