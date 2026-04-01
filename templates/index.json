@@ -90,7 +90,7 @@
           "type": "card",
           "settings": {
             "heading": "Premium Blanks. Liquidation Prices.",
-            "text": "Every season, Fanatics produces more blank apparel than retailers can move. We buy authentic overstock directly through licensed liquidation channels and pass the savings to you. Same quality blanks used by MLB, NFL, and NHL teams \u2014 without the retail markup."
+            "text": "The same blank apparel used by MLB, NFL, and NHL teams \u2014 at a fraction of retail. We source authentic Fanatics overstock through licensed liquidation channels and pass the savings directly to you. No middlemen, no markup."
           }
         },
         "card_2": {
@@ -148,16 +148,6 @@
         "cta_label": "Request Pricing"
       }
     },
-    "bayou_split": {
-      "type": "bayou-split",
-      "settings": {
-        "label": "About Us",
-        "heading": "Why Bayou Blanks?",
-        "text": "We source premium Fanatics blanks and ship them from our warehouse in Hattiesburg, Mississippi. Whether you're a screen printer, decorator, or just someone who appreciates quality basics \u2014 we've got you covered.",
-        "button_label": "Learn More",
-        "reverse_layout": false
-      }
-    },
     "bayou_tiktok": {
       "type": "bayou-tiktok-cta",
       "settings": {
@@ -177,7 +167,6 @@
     "featured_collection",
     "bayou_trust",
     "bayou_wholesale",
-    "bayou_split",
     "bayou_tiktok"
   ]
 }
