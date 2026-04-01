@@ -43,10 +43,6 @@
       "blocks": {
         "text_1": {
           "type": "text",
-          "settings": { "text": "FREE SHIPPING $75+" }
-        },
-        "text_2": {
-          "type": "text",
           "settings": { "text": "100,000+ UNITS SOLD" }
         },
         "text_3": {
@@ -66,7 +62,7 @@
           "settings": { "text": "BACKED BY WEST COAST DEALS" }
         }
       },
-      "block_order": ["text_1", "text_2", "text_3", "text_4", "text_5", "text_6"],
+      "block_order": ["text_1", "text_3", "text_4", "text_5", "text_6"],
       "settings": {
         "speed": 60
       }
