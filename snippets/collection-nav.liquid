@@ -1,0 +1,83 @@
+{% comment %}
+  Renders a horizontal category pill nav on collection pages.
+  Pulls links from the "Shop" dropdown in the main menu, so it always
+  stays in sync with the header navigation. Highlights the active collection.
+
+  Usage: {% render 'collection-nav' %}
+{% endcomment %}
+
+{%- liquid
+  assign shop_links = blank
+  for link in linklists['main-menu'].links
+    if link.links.size > 0
+      assign shop_links = link.links
+      break
+    endif
+  endfor
+-%}
+
+{%- if shop_links != blank -%}
+  <style>
+    .collection-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.8rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 1.6rem 0 0.4rem;
+    }
+    .collection-nav::-webkit-scrollbar {
+      display: none;
+    }
+    .collection-nav__pill {
+      flex: 0 0 auto;
+      padding: 0.7rem 1.6rem;
+      border: 0.1rem solid rgba(var(--color-foreground), 0.25);
+      border-radius: 5rem;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      text-decoration: none;
+      color: rgb(var(--color-foreground));
+      background: transparent;
+      transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+    .collection-nav__pill:hover {
+      border-color: rgb(var(--color-foreground));
+    }
+    .collection-nav__pill--active {
+      background: rgb(var(--color-foreground));
+      color: rgb(var(--color-background));
+      border-color: rgb(var(--color-foreground));
+    }
+    @media screen and (max-width: 749px) {
+      .collection-nav {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+  </style>
+
+  <nav class="collection-nav" aria-label="Shop categories">
+    {%- for link in shop_links -%}
+      {%- liquid
+        assign is_active = false
+        if link.url == collection.url
+          assign is_active = true
+        elsif link.url == '/collections/all' and request.path == '/collections/all'
+          assign is_active = true
+        endif
+      -%}
+      <a
+        href="{{ link.url }}"
+        class="collection-nav__pill{% if is_active %} collection-nav__pill--active{% endif %}"
+        {% if is_active %}aria-current="page"{% endif %}
+      >
+        {{- link.title | escape -}}
+      </a>
+    {%- endfor -%}
+  </nav>
+{%- endif -%}
