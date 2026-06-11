@@ -112,6 +112,32 @@
         >
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+      {%- comment -%}
+        Bayou Blanks: business_type is an analytics signal — keep the field
+        name "contact[business_type]" and these option values stable.
+      {%- endcomment -%}
+      <div class="field">
+        <div class="select">
+          <select
+            id="ContactForm-business-type"
+            class="select__select"
+            name="contact[business_type]"
+            aria-label="{{ section.settings.business_type_label | default: 'Business type' | escape }}"
+          >
+            <option value="" selected disabled>
+              {{ section.settings.business_type_label | default: 'Business type' | escape }}
+            </option>
+            <option value="Screen printer">Screen printer</option>
+            <option value="Embroiderer">Embroiderer</option>
+            <option value="Reseller">Reseller</option>
+            <option value="Team">Team</option>
+            <option value="Other">Other</option>
+          </select>
+          <span class="svg-wrapper">
+            {{- 'icon-caret.svg' | inline_asset_content -}}
+          </span>
+        </div>
+      </div>
       <div class="field">
         <textarea
           rows="10"
@@ -183,6 +209,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "business_type_label",
+      "label": "Business type placeholder",
+      "default": "Business type"
     },
     {
       "type": "header",

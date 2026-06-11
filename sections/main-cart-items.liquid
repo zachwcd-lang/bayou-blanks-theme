@@ -73,9 +73,11 @@
     </div>
 
     <div class="cart__warnings">
-      <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="button">
-        {{ 'general.continue_shopping' | t }}
+      <h1 class="cart__empty-text">
+        {{- section.settings.bayou_empty_text | default: 'NOTHING IN THE CART — YET.' | escape -}}
+      </h1>
+      <a href="{{ section.settings.bayou_empty_link | default: '/collections/in-stock' }}" class="button">
+        {{ section.settings.bayou_empty_button | default: 'SHOP IN STOCK' | escape }}
       </a>
 
       {%- if shop.customer_accounts_enabled and customer == null -%}
@@ -549,6 +551,23 @@
       "label": "Honesty line",
       "info": "Shown above the cart subtotal. The cart drawer shows the same line.",
       "default": "LIQUIDATION STOCK — SOLD OUT IS GONE"
+    },
+    {
+      "type": "text",
+      "id": "bayou_empty_text",
+      "label": "Empty cart heading",
+      "default": "NOTHING IN THE CART — YET."
+    },
+    {
+      "type": "text",
+      "id": "bayou_empty_button",
+      "label": "Empty cart button label",
+      "default": "SHOP IN STOCK"
+    },
+    {
+      "type": "url",
+      "id": "bayou_empty_link",
+      "label": "Empty cart button link"
     },
     {
       "type": "color_scheme",

@@ -141,7 +141,13 @@
           {%- endif -%}
         {%- endunless -%}
         {%- if search.results_count == 0 and search.filters == empty -%}
-          <p role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+          <p role="status" class="bb-mono-label" style="opacity: 0.6;">
+            {{ section.settings.bayou_no_results_text | default: 'NOTHING ON THIS SHELF FOR' | escape }}
+            &ldquo;{{ search.terms | escape }}&rdquo;
+          </p>
+          <a href="{{ section.settings.bayou_no_results_link | default: '/collections/in-stock' }}" class="button" style="margin-top: 2rem;">
+            {{ section.settings.bayou_no_results_button | default: 'SHOP IN STOCK' | escape }}
+          </a>
         {%- endif -%}
       {%- endif -%}
     </div>
@@ -339,6 +345,23 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "bayou_no_results_text",
+      "label": "No-results line (search term is appended)",
+      "default": "NOTHING ON THIS SHELF FOR"
+    },
+    {
+      "type": "text",
+      "id": "bayou_no_results_button",
+      "label": "No-results button label",
+      "default": "SHOP IN STOCK"
+    },
+    {
+      "type": "url",
+      "id": "bayou_no_results_link",
+      "label": "No-results button link"
+    },
     {
       "type": "range",
       "id": "columns_desktop",
