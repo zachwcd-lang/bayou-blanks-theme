@@ -1,0 +1,172 @@
+{% comment %}
+  Renders the Bayou Blanks mobile sticky add-to-cart bar (glass surface).
+
+  Mobile only (max-width 749px). Hidden by default ([hidden]) so the bar never
+  appears without JS; JS reveals it and shows/hides it with an
+  IntersectionObserver watching the real submit button. The bar's button is a
+  proxy that clicks the real product form submit, so all of Dawn's
+  product-form behaviour (errors, cart drawer, live regions) stays intact.
+
+  Accepts:
+  - product: {Object} product object.
+
+  Usage:
+  {% render 'bayou-sticky-atc', product: product %}
+{% endcomment %}
+
+{%- liquid
+  assign bayou_sticky_variant = product.selected_or_first_available_variant
+-%}
+
+{%- if product != blank and bayou_sticky_variant != null -%}
+  <bayou-sticky-atc
+    id="BayouStickyAtc-{{ section.id }}"
+    class="bayou-sticky-atc bb-glass"
+    data-section="{{ section.id }}"
+    hidden
+  >
+    <div class="bayou-sticky-atc__info">
+      <span class="bayou-sticky-atc__label bb-mono-label" data-sticky-label>
+        {{- bayou_sticky_variant.options | join: ' &middot; ' -}}
+      </span>
+      <span class="bayou-sticky-atc__price bb-mono-label" data-sticky-price>
+        {{- bayou_sticky_variant.price | money -}}
+      </span>
+    </div>
+    <button
+      type="button"
+      class="button button--primary bayou-sticky-atc__button"
+      data-sticky-submit
+      {% if bayou_sticky_variant.available == false %}
+        disabled
+      {% endif %}
+    >
+      {%- if bayou_sticky_variant.available -%}
+        {{ 'products.product.add_to_cart' | t }}
+      {%- else -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- endif -%}
+    </button>
+  </bayou-sticky-atc>
+
+  {% style %}
+    .bayou-sticky-atc {
+      display: none;
+    }
+
+    @media screen and (max-width: 749px) {
+      .bayou-sticky-atc:not([hidden]) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.2rem;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        padding: 1rem 1.5rem;
+        border: 0;
+        border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+        /* Shadow allowed: overlay element. */
+        box-shadow: 0 -6px 18px rgba(26, 36, 21, 0.08);
+        transform: translateY(110%);
+        transition: transform 0.25s ease;
+      }
+
+      .bayou-sticky-atc.bayou-sticky-atc--visible {
+        transform: translateY(0);
+      }
+    }
+
+    .bayou-sticky-atc__info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+    }
+
+    .bayou-sticky-atc__label {
+      color: var(--bb-ink-soft, #2d3b1e);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .bayou-sticky-atc__price {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--bb-ink, #1a2415);
+    }
+
+    .bayou-sticky-atc__button {
+      min-height: 4.4rem;
+      flex-shrink: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+  {% endstyle %}
+
+  <script>
+    if (!customElements.get('bayou-sticky-atc')) {
+      customElements.define(
+        'bayou-sticky-atc',
+        class BayouStickyAtc extends HTMLElement {
+          observer = undefined;
+          variantChangeUnsubscriber = undefined;
+
+          connectedCallback() {
+            this.realSubmit = document.getElementById(`ProductSubmitButton-${this.dataset.section}`);
+            if (!this.realSubmit || !('IntersectionObserver' in window)) return;
+
+            this.removeAttribute('hidden');
+
+            this.querySelector('[data-sticky-submit]')?.addEventListener('click', () => {
+              this.realSubmit.click();
+            });
+
+            this.observer = new IntersectionObserver(
+              ([entry]) => {
+                this.classList.toggle('bayou-sticky-atc--visible', !entry.isIntersecting);
+              },
+              { rootMargin: '0px 0px -10% 0px' }
+            );
+            this.observer.observe(this.realSubmit);
+
+            if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined') {
+              this.variantChangeUnsubscriber = subscribe(
+                PUB_SUB_EVENTS.variantChange,
+                this.onVariantChange.bind(this)
+              );
+            }
+          }
+
+          disconnectedCallback() {
+            this.observer?.disconnect();
+            this.variantChangeUnsubscriber?.();
+          }
+
+          onVariantChange({ data: { sectionId, html } }) {
+            if (sectionId !== this.dataset.section || !html) return;
+
+            const fresh = html.getElementById(this.id);
+            if (!fresh) return;
+
+            ['data-sticky-label', 'data-sticky-price'].forEach((attribute) => {
+              const source = fresh.querySelector(`[${attribute}]`);
+              const destination = this.querySelector(`[${attribute}]`);
+              if (source && destination) destination.textContent = source.textContent.trim();
+            });
+
+            const freshButton = fresh.querySelector('[data-sticky-submit]');
+            const liveButton = this.querySelector('[data-sticky-submit]');
+            if (freshButton && liveButton) {
+              liveButton.toggleAttribute('disabled', freshButton.hasAttribute('disabled'));
+              liveButton.textContent = freshButton.textContent.trim();
+            }
+          }
+        }
+      );
+    }
+  </script>
+{%- endif -%}

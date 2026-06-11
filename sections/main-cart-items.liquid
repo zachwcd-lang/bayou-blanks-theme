@@ -17,6 +17,44 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .bayou-line-math {
+    margin: 0.4rem 0 0;
+    color: var(--bb-ink-soft, #2d3b1e);
+  }
+
+  .bayou-cart-honesty {
+    margin: 2rem 0 0;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    text-align: right;
+  }
+
+  .bayou-cart-honesty__line {
+    display: block;
+    margin: 0;
+    color: var(--bb-ink-soft, #2d3b1e);
+  }
+
+  .bayou-payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+
+  .bayou-payment-icons li {
+    display: flex;
+  }
+
+  .bayou-payment-icons .icon {
+    width: 3.2rem;
+    height: 2rem;
+    filter: grayscale(1);
+    opacity: 0.7;
+  }
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
@@ -165,6 +203,30 @@
                         </dl>
 
                         <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                      {%- endif -%}
+
+                      {%- liquid
+                        # Bayou Blanks: per-unit math from the Bundle Quantity option value (e.g. '6-Pack').
+                        assign bayou_pack_label = ''
+                        assign bayou_pack_count = 0
+                        for option in item.options_with_values
+                          assign bayou_value_down = option.value | downcase
+                          if bayou_value_down contains 'pack'
+                            assign bayou_pack_count = option.value | split: '-' | first | plus: 0
+                            if bayou_pack_count > 0
+                              assign bayou_pack_label = option.value
+                              break
+                            endif
+                          endif
+                        endfor
+                      -%}
+                      {%- if bayou_pack_count > 0 and item.quantity > 0 -%}
+                        {%- assign bayou_total_units = item.quantity | times: bayou_pack_count -%}
+                        <p class="bayou-line-math bb-mono-label">
+                          {{ bayou_pack_label | escape }} &middot;
+                          {{ item.final_line_price | divided_by: bayou_total_units | money -}}
+                          /unit
+                        </p>
                       {%- endif -%}
 
                       <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -443,6 +505,26 @@
         </div>
       </div>
 
+      {%- if section.settings.bayou_honesty_text != blank -%}
+        {% comment %}
+          Sits directly above the cart footer/subtotal section. The cart drawer
+          (snippets/cart-drawer.liquid) hardcodes the same default copy.
+        {% endcomment %}
+        <div class="bayou-cart-honesty">
+          <span class="bayou-cart-honesty__line bb-mono-label">{{ section.settings.bayou_honesty_text | escape }}</span>
+          {%- if shop.enabled_payment_types.size > 0 -%}
+            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+            <ul class="bayou-payment-icons list-unstyled" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li>
+                  {{- type | payment_type_svg_tag: class: 'icon' -}}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
       <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
       <p
         class="visually-hidden"
@@ -461,6 +543,13 @@
 {
   "name": "t:sections.main-cart-items.name",
   "settings": [
+    {
+      "type": "text",
+      "id": "bayou_honesty_text",
+      "label": "Honesty line",
+      "info": "Shown above the cart subtotal. The cart drawer shows the same line.",
+      "default": "LIQUIDATION STOCK — SOLD OUT IS GONE"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",

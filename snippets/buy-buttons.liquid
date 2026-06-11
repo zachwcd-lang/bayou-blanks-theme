@@ -88,7 +88,13 @@
               {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
+                {%- comment -%}
+                  Bayou Blanks: label carries the live pack total. Kept in sync on
+                  variant change by bayou-pack-table, which copies this server-rendered
+                  text after Dawn's toggleSubmitButton resets it.
+                {%- endcomment -%}
+                {{ 'products.product.add_to_cart' | t }} &mdash;
+                {{ product.selected_or_first_available_variant.price | money }}
               {%- endif -%}
             </span>
             {%- render 'loading-spinner' -%}

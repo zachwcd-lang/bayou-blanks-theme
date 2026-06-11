@@ -1,0 +1,306 @@
+{% comment %}
+  Renders the Bayou Blanks pack/price table for the bundle-quantity option.
+
+  Progressive enhancement over Dawn's variant picker: the native picker inputs
+  stay in the DOM and keep working. Rows here proxy clicks to the matching
+  native input and dispatch its change event, so Dawn's variant-selects /
+  product-info pipeline stays the single source of truth. With JS disabled the
+  table is inert decoration-free (rows are buttons that do nothing) — so it is
+  hidden by default and revealed by JS, while the native picker stays visible.
+
+  Accepts:
+  - product: {Object} product object.
+  - product_form_id: {String} id of the product form the picker belongs to.
+
+  Usage:
+  {% render 'bayou-pack-table', product: product, product_form_id: product_form_id %}
+{% endcomment %}
+
+{%- liquid
+  assign bayou_bundle_option_name = section.settings.bayou_bundle_option_name | default: 'Bundle Quantity'
+  assign bayou_bundle_name_down = bayou_bundle_option_name | downcase
+  assign bayou_bundle_option = null
+  for option in product.options_with_values
+    assign bayou_option_name_down = option.name | downcase
+    if bayou_option_name_down == bayou_bundle_name_down
+      assign bayou_bundle_option = option
+      break
+    endif
+  endfor
+-%}
+
+{%- if bayou_bundle_option != null and product.has_only_default_variant == false -%}
+  {%- liquid
+    assign bayou_bundle_index0 = bayou_bundle_option.position | minus: 1
+    assign bayou_selected_variant = product.selected_or_first_available_variant
+  -%}
+
+  <bayou-pack-table
+    id="BayouPackTable-{{ section.id }}"
+    class="bayou-pack-table"
+    data-section="{{ section.id }}"
+    hidden
+  >
+    <div class="bayou-pack-table__frame">
+      <div class="bayou-pack-table__head bb-mono-label" aria-hidden="true">
+        <span>Pack</span>
+        <span class="bayou-pack-table__num">Total</span>
+        <span class="bayou-pack-table__num">Per unit</span>
+      </div>
+      <div role="group" aria-label="{{ bayou_bundle_option.name | escape }}">
+        {%- for value in bayou_bundle_option.values -%}
+          {%- liquid
+            assign bayou_value_name = value.name | default: value
+            assign bayou_row_variant = null
+            for variant in product.variants
+              if variant.options[bayou_bundle_index0] != bayou_value_name
+                continue
+              endif
+              assign bayou_matches = true
+              for variant_option in variant.options
+                assign bayou_opt_index0 = forloop.index0
+                if bayou_opt_index0 == bayou_bundle_index0
+                  continue
+                endif
+                if variant_option != bayou_selected_variant.options[bayou_opt_index0]
+                  assign bayou_matches = false
+                  break
+                endif
+              endfor
+              if bayou_matches
+                assign bayou_row_variant = variant
+                break
+              endif
+            endfor
+          -%}
+          {%- if bayou_row_variant != null -%}
+            {%- liquid
+              assign bayou_pack_count = bayou_value_name | split: '-' | first | plus: 0
+              assign bayou_row_selected = false
+              if bayou_row_variant.id == bayou_selected_variant.id
+                assign bayou_row_selected = true
+              endif
+            -%}
+            <button
+              type="button"
+              class="bayou-pack-row{% if bayou_row_selected %} bayou-pack-row--selected{% endif %}{% unless bayou_row_variant.available %} bayou-pack-row--soldout{% endunless %}"
+              data-option-value-id="{{ value.id }}"
+              aria-pressed="{{ bayou_row_selected }}"
+              {% unless bayou_row_variant.available %}
+                disabled
+              {% endunless %}
+            >
+              <span class="bayou-pack-row__pack bb-mono-label">{{ bayou_value_name }}</span>
+              <span class="bayou-pack-table__num bayou-pack-row__total">{{ bayou_row_variant.price | money }}</span>
+              <span class="bayou-pack-table__num bayou-pack-row__unit bb-mono-label">
+                {%- if bayou_row_variant.available == false -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- elsif bayou_pack_count > 0 -%}
+                  {{ bayou_row_variant.price | divided_by: bayou_pack_count | money }}/unit
+                {%- else -%}
+                  &mdash;
+                {%- endif -%}
+              </span>
+            </button>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <p class="bayou-pack-table__stock bb-mono-label" role="status">
+      {%- liquid
+        assign bayou_selected_pack_count = bayou_selected_variant.options[bayou_bundle_index0] | split: '-' | first | plus: 0
+        assign bayou_units_remaining = 0
+        if bayou_selected_variant.inventory_management == 'shopify' and bayou_selected_pack_count > 0 and bayou_selected_variant.inventory_quantity > 0
+          assign bayou_units_remaining = bayou_selected_variant.inventory_quantity | times: bayou_selected_pack_count
+        endif
+      -%}
+      {%- if bayou_units_remaining > 0 -%}
+        {{ bayou_units_remaining }} units remaining &middot;
+      {% endif -%}
+      {{ section.settings.bayou_scarcity_text | default: 'Liquidation stock does not restock' }}
+    </p>
+  </bayou-pack-table>
+
+  {% style %}
+    .bayou-pack-table {
+      display: block;
+      margin: 1.6rem 0 0.4rem;
+    }
+
+    /* No JS: keep the table hidden so the native picker stays the UI. */
+    .bayou-pack-table[hidden] {
+      display: none;
+    }
+
+    .bayou-pack-table__frame {
+      border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+      border-radius: var(--bb-radius-card, 4px);
+      overflow: hidden;
+    }
+
+    .bayou-pack-table__head,
+    .bayou-pack-row {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(9rem, auto);
+      align-items: center;
+      gap: 1.2rem;
+      width: 100%;
+      padding: 1rem 1.4rem;
+    }
+
+    .bayou-pack-table__head {
+      color: var(--bb-ink-soft, #2d3b1e);
+      opacity: 0.75;
+      padding-block: 0.8rem;
+    }
+
+    .bayou-pack-table__num {
+      text-align: right;
+    }
+
+    .bayou-pack-row {
+      background: transparent;
+      border: 0;
+      border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+      border-radius: 0;
+      color: inherit;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      padding-block: 1.2rem;
+    }
+
+    .bayou-pack-row:hover:not(:disabled):not(.bayou-pack-row--selected) {
+      background: var(--bb-paper-deep, #f1ecdd);
+    }
+
+    .bayou-pack-row:focus-visible {
+      outline: 0.2rem solid var(--bb-moss, #5c7a3a);
+      outline-offset: -0.2rem;
+    }
+
+    .bayou-pack-row--selected {
+      background: var(--bb-ink, #1a2415);
+      color: var(--bb-paper, #faf8f2);
+    }
+
+    .bayou-pack-row--soldout {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .bayou-pack-row__total {
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .bayou-pack-table__stock {
+      margin: 1rem 0 0;
+      color: var(--bb-ink-soft, #2d3b1e);
+    }
+
+    .bayou-native-bundle-hidden {
+      display: none !important;
+    }
+
+    .product-form__submit {
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+  {% endstyle %}
+
+  <script>
+    if (!customElements.get('bayou-pack-table')) {
+      customElements.define(
+        'bayou-pack-table',
+        class BayouPackTable extends HTMLElement {
+          variantChangeUnsubscriber = undefined;
+
+          connectedCallback() {
+            // JS is running: reveal the table and hide the native bundle picker.
+            this.removeAttribute('hidden');
+            this.hideNativeBundlePicker();
+            this.addEventListener('click', this.onRowClick.bind(this));
+
+            if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined') {
+              this.variantChangeUnsubscriber = subscribe(
+                PUB_SUB_EVENTS.variantChange,
+                this.onVariantChange.bind(this)
+              );
+            }
+          }
+
+          disconnectedCallback() {
+            this.variantChangeUnsubscriber?.();
+          }
+
+          get sectionId() {
+            return this.dataset.section;
+          }
+
+          onRowClick(event) {
+            const row = event.target.closest('.bayou-pack-row');
+            if (!row || row.disabled || row.classList.contains('bayou-pack-row--selected')) return;
+
+            const control = this.findNativeControl(row.dataset.optionValueId);
+            if (!control) return;
+
+            // Optimistic selection; the server response re-renders the table.
+            this.querySelectorAll('.bayou-pack-row').forEach((otherRow) => {
+              const selected = otherRow === row;
+              otherRow.classList.toggle('bayou-pack-row--selected', selected);
+              otherRow.setAttribute('aria-pressed', selected);
+            });
+
+            if (control.tagName === 'OPTION') {
+              const select = control.closest('select');
+              if (!select) return;
+              select.value = control.value;
+              select.dispatchEvent(new Event('change', { bubbles: true }));
+            } else {
+              control.checked = true;
+              control.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+          }
+
+          onVariantChange({ data: { sectionId, html } }) {
+            if (sectionId !== this.sectionId || !html) return;
+
+            const fresh = html.getElementById(this.id);
+            if (fresh) this.innerHTML = fresh.innerHTML;
+
+            // variant-selects was swapped for a new node; re-hide its bundle picker.
+            this.hideNativeBundlePicker();
+            this.syncSubmitButton(html);
+          }
+
+          syncSubmitButton(html) {
+            const freshText = html
+              .getElementById(`ProductSubmitButton-${this.sectionId}`)
+              ?.querySelector('span')?.textContent;
+            const liveSpan = document
+              .getElementById(`ProductSubmitButton-${this.sectionId}`)
+              ?.querySelector('span');
+            if (freshText && liveSpan) liveSpan.textContent = freshText.trim();
+          }
+
+          findNativeControl(optionValueId) {
+            if (!optionValueId) return null;
+            // The freshest variant-selects node is first in document order.
+            return this.closest('product-info')?.querySelector(
+              `variant-selects input[data-option-value-id="${optionValueId}"], variant-selects option[data-option-value-id="${optionValueId}"]`
+            );
+          }
+
+          hideNativeBundlePicker() {
+            const anyValueId = this.querySelector('[data-option-value-id]')?.dataset.optionValueId;
+            const control = this.findNativeControl(anyValueId);
+            control
+              ?.closest('fieldset, .product-form__input')
+              ?.classList.add('bayou-native-bundle-hidden');
+          }
+        }
+      );
+    }
+  </script>
+{%- endif -%}

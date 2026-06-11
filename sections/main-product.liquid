@@ -37,6 +37,45 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+
+    #MainProduct-{{ section.id }} .product__title h1,
+    #MainProduct-{{ section.id }} .product__title .h1 {
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+
+    #MainProduct-{{ section.id }} .bayou-product-subtitle {
+      margin: 0.4rem 0 0;
+      color: var(--bb-ink-soft, #2d3b1e);
+    }
+
+    #MainProduct-{{ section.id }} .bayou-spec-table {
+      margin: 2rem 0 0;
+      border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+      border-radius: var(--bb-radius-card, 4px);
+    }
+
+    #MainProduct-{{ section.id }} .bayou-spec-table__row {
+      display: grid;
+      grid-template-columns: 9rem 1fr;
+      gap: 1.2rem;
+      align-items: baseline;
+      padding: 0.9rem 1.4rem;
+    }
+
+    #MainProduct-{{ section.id }} .bayou-spec-table__row + .bayou-spec-table__row {
+      border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    }
+
+    #MainProduct-{{ section.id }} .bayou-spec-table__label {
+      color: var(--bb-ink-soft, #2d3b1e);
+      opacity: 0.75;
+    }
+
+    #MainProduct-{{ section.id }} .bayou-spec-table__value {
+      font-size: 1.4rem;
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -105,6 +144,47 @@
                     </h2>
                   </a>
                 </div>
+                {%- liquid
+                  # Style code heuristic: first tag containing a digit and '-' that equals
+                  # its own upcase (e.g. 2G17-4505), skipping cat-* category tags.
+                  assign bayou_style_code = ''
+                  assign bayou_digits = '0,1,2,3,4,5,6,7,8,9' | split: ','
+                  for tag in product.tags
+                    assign bayou_tag_down = tag | downcase
+                    if bayou_tag_down contains 'cat-'
+                      continue
+                    endif
+                    unless tag contains '-'
+                      continue
+                    endunless
+                    assign bayou_tag_up = tag | upcase
+                    unless tag == bayou_tag_up
+                      continue
+                    endunless
+                    assign bayou_has_digit = false
+                    for digit in bayou_digits
+                      if tag contains digit
+                        assign bayou_has_digit = true
+                        break
+                      endif
+                    endfor
+                    if bayou_has_digit
+                      assign bayou_style_code = tag
+                      break
+                    endif
+                  endfor
+                -%}
+                {%- if bayou_style_code != blank or section.settings.bayou_subtitle_text != blank -%}
+                  <p class="bayou-product-subtitle bb-mono-label">
+                    {%- if bayou_style_code != blank -%}
+                      Style {{ bayou_style_code | escape }}
+                      {%- if section.settings.bayou_subtitle_text != blank %}
+                        &middot;
+                      {% endif -%}
+                    {%- endif -%}
+                    {{ section.settings.bayou_subtitle_text | escape }}
+                  </p>
+                {%- endif -%}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -477,6 +557,7 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                {% render 'bayou-pack-table', product: product, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -676,6 +757,91 @@
                 {% render 'icon-with-text', block: block %}
             {%- endcase -%}
           {%- endfor -%}
+
+          {%- liquid
+            # Spec values: product metafields (custom namespace) win over section defaults.
+            assign bayou_spec_fabric = section.settings.bayou_spec_fabric
+            if product.metafields.custom.fabric.value != blank
+              assign bayou_spec_fabric = product.metafields.custom.fabric.value
+            endif
+            assign bayou_spec_sizes = section.settings.bayou_spec_sizes
+            assign bayou_spec_print = section.settings.bayou_spec_print
+            if product.metafields.custom.print_method.value != blank
+              assign bayou_spec_print = product.metafields.custom.print_method.value
+            endif
+            assign bayou_spec_ships = section.settings.bayou_spec_ships
+            if product.metafields.custom.ships.value != blank
+              assign bayou_spec_ships = product.metafields.custom.ships.value
+            endif
+          -%}
+          {%- if bayou_spec_fabric != blank
+            or bayou_spec_sizes != blank
+            or bayou_spec_print != blank
+            or bayou_spec_ships != blank
+          -%}
+            <div class="bayou-spec-table quick-add-hidden">
+              {%- if bayou_spec_fabric != blank -%}
+                <div class="bayou-spec-table__row">
+                  <span class="bayou-spec-table__label bb-mono-label">Fabric</span>
+                  <span class="bayou-spec-table__value">{{ bayou_spec_fabric }}</span>
+                </div>
+              {%- endif -%}
+              {%- if bayou_spec_sizes != blank -%}
+                <div class="bayou-spec-table__row">
+                  <span class="bayou-spec-table__label bb-mono-label">Sizes</span>
+                  <span class="bayou-spec-table__value">{{ bayou_spec_sizes }}</span>
+                </div>
+              {%- endif -%}
+              {%- if bayou_spec_print != blank -%}
+                <div class="bayou-spec-table__row">
+                  <span class="bayou-spec-table__label bb-mono-label">Print</span>
+                  <span class="bayou-spec-table__value">{{ bayou_spec_print }}</span>
+                </div>
+              {%- endif -%}
+              {%- if bayou_spec_ships != blank -%}
+                <div class="bayou-spec-table__row">
+                  <span class="bayou-spec-table__label bb-mono-label">Ships</span>
+                  <span class="bayou-spec-table__value">{{ bayou_spec_ships }}</span>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+
+          {%- for bayou_accordion_index in (1..3) -%}
+            {%- liquid
+              case bayou_accordion_index
+                when 1
+                  assign bayou_accordion_heading = section.settings.bayou_accordion_1_heading
+                  assign bayou_accordion_content = section.settings.bayou_accordion_1_content
+                when 2
+                  assign bayou_accordion_heading = section.settings.bayou_accordion_2_heading
+                  assign bayou_accordion_content = section.settings.bayou_accordion_2_content
+                when 3
+                  assign bayou_accordion_heading = section.settings.bayou_accordion_3_heading
+                  assign bayou_accordion_content = section.settings.bayou_accordion_3_content
+              endcase
+            -%}
+            {%- if bayou_accordion_heading != blank and bayou_accordion_content != blank -%}
+              <div class="product__accordion accordion quick-add-hidden">
+                <details id="Details-bayou-accordion-{{ bayou_accordion_index }}-{{ section.id }}">
+                  <summary>
+                    <div class="summary__title">
+                      <h2 class="h4 accordion__title inline-richtext">
+                        {{ bayou_accordion_heading | escape }}
+                      </h2>
+                    </div>
+                    {{- 'icon-caret.svg' | inline_asset_content -}}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="ProductAccordion-bayou-{{ bayou_accordion_index }}-{{ section.id }}"
+                  >
+                    {{ bayou_accordion_content }}
+                  </div>
+                </details>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
             {{ 'products.product.view_full_details' | t }}
             {{- 'icon-arrow.svg' | inline_asset_content -}}
@@ -685,6 +851,7 @@
     </div>
 
     {% render 'product-media-modal', variant_images: variant_images %}
+    {% render 'bayou-sticky-atc', product: product %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
     {%- for block in popups -%}
@@ -2089,6 +2256,102 @@
     }
   ],
   "settings": [
+    {
+      "type": "header",
+      "content": "Bayou Blanks"
+    },
+    {
+      "type": "text",
+      "id": "bayou_bundle_option_name",
+      "label": "Bundle option name",
+      "info": "Product option used for the pack/price table.",
+      "default": "Bundle Quantity"
+    },
+    {
+      "type": "text",
+      "id": "bayou_scarcity_text",
+      "label": "Scarcity line",
+      "info": "Shown under the pack table after the live unit count.",
+      "default": "LIQUIDATION STOCK DOES NOT RESTOCK"
+    },
+    {
+      "type": "text",
+      "id": "bayou_subtitle_text",
+      "label": "Subtitle line",
+      "info": "Mono line under the title, after the style code.",
+      "default": "FANATICS OVERSTOCK · NEW"
+    },
+    {
+      "type": "header",
+      "content": "Bayou Blanks: spec table"
+    },
+    {
+      "type": "text",
+      "id": "bayou_spec_fabric",
+      "label": "Fabric",
+      "info": "Overridden by the custom.fabric product metafield when set.",
+      "default": "100% cotton or as listed"
+    },
+    {
+      "type": "text",
+      "id": "bayou_spec_sizes",
+      "label": "Sizes",
+      "default": "See size chart"
+    },
+    {
+      "type": "text",
+      "id": "bayou_spec_print",
+      "label": "Print",
+      "info": "Overridden by the custom.print_method product metafield when set.",
+      "default": "Blank — ready for print"
+    },
+    {
+      "type": "text",
+      "id": "bayou_spec_ships",
+      "label": "Ships",
+      "info": "Overridden by the custom.ships product metafield when set.",
+      "default": "1–2 business days from Hattiesburg, MS"
+    },
+    {
+      "type": "header",
+      "content": "Bayou Blanks: accordions"
+    },
+    {
+      "type": "text",
+      "id": "bayou_accordion_1_heading",
+      "label": "Accordion 1 heading",
+      "default": "Shipping"
+    },
+    {
+      "type": "richtext",
+      "id": "bayou_accordion_1_content",
+      "label": "Accordion 1 content",
+      "default": "<p>Orders ship in 1–2 business days from our warehouse in Hattiesburg, MS. You get a tracking number as soon as the label prints. Most US orders arrive 3–5 days after that.</p>"
+    },
+    {
+      "type": "text",
+      "id": "bayou_accordion_2_heading",
+      "label": "Accordion 2 heading",
+      "default": "Returns"
+    },
+    {
+      "type": "richtext",
+      "id": "bayou_accordion_2_content",
+      "label": "Accordion 2 content",
+      "default": "<p>Unworn, unwashed blanks in their original packs can come back within 30 days. Because this is liquidation stock, we can't promise an exchange — if your size is gone when the return lands, we refund instead.</p>"
+    },
+    {
+      "type": "text",
+      "id": "bayou_accordion_3_heading",
+      "label": "Accordion 3 heading",
+      "default": "Are these really Fanatics?"
+    },
+    {
+      "type": "richtext",
+      "id": "bayou_accordion_3_content",
+      "label": "Accordion 3 content",
+      "default": "<p>Yes. These are genuine Fanatics overstock blanks we buy when warehouses clear them out. Same garments, never printed, sold in packs at liquidation prices. When a style sells through, we can't reorder it.</p>"
+    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",

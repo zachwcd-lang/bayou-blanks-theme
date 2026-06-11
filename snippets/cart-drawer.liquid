@@ -15,6 +15,38 @@
   .drawer {
     visibility: hidden;
   }
+
+  .bayou-line-math {
+    margin: 0.4rem 0 0;
+    color: var(--bb-ink-soft, #2d3b1e);
+  }
+
+  .bayou-honesty-line {
+    display: block;
+    margin: 0 0 0.8rem;
+    color: var(--bb-ink-soft, #2d3b1e);
+    text-align: center;
+  }
+
+  .bayou-payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
+
+  .bayou-payment-icons li {
+    display: flex;
+  }
+
+  .bayou-payment-icons .icon {
+    width: 3.2rem;
+    height: 2rem;
+    filter: grayscale(1);
+    opacity: 0.7;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -217,6 +249,30 @@
                             </dl>
 
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                          {%- endif -%}
+
+                          {%- liquid
+                            # Bayou Blanks: per-unit math from the Bundle Quantity option value (e.g. '6-Pack').
+                            assign bayou_pack_label = ''
+                            assign bayou_pack_count = 0
+                            for option in item.options_with_values
+                              assign bayou_value_down = option.value | downcase
+                              if bayou_value_down contains 'pack'
+                                assign bayou_pack_count = option.value | split: '-' | first | plus: 0
+                                if bayou_pack_count > 0
+                                  assign bayou_pack_label = option.value
+                                  break
+                                endif
+                              endif
+                            endfor
+                          -%}
+                          {%- if bayou_pack_count > 0 and item.quantity > 0 -%}
+                            {%- assign bayou_total_units = item.quantity | times: bayou_pack_count -%}
+                            <p class="bayou-line-math bb-mono-label">
+                              {{ bayou_pack_label | escape }} &middot;
+                              {{ item.final_line_price | divided_by: bayou_total_units | money -}}
+                              /unit
+                            </p>
                           {%- endif -%}
 
                           <ul
@@ -499,6 +555,12 @@
         <!-- Subtotals -->
 
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
+          {% comment %}
+            Mirrors the "Honesty line" section setting (bayou_honesty_text) in
+            sections/main-cart-items.liquid — keep the copy in sync. The drawer
+            is a snippet with no schema, so the default is hardcoded here.
+          {% endcomment %}
+          <span class="bayou-honesty-line bb-mono-label">LIQUIDATION STOCK &mdash; SOLD OUT IS GONE</span>
           <div>
             {%- if cart.cart_level_discount_applications.size > 0 -%}
               <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -574,6 +636,16 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button>
+          {%- if shop.enabled_payment_types.size > 0 -%}
+            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+            <ul class="bayou-payment-icons list-unstyled" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li>
+                  {{- type | payment_type_svg_tag: class: 'icon' -}}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
         </div>
       </div>
     </div>
