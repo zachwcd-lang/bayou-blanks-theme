@@ -1,6 +1,5 @@
 {%- style -%}
   .bayou-tiktok {
-    background-color: var(--bb-paper, #FAF8F2);
     padding: 5.6rem 0;
   }
 
@@ -24,20 +23,66 @@
     }
   }
 
+  /* Social-proof chips: glass over either scheme via foreground-tinted frost. */
+  .bayou-tiktok__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bayou-tiktok__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 10px 16px;
+    border: 1px solid rgba(var(--color-foreground), 0.18);
+    background: rgba(var(--color-foreground), 0.06);
+    backdrop-filter: blur(var(--bb-blur, 18px)) saturate(1.4);
+    -webkit-backdrop-filter: blur(var(--bb-blur, 18px)) saturate(1.4);
+    border-radius: var(--bb-radius-card, 4px);
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.2;
+    color: rgb(var(--color-foreground));
+    white-space: nowrap;
+  }
+
+  .bayou-tiktok__chip-mark {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(var(--color-foreground));
+  }
+
+  .bayou-tiktok__chip-mark svg,
+  .bayou-tiktok__chip-mark img {
+    width: 16px;
+    height: 16px;
+    display: block;
+  }
+
+  .bayou-tiktok__chip-mark--text {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 13px;
+  }
+
+  .bayou-tiktok__chip-stars {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--bb-gold, #C9B96B);
+  }
+
   .bayou-tiktok__heading {
     font-family: var(--font-display, 'Inter', sans-serif);
     font-weight: 600;
-    font-size: 2.8rem;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-    color: var(--bb-ink, #1A2415);
-    margin: 0 0 1.4rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .bayou-tiktok__heading {
-      font-size: 3.4rem;
-    }
+    font-size: clamp(3.6rem, 2.55rem + 2.8vw, 5.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: rgb(var(--color-foreground));
+    margin: 0 0 1.2rem;
   }
 
   .bayou-tiktok__handle {
@@ -45,8 +90,24 @@
     font-size: 11px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bb-ink-soft, #2D3B1E);
-    margin: 0 0 2.8rem;
+    color: rgba(var(--color-foreground), 0.7);
+    margin: 0 0 1rem;
+  }
+
+  .bayou-tiktok__subline {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.55;
+    color: rgba(var(--color-foreground), 0.82);
+    max-width: 44rem;
+    margin: 0 0 2.4rem;
+  }
+
+  .bayou-tiktok__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
   }
 
   .bayou-tiktok__button {
@@ -55,18 +116,32 @@
     font-weight: 500;
     font-size: 1.4rem;
     padding: 1.4rem 3rem;
-    background-color: var(--bb-ink, #1A2415);
-    color: var(--bb-paper, #FAF8F2);
     text-decoration: none;
     border-radius: var(--bb-radius-btn, 2px);
-    border: 1px solid var(--bb-ink, #1A2415);
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
   }
 
-  .bayou-tiktok__button:hover {
-    background-color: var(--bb-ink-soft, #2D3B1E);
-    border-color: var(--bb-ink-soft, #2D3B1E);
-    color: var(--bb-paper, #FAF8F2);
+  .bayou-tiktok__button--primary {
+    background-color: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    border: 1px solid rgb(var(--color-button));
+  }
+
+  .bayou-tiktok__button--primary:hover {
+    opacity: 0.85;
+    color: rgb(var(--color-button-text));
+  }
+
+  .bayou-tiktok__button--secondary {
+    background-color: transparent;
+    color: rgb(var(--color-foreground));
+    border: 1px solid rgba(var(--color-foreground), 0.6);
+  }
+
+  .bayou-tiktok__button--secondary:hover {
+    border-color: rgb(var(--color-foreground));
+    background-color: rgba(var(--color-foreground), 0.06);
+    color: rgb(var(--color-foreground));
   }
 
   .bayou-tiktok__media-wrap {
@@ -85,8 +160,8 @@
     max-height: 50rem;
     overflow: hidden;
     border-radius: var(--bb-radius-card, 4px);
-    border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
-    background-color: var(--bb-paper-deep, #F1ECDD);
+    border: 1px solid rgba(var(--color-foreground), 0.18);
+    background-color: rgba(var(--color-foreground), 0.04);
   }
 
   .bayou-tiktok__media img,
@@ -102,35 +177,79 @@
     font-size: 11px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bb-ink-soft, #2D3B1E);
+    color: rgba(var(--color-foreground), 0.65);
     margin: 1.2rem 0 0;
   }
 {%- endstyle -%}
 
-<section class="bayou-tiktok" id="bayou-tiktok-{{ section.id }}">
+<section class="bayou-tiktok color-{{ section.settings.color_scheme }} gradient" id="bayou-tiktok-{{ section.id }}">
   <div class="page-width bayou-tiktok__inner">
     <div class="bayou-tiktok__content">
+      {%- if section.blocks.size > 0 -%}
+        <ul class="bayou-tiktok__chips" role="list">
+          {%- for block in section.blocks -%}
+            <li class="bayou-tiktok__chip" {{ block.shopify_attributes }}>
+              {%- case block.settings.platform -%}
+                {%- when 'tiktok' -%}
+                  <span class="bayou-tiktok__chip-mark" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M10.511 1.705h2.74s-.157 3.51 3.795 3.768v2.711s-2.114.129-3.796-1.158l.028 5.606A5.073 5.073 0 1 1 8.213 7.56h.708v2.785a2.298 2.298 0 1 0 1.618 2.205z"/></svg>
+                  </span>
+                {%- when 'whatnot' -%}
+                  <span class="bayou-tiktok__chip-mark" aria-hidden="true">
+                    {%- if block.settings.mark_image != blank -%}
+                      {{ block.settings.mark_image | image_url: width: 32 | image_tag: loading: 'lazy', alt: '' }}
+                    {%- else -%}
+                      <span class="bayou-tiktok__chip-mark--text">W·</span>
+                    {%- endif -%}
+                  </span>
+              {%- endcase -%}
+              {%- if block.settings.rating > 0 -%}
+                <span class="bayou-tiktok__chip-stars" role="img" aria-label="Rated {{ block.settings.rating }} out of 5 stars">
+                  {%- for i in (1..block.settings.rating) -%}&#9733;{%- endfor -%}
+                </span>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <span class="bayou-tiktok__chip-text">{{ block.settings.text }}</span>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
       {%- if section.settings.heading != blank -%}
-        <h2 class="bayou-tiktok__heading">{{ section.settings.heading }}</h2>
+        <h1 class="bayou-tiktok__heading">{{ section.settings.heading }}</h1>
       {%- endif -%}
 
       {%- if section.settings.handle_line != blank -%}
         <p class="bayou-tiktok__handle">{{ section.settings.handle_line }}</p>
       {%- endif -%}
 
-      {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button" target="_blank" rel="noopener">
-          {{- section.settings.button_label -}}
-        </a>
+      {%- if section.settings.subline != blank -%}
+        <p class="bayou-tiktok__subline">{{ section.settings.subline }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_label != blank or section.settings.button_secondary_label != blank -%}
+        <div class="bayou-tiktok__buttons">
+          {%- if section.settings.button_label != blank -%}
+            <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button bayou-tiktok__button--primary" target="_blank" rel="noopener">
+              {{- section.settings.button_label -}}
+            </a>
+          {%- endif -%}
+          {%- if section.settings.button_secondary_label != blank -%}
+            <a href="{{ section.settings.button_secondary_link }}" class="bayou-tiktok__button bayou-tiktok__button--secondary">
+              {{- section.settings.button_secondary_label -}}
+            </a>
+          {%- endif -%}
+        </div>
       {%- endif -%}
     </div>
 
     <div class="bayou-tiktok__media-wrap">
       <div class="bayou-tiktok__media">
         {%- if section.settings.video != blank -%}
-          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, preload: 'metadata' }}
         {%- elsif section.settings.video_asset != blank -%}
-          <video autoplay loop muted playsinline>
+          <video autoplay loop muted playsinline preload="metadata">
             <source src="{{ section.settings.video_asset | asset_url }}" type="video/mp4">
           </video>
         {%- elsif section.settings.image != blank -%}
@@ -150,10 +269,16 @@
 
 {% schema %}
 {
-  "name": "Bayou TikTok CTA",
+  "name": "Bayou Live Hero",
   "tag": "section",
   "class": "bayou-tiktok-section",
   "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-3"
+    },
     {
       "type": "text",
       "id": "heading",
@@ -168,14 +293,31 @@
     },
     {
       "type": "text",
+      "id": "subline",
+      "label": "Commerce subline",
+      "default": "Authentic Fanatics overstock, sold by the pack at per-unit prices."
+    },
+    {
+      "type": "text",
       "id": "button_label",
-      "label": "Button label",
+      "label": "Primary button label",
       "default": "Follow @bayou.blanks"
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button link"
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "button_secondary_label",
+      "label": "Secondary button label",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_secondary_link",
+      "label": "Secondary button link"
     },
     {
       "type": "video",
@@ -200,9 +342,60 @@
       "default": "LIVE FROM THE WAREHOUSE, DAILY."
     }
   ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Social-proof chip",
+      "settings": [
+        {
+          "type": "select",
+          "id": "platform",
+          "label": "Platform mark",
+          "options": [
+            { "value": "tiktok", "label": "TikTok" },
+            { "value": "whatnot", "label": "Whatnot" },
+            { "value": "none", "label": "None" }
+          ],
+          "default": "none"
+        },
+        {
+          "type": "image_picker",
+          "id": "mark_image",
+          "label": "Custom mark image (optional)",
+          "info": "Used for the Whatnot mark if set. 16px square works best."
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "label": "Star rating",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Chip text",
+          "default": "1,000s of 5-star reviews"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "Bayou TikTok CTA"
+      "name": "Bayou Live Hero",
+      "blocks": [
+        {
+          "type": "chip",
+          "settings": { "platform": "tiktok", "rating": 5, "text": "1,000s of 5-star reviews" }
+        },
+        {
+          "type": "chip",
+          "settings": { "platform": "whatnot", "rating": 5, "text": "Top-rated seller" }
+        }
+      ]
     }
   ]
 }
