@@ -146,6 +146,16 @@
     }
   }
 
+  /* --- Nav: 28px gaps between items --- */
+  .header__inline-menu .list-menu--inline {
+    gap: 28px;
+  }
+
+  .header__inline-menu .list-menu--inline > li > .header__menu-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* --- Nav links: mono 11px uppercase; keep Dawn's underline machinery. --- */
   .header__inline-menu .header__menu-item,
   .header__inline-menu .header__menu-item span,
@@ -193,7 +203,7 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px 3rem;
   }
 
   .section-header {

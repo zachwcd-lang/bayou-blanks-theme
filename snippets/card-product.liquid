@@ -38,11 +38,16 @@
       object-fit: cover;
       filter: saturate(0.92) sepia(0.06);
     }
+    .product-card-wrapper .card__information {
+      padding: 16px 18px 18px;
+    }
     .product-card-wrapper .card__heading {
       font-family: var(--font-body, 'Inter', sans-serif);
       font-weight: 500;
       font-size: 16px;
       line-height: 1.3;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .product-card-wrapper .bb-card-meta {
       font-family: var(--font-mono, 'IBM Plex Mono', monospace);
@@ -50,14 +55,14 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--bb-ink-soft, #2d3b1e);
-      margin-top: 0.5rem;
+      margin-top: 10px;
     }
     .product-card-wrapper .bb-card-footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 0.8rem;
-      margin-top: 1rem;
+      margin-top: 12px;
       padding-top: 0.8rem;
       border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
       font-family: var(--font-mono, 'IBM Plex Mono', monospace);
@@ -80,6 +85,11 @@
     }
     .product-card-wrapper .bb-card-code {
       opacity: 0.6;
+    }
+    @media screen and (max-width: 749px) {
+      .product-card-wrapper .card__information {
+        padding: 10px 12px 12px;
+      }
     }
   </style>
 {%- endunless -%}

@@ -454,6 +454,18 @@ variant-selects input:checked + .product-form__input {
 .bayou-text-gold { color: var(--bb-gold); }
 .bayou-text-cream { color: var(--bb-paper); }
 
+/* --- Spacing pass: breathing room --- */
+/* Mobile grid gap: settings give 28px desktop; Dawn halves to 14 — hold at 16. */
+:root {
+  --grid-mobile-horizontal-spacing: 16px;
+  --grid-mobile-vertical-spacing: 16px;
+}
+
+/* 32px gap below section headings before the product grid starts. */
+.collection__title.title-wrapper {
+  margin-bottom: 32px;
+}
+
 /* --- Selection --- */
 ::selection {
   background-color: rgba(92, 122, 58, 0.25);

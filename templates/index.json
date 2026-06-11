@@ -5,22 +5,33 @@
       "blocks": {
         "chip_tiktok": {
           "type": "chip",
-          "settings": { "platform": "tiktok", "rating": 5, "text": "1,000s of 5-star reviews" }
+          "settings": {
+            "platform": "tiktok",
+            "rating": 5,
+            "text": "1,000s of 5-star reviews"
+          }
         },
         "chip_whatnot": {
           "type": "chip",
-          "settings": { "platform": "whatnot", "rating": 5, "text": "Top-rated seller" }
+          "settings": {
+            "platform": "whatnot",
+            "rating": 5,
+            "text": "Top-rated seller"
+          }
         }
       },
-      "block_order": ["chip_tiktok", "chip_whatnot"],
+      "block_order": [
+        "chip_tiktok",
+        "chip_whatnot"
+      ],
       "settings": {
-        "kicker": "AUTHENTIC FANATICS OVERSTOCK · LICENSED LIQUIDATION",
+        "kicker": "AUTHENTIC FANATICS OVERSTOCK \u00b7 LICENSED LIQUIDATION",
         "heading": "Pro-grade blanks. Liquidation prices.",
         "subheading": "Authentic Fanatics overstock, inspected in Hattiesburg and sold by the pack at per-unit prices.",
         "button_primary_label": "Shop in stock",
-        "button_primary_link": "shopify:\/\/collections\/in-stock",
+        "button_primary_link": "shopify://collections/in-stock",
         "button_secondary_label": "Bulk pricing",
-        "button_secondary_link": "\/pages\/contact",
+        "button_secondary_link": "/pages/contact",
         "height_desktop": 85,
         "height_mobile": 70,
         "content_position": "center"
@@ -31,22 +42,35 @@
       "blocks": {
         "item_1": {
           "type": "item",
-          "settings": { "text": "80,000+ units in stock" }
+          "settings": {
+            "text": "80,000+ units in stock"
+          }
         },
         "item_2": {
           "type": "item",
-          "settings": { "text": "New pallets weekly" }
+          "settings": {
+            "text": "New pallets weekly"
+          }
         },
         "item_3": {
           "type": "item",
-          "settings": { "text": "Live daily @bayou.blanks" }
+          "settings": {
+            "text": "Live daily @bayou.blanks"
+          }
         },
         "item_4": {
           "type": "item",
-          "settings": { "text": "Ships from Hattiesburg, MS" }
+          "settings": {
+            "text": "Ships from Hattiesburg, MS"
+          }
         }
       },
-      "block_order": ["item_1", "item_2", "item_3", "item_4"],
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
       "settings": {
         "speed": 60
       }
@@ -67,8 +91,8 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     },
     "bayou_trust": {
@@ -78,7 +102,7 @@
           "type": "card",
           "settings": {
             "figure": "box",
-            "caption": "Fig. 1 — Sourced: authentic Fanatics overstock",
+            "caption": "Fig. 1 \u2014 Sourced: authentic Fanatics overstock",
             "text": "The same blanks the pros print on, bought through licensed liquidation channels at a fraction of retail."
           }
         },
@@ -86,7 +110,7 @@
           "type": "card",
           "settings": {
             "figure": "tag",
-            "caption": "Fig. 2 — Inspected: every case pack, Hattiesburg, MS",
+            "caption": "Fig. 2 \u2014 Inspected: every case pack, Hattiesburg, MS",
             "text": "Every shipment is received, scanned, and condition-checked in our warehouse before it hits the site."
           }
         },
@@ -94,12 +118,16 @@
           "type": "card",
           "settings": {
             "figure": "waves",
-            "caption": "Fig. 3 — Sold live: daily on TikTok & Whatnot",
-            "text": "Watch us pull, pack, and ship in real time — see the product before you buy."
+            "caption": "Fig. 3 \u2014 Sold live: daily on TikTok & Whatnot",
+            "text": "Watch us pull, pack, and ship in real time \u2014 see the product before you buy."
           }
         }
       },
-      "block_order": ["card_1", "card_2", "card_3"],
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
       "settings": {
         "label": "How it works",
         "heading": "Why Trust Bayou Blanks?"
@@ -110,34 +138,50 @@
       "blocks": {
         "tier_1": {
           "type": "tier",
-          "settings": { "name": "Case", "units": "48 units", "price": "from $8.50\/unit" }
+          "settings": {
+            "name": "Case",
+            "units": "48 units",
+            "price": "from $8.50/unit"
+          }
         },
         "tier_2": {
           "type": "tier",
-          "settings": { "name": "Half pallet", "units": "288 units", "price": "from $7.25\/unit" }
+          "settings": {
+            "name": "Half pallet",
+            "units": "288 units",
+            "price": "from $7.25/unit"
+          }
         },
         "tier_3": {
           "type": "tier",
-          "settings": { "name": "Pallet", "units": "576+ units", "price": "from $6.50\/unit" }
+          "settings": {
+            "name": "Pallet",
+            "units": "576+ units",
+            "price": "from $6.50/unit"
+          }
         }
       },
-      "block_order": ["tier_1", "tier_2", "tier_3"],
+      "block_order": [
+        "tier_1",
+        "tier_2",
+        "tier_3"
+      ],
       "settings": {
         "label": "For businesses",
         "heading": "Printing at volume?",
-        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg.",
+        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers \u2014 shipped from Hattiesburg.",
         "button_label": "Talk to us",
-        "button_link": "\/pages\/contact",
-        "footnote": "Placeholder pricing — talk to us for a current quote"
+        "button_link": "/pages/contact",
+        "footnote": "Placeholder pricing \u2014 talk to us for a current quote"
       }
     },
     "bayou_tiktok": {
       "type": "bayou-tiktok-cta",
       "settings": {
         "heading": "Live daily.",
-        "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
+        "handle_line": "@BAYOU.BLANKS \u00b7 TIKTOK & WHATNOT",
         "button_label": "Follow @bayou.blanks",
-        "button_link": "https:\/\/www.tiktok.com\/@bayou.blanks",
+        "button_link": "https://www.tiktok.com/@bayou.blanks",
         "video_asset": "hattiesburg-hero.mov",
         "caption": "LIVE FROM THE WAREHOUSE, DAILY."
       }
