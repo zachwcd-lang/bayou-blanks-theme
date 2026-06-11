@@ -60,22 +60,7 @@
       {%- endcomment -%}
       <div class="price__regular">
         {%- if product.quantity_price_breaks_configured? -%}
-          {%- if show_compare_at_price and compare_at_price -%}
-            {%- unless product.price_varies == false and product.compare_at_price_varies %}
-              <span class="visually-hidden visually-hidden--inline">
-                {{- 'products.product.price.regular_price' | t -}}
-              </span>
-              <span>
-                <s class="price-item price-item--regular variant-item__old-price">
-                  {% if settings.currency_code_enabled %}
-                    {{ compare_at_price | money_with_currency }}
-                  {% else %}
-                    {{ compare_at_price | money }}
-                  {% endif %}
-                </s>
-              </span>
-            {%- endunless -%}
-          {%- endif -%}
+          {%- comment -%} Bayou Blanks: no compare-at strikethrough — per-unit pricing is the story {%- endcomment -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span class="price-item price-item--regular">
             {{-
@@ -91,18 +76,7 @@
         {%- endif -%}
       </div>
       <div class="price__sale">
-        {%- unless product.price_varies == false and product.compare_at_price_varies %}
-          <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span>
-            <s class="price-item price-item--regular">
-              {% if settings.currency_code_enabled %}
-                {{ compare_at_price | money_with_currency }}
-              {% else %}
-                {{ compare_at_price | money }}
-              {% endif %}
-            </s>
-          </span>
-        {%- endunless -%}
+        {%- comment -%} Bayou Blanks: no compare-at strikethrough — per-unit pricing is the story {%- endcomment -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
         <span class="price-item price-item--sale price-item--last">
           {{ money_price }}
@@ -113,10 +87,6 @@
       {%- endif -%}
     </div>
     {%- if show_badges -%}
-      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-        {{ 'products.product.on_sale' | t }}
-      </span>
-
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
         {{ 'products.product.sold_out' | t }}
       </span>
