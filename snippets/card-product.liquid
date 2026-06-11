@@ -57,6 +57,15 @@
       color: var(--bb-ink-soft, #2d3b1e);
       margin-top: 10px;
     }
+    .product-card-wrapper .bb-card-sizes {
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bb-ink, #1a2415);
+      opacity: 0.55;
+      margin-top: 6px;
+    }
     .product-card-wrapper .bb-card-footer {
       display: flex;
       align-items: center;
@@ -178,6 +187,31 @@
         break
       endif
     endfor
+
+    comment
+      Bayou Blanks: available sizes at a glance — option order preserved,
+      only sizes with at least one available variant.
+    endcomment
+    assign bb_size_index = -1
+    for bb_option in card_product.options_with_values
+      if bb_option.name == 'Size'
+        assign bb_size_index = bb_option.position | minus: 1
+        assign bb_size_values = bb_option.values
+        break
+      endif
+    endfor
+    assign bb_avail_sizes = ''
+    if bb_size_index >= 0
+      for bb_size in bb_size_values
+        for bb_size_variant in card_product.variants
+          if bb_size_variant.available and bb_size_variant.options[bb_size_index] == bb_size
+            assign bb_avail_sizes = bb_avail_sizes | append: bb_size | append: '|'
+            break
+          endif
+        endfor
+      endfor
+    endif
+    assign bb_size_list = bb_avail_sizes | split: '|'
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
@@ -343,6 +377,15 @@
                 FROM {{ bb_from_price }}
               {%- endif -%}
             </div>
+            {%- if bb_size_list.size > 0 and bb_size_list.first != '' -%}
+              <div class="bb-card-sizes">
+                {%- if bb_size_list.size > 5 -%}
+                  SIZES {{ bb_size_list.first }}&ndash;{{ bb_size_list.last }}
+                {%- else -%}
+                  SIZES {{ bb_size_list | join: ' / ' }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                 {% liquid
