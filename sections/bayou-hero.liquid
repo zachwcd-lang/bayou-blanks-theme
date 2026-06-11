@@ -230,6 +230,8 @@
         | image_url: width: 2200
         | image_tag: loading: 'eager', sizes: '100vw', widths: '600,900,1200,1800,2200', alt: ''
       }}
+    {%- elsif section.settings.use_default_painting -%}
+      <img src="{{ 'bayou-hero-painting.jpg' | asset_url }}" alt="" loading="eager" width="1536" height="658">
     {%- else -%}
       <div class="bayou-hero__bar bayou-hero__bar--1"></div>
       <div class="bayou-hero__bar bayou-hero__bar--2"></div>
@@ -312,6 +314,13 @@
       "id": "image",
       "label": "Hero image — painterly artwork",
       "info": "Optional. Replaces the layered color scene. No warehouse or pallet photos."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_default_painting",
+      "label": "Use built-in bayou painting",
+      "info": "When no hero image is picked, show the bundled painting instead of the layered color scene.",
+      "default": true
     },
     {
       "type": "text",

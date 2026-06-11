@@ -94,6 +94,17 @@
           widths: '750, 1100, 1500, 1920, 2560, 3200'
       }}
     </div>
+  {%- elsif section.settings.use_default_strip -%}
+    <div class="footer__painting-strip">
+      <img
+        src="{{ 'bayou-footer-strip.jpg' | asset_url }}"
+        class="footer__painting-strip-image"
+        alt=""
+        loading="lazy"
+        width="1536"
+        height="192"
+      >
+    </div>
   {%- endif -%}
   {%- liquid
     assign has_social_icons = true
@@ -509,6 +520,13 @@
       "id": "painting_strip",
       "label": "Painting strip (8:1 crop)",
       "info": "Full-width image strip rendered flush at the footer's top edge. Cropped to roughly 8:1. Leave empty to hide."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_default_strip",
+      "label": "Use built-in bayou painting strip",
+      "info": "When no painting strip is picked, show the bundled bayou-water strip.",
+      "default": true
     },
     {
       "type": "text",
