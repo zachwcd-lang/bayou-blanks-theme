@@ -27,6 +27,61 @@
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+
+  <style>
+    /* Bayou Blanks product card */
+    .product-card-wrapper .card__inner.ratio::before {
+      padding-bottom: 100%;
+    }
+    .product-card-wrapper .card__media .media img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      filter: saturate(0.92) sepia(0.06);
+    }
+    .product-card-wrapper .card__heading {
+      font-family: var(--font-body, 'Inter', sans-serif);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+    .product-card-wrapper .bb-card-meta {
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bb-ink-soft, #2d3b1e);
+      margin-top: 0.5rem;
+    }
+    .product-card-wrapper .bb-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-top: 1rem;
+      padding-top: 0.8rem;
+      border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bb-ink, #1a2415);
+    }
+    .product-card-wrapper .bb-card-stock {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .product-card-wrapper .bb-card-stock-dot {
+      flex: 0 0 auto;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--bb-moss, #5c7a3a);
+    }
+    .product-card-wrapper .bb-card-code {
+      opacity: 0.6;
+    }
+  </style>
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -39,6 +94,80 @@
     if ratio == 0 or ratio == null
       assign ratio = 1
     endif
+
+    comment
+      Bayou Blanks: lowest-priced available variant drives the mono meta line.
+    endcomment
+    assign bb_low_variant = nil
+    for variant in card_product.variants
+      if variant.available
+        if bb_low_variant == nil
+          assign bb_low_variant = variant
+        elsif variant.price < bb_low_variant.price
+          assign bb_low_variant = variant
+        endif
+      endif
+    endfor
+    if bb_low_variant == nil
+      assign bb_low_variant = card_product.selected_or_first_available_variant
+    endif
+
+    assign bb_pack_count = 0
+    assign bb_pack_position = 0
+    for bb_option in card_product.options_with_values
+      if bb_option.name == 'Bundle Quantity'
+        assign bb_pack_position = bb_option.position
+        break
+      endif
+    endfor
+    if bb_pack_position > 0
+      assign bb_pack_index = bb_pack_position | minus: 1
+      assign bb_pack_value = bb_low_variant.options[bb_pack_index]
+      assign bb_pack_count = bb_pack_value | split: '-' | first | plus: 0
+    endif
+
+    assign bb_from_price = bb_low_variant.price | money
+    if bb_pack_count > 0
+      assign bb_unit_price = bb_low_variant.price | times: 1.0 | divided_by: bb_pack_count | round | money
+    endif
+
+    assign bb_stock_units = 0
+    for variant in card_product.variants
+      if variant.inventory_management != blank and variant.inventory_quantity > 0
+        assign bb_stock_units = bb_stock_units | plus: variant.inventory_quantity
+      endif
+    endfor
+
+    comment
+      Bayou Blanks: style code heuristic — first tag with a digit and a dash
+      that equals its own upcase, skipping "cat-" tags.
+    endcomment
+    assign bb_style_code = blank
+    assign bb_digit_list = '0,1,2,3,4,5,6,7,8,9' | split: ','
+    for tag in card_product.tags
+      assign bb_tag_prefix = tag | slice: 0, 4
+      if bb_tag_prefix == 'cat-'
+        continue
+      endif
+      unless tag contains '-'
+        continue
+      endunless
+      assign bb_tag_upcase = tag | upcase
+      if bb_tag_upcase != tag
+        continue
+      endif
+      assign bb_has_digit = false
+      for bb_digit in bb_digit_list
+        if tag contains bb_digit
+          assign bb_has_digit = true
+          break
+        endif
+      endfor
+      if bb_has_digit
+        assign bb_style_code = tag
+        break
+      endif
+    endfor
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
@@ -197,7 +326,13 @@
               </p>
             {%- endif -%}
 
-            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            <div class="bb-card-meta">
+              {%- if bb_pack_count > 0 -%}
+                {{ bb_pack_count }}-PACK FROM {{ bb_from_price }} &middot; {{ bb_unit_price }}/UNIT
+              {%- else -%}
+                FROM {{ bb_from_price }}
+              {%- endif -%}
+            </div>
             {%- if card_product.quantity_price_breaks_configured? -%}
               {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                 {% liquid
@@ -278,6 +413,15 @@
                 </div>
                 </quantity-popover>
               {% endif %}
+            {%- endif -%}
+          </div>
+          <div class="bb-card-footer">
+            <span class="bb-card-stock">
+              <span class="bb-card-stock-dot" aria-hidden="true"></span>
+              {{ bb_stock_units }} UNITS
+            </span>
+            {%- if bb_style_code != blank -%}
+              <span class="bb-card-code">{{ bb_style_code | escape }}</span>
             {%- endif -%}
           </div>
         </div>

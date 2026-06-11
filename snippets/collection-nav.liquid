@@ -32,24 +32,27 @@
     }
     .collection-nav__pill {
       flex: 0 0 auto;
-      padding: 0.7rem 1.6rem;
-      border: 0.1rem solid rgba(var(--color-foreground), 0.25);
-      border-radius: 5rem;
-      font-size: 1.4rem;
+      padding: 0.7rem 1.4rem;
+      border: 1px solid var(--bb-ink, #1a2415);
+      border-radius: var(--bb-radius-btn, 2px);
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       line-height: 1.4;
       text-decoration: none;
-      color: rgb(var(--color-foreground));
+      color: var(--bb-ink, #1a2415);
       background: transparent;
-      transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+      transition: background-color 0.2s ease, color 0.2s ease;
       white-space: nowrap;
     }
     .collection-nav__pill:hover {
-      border-color: rgb(var(--color-foreground));
+      background: var(--bb-paper-deep, #f1ecdd);
     }
     .collection-nav__pill--active {
-      background: rgb(var(--color-foreground));
-      color: rgb(var(--color-background));
-      border-color: rgb(var(--color-foreground));
+      background: var(--bb-ink, #1a2415);
+      color: var(--bb-paper, #faf8f2);
+      border-color: var(--bb-ink, #1a2415);
     }
     @media screen and (max-width: 749px) {
       .collection-nav {
