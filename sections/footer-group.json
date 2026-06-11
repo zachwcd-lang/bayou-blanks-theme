@@ -5,25 +5,11 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "footer-about": {
-          "type": "link_list",
-          "settings": {
-            "heading": "About",
-            "menu": "about"
-          }
-        },
-        "footer-support": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Customer Service",
-            "menu": "customer-service"
-          }
-        },
         "footer-shop": {
           "type": "link_list",
           "settings": {
             "heading": "Shop",
-            "menu": "shop"
+            "menu": "footer"
           }
         },
         "footer-social": {
@@ -35,8 +21,6 @@
         }
       },
       "block_order": [
-        "footer-about",
-        "footer-support",
         "footer-shop",
         "footer-social"
       ],
