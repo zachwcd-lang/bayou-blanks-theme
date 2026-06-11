@@ -1,42 +1,92 @@
 {%- style -%}
   .bayou-tiktok {
-    background: linear-gradient(160deg, var(--color-bayou-dark) 0%, var(--color-bayou-forest) 100%);
+    background-color: var(--bb-paper, #FAF8F2);
     padding: 6rem 0;
-  }
-
-  .bayou-tiktok__inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    align-items: center;
   }
 
   @media screen and (min-width: 750px) {
     .bayou-tiktok {
       padding: 8rem 0;
     }
+  }
+
+  .bayou-tiktok__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 750px) {
     .bayou-tiktok__inner {
       grid-template-columns: 1fr 1fr;
-      gap: 5rem;
+      gap: 6rem;
+    }
+  }
+
+  .bayou-tiktok__heading {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 1.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-tiktok__heading {
+      font-size: 3.4rem;
+    }
+  }
+
+  .bayou-tiktok__handle {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-ink-soft, #2D3B1E);
+    margin: 0 0 2.8rem;
+  }
+
+  .bayou-tiktok__button {
+    display: inline-block;
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 1.4rem 3rem;
+    background-color: var(--bb-ink, #1A2415);
+    color: var(--bb-paper, #FAF8F2);
+    text-decoration: none;
+    border-radius: var(--bb-radius-btn, 2px);
+    border: 1px solid var(--bb-ink, #1A2415);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .bayou-tiktok__button:hover {
+    background-color: var(--bb-ink-soft, #2D3B1E);
+    border-color: var(--bb-ink-soft, #2D3B1E);
+    color: var(--bb-paper, #FAF8F2);
+  }
+
+  .bayou-tiktok__media-wrap {
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-tiktok__media-wrap {
+      margin: 0 0 0 auto;
     }
   }
 
   .bayou-tiktok__media {
-    aspect-ratio: 9/16;
+    aspect-ratio: 9 / 16;
     max-height: 50rem;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: var(--radius-xl, 20px);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    margin: 0 auto;
-    max-width: 32rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .bayou-tiktok__media {
-      margin: 0;
-      max-width: none;
-    }
+    border-radius: var(--bb-radius-card, 4px);
+    border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    background-color: var(--bb-paper-deep, #F1ECDD);
   }
 
   .bayou-tiktok__media img,
@@ -44,124 +94,55 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
-  .bayou-tiktok__media iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
-  .bayou-tiktok__content {
-    text-align: center;
-  }
-
-  @media screen and (min-width: 750px) {
-    .bayou-tiktok__content {
-      text-align: left;
-    }
-  }
-
-  .bayou-tiktok__label {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
+  .bayou-tiktok__caption {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--color-bayou-moss);
-    margin: 0 0 1.2rem;
-  }
-
-  .bayou-tiktok__heading {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
-    line-height: 1.1;
-    color: var(--color-bayou-offwhite);
-    margin: 0 0 1.6rem;
-    text-transform: uppercase;
-  }
-
-  @media screen and (min-width: 750px) {
-    .bayou-tiktok__heading {
-      font-size: 4.2rem;
-    }
-  }
-
-  .bayou-tiktok__text {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    color: var(--color-bayou-sage);
-    margin: 0 0 3rem;
-    max-width: 44rem;
-  }
-
-  .bayou-tiktok__button {
-    display: inline-block;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 1.5rem 3.5rem;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    color: var(--color-bayou-cream);
-    text-decoration: none;
-    border-radius: var(--radius-md, 12px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: all 0.25s ease;
-  }
-
-  .bayou-tiktok__button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-    color: var(--color-bayou-white);
-    transform: translateY(-1px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: var(--bb-ink-soft, #2D3B1E);
+    margin: 1.2rem 0 0;
   }
 {%- endstyle -%}
 
 <section class="bayou-tiktok" id="bayou-tiktok-{{ section.id }}">
   <div class="page-width bayou-tiktok__inner">
-    <div class="bayou-tiktok__media">
-      {%- if section.settings.video != blank -%}
-        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
-      {%- elsif section.settings.video_asset != blank -%}
-        <video autoplay loop muted playsinline>
-          <source src="{{ section.settings.video_asset | asset_url }}" type="video/mp4">
-        </video>
-      {%- elsif section.settings.image != blank -%}
-        {{ section.settings.image | image_url: width: 800 | image_tag:
-          loading: 'lazy',
-          sizes: '(min-width: 750px) 50vw, 100vw',
-          widths: '400,600,800'
-        }}
-      {%- else -%}
-        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(232,223,196,0.3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        </div>
-      {%- endif -%}
-    </div>
-
     <div class="bayou-tiktok__content">
-      {%- if section.settings.label != blank -%}
-        <p class="bayou-tiktok__label">{{ section.settings.label }}</p>
-      {%- endif -%}
-
       {%- if section.settings.heading != blank -%}
         <h2 class="bayou-tiktok__heading">{{ section.settings.heading }}</h2>
       {%- endif -%}
 
-      {%- if section.settings.text != blank -%}
-        <p class="bayou-tiktok__text">{{ section.settings.text }}</p>
+      {%- if section.settings.handle_line != blank -%}
+        <p class="bayou-tiktok__handle">{{ section.settings.handle_line }}</p>
       {%- endif -%}
 
       {%- if section.settings.button_label != blank -%}
         <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button" target="_blank" rel="noopener">
-          {{ section.settings.button_label }}
+          {{- section.settings.button_label -}}
         </a>
+      {%- endif -%}
+    </div>
+
+    <div class="bayou-tiktok__media-wrap">
+      <div class="bayou-tiktok__media">
+        {%- if section.settings.video != blank -%}
+          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
+        {%- elsif section.settings.video_asset != blank -%}
+          <video autoplay loop muted playsinline>
+            <source src="{{ section.settings.video_asset | asset_url }}" type="video/mp4">
+          </video>
+        {%- elsif section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 800
+            | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw', widths: '400,600,800'
+          }}
+        {%- endif -%}
+      </div>
+      {%- if section.settings.caption != blank -%}
+        <p class="bayou-tiktok__caption">{{ section.settings.caption }}</p>
       {%- endif -%}
     </div>
   </div>
@@ -173,6 +154,29 @@
   "tag": "section",
   "class": "bayou-tiktok-section",
   "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Live daily."
+    },
+    {
+      "type": "text",
+      "id": "handle_line",
+      "label": "Handle line (mono)",
+      "default": "@BAYOU.BLANKS · TIKTOK & WHATNOT"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Follow @bayou.blanks"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
     {
       "type": "video",
       "id": "video",
@@ -191,32 +195,9 @@
     },
     {
       "type": "text",
-      "id": "label",
-      "label": "Label",
-      "default": "Live Shopping"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Shop Live on TikTok"
-    },
-    {
-      "type": "textarea",
-      "id": "text",
-      "label": "Text",
-      "default": "Catch our live drops, exclusive deals, and behind-the-scenes looks at the blanks you love. Follow us on TikTok Shop."
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label",
-      "default": "Shop Live"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button link"
+      "id": "caption",
+      "label": "Video caption (mono)",
+      "default": "LIVE FROM THE WAREHOUSE, DAILY."
     }
   ],
   "presets": [

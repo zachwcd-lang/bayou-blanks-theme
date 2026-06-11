@@ -1,12 +1,6 @@
 {%- style -%}
   .bayou-wholesale {
-    {%- if section.settings.bg_color == '#1A2415' -%}
-      background: linear-gradient(160deg, #1A2415 0%, #2D3B1E 100%);
-    {%- elsif section.settings.bg_color == '#2D3B1E' -%}
-      background: linear-gradient(160deg, #2D3B1E 0%, #3a4d28 100%);
-    {%- else -%}
-      background-color: {{ section.settings.bg_color }};
-    {%- endif -%}
+    background-color: var(--bb-ink, #1A2415);
     padding: 6rem 0;
   }
 
@@ -19,7 +13,7 @@
   .bayou-wholesale__inner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   @media screen and (min-width: 750px) {
@@ -31,204 +25,109 @@
   }
 
   .bayou-wholesale__label {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--color-bayou-gold);
+    color: rgba(250, 248, 242, 0.6);
     margin: 0 0 1.2rem;
   }
 
   .bayou-wholesale__heading {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
     font-size: 2.8rem;
     line-height: 1.1;
-    margin: 0 0 1.6rem;
-    {%- if section.settings.bg_color == '#1A2415' or section.settings.bg_color == '#2D3B1E' -%}
-      color: var(--color-bayou-offwhite);
-    {%- else -%}
-      color: var(--color-bayou-charcoal);
-    {%- endif -%}
+    letter-spacing: -0.025em;
+    color: var(--bb-paper, #FAF8F2);
+    margin: 0 0 1.4rem;
   }
 
   @media screen and (min-width: 750px) {
     .bayou-wholesale__heading {
-      font-size: 3.6rem;
+      font-size: 3.4rem;
     }
   }
 
-  .bayou-wholesale__subtext {
+  .bayou-wholesale__text {
+    font-family: var(--font-display, 'Inter', sans-serif);
     font-size: 1.5rem;
     line-height: 1.6;
-    margin: 0 0 3rem;
-    {%- if section.settings.bg_color == '#1A2415' or section.settings.bg_color == '#2D3B1E' -%}
-      color: var(--color-bayou-sage);
-    {%- else -%}
-      color: rgba(44, 44, 44, 0.7);
-    {%- endif -%}
+    color: rgba(250, 248, 242, 0.78);
+    max-width: 44rem;
+    margin: 0 0 2.8rem;
   }
 
-  .bayou-wholesale__features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  .bayou-wholesale__feature {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.2rem;
-  }
-
-  .bayou-wholesale__feature-icon {
-    flex-shrink: 0;
-    width: 3.6rem;
-    height: 3.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--radius-md, 12px);
-    background-color: rgba(92, 122, 58, 0.12);
-    {%- if section.settings.bg_color == '#1A2415' or section.settings.bg_color == '#2D3B1E' -%}
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    {%- endif -%}
-  }
-
-  .bayou-wholesale__feature-icon svg {
-    width: 1.8rem;
-    height: 1.8rem;
-    stroke: var(--color-bayou-moss);
-    fill: none;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  .bayou-wholesale__feature-text {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 1.4;
-    {%- if section.settings.bg_color == '#1A2415' or section.settings.bg_color == '#2D3B1E' -%}
-      color: var(--color-bayou-cream);
-    {%- else -%}
-      color: var(--color-bayou-charcoal);
-    {%- endif -%}
-  }
-
-  /* Right side: CTA or form */
-  .bayou-wholesale__cta-side {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .bayou-wholesale__cta-button {
+  .bayou-wholesale__button {
     display: inline-block;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 500;
     font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 1.6rem 3.5rem;
-    background-color: var(--color-bayou-gold);
-    color: var(--color-bayou-dark);
-    text-decoration: none;
-    text-align: center;
-    border-radius: var(--radius-md, 12px);
-    transition: all 0.25s ease;
-  }
-
-  .bayou-wholesale__cta-button:hover {
-    background-color: #d4c87a;
-    color: var(--color-bayou-dark);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(201, 185, 107, 0.35);
-  }
-
-  /* Inline form styles */
-  .bayou-wholesale__form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
-
-  .bayou-wholesale__form input,
-  .bayou-wholesale__form textarea {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.4rem;
-    padding: 1.2rem 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    color: var(--color-bayou-cream);
-    width: 100%;
-    border-radius: var(--radius-md, 12px);
-    transition: all 0.2s ease;
-  }
-
-  .bayou-wholesale__form input:focus,
-  .bayou-wholesale__form textarea:focus {
-    border-color: var(--color-bayou-gold);
-    background: rgba(255, 255, 255, 0.1);
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(201, 185, 107, 0.15);
-  }
-
-  {%- if section.settings.bg_color != '#1A2415' and section.settings.bg_color != '#2D3B1E' -%}
-    .bayou-wholesale__form input,
-    .bayou-wholesale__form textarea {
-      border-color: rgba(0, 0, 0, 0.08);
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(8px);
-      color: var(--color-bayou-charcoal);
-      border-radius: var(--radius-md, 12px);
-    }
-    .bayou-wholesale__form input:focus,
-    .bayou-wholesale__form textarea:focus {
-      border-color: var(--color-bayou-moss);
-      box-shadow: 0 0 0 3px rgba(92, 122, 58, 0.12);
-    }
-  {%- endif -%}
-
-  .bayou-wholesale__form input::placeholder,
-  .bayou-wholesale__form textarea::placeholder {
-    {%- if section.settings.bg_color == '#1A2415' or section.settings.bg_color == '#2D3B1E' -%}
-      color: rgba(232, 223, 196, 0.4);
-    {%- else -%}
-      color: rgba(44, 44, 44, 0.4);
-    {%- endif -%}
-  }
-
-  .bayou-wholesale__form textarea {
-    min-height: 8rem;
-    resize: vertical;
-  }
-
-  .bayou-wholesale__form button {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     padding: 1.4rem 3rem;
-    background-color: var(--color-bayou-gold);
-    color: var(--color-bayou-dark);
-    border: none;
-    border-radius: var(--radius-md, 12px);
-    cursor: pointer;
-    transition: all 0.25s ease;
+    background-color: var(--bb-paper, #FAF8F2);
+    color: var(--bb-ink, #1A2415);
+    text-decoration: none;
+    border-radius: var(--bb-radius-btn, 2px);
+    border: 1px solid var(--bb-paper, #FAF8F2);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
   }
 
-  .bayou-wholesale__form button:hover {
-    background-color: #d4c87a;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(201, 185, 107, 0.35);
+  .bayou-wholesale__button:hover {
+    background-color: var(--bb-paper-deep, #F1ECDD);
+    border-color: var(--bb-paper-deep, #F1ECDD);
+    color: var(--bb-ink, #1A2415);
+  }
+
+  /* --- Glass price panel (sanctioned glass surface) --- */
+  .bayou-wholesale__panel {
+    border-radius: var(--bb-radius-card, 4px);
+    padding: 0.8rem 2.4rem;
+  }
+
+  .bayou-wholesale__tier {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: baseline;
+    gap: 1.6rem;
+    padding: 1.8rem 0;
+  }
+
+  .bayou-wholesale__tier + .bayou-wholesale__tier {
+    border-top: 1px solid var(--bb-glass-border, rgba(250, 248, 242, 0.22));
+  }
+
+  .bayou-wholesale__tier-name {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-paper, #FAF8F2);
+  }
+
+  .bayou-wholesale__tier-units {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(250, 248, 242, 0.6);
+  }
+
+  .bayou-wholesale__tier-price {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 1.4rem;
+    color: var(--bb-paper, #FAF8F2);
+    text-align: right;
+  }
+
+  .bayou-wholesale__footnote {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-gold, #C9B96B);
+    border-top: 1px solid var(--bb-glass-border, rgba(250, 248, 242, 0.22));
+    padding: 1.6rem 0 1rem;
+    margin: 0;
   }
 {%- endstyle -%}
 
@@ -243,172 +142,120 @@
         <h2 class="bayou-wholesale__heading">{{ section.settings.heading }}</h2>
       {%- endif -%}
 
-      {%- if section.settings.subtext != blank -%}
-        <p class="bayou-wholesale__subtext">{{ section.settings.subtext }}</p>
+      {%- if section.settings.text != blank -%}
+        <p class="bayou-wholesale__text">{{ section.settings.text }}</p>
       {%- endif -%}
 
-      <div class="bayou-wholesale__features">
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="bayou-wholesale__button">
+          {{- section.settings.button_label -}}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="bayou-wholesale__panel bb-glass-dark">
         {%- for block in section.blocks -%}
-          <div class="bayou-wholesale__feature" {{ block.shopify_attributes }}>
-            <div class="bayou-wholesale__feature-icon">
-              {%- case block.settings.icon -%}
-                {%- when 'discount' -%}
-                  <svg viewBox="0 0 24 24"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
-                {%- when 'truck' -%}
-                  <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-                {%- when 'package' -%}
-                  <svg viewBox="0 0 24 24"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                {%- when 'shirt' -%}
-                  <svg viewBox="0 0 24 24"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10h12V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"></path></svg>
-                {%- when 'zap' -%}
-                  <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                {%- else -%}
-                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              {%- endcase -%}
-            </div>
-            <span class="bayou-wholesale__feature-text">{{ block.settings.text }}</span>
+          <div class="bayou-wholesale__tier" {{ block.shopify_attributes }}>
+            <span class="bayou-wholesale__tier-name">{{ block.settings.name }}</span>
+            <span class="bayou-wholesale__tier-units">{{ block.settings.units }}</span>
+            <span class="bayou-wholesale__tier-price">{{ block.settings.price }}</span>
           </div>
         {%- endfor -%}
+        {%- if section.settings.footnote != blank -%}
+          <p class="bayou-wholesale__footnote">{{ section.settings.footnote }}</p>
+        {%- endif -%}
       </div>
-    </div>
-
-    <div class="bayou-wholesale__cta-side">
-      {%- if section.settings.mode == 'link' -%}
-        {%- if section.settings.cta_heading != blank -%}
-          <h3 class="bayou-wholesale__heading" style="font-size:2.2rem;">{{ section.settings.cta_heading }}</h3>
-        {%- endif -%}
-        {%- if section.settings.cta_text != blank -%}
-          <p class="bayou-wholesale__subtext" style="margin-bottom:1rem;">{{ section.settings.cta_text }}</p>
-        {%- endif -%}
-        <a href="{{ section.settings.cta_link }}" class="bayou-wholesale__cta-button">
-          {{ section.settings.cta_label | default: 'Request Wholesale Pricing' }}
-        </a>
-      {%- else -%}
-        {%- if section.settings.cta_heading != blank -%}
-          <h3 class="bayou-wholesale__heading" style="font-size:2.2rem;">{{ section.settings.cta_heading }}</h3>
-        {%- endif -%}
-        <form class="bayou-wholesale__form" action="/contact#bayou-wholesale-{{ section.id }}" method="post">
-          <input type="hidden" name="form_type" value="contact">
-          <input type="hidden" name="utf8" value="&#x2713;">
-          <input type="hidden" name="contact[tags]" value="wholesale">
-          <input type="text" name="contact[name]" placeholder="Your Name" required>
-          <input type="email" name="contact[email]" placeholder="Email Address" required>
-          <input type="text" name="contact[company]" placeholder="Business Name">
-          <input type="text" name="contact[estimated_qty]" placeholder="Estimated Quantity">
-          <textarea name="contact[body]" placeholder="Tell us about your needs..."></textarea>
-          <button type="submit">{{ section.settings.cta_label | default: 'Request Pricing' }}</button>
-        </form>
-      {%- endif -%}
-    </div>
+    {%- endif -%}
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Bayou Wholesale CTA",
+  "name": "Bayou Bulk Band",
   "tag": "section",
   "class": "bayou-wholesale-section",
   "settings": [
     {
-      "type": "select",
-      "id": "bg_color",
-      "label": "Background color",
-      "options": [
-        { "value": "#1A2415", "label": "Dark (Bayou Dark)" },
-        { "value": "#2D3B1E", "label": "Forest" },
-        { "value": "#E8DFC4", "label": "Cream" },
-        { "value": "#FAF8F2", "label": "Off-white" }
-      ],
-      "default": "#1A2415"
-    },
-    {
       "type": "text",
       "id": "label",
       "label": "Label",
-      "default": "For Businesses"
+      "default": "For businesses"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Bulk & Wholesale Pricing"
+      "default": "Printing at volume?"
     },
     {
       "type": "textarea",
-      "id": "subtext",
-      "label": "Subtext",
-      "default": "Volume discounts for screen printers, decorators, resellers, and teams. Premium Fanatics blanks shipped fast from Mississippi."
-    },
-    {
-      "type": "select",
-      "id": "mode",
-      "label": "CTA mode",
-      "options": [
-        { "value": "link", "label": "Link to page" },
-        { "value": "form", "label": "Inline inquiry form" }
-      ],
-      "default": "form"
+      "id": "text",
+      "label": "Body line",
+      "default": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg."
     },
     {
       "type": "text",
-      "id": "cta_heading",
-      "label": "CTA side heading",
-      "default": "Get a Custom Quote"
-    },
-    {
-      "type": "textarea",
-      "id": "cta_text",
-      "label": "CTA side text (link mode only)",
-      "default": "Fill out our quick form and we'll get back to you within 24 hours with pricing for your order."
-    },
-    {
-      "type": "text",
-      "id": "cta_label",
-      "label": "CTA button label",
-      "default": "Request Pricing"
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Talk to us"
     },
     {
       "type": "url",
-      "id": "cta_link",
-      "label": "CTA button link (link mode only)"
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "footnote",
+      "label": "Panel footnote (gold)",
+      "default": "Placeholder pricing — talk to us for a current quote"
     }
   ],
+  "max_blocks": 4,
   "blocks": [
     {
-      "type": "feature",
-      "name": "Feature",
+      "type": "tier",
+      "name": "Price tier",
       "settings": [
         {
-          "type": "select",
-          "id": "icon",
-          "label": "Icon",
-          "options": [
-            { "value": "discount", "label": "Discount" },
-            { "value": "truck", "label": "Truck / Fast shipping" },
-            { "value": "package", "label": "Package" },
-            { "value": "shirt", "label": "Shirt / Apparel" },
-            { "value": "zap", "label": "Lightning / Fast" },
-            { "value": "check", "label": "Checkmark" }
-          ],
-          "default": "check"
+          "type": "text",
+          "id": "name",
+          "label": "Tier name",
+          "default": "Case"
         },
         {
           "type": "text",
-          "id": "text",
-          "label": "Feature text",
-          "default": "Volume discounts"
+          "id": "units",
+          "label": "Units",
+          "default": "48 units"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price text",
+          "info": "Placeholder — edit with real pricing.",
+          "default": "from $8.50/unit"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Bayou Wholesale CTA",
+      "name": "Bayou Bulk Band",
       "blocks": [
-        { "type": "feature", "settings": { "icon": "discount", "text": "Tiered Volume Discounts" } },
-        { "type": "feature", "settings": { "icon": "package", "text": "No Minimum Orders" } },
-        { "type": "feature", "settings": { "icon": "truck", "text": "Fast Shipping from MS" } },
-        { "type": "feature", "settings": { "icon": "shirt", "text": "Print-Ready Blanks" } }
+        {
+          "type": "tier",
+          "settings": { "name": "Case", "units": "48 units", "price": "from $8.50/unit" }
+        },
+        {
+          "type": "tier",
+          "settings": { "name": "Half pallet", "units": "288 units", "price": "from $7.25/unit" }
+        },
+        {
+          "type": "tier",
+          "settings": { "name": "Pallet", "units": "576+ units", "price": "from $6.50/unit" }
+        }
       ]
     }
   ]

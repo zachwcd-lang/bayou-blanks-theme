@@ -1,0 +1,121 @@
+{%- style -%}
+  .bayou-ticker {
+    background-color: var(--bb-paper, #FAF8F2);
+    border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    border-bottom: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    overflow: hidden;
+    padding: 1rem 0;
+  }
+
+  .bayou-ticker__track {
+    display: flex;
+    width: max-content;
+    animation: bayou-ticker-scroll {{ section.settings.speed }}s linear infinite;
+  }
+
+  .bayou-ticker__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+    width: max-content;
+    min-width: 100vw;
+  }
+
+  .bayou-ticker__item,
+  .bayou-ticker__sep {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-ink, #1A2415);
+    white-space: nowrap;
+    padding: 0 1.2rem;
+  }
+
+  .bayou-ticker__sep {
+    color: var(--bb-ink-soft, #2D3B1E);
+    opacity: 0.5;
+  }
+
+  @keyframes bayou-ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bayou-ticker__track {
+      animation: none;
+      width: 100%;
+    }
+
+    .bayou-ticker__group {
+      width: 100%;
+      min-width: 0;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+
+    .bayou-ticker__group--clone {
+      display: none;
+    }
+  }
+{%- endstyle -%}
+
+<section class="bayou-ticker" id="bayou-ticker-{{ section.id }}">
+  <div class="bayou-ticker__track">
+    {%- for dup in (1..2) -%}
+      <div class="bayou-ticker__group{% if dup == 2 %} bayou-ticker__group--clone{% endif %}" {% if dup == 2 %}aria-hidden="true"{% endif %}>
+        {%- for block in section.blocks -%}
+          <span class="bayou-ticker__item" {% if dup == 1 %}{{ block.shopify_attributes }}{% endif %}>{{ block.settings.text }}</span>
+          <span class="bayou-ticker__sep" aria-hidden="true">·</span>
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Ticker",
+  "tag": "section",
+  "class": "bayou-ticker-section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 20,
+      "max": 120,
+      "step": 5,
+      "label": "Loop duration (seconds)",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Ticker item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "New pallets weekly"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Ticker",
+      "blocks": [
+        { "type": "item", "settings": { "text": "80,000+ units in stock" } },
+        { "type": "item", "settings": { "text": "New pallets weekly" } },
+        { "type": "item", "settings": { "text": "Live daily @bayou.blanks" } },
+        { "type": "item", "settings": { "text": "Ships from Hattiesburg, MS" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

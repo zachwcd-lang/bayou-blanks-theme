@@ -1,7 +1,7 @@
 {%- style -%}
   .bayou-trust {
     padding: 6rem 0;
-    background-color: var(--color-bayou-offwhite, #FAF8F2);
+    background-color: var(--bb-paper, #FAF8F2);
   }
 
   @media screen and (min-width: 750px) {
@@ -12,98 +12,91 @@
 
   .bayou-trust__header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 4.8rem;
   }
 
   .bayou-trust__label {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--color-bayou-moss);
+    color: var(--bb-moss, #5C7A3A);
     margin: 0 0 1.2rem;
   }
 
   .bayou-trust__title {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
     font-size: 2.8rem;
     line-height: 1.1;
-    color: var(--color-bayou-charcoal);
+    letter-spacing: -0.025em;
+    color: var(--bb-ink, #1A2415);
     margin: 0;
   }
 
   @media screen and (min-width: 750px) {
     .bayou-trust__title {
-      font-size: 3.6rem;
+      font-size: 3.4rem;
     }
   }
 
   .bayou-trust__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+  }
+
+  .bayou-trust__col {
+    padding: 2.8rem 0;
+    border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
   }
 
   @media screen and (min-width: 750px) {
     .bayou-trust__grid {
       grid-template-columns: repeat(3, 1fr);
-      gap: 3.5rem;
+      border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    }
+
+    .bayou-trust__col {
+      border-top: none;
+      padding: 3.2rem 2.8rem 0.8rem;
+    }
+
+    .bayou-trust__col + .bayou-trust__col {
+      border-left: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
     }
   }
 
-  .bayou-trust__card {
-    background: #fff;
-    border-radius: var(--radius-xl, 20px);
-    padding: 3rem 2.4rem;
-    border: 1px solid rgba(0, 0, 0, 0.04);
+  .bayou-trust__figure {
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 2rem;
   }
 
-  .bayou-trust__card-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: var(--radius-md, 12px);
-    background: rgba(92, 122, 58, 0.1);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
+  .bayou-trust__figure svg {
+    width: 48px;
+    height: 48px;
+    display: block;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .bayou-trust__caption {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 1rem;
+  }
+
+  .bayou-trust__text {
+    font-family: var(--font-display, 'Inter', sans-serif);
     font-size: 1.4rem;
-    color: var(--color-bayou-moss);
-    margin-bottom: 2rem;
-  }
-
-  .bayou-trust__card-heading {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    color: var(--color-bayou-charcoal);
-    margin: 0 0 1.2rem;
-  }
-
-  .bayou-trust__card-text {
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: rgba(44, 44, 44, 0.7);
+    line-height: 1.65;
+    color: var(--bb-ink-soft, #2D3B1E);
     margin: 0;
-  }
-
-  .bayou-trust__card-link {
-    display: inline-block;
-    margin-top: 1.6rem;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: var(--color-bayou-moss);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .bayou-trust__card-link:hover {
-    color: var(--color-bayou-dark);
   }
 {%- endstyle -%}
 
@@ -122,18 +115,36 @@
 
     <div class="bayou-trust__grid">
       {%- for block in section.blocks -%}
-        <div class="bayou-trust__card" {{ block.shopify_attributes }}>
-          <div class="bayou-trust__card-number">{{ forloop.index }}</div>
-          {%- if block.settings.heading != blank -%}
-            <h3 class="bayou-trust__card-heading">{{ block.settings.heading }}</h3>
+        <div class="bayou-trust__col" {{ block.shopify_attributes }}>
+          <div class="bayou-trust__figure" aria-hidden="true">
+            {%- case block.settings.figure -%}
+              {%- when 'box' -%}
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 6 L42 15 V33 L24 42 L6 33 V15 Z"/>
+                  <path d="M6 15 L24 24 L42 15"/>
+                  <path d="M24 24 V42"/>
+                  <path d="M15 10.5 L33 19.5 V26"/>
+                </svg>
+              {%- when 'tag' -%}
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M41.2 26.8 L26.8 41.2 a4 4 0 0 1 -5.6 0 L4 24 V4 H24 L41.2 21.2 a4 4 0 0 1 0 5.6 Z"/>
+                  <circle cx="13" cy="13" r="2.5"/>
+                  <polyline points="19 26 24 31 33 22"/>
+                </svg>
+              {%- when 'waves' -%}
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="33" r="2"/>
+                  <path d="M17 26 a10 10 0 0 1 14 0"/>
+                  <path d="M12 20.5 a17 17 0 0 1 24 0"/>
+                  <path d="M7 15 a24 24 0 0 1 34 0"/>
+                </svg>
+            {%- endcase -%}
+          </div>
+          {%- if block.settings.caption != blank -%}
+            <h3 class="bayou-trust__caption">{{ block.settings.caption }}</h3>
           {%- endif -%}
           {%- if block.settings.text != blank -%}
-            <p class="bayou-trust__card-text">{{ block.settings.text }}</p>
-          {%- endif -%}
-          {%- if block.settings.link_label != blank -%}
-            <a href="{{ block.settings.link_url }}" class="bayou-trust__card-link" {% if block.settings.link_external %}target="_blank" rel="noopener"{% endif %}>
-              {{ block.settings.link_label }}
-            </a>
+            <p class="bayou-trust__text">{{ block.settings.text }}</p>
           {%- endif -%}
         </div>
       {%- endfor -%}
@@ -151,7 +162,7 @@
       "type": "text",
       "id": "label",
       "label": "Label",
-      "default": "How It Works"
+      "default": "How it works"
     },
     {
       "type": "text",
@@ -160,38 +171,34 @@
       "default": "Why Trust Bayou Blanks?"
     }
   ],
+  "max_blocks": 3,
   "blocks": [
     {
       "type": "card",
-      "name": "Card",
+      "name": "Column",
       "settings": [
         {
+          "type": "select",
+          "id": "figure",
+          "label": "Line drawing",
+          "options": [
+            { "value": "box", "label": "Case-pack box" },
+            { "value": "tag", "label": "Inspection tag" },
+            { "value": "waves", "label": "Live signal waves" }
+          ],
+          "default": "box"
+        },
+        {
           "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Premium Quality"
+          "id": "caption",
+          "label": "Fig. caption (mono)",
+          "default": "Fig. 1 — Sourced: authentic Fanatics overstock"
         },
         {
           "type": "textarea",
           "id": "text",
-          "label": "Body text",
-          "default": "Description of this trust point."
-        },
-        {
-          "type": "text",
-          "id": "link_label",
-          "label": "Link label (optional)"
-        },
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Link URL"
-        },
-        {
-          "type": "checkbox",
-          "id": "link_external",
-          "label": "Open link in new tab",
-          "default": false
+          "label": "Body line",
+          "default": "One short, honest sentence about this step."
         }
       ]
     }
@@ -203,22 +210,25 @@
         {
           "type": "card",
           "settings": {
-            "heading": "Premium Blanks. Liquidation Prices.",
-            "text": "Every season, Fanatics produces more blank apparel than retailers can move. We buy authentic overstock directly through licensed liquidation channels and pass the savings to you."
+            "figure": "box",
+            "caption": "Fig. 1 — Sourced: authentic Fanatics overstock",
+            "text": "The same blanks the pros print on, bought through licensed liquidation channels at a fraction of retail."
           }
         },
         {
           "type": "card",
           "settings": {
-            "heading": "Inspected In Our Warehouse",
-            "text": "Every shipment is received, scanned, and quality-checked by our team in Hattiesburg, MS before it ever hits the site."
+            "figure": "tag",
+            "caption": "Fig. 2 — Inspected: every case pack, Hattiesburg, MS",
+            "text": "Every shipment is received, scanned, and condition-checked in our warehouse before it hits the site."
           }
         },
         {
           "type": "card",
           "settings": {
-            "heading": "Watch Us Work",
-            "text": "We stream daily flash sales on TikTok Shop. Come see the product in person before you buy."
+            "figure": "waves",
+            "caption": "Fig. 3 — Sold live: daily on TikTok & Whatnot",
+            "text": "Watch us pull, pack, and ship in real time — see the product before you buy."
           }
         }
       ]
