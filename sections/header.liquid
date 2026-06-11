@@ -70,6 +70,125 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* --- Bayou Blanks: resting header is flat paper with a hairline bottom edge. --- */
+  .header-wrapper,
+  .header-wrapper.gradient {
+    background: var(--bb-paper);
+    transition: background-color 0.25s ease;
+  }
+
+  .header-wrapper--border-bottom {
+    border-bottom: 1px solid var(--bb-haze);
+  }
+
+  /* Glass surface #1: on scroll the section element takes the sanctioned glass
+     recipe (tokens from bayou-custom.css); the wrapper goes transparent so the
+     glass shows through. Hairline stays on the wrapper, so no layout jump. */
+  .section-header.scrolled-past-header {
+    background: var(--bb-glass);
+    backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
+    -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
+    box-shadow: 0 1px 12px rgba(26, 36, 21, 0.06); /* sticky element: shadow allowed */
+  }
+
+  .section-header.scrolled-past-header .header-wrapper,
+  .section-header.scrolled-past-header .header-wrapper.gradient {
+    background: transparent;
+  }
+
+  /* --- Wordmark: Inter 600 name + mono microline beneath. --- */
+  .header__heading-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.2rem;
+  }
+
+  .header__heading-link .h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--bb-ink);
+  }
+
+  .header__heading-link:hover .h2 {
+    color: var(--bb-ink-soft);
+  }
+
+  .header__microline {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: rgba(26, 36, 21, 0.6);
+  }
+
+  @media screen and (max-width: 989px) {
+    .header--mobile-center .header__heading-link {
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .header__microline {
+      font-size: 10px;
+      white-space: nowrap;
+    }
+
+    .header--middle-center .header__heading-link,
+    .header--top-center .header__heading-link {
+      align-items: center;
+    }
+  }
+
+  /* --- Nav links: mono 11px uppercase; keep Dawn's underline machinery. --- */
+  .header__inline-menu .header__menu-item,
+  .header__inline-menu .header__menu-item span,
+  .header__submenu .header__menu-item {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-ink);
+  }
+
+  .header__inline-menu .header__menu-item:hover,
+  .header__inline-menu .header__menu-item:hover span,
+  .header__submenu .header__menu-item:hover {
+    color: var(--bb-ink-soft);
+  }
+
+  .header__active-menu-item,
+  .header__menu-item:hover span {
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+  }
+
+  .header__menu-item:hover .header__active-menu-item {
+    text-decoration-thickness: 1px;
+  }
+
+  /* Mobile drawer nav: retyped to match. */
+  .menu-drawer .menu-drawer__menu-item {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-ink);
+  }
+
+  /* Cart count bubble: ink chip, paper numeral, mono. */
+  .cart-count-bubble {
+    background-color: var(--bb-ink);
+    color: var(--bb-paper);
+    font-family: var(--font-mono);
+  }
 </style>
 
 {%- style -%}
@@ -105,6 +224,12 @@
     endif
   endfor
 -%}
+
+{%- capture bb_header_microline -%}
+  {%- if section.settings.wordmark_microline != blank -%}
+    <span class="header__microline">{{ section.settings.wordmark_microline | escape }}</span>
+  {%- endif -%}
+{%- endcapture -%}
 
 {% liquid
   assign header_tag = 'div'
@@ -159,8 +284,10 @@
                   preload: true
                 }}
               </div>
+              {{ bb_header_microline }}
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
+              {{ bb_header_microline }}
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -199,8 +326,10 @@
                   preload: true
                 }}
               </div>
+              {{ bb_header_microline }}
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
+              {{ bb_header_microline }}
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -548,6 +677,17 @@
       "id": "show_line_separator",
       "default": true,
       "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "header",
+      "content": "Wordmark"
+    },
+    {
+      "type": "text",
+      "id": "wordmark_microline",
+      "label": "Wordmark microline",
+      "info": "Mono line rendered beneath the wordmark or logo. Leave blank to hide.",
+      "default": "THE BAYOU BLANKS CO. · HATTIESBURG, MS"
     },
     {
       "type": "header",

@@ -265,7 +265,10 @@ textarea:focus {
   color: var(--bb-paper) !important;
 }
 
-/* --- Sticky header: glass surface 1 of 4 --- */
+/* --- Sticky header: glass surface 1 of 4 ---
+   The glass-on-scroll rule lives in sections/header.liquid
+   (.section-header.scrolled-past-header) — Dawn adds the scroll class to the
+   section element itself, so a descendant selector here would never match. */
 .section-header {
   transition: background-color 0.25s ease;
 }
@@ -274,14 +277,6 @@ textarea:focus {
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.scrolled-past-header .section-header {
-  background: var(--bb-glass) !important;
-  backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-  -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-  border-bottom: 1px solid var(--bb-haze);
-  box-shadow: 0 1px 12px rgba(26, 36, 21, 0.06); /* sticky element: shadow allowed */
 }
 
 .header__heading-logo-image {

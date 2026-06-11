@@ -25,9 +25,76 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* --- Bayou Blanks: painting strip flush at the footer's very top edge.
+     Negative margin cancels the section's top padding; no other layout shifts. --- */
+  .footer__painting-strip {
+    width: 100%;
+    aspect-ratio: 8 / 1;
+    overflow: hidden;
+    margin-top: -{{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .footer__painting-strip {
+      margin-top: -{{ section.settings.padding_top }}px;
+    }
+  }
+
+  .footer__painting-strip-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* --- Hairline separators on the ink band: low-opacity paper, not Dawn defaults. --- */
+  .footer__content-bottom {
+    border-top: 1px solid rgba(250, 248, 242, 0.14);
+  }
+
+  /* --- Body copy in footer blocks: Inter, paper at reduced opacity. --- */
+  .footer .footer-block__details-content,
+  .footer .footer-block__details-content p {
+    color: rgba(250, 248, 242, 0.78);
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  /* --- Smallprint: mono 10px uppercase, paper at 40%. --- */
+  .footer__copyright,
+  .footer__copyright .copyright__content {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(250, 248, 242, 0.4);
+  }
+
+  .footer .footer__copyright a {
+    color: rgba(250, 248, 242, 0.4) !important;
+  }
+
+  .footer .footer__copyright a:hover {
+    color: var(--bb-gold) !important;
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  {%- if section.settings.painting_strip != blank -%}
+    <div class="footer__painting-strip">
+      {{
+        section.settings.painting_strip
+        | image_url: width: 3200
+        | image_tag:
+          class: 'footer__painting-strip-image',
+          loading: 'lazy',
+          sizes: '100vw',
+          widths: '750, 1100, 1500, 1920, 2560, 3200'
+      }}
+    </div>
+  {%- endif -%}
   {%- liquid
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -300,7 +367,10 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          >{%- if section.settings.smallprint_text != blank -%}
+            {{- section.settings.smallprint_text | escape }} &middot;
+          {% endif -%}
+          &copy; {{ 'now' | date: '%Y' -}}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
         {%- if section.settings.show_policy -%}
@@ -429,6 +499,23 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Bayou Blanks"
+    },
+    {
+      "type": "image_picker",
+      "id": "painting_strip",
+      "label": "Painting strip (8:1 crop)",
+      "info": "Full-width image strip rendered flush at the footer's top edge. Cropped to roughly 8:1. Leave empty to hide."
+    },
+    {
+      "type": "text",
+      "id": "smallprint_text",
+      "label": "Smallprint",
+      "info": "Mono line at the very bottom, rendered before the dynamic © year.",
+      "default": "THE BAYOU BLANKS COMPANY · EST. HATTIESBURG, MS · BACKED BY WEST COAST DEALS"
     },
     {
       "type": "header",

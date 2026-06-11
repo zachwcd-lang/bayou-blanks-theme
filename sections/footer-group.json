@@ -12,20 +12,29 @@
             "menu": "footer"
           }
         },
-        "footer-social": {
+        "footer-company": {
           "type": "text",
           "settings": {
-            "heading": "Follow Us",
-            "subtext": "<p><a href=\"https://www.tiktok.com/@bayou.blanks\" target=\"_blank\" title=\"TikTok\">TikTok</a></p>"
+            "heading": "Company",
+            "subtext": "<p>Backed by West Coast Deals. Authentic Fanatics overstock, sold by the pack.</p><p><a href=\"/pages/contact\" title=\"Contact\">Buy bulk →</a></p>"
+          }
+        },
+        "footer-warehouse": {
+          "type": "text",
+          "settings": {
+            "heading": "The Warehouse",
+            "subtext": "<p>Hattiesburg, MS — every case pack received, scanned, and inspected here.</p><p>Live on <a href=\"https://www.tiktok.com/@bayou.blanks\" target=\"_blank\" title=\"TikTok\">TikTok</a> &amp; Whatnot daily.</p>"
           }
         }
       },
       "block_order": [
         "footer-shop",
-        "footer-social"
+        "footer-company",
+        "footer-warehouse"
       ],
       "settings": {
         "color_scheme": "scheme-1",
+        "smallprint_text": "THE BAYOU BLANKS COMPANY · EST. HATTIESBURG, MS · BACKED BY WEST COAST DEALS",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "show_social": true,
