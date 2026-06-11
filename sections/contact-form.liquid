@@ -12,6 +12,49 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* Scheme-aware fields: the global bayou-custom.css input/button rules assume
+     paper backgrounds; these scoped rules follow the section's color scheme so
+     the form also works on the dark ink scheme. */
+  .contact .field__input,
+  .contact .select__select,
+  .contact .text-area {
+    background: transparent;
+    color: rgb(var(--color-foreground));
+    border: 1px solid rgba(var(--color-foreground), 0.35);
+  }
+
+  .contact .field__input:focus,
+  .contact .select__select:focus,
+  .contact .text-area:focus {
+    background: transparent;
+    border-color: rgb(var(--color-foreground));
+  }
+
+  .contact .field__label,
+  .contact .form__label {
+    color: rgba(var(--color-foreground), 0.65);
+  }
+
+  .contact .select .svg-wrapper,
+  .contact .select svg {
+    color: rgb(var(--color-foreground));
+  }
+
+  .contact .select__select option {
+    color: var(--bb-ink, #1a2415);
+    background: var(--bb-paper, #faf8f2);
+  }
+
+  .contact .button {
+    background-color: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+  }
+
+  .contact .button:hover {
+    background-color: rgb(var(--color-button));
+    opacity: 0.85;
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">

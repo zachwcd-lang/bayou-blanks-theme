@@ -146,7 +146,8 @@
           "settings": {
             "platform": "tiktok",
             "rating": 5,
-            "text": "1,000s of 5-star reviews"
+            "text": "1,000s of 5-star reviews",
+            "link": "https://www.tiktok.com/@bayou.blanks"
           }
         },
         "chip_whatnot": {
@@ -154,7 +155,8 @@
           "settings": {
             "platform": "whatnot",
             "rating": 5,
-            "text": "Top-rated seller"
+            "text": "Top-rated seller",
+            "link": "https://www.whatnot.com/user/westcoastdeals"
           }
         }
       },
