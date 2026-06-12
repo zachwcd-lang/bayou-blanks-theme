@@ -19,8 +19,8 @@
   --bb-glass-dark: rgba(250, 248, 242, 0.08);
   --bb-glass-border: rgba(250, 248, 242, 0.22);
   --bb-blur: 18px;
-  --bb-radius-btn: 2px;
-  --bb-radius-card: 4px;
+  --bb-radius-btn: 6px;
+  --bb-radius-card: 16px;
   --font-display: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -35,9 +35,9 @@
   --font-heading-weight: 600;
 
   --buttons-radius: var(--bb-radius-btn) !important;
-  --buttons-radius-outset: 3px !important;
+  --buttons-radius-outset: 7px !important;
   --inputs-radius: var(--bb-radius-btn) !important;
-  --inputs-radius-outset: 3px !important;
+  --inputs-radius-outset: 7px !important;
   --product-card-corner-radius: var(--bb-radius-card) !important;
   --collection-card-corner-radius: var(--bb-radius-card) !important;
   --blog-card-corner-radius: var(--bb-radius-card) !important;
@@ -172,11 +172,13 @@ hr {
   border-top: 1px solid var(--bb-haze);
 }
 
-/* --- Cards: flat paper, hairline border, 4px radius, no shadows --- */
+/* --- Cards: flat paper, hairline border, rounded tile (16px), no shadows.
+   The card clips its own corners; the photo bleeds full-width inside and
+   stays square, so the rounding reads on the outer tile only. --- */
 .card,
-.card--card,
-.card--standard .card__inner {
+.card--card {
   border-radius: var(--bb-radius-card);
+  overflow: hidden;
   background: var(--bb-paper);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -192,11 +194,20 @@ hr {
   border-color: var(--bb-ink-soft);
 }
 
-.card__media,
-.media {
+/* Image box inside the standard card: no box of its own — just the
+   hairline separator under the photo. */
+.card--standard .card__inner {
+  border: 0;
+  border-bottom: 1px solid var(--bb-haze);
   border-radius: 0;
+  background: var(--bb-paper);
+  box-shadow: none;
 }
 
+/* Card media stays square (the rounded card clips it). Media elsewhere —
+   product gallery, banners — keeps Dawn's --media-radius rounding. */
+.card .card__inner .card__media,
+.card .media,
 .card .media img {
   border-radius: 0;
 }
