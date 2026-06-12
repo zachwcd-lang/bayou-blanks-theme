@@ -1,0 +1,538 @@
+{%- comment -%}
+  Newsletter popup — Bayou Blanks
+  Heritage-editorial signup notice. Captures emails into the Shopify customer
+  list (marketing consent + tags "newsletter,popup10"); the welcome code is
+  delivered by the "Welcome new subscriber" email automation.
+{%- endcomment -%}
+
+{%- liquid
+  assign s = section.settings
+  assign form_id = 'NewsletterPopupForm-' | append: section.id
+-%}
+
+{%- if s.enable or request.design_mode -%}
+  {%- style -%}
+    newsletter-popup {
+      --np-paper: #F4F1EA;
+      --np-ink: 20, 20, 20;
+      display: block;
+    }
+
+    newsletter-popup .np-root {
+      position: fixed;
+      inset: 0;
+      z-index: 1002;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    newsletter-popup .np-root[open] {
+      display: flex;
+      animation: np-fade 150ms ease-out both;
+    }
+
+    @keyframes np-fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      newsletter-popup .np-root[open] {
+        animation: none;
+      }
+    }
+
+    newsletter-popup .np-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 18, 14, 0.5);
+    }
+
+    newsletter-popup .np-card {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      max-height: calc(100vh - 32px);
+      max-height: calc(100dvh - 32px);
+      overflow-y: auto;
+      background: var(--np-paper);
+      color: rgb(var(--np-ink));
+      border: 1px solid rgb(var(--np-ink));
+      border-radius: 0;
+      box-shadow: none;
+      padding: 28px 24px 24px;
+    }
+
+    /* Paper grain — tiny SVG noise, barely there */
+    newsletter-popup .np-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    newsletter-popup .np-card:focus {
+      outline: none;
+    }
+
+    newsletter-popup .np-masthead {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      border-bottom: 1px solid rgb(var(--np-ink));
+      padding-bottom: 12px;
+      margin-bottom: 26px;
+    }
+
+    newsletter-popup .np-eyebrow {
+      flex: 1;
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    newsletter-popup .np-close {
+      flex-shrink: 0;
+      background: none;
+      border: 0;
+      border-radius: 0;
+      cursor: pointer;
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: rgba(var(--np-ink), 0.7);
+      white-space: nowrap;
+      padding: 10px 0 10px 14px;
+      margin: -10px 0;
+    }
+
+    newsletter-popup .np-close:hover {
+      color: rgb(var(--np-ink));
+    }
+
+    newsletter-popup .np-heading {
+      font-family: 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: rgb(var(--np-ink));
+      margin: 0 0 12px;
+    }
+
+    newsletter-popup .np-body {
+      font-size: 13px;
+      line-height: 1.6;
+      color: rgba(var(--np-ink), 0.7);
+      margin: 0 0 26px;
+    }
+
+    newsletter-popup .np-field {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    newsletter-popup .np-input {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid rgb(var(--np-ink));
+      border-radius: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 16px;
+      color: rgb(var(--np-ink));
+      padding: 10px 2px;
+    }
+
+    newsletter-popup .np-input::placeholder {
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      color: rgba(var(--np-ink), 0.45);
+    }
+
+    newsletter-popup .np-input:focus {
+      outline: none;
+      box-shadow: 0 1px 0 rgb(var(--np-ink));
+    }
+
+    newsletter-popup .np-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgb(var(--np-ink));
+      color: var(--np-paper);
+      border: 1px solid rgb(var(--np-ink));
+      border-radius: 0;
+      cursor: pointer;
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      min-height: 44px;
+      padding: 12px 22px;
+      width: 100%;
+    }
+
+    newsletter-popup .np-button:hover {
+      background: transparent;
+      color: rgb(var(--np-ink));
+    }
+
+    newsletter-popup .np-button:focus-visible,
+    newsletter-popup .np-close:focus-visible {
+      outline: 2px solid rgb(var(--np-ink));
+      outline-offset: 2px;
+    }
+
+    newsletter-popup .np-error {
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 11px;
+      line-height: 1.5;
+      color: #9b2c20;
+      margin: 12px 0 0;
+    }
+
+    newsletter-popup .np-footnote {
+      font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      line-height: 1.6;
+      color: rgba(var(--np-ink), 0.55);
+      margin: 30px 0 0;
+    }
+
+    newsletter-popup .np-root[data-panel='form'] .np-panel--success,
+    newsletter-popup .np-root[data-panel='success'] .np-panel--form {
+      display: none;
+    }
+
+    @media screen and (min-width: 750px) {
+      newsletter-popup .np-card {
+        padding: 40px 44px 32px;
+      }
+
+      newsletter-popup .np-heading {
+        font-size: 30px;
+      }
+
+      newsletter-popup .np-field {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 18px;
+      }
+
+      newsletter-popup .np-input {
+        flex: 1;
+        font-size: 14px;
+      }
+
+      newsletter-popup .np-button {
+        width: auto;
+        flex-shrink: 0;
+      }
+    }
+  {%- endstyle -%}
+
+  <newsletter-popup
+    data-section-id="{{ section.id }}"
+    data-delay="{{ s.delay | default: 4 }}"
+    data-dismiss-days="{{ s.dismiss_days | default: 30 }}"
+  >
+    <div class="np-root" data-np-root data-panel="form">
+      <div class="np-overlay" data-np-overlay></div>
+      <div
+        class="np-card"
+        data-np-card
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="NewsletterPopup-heading-{{ section.id }}"
+        tabindex="-1"
+      >
+        <header class="np-masthead">
+          <p class="np-eyebrow">{{ s.eyebrow | escape }}</p>
+          <button type="button" class="np-close" data-np-close>[ CLOSE ]</button>
+        </header>
+
+        <div class="np-panel--form">
+          <h2 class="np-heading" id="NewsletterPopup-heading-{{ section.id }}" data-np-form-heading>
+            {{ s.heading | escape }}
+          </h2>
+          <p class="np-body">{{ s.subtext | escape }}</p>
+
+          {% form 'customer', id: form_id, class: 'np-form' %}
+            <input type="hidden" name="contact[tags]" value="newsletter,popup10">
+            <label class="visually-hidden" for="NewsletterPopup-email-{{ section.id }}">Email</label>
+            <div class="np-field">
+              <input
+                type="email"
+                class="np-input"
+                id="NewsletterPopup-email-{{ section.id }}"
+                name="contact[email]"
+                value="{{ form.email }}"
+                placeholder="email@address.com"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="email"
+                required
+                {% if form.errors %}
+                  aria-invalid="true"
+                  aria-describedby="NewsletterPopup-error-{{ section.id }}"
+                {% endif %}
+              >
+              <button type="submit" class="np-button" name="commit">Sign up <span aria-hidden="true">&rarr;</span></button>
+            </div>
+            {%- if form.errors -%}
+              <p class="np-error" id="NewsletterPopup-error-{{ section.id }}" data-np-error role="alert">
+                {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}
+              </p>
+            {%- endif -%}
+          {% endform %}
+
+          <p class="np-footnote">Fig. 1 &mdash; One use per customer. Unsubscribe anytime.</p>
+        </div>
+
+        <div class="np-panel--success">
+          <h2 class="np-heading" id="NewsletterPopup-success-heading-{{ section.id }}" data-np-success-heading>
+            You&rsquo;re on the list.
+          </h2>
+          <p class="np-body">{{ s.success_text | escape }}</p>
+          <button type="button" class="np-button" data-np-close>Keep shopping</button>
+        </div>
+      </div>
+    </div>
+  </newsletter-popup>
+
+  <script>
+    (function () {
+      if (customElements.get('newsletter-popup')) return;
+
+      var STORAGE_KEY = 'bb-news-popup';
+      var DAY_MS = 24 * 60 * 60 * 1000;
+
+      class NewsletterPopup extends HTMLElement {
+        connectedCallback() {
+          this.root = this.querySelector('[data-np-root]');
+          this.card = this.querySelector('[data-np-card]');
+          if (!this.root || !this.card) return;
+
+          this.delayMs = (parseInt(this.dataset.delay, 10) || 4) * 1000;
+          this.dismissMs = (parseInt(this.dataset.dismissDays, 10) || 30) * DAY_MS;
+          this.designMode = !!(window.Shopify && window.Shopify.designMode);
+          this.onKeyDown = this.onKeyDown.bind(this);
+
+          this.querySelectorAll('[data-np-close]').forEach(
+            function (el) {
+              el.addEventListener('click', this.close.bind(this));
+            }.bind(this)
+          );
+          this.querySelector('[data-np-overlay]').addEventListener('click', this.close.bind(this));
+
+          if (this.designMode) {
+            document.addEventListener(
+              'shopify:section:select',
+              function (event) {
+                if (event.detail.sectionId === this.dataset.sectionId) this.open();
+              }.bind(this)
+            );
+            document.addEventListener(
+              'shopify:section:deselect',
+              function (event) {
+                if (event.detail.sectionId === this.dataset.sectionId) this.close();
+              }.bind(this)
+            );
+            return;
+          }
+
+          if (new URLSearchParams(window.location.search).get('customer_posted') === 'true') {
+            this.writeState({ subscribed: true });
+            this.setPanel('success');
+            this.open();
+            this.stripPostedParam();
+            return;
+          }
+
+          if (this.querySelector('[data-np-error]')) {
+            // The signup just failed server-side — reopen so the inline error is visible.
+            this.open();
+            return;
+          }
+
+          var state = this.readState();
+          if (state.subscribed) return;
+          if (state.dismissedAt && Date.now() - state.dismissedAt < this.dismissMs) return;
+          this.timer = setTimeout(this.open.bind(this), this.delayMs);
+        }
+
+        disconnectedCallback() {
+          clearTimeout(this.timer);
+          document.removeEventListener('keydown', this.onKeyDown);
+        }
+
+        open() {
+          if (this.root.hasAttribute('open')) return;
+          clearTimeout(this.timer);
+          this.openedBy = document.activeElement;
+          this.root.setAttribute('open', '');
+          document.addEventListener('keydown', this.onKeyDown);
+          var focusTarget = this.querySelector('[data-np-error]')
+            ? this.querySelector('input[type="email"]')
+            : this.card;
+          focusTarget.focus();
+        }
+
+        close() {
+          if (!this.root.hasAttribute('open')) return;
+          this.root.removeAttribute('open');
+          document.removeEventListener('keydown', this.onKeyDown);
+          if (!this.designMode && this.root.dataset.panel !== 'success') {
+            this.writeState({ dismissedAt: Date.now() });
+          }
+          if (this.openedBy && typeof this.openedBy.focus === 'function') {
+            this.openedBy.focus();
+          }
+        }
+
+        onKeyDown(event) {
+          if (event.key === 'Escape') {
+            this.close();
+            return;
+          }
+          if (event.key !== 'Tab') return;
+          // Trap focus within the card, counting only visible controls
+          // (the inactive panel's controls are display:none but still in the DOM).
+          var focusable = Array.prototype.filter.call(
+            this.card.querySelectorAll('a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'),
+            function (el) {
+              return !el.disabled && el.offsetParent !== null;
+            }
+          );
+          if (focusable.length === 0) return;
+          var first = focusable[0];
+          var last = focusable[focusable.length - 1];
+          var active = document.activeElement;
+          if (event.shiftKey && (active === first || active === this.card || !this.card.contains(active))) {
+            event.preventDefault();
+            last.focus();
+          } else if (!event.shiftKey && (active === last || !this.card.contains(active))) {
+            event.preventDefault();
+            first.focus();
+          }
+        }
+
+        setPanel(name) {
+          this.root.dataset.panel = name;
+          var heading = this.querySelector(
+            name === 'success' ? '[data-np-success-heading]' : '[data-np-form-heading]'
+          );
+          if (heading) this.card.setAttribute('aria-labelledby', heading.id);
+        }
+
+        stripPostedParam() {
+          try {
+            var url = new URL(window.location.href);
+            url.searchParams.delete('customer_posted');
+            window.history.replaceState({}, '', url.toString());
+          } catch (e) {
+            /* noop */
+          }
+        }
+
+        readState() {
+          try {
+            return JSON.parse(window.localStorage.getItem(STORAGE_KEY)) || {};
+          } catch (e) {
+            return {};
+          }
+        }
+
+        writeState(patch) {
+          try {
+            window.localStorage.setItem(STORAGE_KEY, JSON.stringify(Object.assign(this.readState(), patch)));
+          } catch (e) {
+            /* noop */
+          }
+        }
+      }
+
+      customElements.define('newsletter-popup', NewsletterPopup);
+    })();
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Newsletter Popup",
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable popup",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "delay",
+      "min": 1,
+      "max": 15,
+      "step": 1,
+      "unit": "s",
+      "label": "Delay before opening",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "dismiss_days",
+      "min": 1,
+      "max": 90,
+      "step": 1,
+      "unit": "d",
+      "label": "Days hidden after dismissal",
+      "default": 30
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Masthead",
+      "default": "THE BAYOU BLANKS COMPANY · EST. HATTIESBURG, MS"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Get 10% off your first order."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Body text",
+      "default": "Sign up for the dispatch — first word on new case packs, restocks, and live sales. Your welcome code arrives by email."
+    },
+    {
+      "type": "textarea",
+      "id": "success_text",
+      "label": "Success text",
+      "default": "Check your inbox — your 10% off welcome code is on its way."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter Popup"
+    }
+  ]
+}
+{% endschema %}
