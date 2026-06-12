@@ -92,6 +92,35 @@
   .footer .footer__copyright a:hover {
     color: var(--bb-gold) !important;
   }
+
+  /* --- Blog link: coming-soon stamp badge, revealed on click. --- */
+  .footer-blog-badge {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 7px 1px;
+    border: 1px solid currentColor;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bb-gold, #C9B96B);
+    vertical-align: 2px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .footer-blog-badge.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 150ms ease-out;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .footer-blog-badge.is-visible {
+      transition: none;
+    }
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -132,6 +161,8 @@
     if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
       assign only_empty_brand = true
     endif
+
+    assign blog_link_pending = section.settings.show_blog_link
   -%}
   {%- if section.blocks.size > 0
     or section.settings.newsletter_enable
@@ -190,6 +221,24 @@
                             </a>
                           </li>
                         {%- endfor -%}
+                        {%- if blog_link_pending -%}
+                          {%- assign blog_link_pending = false -%}
+                          <li>
+                            <a
+                              href="{{ section.settings.blog_url | default: '/blogs/news' }}"
+                              class="link link--text list-menu__item list-menu__item--link"
+                              {% if section.settings.blog_coming_soon %}
+                                data-blog-coming-soon
+                                aria-describedby="FooterBlogBadge"
+                              {% endif %}
+                            >
+                              {{- section.settings.blog_label | default: 'Blog' | escape -}}
+                            </a>
+                            {%- if section.settings.blog_coming_soon -%}
+                              <span class="footer-blog-badge" id="FooterBlogBadge" role="status"></span>
+                            {%- endif -%}
+                          </li>
+                        {%- endif -%}
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
@@ -415,6 +464,27 @@
   </div>
 </footer>
 
+{%- if section.settings.show_blog_link and section.settings.blog_coming_soon -%}
+  <script>
+    (function () {
+      var link = document.querySelector('[data-blog-coming-soon]');
+      var badge = document.getElementById('FooterBlogBadge');
+      if (!link || !badge) return;
+      var timer;
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        badge.textContent = '[ COMING SOON ]';
+        badge.classList.add('is-visible');
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+          badge.classList.remove('is-visible');
+          badge.textContent = '';
+        }, 2600);
+      });
+    })();
+  </script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.footer.name",
@@ -547,6 +617,35 @@
       "label": "Smallprint",
       "info": "Mono line at the very bottom, rendered before the dynamic © year.",
       "default": "THE BAYOU BLANKS COMPANY · EST. HATTIESBURG, MS · BACKED BY WEST COAST DEALS"
+    },
+    {
+      "type": "header",
+      "content": "Blog link"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_blog_link",
+      "label": "Show Blog link in the menu column",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "blog_label",
+      "label": "Blog link label",
+      "default": "Blog"
+    },
+    {
+      "type": "url",
+      "id": "blog_url",
+      "label": "Blog link destination",
+      "info": "Used once coming-soon mode is off. Leave empty for /blogs/news."
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_coming_soon",
+      "label": "Coming-soon mode",
+      "info": "Clicking the link shows a coming-soon badge instead of navigating. Turn off when the blog goes live.",
+      "default": true
     },
     {
       "type": "header",
