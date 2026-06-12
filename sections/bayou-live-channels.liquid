@@ -1,0 +1,393 @@
+{%- comment -%}
+  Bayou Live Channels — "Watch us live, 7 days a week."
+  Two brand plates (Swamp Sales / Bayou Blanks) with built-in logo art
+  (assets/swamp-sales-logo-card.webp, assets/bayou-blanks-logo-card.webp)
+  and a live CTA per channel.
+{%- endcomment -%}
+
+{%- style -%}
+  .bayou-live {
+    padding: 5.6rem 0;
+    background-color: var(--bb-paper, #FAF8F2);
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-live {
+      padding: 9.6rem 0;
+    }
+  }
+
+  .bayou-live__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .bayou-live__label {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-moss, #5C7A3A);
+    margin: 0 0 1.2rem;
+  }
+
+  .bayou-live__title {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--bb-ink, #1A2415);
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-live__title {
+      font-size: 3.4rem;
+    }
+  }
+
+  .bayou-live__subline {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.5rem;
+    line-height: 1.65;
+    color: var(--bb-ink-soft, #2D3B1E);
+    max-width: 52rem;
+    margin: 1.4rem auto 0;
+  }
+
+  .bayou-live__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    max-width: 96rem;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-live__grid {
+      grid-template-columns: repeat({{ section.blocks.size | at_least: 1 }}, 1fr);
+      gap: 2.4rem;
+    }
+  }
+
+  .bayou-live__plate {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    border-radius: var(--bb-radius-card, 16px);
+    background-color: var(--bb-paper, #FAF8F2);
+    padding: 2rem 2rem 2.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-live__plate {
+      padding: 2.4rem 2.8rem 2.8rem;
+    }
+  }
+
+  .bayou-live__meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.6rem;
+    border-bottom: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    padding-bottom: 1.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .bayou-live__onair,
+  .bayou-live__platform {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bb-ink-soft, #2D3B1E);
+    white-space: nowrap;
+  }
+
+  .bayou-live__dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--bb-moss, #5C7A3A);
+    margin-right: 0.8rem;
+    vertical-align: 1px;
+    animation: bayou-live-pulse 1.8s ease-in-out infinite;
+  }
+
+  @keyframes bayou-live-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bayou-live__dot {
+      animation: none;
+    }
+  }
+
+  .bayou-live__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16rem;
+    margin-bottom: 2.4rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-live__logo {
+      height: 21rem;
+    }
+  }
+
+  .bayou-live__logo img {
+    display: block;
+    max-width: min(100%, 36rem);
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .bayou-live__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: auto;
+    background-color: var(--bb-ink, #1A2415);
+    color: var(--bb-paper, #FAF8F2);
+    border: 1px solid var(--bb-ink, #1A2415);
+    border-radius: var(--bb-radius-btn, 2px);
+    text-decoration: none;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    min-height: 44px;
+    padding: 1.3rem 2rem;
+  }
+
+  .bayou-live__cta:hover {
+    background-color: transparent;
+    color: var(--bb-ink, #1A2415);
+  }
+
+  .bayou-live__cta:focus-visible {
+    outline: 2px solid var(--bb-ink, #1A2415);
+    outline-offset: 2px;
+  }
+
+  .bayou-live__footnote {
+    text-align: center;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+    color: var(--bb-ink-soft, #2D3B1E);
+    opacity: 0.75;
+    margin: 3.2rem 0 0;
+  }
+{%- endstyle -%}
+
+<section class="bayou-live" id="bayou-live-{{ section.id }}">
+  <div class="page-width">
+    {%- if section.settings.label != blank
+      or section.settings.heading != blank
+      or section.settings.subline != blank
+    -%}
+      <div class="bayou-live__header">
+        {%- if section.settings.label != blank -%}
+          <p class="bayou-live__label">{{ section.settings.label }}</p>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="bayou-live__title">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subline != blank -%}
+          <p class="bayou-live__subline">{{ section.settings.subline }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="bayou-live__grid">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          if block.settings.brand == 'bayou-blanks'
+            assign builtin_logo = 'bayou-blanks-logo-card.webp'
+            assign builtin_w = 880
+            assign builtin_h = 609
+          else
+            assign builtin_logo = 'swamp-sales-logo-card.webp'
+            assign builtin_w = 880
+            assign builtin_h = 782
+          endif
+        -%}
+        <div class="bayou-live__plate" {{ block.shopify_attributes }}>
+          <div class="bayou-live__meta">
+            <span class="bayou-live__onair">
+              <span class="bayou-live__dot" aria-hidden="true"></span>
+              {{- block.settings.status_line | escape -}}
+            </span>
+            {%- if block.settings.platform_line != blank -%}
+              <span class="bayou-live__platform">{{ block.settings.platform_line | escape }}</span>
+            {%- endif -%}
+          </div>
+
+          <div class="bayou-live__logo">
+            {%- if block.settings.logo != blank -%}
+              {{
+                block.settings.logo
+                | image_url: width: 880
+                | image_tag:
+                  loading: 'lazy',
+                  alt: block.settings.name,
+                  sizes: '(min-width: 750px) 480px, 90vw',
+                  widths: '440, 660, 880'
+              }}
+            {%- else -%}
+              <img
+                src="{{ builtin_logo | asset_url }}"
+                alt="{{ block.settings.name | escape }}"
+                loading="lazy"
+                width="{{ builtin_w }}"
+                height="{{ builtin_h }}"
+              >
+            {%- endif -%}
+          </div>
+
+          {%- if block.settings.cta_label != blank -%}
+            <a
+              class="bayou-live__cta"
+              href="{{ block.settings.cta_link | default: '#' }}"
+              {% if block.settings.cta_link != blank %}
+                target="_blank"
+                rel="noopener"
+              {% endif %}
+            >
+              {{- block.settings.cta_label | escape }} <span aria-hidden="true">&rarr;</span>
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.footnote != blank -%}
+      <p class="bayou-live__footnote">{{ section.settings.footnote }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Live Channels",
+  "tag": "section",
+  "class": "bayou-live-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label (mono)",
+      "default": "Live from the warehouse"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Watch us live, 7 days a week."
+    },
+    {
+      "type": "textarea",
+      "id": "subline",
+      "label": "Subline",
+      "default": "Watch us pull, pack, and ship in real time — see the product before you buy."
+    },
+    {
+      "type": "text",
+      "id": "footnote",
+      "label": "Footnote (mono)",
+      "default": "Fig. 4 — Two channels, one warehouse. Streaming daily from Hattiesburg, MS."
+    }
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "channel",
+      "name": "Channel",
+      "settings": [
+        {
+          "type": "select",
+          "id": "brand",
+          "label": "Built-in logo",
+          "options": [
+            { "value": "swamp-sales", "label": "Swamp Sales" },
+            { "value": "bayou-blanks", "label": "Bayou Blanks" }
+          ],
+          "default": "swamp-sales"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo override (optional)",
+          "info": "Replaces the built-in logo art."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Channel name (alt text)",
+          "default": "Swamp Sales"
+        },
+        {
+          "type": "text",
+          "id": "status_line",
+          "label": "Status line (mono)",
+          "default": "On air · 7 days a week"
+        },
+        {
+          "type": "text",
+          "id": "platform_line",
+          "label": "Platform line (mono)",
+          "default": "TikTok Live"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "CTA label",
+          "default": "Watch Swamp Sales live"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "CTA link",
+          "info": "Opens in a new tab."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Live Channels",
+      "blocks": [
+        {
+          "type": "channel",
+          "settings": {
+            "brand": "swamp-sales",
+            "name": "Swamp Sales",
+            "cta_label": "Watch Swamp Sales live"
+          }
+        },
+        {
+          "type": "channel",
+          "settings": {
+            "brand": "bayou-blanks",
+            "name": "Bayou Blanks",
+            "cta_label": "Watch Bayou Blanks live"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

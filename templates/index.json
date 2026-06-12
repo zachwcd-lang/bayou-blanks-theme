@@ -58,42 +58,41 @@
         "padding_bottom": 96
       }
     },
-    "bayou_trust": {
-      "type": "bayou-trust",
+    "live_channels": {
+      "type": "bayou-live-channels",
       "blocks": {
-        "card_1": {
-          "type": "card",
+        "channel_swamp": {
+          "type": "channel",
           "settings": {
-            "figure": "box",
-            "caption": "Fig. 1 \u2014 Sourced: authentic Fanatics overstock",
-            "text": "The same blanks the pros print on, bought through licensed liquidation channels at a fraction of retail."
+            "brand": "swamp-sales",
+            "name": "Swamp Sales",
+            "status_line": "On air · 7 days a week",
+            "platform_line": "TikTok Live",
+            "cta_label": "Watch Swamp Sales live",
+            "cta_link": "https://www.tiktok.com/@swamp.sales/live"
           }
         },
-        "card_2": {
-          "type": "card",
+        "channel_bayou": {
+          "type": "channel",
           "settings": {
-            "figure": "tag",
-            "caption": "Fig. 2 \u2014 Inspected: every case pack, Hattiesburg, MS",
-            "text": "Every shipment is received, scanned, and condition-checked in our warehouse before it hits the site."
-          }
-        },
-        "card_3": {
-          "type": "card",
-          "settings": {
-            "figure": "waves",
-            "caption": "Fig. 3 \u2014 Sold live: daily on TikTok & Whatnot",
-            "text": "Watch us pull, pack, and ship in real time \u2014 see the product before you buy."
+            "brand": "bayou-blanks",
+            "name": "Bayou Blanks",
+            "status_line": "On air · 7 days a week",
+            "platform_line": "TikTok Live",
+            "cta_label": "Watch Bayou Blanks live",
+            "cta_link": "https://www.tiktok.com/@bayou.blanks/live"
           }
         }
       },
       "block_order": [
-        "card_1",
-        "card_2",
-        "card_3"
+        "channel_swamp",
+        "channel_bayou"
       ],
       "settings": {
-        "label": "How it works",
-        "heading": "Why Trust Bayou Blanks?"
+        "label": "Live from the warehouse",
+        "heading": "Watch us live, 7 days a week.",
+        "subline": "Watch us pull, pack, and ship in real time — see the product before you buy.",
+        "footnote": "Fig. 4 — Two channels, one warehouse. Streaming daily from Hattiesburg, MS."
       }
     },
     "bayou_wholesale": {
@@ -132,10 +131,10 @@
       "settings": {
         "label": "For businesses",
         "heading": "Printing at volume?",
-        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers \u2014 shipped from Hattiesburg.",
+        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg.",
         "button_label": "Talk to us",
         "button_link": "/pages/contact",
-        "footnote": "Placeholder pricing \u2014 talk to us for a current quote"
+        "footnote": "Placeholder pricing — talk to us for a current quote"
       }
     },
     "live_hero": {
@@ -167,7 +166,7 @@
       "settings": {
         "color_scheme": "scheme-3",
         "heading": "Live daily.",
-        "handle_line": "@BAYOU.BLANKS \u00b7 TIKTOK & WHATNOT",
+        "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
         "subline": "Authentic Fanatics overstock, sold by the pack at per-unit prices.",
         "button_label": "Follow @bayou.blanks",
         "button_link": "https://www.tiktok.com/@bayou.blanks",
@@ -182,7 +181,7 @@
     "live_hero",
     "bayou_ticker",
     "featured_collection",
-    "bayou_trust",
+    "live_channels",
     "bayou_wholesale"
   ]
 }
