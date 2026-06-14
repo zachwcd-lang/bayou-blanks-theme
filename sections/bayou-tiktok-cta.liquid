@@ -197,11 +197,60 @@
     color: rgba(var(--color-foreground), 0.65);
     margin: 1.2rem 0 0;
   }
+
+  /* "The Bayou" badge — drives discovery of the resources hub. */
+  .bayou-tiktok__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 0 1.8rem;
+    padding: 6px 14px 6px 6px;
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    background: rgba(var(--color-foreground), 0.05);
+    border-radius: 999px;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgb(var(--color-foreground));
+    text-decoration: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .bayou-tiktok__badge:hover {
+    border-color: rgba(var(--color-foreground), 0.5);
+    background: rgba(var(--color-foreground), 0.1);
+  }
+
+  .bayou-tiktok__badge-tag {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 999px;
+    background: var(--bb-gold, #C9B96B);
+    color: var(--bb-ink, #1A2415);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+  }
+
+  .bayou-tiktok__badge-arr {
+    color: var(--bb-gold, #C9B96B);
+    font-size: 13px;
+  }
 {%- endstyle -%}
 
 <section class="bayou-tiktok color-{{ section.settings.color_scheme }} gradient" id="bayou-tiktok-{{ section.id }}">
   <div class="page-width bayou-tiktok__inner">
     <div class="bayou-tiktok__content">
+      {%- if section.settings.badge_label != blank -%}
+        <a class="bayou-tiktok__badge" href="{{ section.settings.badge_link | default: '/pages/resources' }}">
+          {%- if section.settings.badge_tag != blank -%}
+            <span class="bayou-tiktok__badge-tag">{{ section.settings.badge_tag }}</span>
+          {%- endif -%}
+          <span class="bayou-tiktok__badge-text">{{ section.settings.badge_label }}</span>
+          <span class="bayou-tiktok__badge-arr" aria-hidden="true">&rarr;</span>
+        </a>
+      {%- endif -%}
+
       {%- if section.blocks.size > 0 -%}
         <ul class="bayou-tiktok__chips" role="list">
           {%- for block in section.blocks -%}
@@ -301,6 +350,29 @@
       "id": "color_scheme",
       "label": "Color scheme",
       "default": "scheme-3"
+    },
+    {
+      "type": "header",
+      "content": "The Bayou badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_tag",
+      "label": "Badge tag (gold pill)",
+      "default": "The Bayou"
+    },
+    {
+      "type": "text",
+      "id": "badge_label",
+      "label": "Badge text",
+      "info": "Leave blank to hide the badge.",
+      "default": "Buying guides & comparisons"
+    },
+    {
+      "type": "url",
+      "id": "badge_link",
+      "label": "Badge link",
+      "info": "Defaults to /pages/resources if left blank."
     },
     {
       "type": "text",

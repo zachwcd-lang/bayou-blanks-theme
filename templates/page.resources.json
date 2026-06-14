@@ -8,7 +8,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "Best Blank T-Shirts for Screen Printing",
-            "dek": "Which cotton weights hold a crisp print, lay flat on the platen, and still pencil out cheap by the unit.",
+            "dek": "Which cotton weights hold a crisp print, lay flat on the platen, and still cost the least per shirt.",
             "cta": "Read guide",
             "url": "/pages/best-blank-t-shirts-for-screen-printing"
           }
@@ -16,13 +16,13 @@
       },
       "block_order": ["e1"],
       "settings": {
-        "vol": "The Resource Library — Vol. I",
-        "nameplate": "The Bayou <i>Almanac</i>",
+        "vol": "Resources",
+        "nameplate": "",
         "heading": "Pick a blank. Print <em>smarter.</em>",
-        "lede": "<p>Field notes for printers, decorators, and resellers — plain talk from the warehouse floor in Hattiesburg, on how to choose a blank, read a spec sheet, and buy by the pack at per-unit prices.</p>",
-        "byline": "Compiled by the floor — Hattiesburg, Mississippi",
-        "contents_label": "Table of Contents",
-        "contents_heading": "Five crops, planted by hand. <em>Pick a row and follow it.</em>"
+        "lede": "<p>Straightforward guides for printers, decorators, and resellers: how to choose a blank, compare fabrics, and buy by the pack at per-unit prices.</p>",
+        "byline": "",
+        "contents_label": "Browse",
+        "contents_heading": "Everything we know about buying blanks, by topic."
       }
     }
   },

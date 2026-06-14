@@ -9,8 +9,7 @@
 <script src="{{ 'farm.js' | asset_url }}" defer="defer"></script>
 
 {%- assign crop_keys = "buying-guides,comparisons,who-its-for,glossary,tools" | split: "," -%}
-{%- assign crop_names = "Buying Guides|Comparisons|Who It's For|The Glossary|Calculators and Tools" | split: "|" -%}
-{%- assign crop_figs = "Fig. I — Cornerstone|Fig. II — Side by Side|Fig. III — By Trade|Fig. IV — Decoded|Fig. V — The Almanac Math" | split: "|" -%}
+{%- assign crop_names = "Buying Guides|Comparisons|Who It's For|Glossary|Tools" | split: "|" -%}
 
 <section class="farm" id="farm-hub-{{ section.id }}">
   <div class="farm-hub__masthead farm__rv">
@@ -56,14 +55,12 @@
     {%- endfor -%}
 
     {%- if crop_count > 0 -%}
-      {%- assign aside_fig = crop_figs[ci] -%}
       {%- assign aside_name = crop_names[ci] -%}
 
       <section class="farm-crop" id="{{ crop_key }}">
         <div class="farm__wrap">
           <div class="farm-crop__grid">
             <aside class="farm-crop__aside farm__rv">
-              <span class="farm-crop__fig farm__mono">{{ aside_fig }}</span>
               <h2>{{ aside_name }}</h2>
               <div class="farm-crop__count">
                 {{ crop_count }}{% if crop_count == 1 %} entry{% else %} entries{% endif %}
