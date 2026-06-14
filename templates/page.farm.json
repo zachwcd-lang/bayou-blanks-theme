@@ -150,11 +150,9 @@
     "related": {
       "type": "farm-related",
       "blocks": {
-        "l1": { "type": "link", "settings": { "category": "Comparison", "title": "Ring-Spun vs Open-End Cotton", "summary": "Which knit prints cleaner.", "cta": "Compare" } },
-        "l2": { "type": "link", "settings": { "category": "Guide", "title": "Best Blanks for DTG & DTF Printing", "summary": "DTG needs a different blank.", "cta": "Read guide" } },
-        "l3": { "type": "link", "settings": { "category": "The Almanac", "title": "All Resources", "summary": "Back to the hub.", "cta": "Browse", "url": "/pages/resources" } }
+        "l3": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac — every guide, comparison, and glossary entry.", "cta": "Browse", "url": "/pages/resources" } }
       },
-      "block_order": ["l1", "l2", "l3"],
+      "block_order": ["l3"],
       "settings": {
         "fig": "Fig. VII — Keep Reading",
         "heading": "More From The <em>Almanac</em>"
@@ -169,7 +167,9 @@
         "ghost_price": "$4.25",
         "background": "paper",
         "cta_label": "Shop T-Shirts",
-        "cta2_label": "Buy Bulk"
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
       }
     }
   },
