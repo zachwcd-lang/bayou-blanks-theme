@@ -1,0 +1,134 @@
+{% comment %}
+  Farm — Answer-first hero. Owns the page's single <h1>.
+  Eyebrow (crop label) → H1 (target keyword) → answer-first lede → meta rail.
+  Renders breadcrumbs + BreadcrumbList JSON-LD via snippets/farm-breadcrumbs.
+  Display layer only.
+{% endcomment %}
+
+{% render 'farm-head' %}
+<script src="{{ 'farm.js' | asset_url }}" defer="defer"></script>
+
+<section class="farm" id="farm-hero-{{ section.id }}">
+  {%- if section.settings.show_breadcrumbs -%}
+    {% render 'farm-breadcrumbs',
+      crop_label: section.settings.eyebrow_crumb,
+      crop_anchor: section.settings.crop_anchor,
+      page_title: section.settings.heading,
+      hub_handle: section.settings.hub_handle
+    %}
+  {%- endif -%}
+
+  <div class="farm-hero">
+    <div class="farm__wrap farm__rv">
+      {%- if section.settings.eyebrow != blank -%}
+        <div class="farm-hero__eyebrow farm__mono">{{ section.settings.eyebrow }}</div>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h1>{{ section.settings.heading }}</h1>
+      {%- endif -%}
+      {%- if section.settings.answer != blank -%}
+        <div class="farm-hero__answer">{{ section.settings.answer }}</div>
+      {%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="farm-hero__rail">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'stat' and block.settings.text != blank -%}
+              <span {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Farm Hero",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Answer-first hero. This section owns the page's single H1. Keep the answer self-contained and under ~320 characters so it stays eligible for AI / featured-snippet citation."
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow (mono label)",
+      "default": "Fig. I — Buying Guide · Updated June 2026"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading (renders as H1)",
+      "default": "The Best Blank Tees for <em>Screen Printing</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "answer",
+      "label": "Answer-first lede",
+      "info": "1–3 declarative sentences that directly answer the page's query. No 'as above/below'.",
+      "default": "<p>The best blank t-shirts for screen printing are <strong>mid-weight, 5.0 to 6.0 oz, 100% ringspun cotton</strong>. The smooth ringspun surface holds fine detail, cotton bonds cleanly with plastisol and water-based inks, and a mid weight lays flat on the platen. Bought by the pack, they start at <strong>$4.25 a unit</strong>.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Breadcrumbs"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_crumb",
+      "label": "Crop crumb label",
+      "info": "The cluster name shown in the breadcrumb (e.g. Buying Guides).",
+      "default": "Buying Guides"
+    },
+    {
+      "type": "text",
+      "id": "crop_anchor",
+      "label": "Crop anchor on hub",
+      "info": "Links the crop crumb to /pages/<hub>#<anchor>. Use: buying-guides, comparisons, who-its-for, glossary, tools.",
+      "default": "buying-guides"
+    },
+    {
+      "type": "text",
+      "id": "hub_handle",
+      "label": "Hub page handle",
+      "default": "resources"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Meta rail item",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Text",
+          "info": "Use <b> to emphasise the number, e.g. <b>9 min</b> read.",
+          "default": "<b>9 min</b> read"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Farm Hero",
+      "blocks": [
+        { "type": "stat", "settings": { "text": "<b>9 min</b> read" } },
+        { "type": "stat", "settings": { "text": "<b>4</b> fabrics compared" } },
+        { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
+        { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

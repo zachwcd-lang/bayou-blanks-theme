@@ -1,0 +1,249 @@
+{% comment %}
+  Farm — The Almanac hub index. Renders a masthead + intro, then the resource
+  index grouped into crops (Buying Guides, Comparisons, Who It's For, Glossary,
+  Tools). Each entry block is ONE published page; grouping by the block's
+  cluster means the hub only ever shows pages we've actually published — no
+  dead links to unbuilt pages.
+
+  Crops render in a fixed order, each with a stable id anchor so breadcrumbs
+  and related-resources links can deep-link (e.g. /pages/resources#buying-guides).
+{% endcomment %}
+
+{% render 'farm-head' %}
+<script src="{{ 'farm.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  # Fixed crop order + display metadata. block.settings.cluster keys map here.
+  # (double-quoted Liquid strings so the apostrophe in "Who It's For" is safe)
+  assign crop_keys = "buying-guides,comparisons,who-its-for,glossary,tools" | split: ","
+  assign crop_names = "Buying Guides|Comparisons|Who It's For|The Glossary|Calculators & Tools" | split: "|"
+  assign crop_figs = "Fig. I — Cornerstone|Fig. II — Side by Side|Fig. III — By Trade|Fig. IV — Decoded|Fig. V — The Almanac Math" | split: "|"
+  assign entry_blocks = section.blocks | where: "type", "entry"
+-%}
+
+<section class="farm" id="farm-hub-{{ section.id }}">
+  <div class="farm-hub__masthead farm__rv">
+    <div class="farm__wrap">
+      {%- if section.settings.vol != blank -%}
+        <div class="farm-hub__vol farm__mono">{{ section.settings.vol }}</div>
+      {%- endif -%}
+      <h1>
+        {%- if section.settings.nameplate != blank -%}
+          <span class="farm-hub__nameplate">{{ section.settings.nameplate }}</span>
+        {%- endif -%}
+        {{ section.settings.heading }}
+      </h1>
+      {%- if section.settings.lede != blank -%}
+        <p class="farm-hub__lede">{{ section.settings.lede }}</p>
+      {%- endif -%}
+      {%- if section.settings.byline != blank -%}
+        <div class="farm-hub__by">{{ section.settings.byline }}</div>
+      {%- endif -%}
+      <div class="farm-hub__rule" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  {%- if section.settings.contents_heading != blank -%}
+    <div class="farm-hub__intro farm__rv">
+      <div class="farm__wrap">
+        {%- if section.settings.contents_label != blank -%}
+          <span class="farm-hub__intro-label farm__mono">{{ section.settings.contents_label }}</span>
+        {%- endif -%}
+        <h2>{{ section.settings.contents_heading }}</h2>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- for crop_key in crop_keys -%}
+    {%- assign ci = forloop.index0 -%}
+    {%- assign crop_entries = entry_blocks | where: 'cluster', crop_key -%}
+    {%- if crop_entries.size == 0 -%}{%- continue -%}{%- endif -%}
+
+    {%- liquid
+      assign aside_fig = crop_figs[ci]
+      assign aside_name = crop_names[ci]
+      for blk in crop_entries
+        if blk.settings.crop_fig != blank
+          assign aside_fig = blk.settings.crop_fig
+        endif
+        if blk.settings.crop_name != blank
+          assign aside_name = blk.settings.crop_name
+        endif
+      endfor
+    -%}
+
+    <section class="farm-crop" id="{{ crop_key }}">
+      <div class="farm__wrap">
+        <div class="farm-crop__grid">
+          <aside class="farm-crop__aside farm__rv">
+            <span class="farm-crop__fig farm__mono">{{ aside_fig }}</span>
+            <h2>{{ aside_name }}</h2>
+            <div class="farm-crop__count">
+              {{ crop_entries.size }} {% if crop_entries.size == 1 %}entry{% else %}entries{% endif %}
+            </div>
+          </aside>
+          <div class="farm-entries farm__rv">
+            {%- for block in crop_entries -%}
+              <a
+                class="farm-entry"
+                href="{{ block.settings.url | default: '#' }}"
+                {{ block.shopify_attributes }}
+              >
+                <span class="farm-entry__no">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                <span class="farm-entry__ttl">
+                  <h3>{{ block.settings.title }}</h3>
+                  {%- if block.settings.dek != blank -%}
+                    <span class="farm-entry__dek">{{ block.settings.dek }}</span>
+                  {%- endif -%}
+                </span>
+                <span class="farm-entry__go">
+                  {{ block.settings.cta | default: 'Read' }} <span class="farm-entry__arr" aria-hidden="true">→</span>
+                </span>
+              </a>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </section>
+  {%- endfor -%}
+</section>
+
+{% schema %}
+{
+  "name": "Farm Hub (Almanac)",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Masthead"
+    },
+    {
+      "type": "text",
+      "id": "vol",
+      "label": "Volume line (mono)",
+      "default": "The Resource Library · Vol. I"
+    },
+    {
+      "type": "text",
+      "id": "nameplate",
+      "label": "Nameplate",
+      "info": "Wrap one word in <i> for the moss italic, e.g. The Bayou <i>Almanac</i>.",
+      "default": "The Bayou <i>Almanac</i>"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Masthead headline (H1)",
+      "default": "Pick a blank.<br>Print <em>smarter.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "lede",
+      "label": "Lede",
+      "default": "<p>Field notes for printers, decorators, and resellers — plain talk from the warehouse floor in Hattiesburg, on how to choose a blank, read a spec sheet, and buy by the pack at per-unit prices.</p>"
+    },
+    {
+      "type": "text",
+      "id": "byline",
+      "label": "Byline (mono)",
+      "default": "Compiled By The Floor · Hattiesburg, Mississippi · Est. 2026"
+    },
+    {
+      "type": "header",
+      "content": "Contents intro"
+    },
+    {
+      "type": "text",
+      "id": "contents_label",
+      "label": "Contents label (mono)",
+      "default": "Table of Contents"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "contents_heading",
+      "label": "Contents heading",
+      "default": "Five crops, planted by hand.<br><em>Pick a row and follow it.</em>"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add one Entry block per PUBLISHED page. Set its Crop to file it under the right group. Only crops that have entries are shown — so the hub never links to a page you haven't built. Anchor ids: buying-guides, comparisons, who-its-for, glossary, tools."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "entry",
+      "name": "Entry",
+      "settings": [
+        {
+          "type": "select",
+          "id": "cluster",
+          "label": "Crop",
+          "options": [
+            { "value": "buying-guides", "label": "Buying Guides" },
+            { "value": "comparisons", "label": "Comparisons" },
+            { "value": "who-its-for", "label": "Who It's For" },
+            { "value": "glossary", "label": "Glossary" },
+            { "value": "tools", "label": "Tools" }
+          ],
+          "default": "buying-guides"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Best Blank T-Shirts for Screen Printing"
+        },
+        {
+          "type": "textarea",
+          "id": "dek",
+          "label": "Dek (one-line summary)",
+          "default": "Which cotton weights hold a crisp print, lay flat on the platen, and still pencil out cheap by the unit."
+        },
+        {
+          "type": "text",
+          "id": "cta",
+          "label": "CTA label",
+          "default": "Read guide"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link (the page)"
+        },
+        {
+          "type": "header",
+          "content": "Crop overrides (optional)"
+        },
+        {
+          "type": "text",
+          "id": "crop_name",
+          "label": "Crop title override",
+          "info": "Override the aside title for this crop. Set on any entry in the crop."
+        },
+        {
+          "type": "text",
+          "id": "crop_fig",
+          "label": "Crop fig. caption override"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Farm Hub (Almanac)",
+      "blocks": [
+        {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Best Blank T-Shirts for Screen Printing",
+            "dek": "Which cotton weights hold a crisp print, lay flat on the platen, and still pencil out cheap by the unit.",
+            "cta": "Read guide"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

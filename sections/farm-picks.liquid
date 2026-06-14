@@ -1,0 +1,173 @@
+{% comment %}
+  Farm — "Our picks" product grid. The conversion bridge.
+
+  Two modes:
+  - If "pick" blocks exist, render those hand-curated cards (product picker +
+    editorial blurb). Recommended for landing pages.
+  - Else fall back to the chosen collection's first N products.
+
+  Per-unit pricing is the hero. We parse the pack count from the variant's
+  "Bundle Quantity" option value (e.g. "4-Pack" -> 4) and divide the variant
+  price by it. NO sale badges, NO compare-at strikethroughs are ever rendered.
+  Display layer only — we show whatever the live catalog holds.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- comment -%} Resolve the source list of products to render. {%- endcomment -%}
+{%- liquid
+  assign pick_blocks = section.blocks | where: 'type', 'pick'
+-%}
+
+<section class="farm" id="farm-picks-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm__block-head farm__rv">
+        {%- if section.settings.fig != blank -%}
+          <span class="farm__fig farm__mono">{{ section.settings.fig }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.intro != blank -%}
+          <div class="farm-picks__intro">{{ section.settings.intro }}</div>
+        {%- endif -%}
+      </div>
+
+      <div class="farm-picks__grid farm__rv">
+        {%- if pick_blocks.size > 0 -%}
+          {%- for block in pick_blocks -%}
+            {%- assign product = block.settings.product -%}
+            {% render 'farm-pick-card',
+              product: product,
+              kicker: block.settings.kicker,
+              title_override: block.settings.title_override,
+              blurb: block.settings.blurb,
+              sizes: block.settings.sizes,
+              tag: block.settings.tag,
+              block_attributes: block.shopify_attributes
+            %}
+          {%- endfor -%}
+        {%- elsif section.settings.collection != blank -%}
+          {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+            {% render 'farm-pick-card', product: product %}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+
+      {%- if section.settings.note != blank -%}
+        <div class="farm-picks__note farm__rv">{{ section.settings.note }}</div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Farm Picks",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fig",
+      "label": "Fig. caption (mono)",
+      "default": "Fig. IV — Our Picks"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Bayou's Screen-Print Blanks, <em>In Stock</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Intro",
+      "default": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Fallback grid"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add Pick blocks below for hand-curated cards (recommended). If there are no Pick blocks, this collection's first products are shown instead."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Fallback collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "default": 4,
+      "label": "Products to show (fallback)"
+    },
+    {
+      "type": "header",
+      "content": "Footer note"
+    },
+    {
+      "type": "richtext",
+      "id": "note",
+      "label": "Note under the grid",
+      "default": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — same blank-tee spec sheet your wholesaler quotes, sourced from liquidation overstock and passed on by the unit. No minimums beyond a pack, and deep stock in extended and plus sizes most suppliers run short on.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pick",
+      "name": "Pick",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "kicker",
+          "label": "Kicker (mono, e.g. spec)",
+          "default": "Ringspun · 5.3 oz"
+        },
+        {
+          "type": "text",
+          "id": "title_override",
+          "label": "Title override",
+          "info": "Leave blank to use the product title."
+        },
+        {
+          "type": "textarea",
+          "id": "blurb",
+          "label": "Blurb",
+          "info": "Sell on attributes, not style codes.",
+          "default": "Smooth face, lays flat — the safe screen-print default."
+        },
+        {
+          "type": "text",
+          "id": "sizes",
+          "label": "Sizes line",
+          "default": "Sizes S – 3XL · Heather options"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Corner tag",
+          "info": "Optional small pill, e.g. Top Pick. Leave blank for none. (Not a sale badge.)",
+          "default": "Top Pick"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Farm Picks"
+    }
+  ]
+}
+{% endschema %}

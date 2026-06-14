@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>9 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>4</b> fabrics compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
+        "heading": "The Best Blank Tees for <em>Screen Printing</em>",
+        "answer": "<p>The best blank t-shirts for screen printing are <strong>mid-weight, 5.0 to 6.0 oz, 100% ringspun cotton</strong>. The smooth ringspun surface holds fine detail, cotton bonds cleanly with plastisol and water-based inks, and a mid weight lays flat on the platen without curling. Bought by the pack, they start at <strong>$4.25 a unit</strong>.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>100% ringspun cotton wins</b> for most jobs — softer hand, smoother surface, cleaner detail than open-end cotton.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Stay in the 5.0–6.0 oz range.</b> Light fashion tees feel premium but ghost; heavyweights print bold on darks.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>50/50 blends</b> are softer and shrink less, but watch dye migration — reach for low-cure inks.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Price by the unit, not the pack.</b> Divide pack price by count: $17 ÷ 4 = $4.25/unit is your real cost.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Most blanks print straight from the pack</b> — no pre-wash needed unless you're chasing a tight final fit.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "Key <em>Takeaways</em>",
+        "quote": "<p>\"A great print starts before the squeegee. <em>Pick the wrong blank and no amount of ink saves it.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Fabric" } },
+        "c2": { "type": "column", "settings": { "label": "Print Result" } },
+        "c3": { "type": "column", "settings": { "label": "Feel" } },
+        "c4": { "type": "column", "settings": { "label": "Best For" } },
+        "c5": { "type": "column", "settings": { "label": "Bayou Pick" } },
+        "r1": {
+          "type": "row",
+          "settings": {
+            "label": "100% Ringspun Cotton",
+            "sub": "5.3–6.0 oz",
+            "is_pick": true,
+            "cell_1": "Crisp, opaque, fine-detail-friendly. Cures easy.",
+            "cell_2": "Soft, smooth, broken-in.",
+            "cell_3": "Everyday tees, retail brands, detailed art.",
+            "cell_4": "Top Pick",
+            "badge_4": true
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "label": "50/50 Cotton-Poly",
+            "sub": "Blend · ~4.5 oz",
+            "cell_1": "Good, but can dye-migrate on darks under heat.",
+            "cell_2": "Softer, drapey, shrink-resistant.",
+            "cell_3": "Comfort tees, athletic events, value runs.",
+            "cell_4": "Strong value"
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "label": "Open-End Cotton",
+            "sub": "Budget · 5.0 oz",
+            "cell_1": "Solid coverage, slightly coarser surface.",
+            "cell_2": "Firmer out of the bag.",
+            "cell_3": "High-volume promos, give-aways, fundraisers.",
+            "cell_4": "Best on price"
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "label": "Heavyweight Cotton",
+            "sub": "Premium · 6.0 oz+",
+            "cell_1": "Bold, opaque, hides show-through on multi-color.",
+            "cell_2": "Structured, boxy, premium weight.",
+            "cell_3": "Dark garments, streetwear, heavy ink coverage.",
+            "cell_4": "For dark prints"
+          }
+        }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "c5", "r1", "r2", "r3", "r4"],
+      "settings": {
+        "fig": "Fig. III — Fabric Comparison",
+        "heading": "Four Blanks, <em>Compared</em>",
+        "intro": "<p>Across the things that actually decide a job: how the print lands, how it feels, who it's for, and where Bayou points you.</p>",
+        "caption": "Blank tee attributes for screen printing"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "Short-Sleeve · V-Neck", "blurb": "Our deepest-stock blank: a clean, lightweight V-neck that takes a print and ships by the pallet. The everyday workhorse for high-volume runs.", "sizes": "Sizes S–3XL", "tag": "Top Pick" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-long-sleeve-raglan-tee", "kicker": "Long-Sleeve · Raglan", "blurb": "A heathered contrast-sleeve raglan for long-sleeve jobs and team merch — flat body panel with room for your art.", "sizes": "Sizes S–3XL", "tag": "" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "The sizes most suppliers run short on — stocked deep in 4XL and 5XL, sold by the pack at the same per-unit price.", "sizes": "Sizes 4XL & 5XL", "tag": "Big & Tall" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Color", "blurb": "Texas-orange on the body for spirit, event, and fundraiser runs — color where you want it, room for a one-hit print.", "sizes": "Sizes S–3XL", "tag": "" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Bayou's Screen-Print Blanks, <em>In Stock</em>",
+        "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — same blank-tee spec sheet your wholesaler quotes, sourced from liquidation overstock and passed on by the unit. No minimums beyond a pack, and deep stock in extended and plus sizes most suppliers run short on.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is the best blank t-shirt for screen printing?", "answer": "<p>A mid-weight (5.0–6.0 oz) 100% ringspun cotton tee is the best all-around blank. The smooth ringspun surface holds fine detail, the cotton bonds well with plastisol and water-based inks, and a mid weight lays flat on the platen without curling. At Bayou Blanks these run from $4.25 per unit by the pack.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is 100% cotton or a 50/50 blend better for screen printing?", "answer": "<p>100% cotton gives the boldest, most opaque print and is the easiest to cure, so it's the default. A 50/50 cotton-poly blend is softer and more shrink-resistant but can dye-migrate under high heat, so use poly-friendly low-cure inks. For most shops, ringspun 100% cotton is the safe pick.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "What weight t-shirt is best for screen printing?", "answer": "<p>Aim for 5.0 to 6.0 oz. Lightweight 4.2 oz fashion tees feel premium but can ghost and are harder to print opaque. Heavyweight 6.0 oz+ tees print bold and resist show-through, making them ideal for dark garments and multi-color art.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Can you screen print on blank tees in bulk cheaply?", "answer": "<p>Yes. Buying undecorated blanks by the pack at per-unit pricing is the cheapest way to source. Bayou Blanks sells liquidation overstock blanks from $4.25 per unit — and some down to $2.50 per unit — with no minimums beyond a pack.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Do I need to pre-wash blank t-shirts before screen printing?", "answer": "<p>No. Most blank cotton and cotton-blend tees are ready to print straight from the pack. Pre-washing is only worth it if you're worried about shrinkage on a tight-fit final product; for standard screen printing it's an unnecessary step.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt — from $4.25, some at $2.50. No sale theater, no struck-through prices." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep inventory across S–5XL with new overstock pallets landing weekly. Order with confidence." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "clock", "heading": "Live Daily", "text": "Catch fresh drops and ask questions live on TikTok & Whatnot — backed by West Coast Deals." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Comparison", "title": "Ring-Spun vs Open-End Cotton", "summary": "Which knit prints cleaner.", "cta": "Compare" } },
+        "l2": { "type": "link", "settings": { "category": "Guide", "title": "Best Blanks for DTG & DTF Printing", "summary": "DTG needs a different blank.", "cta": "Read guide" } },
+        "l3": { "type": "link", "settings": { "category": "The Almanac", "title": "All Resources", "summary": "Back to the hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank tees built for the <em>press.</em>",
+        "subtext": "<p>Mid-weight ringspun, heavyweight, 50/50 and budget open-end — all in stock, all sold by the pack at per-unit prices.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop T-Shirts",
+        "cta2_label": "Buy Bulk"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

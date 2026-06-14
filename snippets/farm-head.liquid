@@ -1,0 +1,34 @@
+{% comment %}
+  Renders the Farm/Almanac stylesheet + Newsreader serif webfont.
+
+  Inter + IBM Plex Mono are already loaded by the theme (assets/bayou-custom.css
+  + theme font settings); only Newsreader is missing, so we add it here. The
+  fonts + farm.css load only on templates that render a farm-* section — no
+  global stylesheet change to layout/theme.liquid.
+
+  Every farm-* section includes this snippet at its top. If multiple farm-*
+  sections render on one page the browser de-duplicates the identical asset
+  URLs, so emitting it per-section is safe and keeps each section
+  self-contained / independently usable in the customizer.
+
+  Usage: {% render 'farm-head' %}
+{% endcomment %}
+{% comment %}
+  theme-check-disable RemoteAsset
+  Google Fonts loaded the same way the theme already loads Inter + IBM Plex Mono
+  in layout/theme.liquid. Only the Newsreader serif (used for the editorial
+  accents) is added here, on Farm templates only.
+{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap"
+  media="print"
+  onload="this.media='all'"
+>
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&display=swap">
+</noscript>
+{{ 'farm.css' | asset_url | stylesheet_tag }}
+{% comment %}theme-check-enable RemoteAsset{% endcomment %}

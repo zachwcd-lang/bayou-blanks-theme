@@ -1,0 +1,142 @@
+{% comment %}
+  Farm — Related resources. The internal-link spine: siblings + the hub.
+  Each block is one link (category label + title + summary + url).
+  Always include a link back to the hub on every page.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- assign link_blocks = section.blocks | where: 'type', 'link' -%}
+
+<section class="farm" id="farm-related-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm__block-head farm__rv">
+        {%- if section.settings.fig != blank -%}
+          <span class="farm__fig farm__mono">{{ section.settings.fig }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+      </div>
+
+      {%- if link_blocks.size > 0 -%}
+        <div class="farm-related__grid farm__rv">
+          {%- for block in link_blocks -%}
+            <a
+              class="farm-rel"
+              href="{{ block.settings.url | default: '#' }}"
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.category != blank -%}
+                <span class="farm-rel__cat farm__mono">{{ block.settings.category }}</span>
+              {%- endif -%}
+              {%- if block.settings.title != blank -%}
+                <h3>{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.summary != blank -%}
+                <span class="farm-rel__summary">{{ block.settings.summary }}</span>
+              {%- endif -%}
+              <span class="farm-rel__arrow farm__mono">
+                {{ block.settings.cta | default: 'Read' }} <span class="farm-rel__arr" aria-hidden="true">→</span>
+              </span>
+            </a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Farm Related",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fig",
+      "label": "Fig. caption (mono)",
+      "default": "Fig. VII — Keep Reading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "More From The <em>Almanac</em>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Related link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category label (mono)",
+          "default": "Comparison"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Ring-Spun vs Open-End Cotton"
+        },
+        {
+          "type": "text",
+          "id": "summary",
+          "label": "Summary",
+          "default": "Which knit prints cleaner."
+        },
+        {
+          "type": "text",
+          "id": "cta",
+          "label": "CTA label",
+          "default": "Compare"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Farm Related",
+      "blocks": [
+        {
+          "type": "link",
+          "settings": {
+            "category": "Comparison",
+            "title": "Ring-Spun vs Open-End Cotton",
+            "summary": "Which knit prints cleaner.",
+            "cta": "Compare"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "category": "Guide",
+            "title": "Best Blanks for DTG & DTF Printing",
+            "summary": "DTG needs a different blank.",
+            "cta": "Read guide"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "category": "The Almanac",
+            "title": "All Resources",
+            "summary": "Back to the hub.",
+            "cta": "Browse"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,259 @@
+{% comment %}
+  Farm — Comparison / spec table. Renders a real semantic <table> with
+  <caption>, <thead><th scope="col"> and <th scope="row"> for the first cell
+  in each row (accessibility + machine readability). Columns and rows are both
+  editable blocks. Per owner rule, per-unit price is fine as a spec column but
+  NO sale/compare-at framing.
+
+  Column block  = one heading.
+  Row block     = a label (first cell) + up to 4 value cells, mapped left→right
+                  onto the column headings after the first.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- liquid
+  assign columns = section.blocks | where: 'type', 'column'
+  assign rows = section.blocks | where: 'type', 'row'
+-%}
+
+<section class="farm" id="farm-comparison-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm__block-head farm__rv">
+        {%- if section.settings.fig != blank -%}
+          <span class="farm__fig farm__mono">{{ section.settings.fig }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.intro != blank -%}
+          <p>{{ section.settings.intro }}</p>
+        {%- endif -%}
+      </div>
+
+      {%- if rows.size > 0 and columns.size > 0 -%}
+        <div class="farm-table__scroll farm__rv">
+          <table class="farm-table">
+            {%- if section.settings.caption != blank -%}
+              <caption>{{ section.settings.caption }}</caption>
+            {%- endif -%}
+            <thead>
+              <tr>
+                {%- for col in columns -%}
+                  <th scope="col" {{ col.shopify_attributes }}>{{ col.settings.label }}</th>
+                {%- endfor -%}
+              </tr>
+            </thead>
+            <tbody>
+              {%- for row in rows -%}
+                <tr class="{% if row.settings.is_pick %}is-pick{% endif %}" {{ row.shopify_attributes }}>
+                  <th scope="row">
+                    {{ row.settings.label }}
+                    {%- if row.settings.sub != blank -%}
+                      <span class="farm-table__sub">{{ row.settings.sub }}</span>
+                    {%- endif -%}
+                  </th>
+                  {%- assign max_cells = columns.size | minus: 1 -%}
+                  {%- for n in (1..4) -%}
+                    {%- if forloop.index > max_cells -%}{%- break -%}{%- endif -%}
+                    {%- assign cell_key = 'cell_' | append: n -%}
+                    {%- assign cell_val = row.settings[cell_key] -%}
+                    {%- assign badge_key = 'badge_' | append: n -%}
+                    {%- assign is_badge = row.settings[badge_key] -%}
+                    <td>
+                      {%- if is_badge and cell_val != blank -%}
+                        <span class="farm-table__badge">{{ cell_val }}</span>
+                      {%- else -%}
+                        {{ cell_val }}
+                      {%- endif -%}
+                    </td>
+                  {%- endfor -%}
+                </tr>
+              {%- endfor -%}
+            </tbody>
+          </table>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Farm Comparison Table",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fig",
+      "label": "Fig. caption (mono)",
+      "default": "Fig. III — Fabric Comparison"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Four Blanks, <em>Compared</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Intro",
+      "default": "<p>Across the things that actually decide a job: how the print lands, how it feels, who it's for, and where Bayou points you.</p>"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Table caption (accessibility)",
+      "info": "Describes the table for screen readers. Shown as a small mono label above the table.",
+      "default": "Blank tee attributes for screen printing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add Column blocks for the headers (first column is the row label column), then Row blocks for each line. Value cells map left-to-right onto the columns after the first."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Heading",
+          "default": "Fabric"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Row label (first cell)",
+          "default": "100% Ringspun Cotton"
+        },
+        {
+          "type": "text",
+          "id": "sub",
+          "label": "Row sub-label (mono)",
+          "default": "5.3–6.0 oz"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_pick",
+          "label": "Highlight as the pick row",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "cell_1",
+          "label": "Cell 1"
+        },
+        {
+          "type": "checkbox",
+          "id": "badge_1",
+          "label": "Cell 1 — show as pill badge",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "cell_2",
+          "label": "Cell 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "badge_2",
+          "label": "Cell 2 — show as pill badge",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "cell_3",
+          "label": "Cell 3"
+        },
+        {
+          "type": "checkbox",
+          "id": "badge_3",
+          "label": "Cell 3 — show as pill badge",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "cell_4",
+          "label": "Cell 4"
+        },
+        {
+          "type": "checkbox",
+          "id": "badge_4",
+          "label": "Cell 4 — show as pill badge",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Farm Comparison Table",
+      "blocks": [
+        { "type": "column", "settings": { "label": "Fabric" } },
+        { "type": "column", "settings": { "label": "Print Result" } },
+        { "type": "column", "settings": { "label": "Feel" } },
+        { "type": "column", "settings": { "label": "Best For" } },
+        { "type": "column", "settings": { "label": "Bayou Pick" } },
+        {
+          "type": "row",
+          "settings": {
+            "label": "100% Ringspun Cotton",
+            "sub": "5.3–6.0 oz",
+            "is_pick": true,
+            "cell_1": "Crisp, opaque, fine-detail-friendly. Cures easy.",
+            "cell_2": "Soft, smooth, broken-in.",
+            "cell_3": "Everyday tees, retail brands, detailed art.",
+            "cell_4": "Top Pick",
+            "badge_4": true
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "50/50 Cotton-Poly",
+            "sub": "Blend · ~4.5 oz",
+            "cell_1": "Good, but can dye-migrate on darks under heat.",
+            "cell_2": "Softer, drapey, shrink-resistant.",
+            "cell_3": "Comfort tees, athletic events, value runs.",
+            "cell_4": "Strong value"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Open-End Cotton",
+            "sub": "Budget · 5.0 oz",
+            "cell_1": "Solid coverage, slightly coarser surface.",
+            "cell_2": "Firmer out of the bag.",
+            "cell_3": "High-volume promos, give-aways, fundraisers.",
+            "cell_4": "Best on price"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "label": "Heavyweight Cotton",
+            "sub": "Premium · 6.0 oz+",
+            "cell_1": "Bold, opaque, hides show-through on multi-color.",
+            "cell_2": "Structured, boxy, premium weight.",
+            "cell_3": "Dark garments, streetwear, heavy ink coverage.",
+            "cell_4": "For dark prints"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

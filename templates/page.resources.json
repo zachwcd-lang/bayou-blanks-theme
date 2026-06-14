@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "hub": {
+      "type": "farm-hub",
+      "blocks": {
+        "e1": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Best Blank T-Shirts for Screen Printing",
+            "dek": "Which cotton weights hold a crisp print, lay flat on the platen, and still pencil out cheap by the unit.",
+            "cta": "Read guide",
+            "url": "/pages/best-blank-t-shirts-for-screen-printing"
+          }
+        }
+      },
+      "block_order": ["e1"],
+      "settings": {
+        "vol": "The Resource Library · Vol. I",
+        "nameplate": "The Bayou <i>Almanac</i>",
+        "heading": "Pick a blank.<br>Print <em>smarter.</em>",
+        "lede": "<p>Field notes for printers, decorators, and resellers — plain talk from the warehouse floor in Hattiesburg, on how to choose a blank, read a spec sheet, and buy by the pack at per-unit prices.</p>",
+        "byline": "Compiled By The Floor · Hattiesburg, Mississippi · Est. 2026",
+        "contents_label": "Table of Contents",
+        "contents_heading": "Five crops, planted by hand.<br><em>Pick a row and follow it.</em>"
+      }
+    }
+  },
+  "order": ["hub"]
+}

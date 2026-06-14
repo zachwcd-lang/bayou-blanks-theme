@@ -1,0 +1,84 @@
+{% comment %}
+  Renders the Farm breadcrumb trail: Home / Almanac / <Crop> / <Page>
+  plus matching BreadcrumbList JSON-LD (visible content === structured data).
+
+  Accepts:
+  - crop_label: {String} The crop / cluster crumb label (e.g. "Buying Guides")
+  - crop_anchor: {String} The hub anchor for the crop (e.g. "buying-guides")
+  - page_title: {String} The current page title (last, non-linked crumb)
+  - hub_handle: {String} Handle of the Almanac hub page. Default: "resources"
+  - hub_label:  {String} Label for the hub crumb. Default: "The Almanac"
+
+  Usage:
+  {% render 'farm-breadcrumbs',
+     crop_label: section.settings.eyebrow,
+     crop_anchor: section.settings.crop_anchor,
+     page_title: section.settings.heading %}
+{% endcomment %}
+
+{%- liquid
+  assign hub_handle = hub_handle | default: 'resources'
+  assign hub_label = hub_label | default: 'The Almanac'
+  assign hub_url = '/pages/' | append: hub_handle
+  assign crop_url = hub_url
+  if crop_anchor != blank
+    assign crop_url = hub_url | append: '#' | append: crop_anchor
+  endif
+  assign page_title = page_title | default: page.title
+-%}
+
+<nav class="farm-crumb" aria-label="Breadcrumb">
+  <div class="farm__wrap">
+    <ol>
+      <li><a href="{{ routes.root_url }}">Home</a></li>
+      <li class="farm-crumb__sep" aria-hidden="true">/</li>
+      <li><a href="{{ hub_url }}">{{ hub_label }}</a></li>
+      {%- if crop_label != blank -%}
+        <li class="farm-crumb__sep" aria-hidden="true">/</li>
+        <li><a href="{{ crop_url }}">{{ crop_label }}</a></li>
+      {%- endif -%}
+      <li class="farm-crumb__sep" aria-hidden="true">/</li>
+      <li class="farm-crumb__here" aria-current="page">{{ page_title }}</li>
+    </ol>
+  </div>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ shop.url | append: routes.root_url | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ hub_label | json }},
+      "item": {{ shop.url | append: hub_url | json }}
+    }
+    {%- if crop_label != blank -%}
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ crop_label | json }},
+      "item": {{ shop.url | append: crop_url | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": {{ page_title | json }}
+    }
+    {%- else -%}
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page_title | json }}
+    }
+    {%- endif -%}
+  ]
+}
+</script>

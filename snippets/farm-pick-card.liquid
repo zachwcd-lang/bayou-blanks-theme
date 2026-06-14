@@ -1,0 +1,126 @@
+{% comment %}
+  Renders one Farm "pick" product card in the editorial mockup style.
+
+  Per-unit pricing is the hero. We find the product's lowest-priced available
+  variant, parse its pack count from the "Bundle Quantity"-style option value
+  (e.g. "4-Pack" -> 4), and show price ÷ pack as the per-unit figure with the
+  pack price beneath. NO sale badge, NO compare-at strikethrough is rendered.
+  Display layer only.
+
+  Accepts:
+  - product: {Object} Product (optional — falls back to a CSS placeholder)
+  - kicker: {String} Mono spec line (optional)
+  - title_override: {String} Title override (optional)
+  - blurb: {String} Editorial description (optional)
+  - sizes: {String} Sizes line (optional)
+  - tag: {String} Corner pill label, e.g. "Top Pick" (optional)
+  - block_attributes: {String} block.shopify_attributes for the editor (optional)
+{% endcomment %}
+
+{%- liquid
+  assign has_product = false
+  if product != blank and product.id
+    assign has_product = true
+  endif
+
+  assign pack_count = 0
+  assign chosen_price = 0
+  assign pack_label = ''
+
+  if has_product
+    assign chosen_variant = product.selected_or_first_available_variant
+    # prefer the lowest-priced available variant
+    for v in product.variants
+      if v.available
+        if chosen_price == 0 or v.price < chosen_price
+          assign chosen_variant = v
+          assign chosen_price = v.price
+        endif
+      endif
+    endfor
+    if chosen_price == 0
+      assign chosen_variant = product.selected_or_first_available_variant
+      assign chosen_price = chosen_variant.price
+    endif
+
+    # parse a pack count out of the variant's option values (e.g. "4-Pack")
+    for opt in chosen_variant.options
+      assign low = opt | downcase
+      if low contains 'pack'
+        assign digits = opt | split: '-' | first | strip
+        assign pack_count = digits | times: 1
+        if pack_count == 0
+          # handle "Pack of 6" style values
+          assign pack_count = opt | replace: 'Pack', '' | replace: 'pack', '' | replace: 'of', '' | strip | times: 1
+        endif
+        assign pack_label = opt
+      endif
+    endfor
+  endif
+-%}
+
+<article class="farm-pick"{% if block_attributes %} {{ block_attributes }}{% endif %}>
+  <div class="farm-pick__media">
+    {%- if has_product and product.featured_media -%}
+      <a href="{{ product.url }}" aria-hidden="true" tabindex="-1">
+        {{
+          product.featured_media
+          | image_url: width: 480
+          | image_tag: loading: 'lazy', sizes: '(min-width: 1000px) 260px, 50vw', widths: '180, 260, 360, 480, 520'
+        }}
+      </a>
+    {%- else -%}
+      <svg viewBox="0 0 100 125" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Blank tee illustration">
+        <rect width="100" height="125" fill="#E7DFCC"/>
+        <path d="M30 30 L42 24 Q50 30 58 24 L70 30 L78 42 L70 48 L70 108 L30 108 L30 48 L22 42 Z" fill="#DDD2B9" stroke="#5C7A3A" stroke-width="0.6"/>
+        <path d="M42 24 Q50 34 58 24" fill="none" stroke="#5C7A3A" stroke-width="0.6"/>
+      </svg>
+    {%- endif -%}
+    {%- if tag != blank -%}
+      <span class="farm-pick__tag">{{ tag }}</span>
+    {%- endif -%}
+  </div>
+
+  <div class="farm-pick__body">
+    {%- if kicker != blank -%}
+      <span class="farm-pick__kicker">{{ kicker }}</span>
+    {%- endif -%}
+
+    <h3>
+      {%- if title_override != blank -%}
+        {{ title_override }}
+      {%- elsif has_product -%}
+        {{ product.title }}
+      {%- else -%}
+        Blank tee
+      {%- endif -%}
+    </h3>
+
+    {%- if blurb != blank -%}
+      <p class="farm-pick__desc">{{ blurb }}</p>
+    {%- endif -%}
+
+    {%- if sizes != blank -%}
+      <p class="farm-pick__sizes">{{ sizes }}</p>
+    {%- endif -%}
+
+    {%- if has_product -%}
+      <div class="farm-pick__price-wrap">
+        <div class="farm-pick__price">
+          {%- if pack_count > 1 -%}
+            {%- assign per_unit = chosen_price | divided_by: pack_count -%}
+            <span class="farm-pick__pu">{{ per_unit | money }}</span>
+            <span class="farm-pick__lab">/ Unit</span>
+          {%- else -%}
+            <span class="farm-pick__pu">{{ chosen_price | money }}</span>
+            <span class="farm-pick__lab">Each</span>
+          {%- endif -%}
+        </div>
+        {%- if pack_count > 1 -%}
+          <p class="farm-pick__pack">{{ chosen_price | money }} / {{ pack_label }}</p>
+        {%- endif -%}
+      </div>
+      <a class="farm-pick__shop" href="{{ product.url }}">Shop →</a>
+    {%- endif -%}
+  </div>
+</article>

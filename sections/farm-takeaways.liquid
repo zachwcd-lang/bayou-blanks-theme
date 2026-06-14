@@ -1,0 +1,119 @@
+{% comment %}
+  Farm — Key takeaways. Scannable TL;DR list (strong AEO list-answer signal),
+  with an optional serif pull-quote beneath. Each bullet should be a complete,
+  self-contained factual statement.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- assign roman = 'i,ii,iii,iv,v,vi,vii,viii,ix,x' | split: ',' -%}
+
+<section class="farm" id="farm-takeaways-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm__block-head farm__block-head--center farm__rv">
+        {%- if section.settings.fig != blank -%}
+          <span class="farm__fig farm__mono">{{ section.settings.fig }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+      </div>
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="farm-takeaways__list farm__rv">
+          <ul>
+            {%- assign i = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'point' and block.settings.text != blank -%}
+                <li {{ block.shopify_attributes }}>
+                  <span class="farm-takeaways__k">{{ roman[i] }}</span>
+                  <div>{{ block.settings.text }}</div>
+                </li>
+                {%- assign i = i | plus: 1 -%}
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if section.settings.quote != blank -%}
+    <div class="farm-pullquote farm__rv">
+      <div class="farm__wrap">
+        <blockquote>{{ section.settings.quote }}</blockquote>
+        {%- if section.settings.quote_cite != blank -%}
+          <cite>{{ section.settings.quote_cite }}</cite>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Farm Takeaways",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fig",
+      "label": "Fig. caption (mono)",
+      "default": "Fig. II — The Short Version"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Key <em>Takeaways</em>"
+    },
+    {
+      "type": "header",
+      "content": "Optional pull quote"
+    },
+    {
+      "type": "richtext",
+      "id": "quote",
+      "label": "Pull quote",
+      "info": "Wrap emphasis in <em> for the moss-italic accent.",
+      "default": "<p>\"A great print starts before the squeegee. <em>Pick the wrong blank and no amount of ink saves it.</em>\"</p>"
+    },
+    {
+      "type": "text",
+      "id": "quote_cite",
+      "label": "Pull quote attribution",
+      "default": "— The Press Room, Bayou Blanks"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Takeaway",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Takeaway",
+          "info": "One complete, self-contained statement. Use <b> for the lead phrase.",
+          "default": "<p><b>100% ringspun cotton wins</b> for most jobs — softer hand, smoother surface, cleaner detail than open-end cotton.</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Farm Takeaways",
+      "blocks": [
+        { "type": "point", "settings": { "text": "<p><b>100% ringspun cotton wins</b> for most jobs — softer hand, smoother surface, cleaner detail than open-end cotton.</p>" } },
+        { "type": "point", "settings": { "text": "<p><b>Stay in the 5.0–6.0 oz range.</b> Light fashion tees feel premium but ghost; heavyweights print bold on darks.</p>" } },
+        { "type": "point", "settings": { "text": "<p><b>50/50 blends</b> are softer and shrink less, but watch dye migration — reach for low-cure inks.</p>" } },
+        { "type": "point", "settings": { "text": "<p><b>Price by the unit, not the pack.</b> Divide pack price by count: $17 ÷ 4 = $4.25/unit is your real cost.</p>" } },
+        { "type": "point", "settings": { "text": "<p><b>Most blanks print straight from the pack</b> — no pre-wash needed unless you're chasing a tight final fit.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

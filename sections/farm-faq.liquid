@@ -1,0 +1,166 @@
+{% comment %}
+  Farm — FAQ accordion + FAQPage JSON-LD built from the same Q/A blocks, so the
+  visible content and the structured data are guaranteed identical (Google's
+  policy requirement). Highest-leverage AEO block after the hero answer.
+  Answers should be self-contained.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- assign qa_blocks = section.blocks | where: 'type', 'qa' -%}
+
+<section class="farm" id="farm-faq-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm__block-head farm__rv">
+        {%- if section.settings.fig != blank -%}
+          <span class="farm__fig farm__mono">{{ section.settings.fig }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.show_schema_note -%}
+          <span class="farm-faq__schema-note">
+            <span class="farm-faq__dot"></span>This block carries FAQ schema (JSON-LD) for AEO
+          </span>
+        {%- endif -%}
+      </div>
+
+      {%- if qa_blocks.size > 0 -%}
+        <div class="farm-faq__list farm__rv">
+          {%- for block in qa_blocks -%}
+            <details
+              class="farm-faq__item"
+              {% if forloop.first and section.settings.open_first %}open{% endif %}
+              {{ block.shopify_attributes }}
+            >
+              <summary class="farm-faq__q">
+                {{ block.settings.question }}
+                <span class="farm-faq__plus" aria-hidden="true"></span>
+              </summary>
+              <div class="farm-faq__a">{{ block.settings.answer }}</div>
+            </details>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{%- if qa_blocks.size > 0 -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for block in qa_blocks -%}
+          {
+            "@type": "Question",
+            "name": {{ block.settings.question | strip_html | json }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ block.settings.answer | strip_html | strip_newlines | json }}
+            }
+          }{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Farm FAQ",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fig",
+      "label": "Fig. caption (mono)",
+      "default": "Fig. V — From The Press Room"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Frequently <em>Asked</em>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_schema_note",
+      "label": "Show 'carries FAQ schema' note",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "open_first",
+      "label": "Open the first question by default",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "qa",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "What is the best blank t-shirt for screen printing?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "info": "Keep it self-contained — no 'as above/below'.",
+          "default": "<p>A mid-weight (5.0–6.0 oz) 100% ringspun cotton tee is the best all-around blank. The smooth ringspun surface holds fine detail, the cotton bonds well with plastisol and water-based inks, and a mid weight lays flat on the platen without curling. At Bayou Blanks these run from $4.25 per unit by the pack.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Farm FAQ",
+      "blocks": [
+        {
+          "type": "qa",
+          "settings": {
+            "question": "What is the best blank t-shirt for screen printing?",
+            "answer": "<p>A mid-weight (5.0–6.0 oz) 100% ringspun cotton tee is the best all-around blank. The smooth ringspun surface holds fine detail, the cotton bonds well with plastisol and water-based inks, and a mid weight lays flat on the platen without curling. At Bayou Blanks these run from $4.25 per unit by the pack.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Is 100% cotton or a 50/50 blend better for screen printing?",
+            "answer": "<p>100% cotton gives the boldest, most opaque print and is the easiest to cure, so it's the default. A 50/50 cotton-poly blend is softer and more shrink-resistant but can dye-migrate under high heat, so use poly-friendly low-cure inks. For most shops, ringspun 100% cotton is the safe pick.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "What weight t-shirt is best for screen printing?",
+            "answer": "<p>Aim for 5.0 to 6.0 oz. Lightweight 4.2 oz fashion tees feel premium but can ghost and are harder to print opaque. Heavyweight 6.0 oz+ tees print bold and resist show-through, making them ideal for dark garments and multi-color art.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Can you screen print on blank tees in bulk cheaply?",
+            "answer": "<p>Yes. Buying undecorated blanks by the pack at per-unit pricing is the cheapest way to source. Bayou Blanks sells liquidation overstock blanks from $4.25 per unit — and some down to $2.50 per unit — with no minimums beyond a pack.</p>"
+          }
+        },
+        {
+          "type": "qa",
+          "settings": {
+            "question": "Do I need to pre-wash blank t-shirts before screen printing?",
+            "answer": "<p>No. Most blank cotton and cotton-blend tees are ready to print straight from the pack. Pre-washing is only worth it if you're worried about shrinkage on a tight-fit final product; for standard screen printing it's an unnecessary step.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

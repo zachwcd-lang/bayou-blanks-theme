@@ -1,0 +1,141 @@
+{% comment %}
+  Farm — CTA banner. Final, full-width call into the routed collection, with
+  the big ghosted per-unit price behind it. No discount/sale language — lead
+  with per-unit value.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- liquid
+  assign primary_url = section.settings.cta_url_override
+  if primary_url == blank and section.settings.cta_collection != blank
+    assign primary_url = section.settings.cta_collection.url
+  endif
+  assign primary_url = primary_url | default: '#'
+
+  assign bg_class = ''
+  case section.settings.background
+    when 'paper-deep'
+      assign bg_class = ' farm-cta--paper-deep'
+    when 'ink'
+      assign bg_class = ' farm-cta--ink'
+  endcase
+-%}
+
+<section class="farm farm-cta{{ bg_class }}" id="farm-cta-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm-cta__inner farm__rv">
+        {%- if section.settings.ghost_price != blank -%}
+          <span class="farm-cta__ghost" aria-hidden="true">{{ section.settings.ghost_price }}</span>
+        {%- endif -%}
+        <div>
+          {%- if section.settings.eyebrow != blank -%}
+            <span class="farm-cta__eyebrow farm__mono">{{ section.settings.eyebrow }}</span>
+          {%- endif -%}
+          {%- if section.settings.heading != blank -%}
+            <h2>{{ section.settings.heading }}</h2>
+          {%- endif -%}
+          {%- if section.settings.subtext != blank -%}
+            <div class="farm-cta__sub">{{ section.settings.subtext }}</div>
+          {%- endif -%}
+        </div>
+        <div class="farm-cta__btns">
+          {%- if section.settings.cta_label != blank -%}
+            <a class="farm-btn farm-btn--solid" href="{{ primary_url }}">{{ section.settings.cta_label }}</a>
+          {%- endif -%}
+          {%- if section.settings.cta2_label != blank -%}
+            <a class="farm-btn farm-btn--ghost" href="{{ section.settings.cta2_url | default: '#' }}">{{ section.settings.cta2_label }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Farm CTA",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow (mono)",
+      "default": "Fig. VIII — Start Your Run"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Shop blank tees built for the <em>press.</em>"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "<p>Mid-weight ringspun, heavyweight, 50/50 and budget open-end — all in stock, all sold by the pack at per-unit prices.</p>"
+    },
+    {
+      "type": "text",
+      "id": "ghost_price",
+      "label": "Ghosted price (background)",
+      "info": "The big translucent figure behind the banner, e.g. $4.25. Leave blank for none.",
+      "default": "$4.25"
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "paper", "label": "Paper" },
+        { "value": "paper-deep", "label": "Paper (deep)" },
+        { "value": "ink", "label": "Ink (dark)" }
+      ],
+      "default": "paper"
+    },
+    {
+      "type": "header",
+      "content": "Primary button (into collection)"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Primary button label",
+      "default": "Shop T-Shirts"
+    },
+    {
+      "type": "collection",
+      "id": "cta_collection",
+      "label": "Routed collection"
+    },
+    {
+      "type": "url",
+      "id": "cta_url_override",
+      "label": "URL override",
+      "info": "Optional — overrides the collection link above."
+    },
+    {
+      "type": "header",
+      "content": "Secondary button"
+    },
+    {
+      "type": "text",
+      "id": "cta2_label",
+      "label": "Secondary button label",
+      "default": "Buy Bulk"
+    },
+    {
+      "type": "url",
+      "id": "cta2_url",
+      "label": "Secondary button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Farm CTA"
+    }
+  ]
+}
+{% endschema %}

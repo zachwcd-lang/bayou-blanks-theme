@@ -1,0 +1,147 @@
+{% comment %}
+  Farm — Why-us / trust. E-E-A-T + conversion reassurance. Editorial columns,
+  hairline-divided, with selectable line-drawing icons. Keep claims honest.
+{% endcomment %}
+
+{% render 'farm-head' %}
+
+{%- assign cell_blocks = section.blocks | where: 'type', 'cell' -%}
+{%- assign grid_mod = '' -%}
+{%- if cell_blocks.size == 3 -%}{%- assign grid_mod = ' farm-trust__grid--3' -%}{%- endif -%}
+
+<section class="farm" id="farm-trust-{{ section.id }}">
+  <div class="farm__block">
+    <div class="farm__wrap">
+      <div class="farm__block-head farm__rv">
+        {%- if section.settings.fig != blank -%}
+          <span class="farm__fig farm__mono">{{ section.settings.fig }}</span>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endif -%}
+      </div>
+
+      <div class="farm-trust__grid{{ grid_mod }} farm__rv">
+        {%- for block in cell_blocks -%}
+          <div class="farm-trust__cell" {{ block.shopify_attributes }}>
+            <span class="farm-trust__ic" aria-hidden="true">
+              {%- case block.settings.icon -%}
+                {%- when 'price' -%}
+                  <svg viewBox="0 0 24 24"><path d="M12 2v20M5 7h14M5 12h14M5 17h14"/></svg>
+                {%- when 'box' -%}
+                  <svg viewBox="0 0 24 24"><path d="M3 9l1-4h16l1 4M3 9h18v11H3zM8 9V5M16 9V5"/></svg>
+                {%- when 'truck' -%}
+                  <svg viewBox="0 0 24 24"><path d="M1 8h13v8H1zM14 11h4l3 3v2h-7M5.5 18.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17.5 18.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+                {%- when 'clock' -%}
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                {%- when 'sizes' -%}
+                  <svg viewBox="0 0 24 24"><path d="M3 6h18M6 3v18M3 12h18M3 18h18M12 3v18M18 3v18"/></svg>
+              {%- endcase -%}
+            </span>
+            {%- if block.settings.heading != blank -%}
+              <h3>{{ block.settings.heading }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <p>{{ block.settings.text }}</p>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Farm Trust",
+  "tag": "section",
+  "class": "farm-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "fig",
+      "label": "Fig. caption (mono)",
+      "default": "Fig. VI — Why Bayou"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Buy Your Blanks <em>From Bayou</em>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cell",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Line drawing",
+          "options": [
+            { "value": "price", "label": "Per-unit pricing" },
+            { "value": "box", "label": "Case-pack box" },
+            { "value": "truck", "label": "Ships from" },
+            { "value": "clock", "label": "Live daily" },
+            { "value": "sizes", "label": "Size grid" }
+          ],
+          "default": "price"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Per-Unit Pricing"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Body",
+          "default": "You see the real cost per shirt — from $4.25, some at $2.50. No sale theater, no struck-through prices."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Farm Trust",
+      "blocks": [
+        {
+          "type": "cell",
+          "settings": {
+            "icon": "price",
+            "heading": "Per-Unit Pricing",
+            "text": "You see the real cost per shirt — from $4.25, some at $2.50. No sale theater, no struck-through prices."
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "icon": "box",
+            "heading": "80,000+ In Stock",
+            "text": "Deep inventory across S–5XL with new overstock pallets landing weekly. Order with confidence."
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "icon": "truck",
+            "heading": "Ships From Hattiesburg",
+            "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor."
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "icon": "clock",
+            "heading": "Live Daily",
+            "text": "Catch fresh drops and ask questions live on TikTok & Whatnot — backed by West Coast Deals."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
