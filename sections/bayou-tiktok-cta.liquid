@@ -26,11 +26,17 @@
   /* Social-proof chips: glass over either scheme via foreground-tinted frost. */
   .bayou-tiktok__chips {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 1rem;
-    margin: 0 0 2rem;
+    margin: 2.8rem 0 0;
     padding: 0;
     list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .bayou-tiktok__chips::-webkit-scrollbar {
+    display: none;
   }
 
   .bayou-tiktok__chip {
@@ -251,6 +257,33 @@
         </a>
       {%- endif -%}
 
+      {%- if section.settings.heading != blank -%}
+        <h1 class="bayou-tiktok__heading">{{ section.settings.heading }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.handle_line != blank -%}
+        <p class="bayou-tiktok__handle">{{ section.settings.handle_line }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.subline != blank -%}
+        <p class="bayou-tiktok__subline">{{ section.settings.subline }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_label != blank or section.settings.button_secondary_label != blank -%}
+        <div class="bayou-tiktok__buttons">
+          {%- if section.settings.button_label != blank -%}
+            <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button bayou-tiktok__button--primary" target="_blank" rel="noopener">
+              {{- section.settings.button_label -}}
+            </a>
+          {%- endif -%}
+          {%- if section.settings.button_secondary_label != blank -%}
+            <a href="{{ section.settings.button_secondary_link }}" class="bayou-tiktok__button bayou-tiktok__button--secondary">
+              {{- section.settings.button_secondary_label -}}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
       {%- if section.blocks.size > 0 -%}
         <ul class="bayou-tiktok__chips" role="list">
           {%- for block in section.blocks -%}
@@ -286,33 +319,6 @@
             </li>
           {%- endfor -%}
         </ul>
-      {%- endif -%}
-
-      {%- if section.settings.heading != blank -%}
-        <h1 class="bayou-tiktok__heading">{{ section.settings.heading }}</h1>
-      {%- endif -%}
-
-      {%- if section.settings.handle_line != blank -%}
-        <p class="bayou-tiktok__handle">{{ section.settings.handle_line }}</p>
-      {%- endif -%}
-
-      {%- if section.settings.subline != blank -%}
-        <p class="bayou-tiktok__subline">{{ section.settings.subline }}</p>
-      {%- endif -%}
-
-      {%- if section.settings.button_label != blank or section.settings.button_secondary_label != blank -%}
-        <div class="bayou-tiktok__buttons">
-          {%- if section.settings.button_label != blank -%}
-            <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button bayou-tiktok__button--primary" target="_blank" rel="noopener">
-              {{- section.settings.button_label -}}
-            </a>
-          {%- endif -%}
-          {%- if section.settings.button_secondary_label != blank -%}
-            <a href="{{ section.settings.button_secondary_link }}" class="bayou-tiktok__button bayou-tiktok__button--secondary">
-              {{- section.settings.button_secondary_label -}}
-            </a>
-          {%- endif -%}
-        </div>
       {%- endif -%}
     </div>
 
