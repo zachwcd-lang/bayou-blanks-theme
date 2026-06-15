@@ -562,12 +562,13 @@
       if (!form || form.dataset.bbBound) return;
       form.dataset.bbBound = '1';
       var RELAY = {{ s.slack_relay_url | json }};
+      var MANIFEST = {{ s.manifest_link | json }};
 
       form.addEventListener('submit', function () {
         var hp = form.querySelector('[name="bb_hp"]');
         if (hp && hp.value) return; // bot — let Shopify handle it, skip Slack
         try {
-          var data = { _source: 'wholesale-form', _shop: location.host, _url: location.href };
+          var data = { _source: 'wholesale-form', _shop: location.host, _url: location.href, _manifest: MANIFEST };
           form.querySelectorAll('[name^="contact["]').forEach(function (el) {
             if (el.type === 'hidden') return;
             var key = el.name.slice(8, -1); // strip "contact[" … "]"
