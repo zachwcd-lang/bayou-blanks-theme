@@ -903,3 +903,19 @@
 @media (max-width: 680px) {
   .farm-cta__inner { padding: 44px 26px; }
 }
+
+/* Hub masthead → dark-green band to match the content pages + landing */
+.farm-hub__masthead {
+  background: var(--farm-ink-bg);
+  color: var(--farm-onink);
+  border-radius: 0 0 var(--farm-radius-lg) var(--farm-radius-lg);
+  padding: 84px 0 74px;
+}
+.farm-hub__vol { color: var(--farm-gold); }
+.farm-hub__masthead h1 { color: var(--farm-onink); }
+.farm-hub__masthead h1 em { color: var(--farm-bright); }
+.farm-hub__nameplate { color: var(--farm-onink-dim); }
+.farm-hub__nameplate i { color: var(--farm-bright); }
+.farm-hub__lede { color: var(--farm-onink-dim); }
+.farm-hub__by { color: rgba(250, 248, 242, 0.5); }
+.farm-hub__rule { background: rgba(250, 248, 242, 0.22); }

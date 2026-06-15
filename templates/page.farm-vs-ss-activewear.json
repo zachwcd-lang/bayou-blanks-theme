@@ -12,7 +12,7 @@
       "settings": {
         "eyebrow": "Fig. I — Comparison · Updated June 2026",
         "heading": "Bayou Blanks vs <em>S&amp;S Activewear</em>",
-        "answer": "<p>Bayou Blanks is the no-hoops alternative to S&amp;S Activewear. S&amp;S is a true wholesale distributor — you register, log in to see prices, and file a resale certificate before your first order. Bayou is open to anyone: the per-unit price is on the page, no account, buy a single pack at a flat <strong>$4.25/unit</strong>.</p>",
+        "answer": "<p>Bayou Blanks is the no-hoops alternative to S&amp;S Activewear. S&amp;S is a true wholesale distributor — you register and log in just to see pricing, and wholesale is for business accounts (personal users see retail). Bayou is open to anyone: the per-unit price is right on the page, no account, buy a single pack at a flat <strong>$4.25/unit</strong>.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Comparisons",
         "crop_anchor": "comparisons",
@@ -23,10 +23,10 @@
       "type": "farm-takeaways",
       "blocks": {
         "t1": { "type": "point", "settings": { "text": "<p><b>S&amp;S Activewear is a wholesale distributor built for businesses</b> — you must register and log in just to see pricing; Bayou shows the per-unit price to anyone, no account.</p>" } },
-        "t2": { "type": "point", "settings": { "text": "<p><b>S&amp;S requires a resale/tax certificate on file before it ships your first order;</b> Bayou has no paperwork — buy a single pack and go.</p>" } },
-        "t3": { "type": "point", "settings": { "text": "<p><b>S&amp;S free shipping starts at $200;</b> Bayou sells by the pack with no business-sized order required.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Wholesale pricing at S&amp;S is for business accounts</b> and asks for business details and a resale certificate; personal users see retail. Bayou is one price for everyone, no paperwork.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Bayou sells by the pack</b> with no business-sized order required — a single 4-pack at $4.25/unit, down to $2.92 by the 12-pack.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou</b> — a 4XL is the same $4.25/unit as a small — while the brands S&amp;S carries upcharge for 2XL and up.</p>" } },
-        "t5": { "type": "point", "settings": { "text": "<p><b>Honest trade-off:</b> S&amp;S's true wholesale case pricing can beat Bayou per unit if you're buying full cases of specific brands, and its 100+ brand catalog is far deeper.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Honest trade-off:</b> S&amp;S's true wholesale case pricing can beat Bayou per unit if you're a business buying full cases of specific brands, and its 100+ brand catalog is far deeper.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>Where Bayou wins:</b> anyone can buy, no account or license, small orders welcome, and flat extended-size pricing.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
@@ -43,19 +43,19 @@
         "c1": { "type": "column", "settings": { "label": "Factor" } },
         "c2": { "type": "column", "settings": { "label": "Bayou Blanks" } },
         "c3": { "type": "column", "settings": { "label": "S&amp;S Activewear" } },
-        "r1": { "type": "row", "settings": { "label": "Who can buy", "cell_1": "Anyone — open to the public", "badge_1": true, "cell_2": "Built for businesses — decorators, resellers" } },
+        "r1": { "type": "row", "settings": { "label": "Who gets the low price", "cell_1": "Anyone — open to the public", "badge_1": true, "cell_2": "Business accounts (personal users see retail)" } },
         "r2": { "type": "row", "settings": { "label": "Seeing the price", "cell_1": "Shown up front, no login", "badge_1": true, "cell_2": "Must register and log in to view pricing" } },
-        "r3": { "type": "row", "settings": { "label": "Paperwork to order", "cell_1": "None", "badge_1": true, "cell_2": "Resale/tax certificate before first order" } },
-        "r4": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $4.25/unit ($2.92 at the 12-pack)", "cell_2": "True wholesale case pricing" } },
+        "r3": { "type": "row", "settings": { "label": "Paperwork", "cell_1": "None", "badge_1": true, "cell_2": "Business details + resale certificate for wholesale" } },
+        "r4": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $4.25/unit ($2.92 at the 12-pack)", "cell_2": "True wholesale case pricing (logged-in business)" } },
         "r5": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $4.25/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
-        "r6": { "type": "row", "settings": { "label": "Free shipping", "cell_1": "Sold by the pack, no big order needed", "cell_2": "Orders over $200" } },
-        "r7": { "type": "row", "settings": { "label": "Best for", "cell_1": "Small–mid buyers, no business needed", "cell_2": "Established decorators buying cases" } }
+        "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "100+ brands, huge catalog" } },
+        "r7": { "type": "row", "settings": { "label": "Best for", "cell_1": "Anyone — no business needed", "cell_2": "Established businesses buying cases" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
       "settings": {
         "fig": "Fig. III — Head To Head",
         "heading": "Bayou vs S&amp;S, <em>Line by Line</em>",
-        "intro": "<p>An honest read on where each one wins — access, pricing, sizing, and who it's built for.</p>",
+        "intro": "<p>An honest read on where each one wins — access, price model, sizing, and selection.</p>",
         "caption": "Bayou Blanks vs S&amp;S Activewear — how the two stack up"
       }
     },
@@ -79,12 +79,12 @@
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "Do you need an account to buy from S&S Activewear?", "answer": "<p>Yes. You have to register and log in just to see S&amp;S pricing. Business customers get wholesale pricing, personal users see retail, and S&amp;S requires a signed resale/tax certificate on file before it ships your first order. Bayou requires none of that — the price is on the page and anyone can buy a single pack.</p>" } },
-        "q2": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than S&S Activewear?", "answer": "<p>It depends on how you buy. S&amp;S's true wholesale case pricing on brand basics can go below $4.25 per unit if you're ordering full cases as a business. Bayou wins on small and mid orders, on flat pricing across every size, and on access — no account, no resale certificate, no $200 shipping threshold.</p>" } },
-        "q3": { "type": "qa", "settings": { "question": "Can I buy from S&S without a business?", "answer": "<p>You can register as a personal user, but you'll see retail pricing, and wholesale requires business details and a resale certificate. Bayou is one price for everyone with no business required — useful if you're a side hustle, a team, or just want blanks without the paperwork.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "Do you need an account to buy from S&S Activewear?", "answer": "<p>Yes — you have to register and log in just to see S&amp;S pricing. Business customers get wholesale pricing (and are asked for business details and a resale certificate), while personal users see retail. Bayou requires none of that: the price is on the page and anyone can buy a single pack.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than S&S Activewear?", "answer": "<p>It depends on how you buy. S&amp;S's true wholesale case pricing on brand basics can go below $4.25 per unit if you're a business ordering full cases. Bayou wins on small and mid orders, on flat pricing across every size, and on access — no account, no resale certificate, no business required.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Can I buy from S&S without a business?", "answer": "<p>You can register as a personal user, but you'll see retail pricing — wholesale needs business details and a resale certificate. Bayou is one price for everyone with no business required, which helps if you're a side hustle, a team, or just want blanks without the paperwork.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $4.25/unit as a small. The brand blanks S&amp;S carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the catch with Bayou's liquidation blanks?", "answer": "<p>Selection. Bayou stocks around 85 curated overstock styles, not S&amp;S's 100+ brand catalog. If you need a specific brand and color in bulk, S&amp;S's range and case pricing are deeper; if you want blanks with no account and a flat per-unit price, Bayou wins.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "S&S Activewear or Bayou — which should I use?", "answer": "<p>Use S&amp;S if you're an established decorator or reseller buying cases of specific brands and you already have a business account and resale certificate. Use Bayou when you want to buy blanks now with no account or license — especially small-to-mid orders and extended or plus sizes.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "S&S Activewear or Bayou — which should I use?", "answer": "<p>Use S&amp;S if you're an established decorator or reseller buying cases of specific brands and you already have a business account. Use Bayou when you want to buy blanks now with no account or license — especially small-to-mid orders and extended or plus sizes.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -125,7 +125,7 @@
       "type": "farm-cta",
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
-        "heading": "No account. No license. <em>Just blanks.</em>",
+        "heading": "No account. No login. <em>Just blanks.</em>",
         "subtext": "<p>Liquidation overstock blanks at a flat $4.25/unit — open to anyone, every size, inspected and shipped from Hattiesburg.</p>",
         "ghost_price": "$4.25",
         "background": "paper",
