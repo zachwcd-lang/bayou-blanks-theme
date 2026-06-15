@@ -62,9 +62,19 @@
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-bulk-apparel"
           }
+        },
+        "c3": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "Bayou Blanks vs BlankStyle",
+            "dek": "BlankStyle has 120+ brands and prints too; Bayou just supplies the blank — flat $4.25/unit, same price in 4XL.",
+            "cta": "See the matchup",
+            "url": "/pages/bayou-blanks-vs-blankstyle"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
