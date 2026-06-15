@@ -42,9 +42,29 @@
             "cta": "See pricing",
             "url": "/pages/cheapest-blank-t-shirts-in-bulk"
           }
+        },
+        "c1": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "Bayou Blanks vs ShirtSpace",
+            "dek": "ShirtSpace has the bigger brand catalog — but Bayou is a flat $4.25/unit, same price in 4XL, no account needed.",
+            "cta": "See the matchup",
+            "url": "/pages/bayou-blanks-vs-shirtspace"
+          }
+        },
+        "c2": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "Bayou Blanks vs Bulk Apparel",
+            "dek": "Bulk Apparel's discounts start at $250 spend; Bayou hits $2.92/unit on a single 12-pack, every size flat.",
+            "cta": "See the matchup",
+            "url": "/pages/bayou-blanks-vs-bulk-apparel"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
