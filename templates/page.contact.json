@@ -44,6 +44,9 @@
     "form": {
       "type": "bayou-wholesale-form",
       "settings": {
+        "success_heading": "We got it.",
+        "manifest_label": "View entire manifest",
+        "manifest_link": "https://admin.shopbayoublanks.com/m/85ff1cf403484d169314ed3547c34166",
         "slack_relay_url": "https://vvgjyvkjptgydqqwzked.supabase.co/functions/v1/bayou-lead"
       }
     }

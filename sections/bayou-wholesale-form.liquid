@@ -246,6 +246,142 @@
   .bb-lead__proof {
     margin-top: 2.4rem;
   }
+
+  /* --- Confirmation modal — auto-opens after a successful submit --- */
+  .bb-lead-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1003;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .bb-lead-modal.is-open {
+    display: flex;
+    animation: bb-lead-modal-fade 150ms ease-out both;
+  }
+
+  @keyframes bb-lead-modal-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bb-lead-modal.is-open {
+      animation: none;
+    }
+  }
+
+  .bb-lead-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 18, 14, 0.55);
+  }
+
+  .bb-lead-modal__card {
+    position: relative;
+    width: 100%;
+    max-width: 46rem;
+    background: var(--bb-paper, #F4F1EA);
+    border: 1px solid var(--bb-ink, #1A2415);
+    border-radius: var(--bb-radius-card, 16px);
+    padding: 3.2rem 2.8rem 2.8rem;
+  }
+
+  .bb-lead-modal__card:focus {
+    outline: none;
+  }
+
+  .bb-lead-modal__close {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    background: none;
+    border: 0;
+    padding: 0.6rem;
+    cursor: pointer;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: rgba(26, 36, 21, 0.6);
+  }
+
+  .bb-lead-modal__close:hover {
+    color: var(--bb-ink, #1A2415);
+  }
+
+  .bb-lead-modal__eyebrow {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--bb-moss, #5C7A3A);
+    margin: 0 0 1.2rem;
+  }
+
+  .bb-lead-modal__heading {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 1rem;
+  }
+
+  .bb-lead-modal__text {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--bb-ink-soft, #2D3B1E);
+    margin: 0 0 2.4rem;
+  }
+
+  .bb-lead-modal__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .bb-lead-modal__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 4.4rem;
+    padding: 1.1rem 2.2rem;
+    border-radius: var(--bb-radius-btn, 6px);
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  }
+
+  .bb-lead-modal__btn--primary {
+    background: var(--bb-ink, #1A2415);
+    color: var(--bb-paper, #F4F1EA);
+    border: 1px solid var(--bb-ink, #1A2415);
+  }
+
+  .bb-lead-modal__btn--primary:hover {
+    background: transparent;
+    color: var(--bb-ink, #1A2415);
+  }
+
+  .bb-lead-modal__btn--ghost {
+    background: transparent;
+    color: var(--bb-ink, #1A2415);
+    border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.3));
+  }
+
+  .bb-lead-modal__btn--ghost:hover {
+    border-color: var(--bb-ink, #1A2415);
+  }
 {%- endstyle -%}
 
 <section class="bb-lead" id="wholesale-lead-form">
@@ -253,11 +389,62 @@
     <div class="bb-lead__card">
       {%- form 'contact', id: 'WholesaleLeadForm', class: 'bb-lead__form' -%}
         {%- if form.posted_successfully? -%}
+          {%- comment -%} Inline panel — fallback confirmation if JS is off. {%- endcomment -%}
           <div class="bb-lead__success">
             <p class="bb-lead__success-eyebrow">{{ s.success_eyebrow | escape }}</p>
             <h2 class="bb-lead__success-heading">{{ s.success_heading | escape }}</h2>
             <p class="bb-lead__success-text">{{ s.success_text | escape }}</p>
           </div>
+
+          {%- comment -%} Confirmation modal — auto-opens over the page on success. {%- endcomment -%}
+          <div
+            class="bb-lead-modal"
+            data-bb-modal
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="bb-modal-h-{{ uid }}"
+          >
+            <div class="bb-lead-modal__overlay" data-bb-close></div>
+            <div class="bb-lead-modal__card" tabindex="-1">
+              <button type="button" class="bb-lead-modal__close" data-bb-close>[ CLOSE ]</button>
+              <p class="bb-lead-modal__eyebrow">{{ s.success_eyebrow | escape }}</p>
+              <h2 class="bb-lead-modal__heading" id="bb-modal-h-{{ uid }}">{{ s.success_heading | escape }}</h2>
+              <p class="bb-lead-modal__text">{{ s.success_text | escape }}</p>
+              <div class="bb-lead-modal__actions">
+                {%- if s.manifest_link != blank -%}
+                  <a
+                    class="bb-lead-modal__btn bb-lead-modal__btn--primary"
+                    href="{{ s.manifest_link }}"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    {{- s.manifest_label | default: 'View entire manifest' | escape }} <span aria-hidden="true">&rarr;</span>
+                  </a>
+                {%- endif -%}
+                <button type="button" class="bb-lead-modal__btn bb-lead-modal__btn--ghost" data-bb-close>Keep shopping</button>
+              </div>
+            </div>
+          </div>
+          <script>
+            (function () {
+              var modal = document.querySelector('[data-bb-modal]');
+              if (!modal) return;
+              var card = modal.querySelector('.bb-lead-modal__card');
+              function close() {
+                modal.classList.remove('is-open');
+                document.removeEventListener('keydown', onKey);
+              }
+              function onKey(e) {
+                if (e.key === 'Escape') close();
+              }
+              modal.querySelectorAll('[data-bb-close]').forEach(function (el) {
+                el.addEventListener('click', close);
+              });
+              document.addEventListener('keydown', onKey);
+              modal.classList.add('is-open');
+              if (card) card.focus();
+            })();
+          </script>
         {%- else -%}
           {%- if s.eyebrow != blank -%}
             <p class="bb-lead__eyebrow">{{ s.eyebrow | escape }}</p>
@@ -472,6 +659,18 @@
       "id": "success_text",
       "label": "Success text",
       "default": "Thanks for reaching out. Someone from the Bayou Blanks team will get back to you within one business day with pricing. Keep an eye on your inbox."
+    },
+    {
+      "type": "text",
+      "id": "manifest_label",
+      "label": "Manifest button label",
+      "default": "View entire manifest"
+    },
+    {
+      "type": "url",
+      "id": "manifest_link",
+      "label": "Manifest button link",
+      "info": "Shown as a button in the confirmation modal (opens in a new tab). Leave blank to hide."
     },
     {
       "type": "header",
