@@ -1,0 +1,138 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> fabrics compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "Fleece vs <em>French Terry</em>",
+        "answer": "<p>Fleece and French terry are both knit fabrics, and the difference is the inside. Fleece is brushed into a soft, fuzzy pile, so it's warmer, heavier, and cozy. French terry leaves the inside as unbrushed loops, so it's lighter, smoother, and more breathable — closer to a midweight sweatshirt than a winter hoodie.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Both start as knit fabric;</b> the difference is how the inside — the back of the knit — is finished.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Fleece is brushed into a soft, fuzzy pile inside</b>, which makes it warmer, heavier, and cozier.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>French terry leaves the inside as unbrushed loops</b>, which makes it lighter, smoother, and more breathable.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Fleece is the classic cold-weather feel;</b> French terry suits spring layers and a structured look.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>French terry's flatter face can give crisper prints;</b> fleece is plush but prints well too.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's blank pullover fleece and sweatshirts</b> start at a flat $4.25/unit.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"It's all about the inside: <em>brushed pile runs warm, looped terry runs light.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Fleece" } },
+        "c3": { "type": "column", "settings": { "label": "French terry" } },
+        "r1": { "type": "row", "settings": { "label": "Inside finish", "cell_1": "Brushed, fuzzy pile", "cell_2": "Unbrushed loops" } },
+        "r2": { "type": "row", "settings": { "label": "Warmth", "cell_1": "Warmer", "badge_1": true, "cell_2": "Lighter, breathable" } },
+        "r3": { "type": "row", "settings": { "label": "Weight", "cell_1": "Heavier", "cell_2": "Mid-weight" } },
+        "r4": { "type": "row", "settings": { "label": "Feel", "cell_1": "Plush, cozy", "cell_2": "Smooth, structured" } },
+        "r5": { "type": "row", "settings": { "label": "Best season", "cell_1": "Cold weather", "cell_2": "Spring and layering" } },
+        "r6": { "type": "row", "settings": { "label": "Print face", "cell_1": "Soft, slightly textured", "cell_2": "Flatter, crisp" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Fleece vs <em>French Terry</em>",
+        "intro": "<p>Both make a great hoodie. The inside finish is what sets the warmth, weight, and feel apart.</p>",
+        "caption": "Fleece vs French terry"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-long-sleeve-fleece-pullover-hoodie", "kicker": "Fleece · Pullover Hoodie", "blurb": "A classic fleece pullover hoodie — warm, plush, and print-ready at a flat $4.25/unit.", "sizes": "Adult sizes", "tag": "Fleece" } },
+        "p2": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Fleece · Pullover", "blurb": "Our deepest-stock pullover fleece, sold by the pack at a flat $4.25/unit.", "sizes": "Adult sizes", "tag": "Deep Stock" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-4", "kicker": "Sweatshirt · Crew", "blurb": "A midweight crew sweatshirt with a clean face for prints, from $4.25/unit.", "sizes": "Adult sizes", "tag": "Crew" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-long-sleeve-pullover-hoodie-2", "kicker": "Pullover Hoodie", "blurb": "A pullover hoodie ready to print at one flat per-unit price, no account.", "sizes": "Adult sizes", "tag": "Hoodie" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blank Hoodies & Fleece, <em>Ready to Print</em>",
+        "intro": "<p>Pullover fleece and crew sweatshirts on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>We mostly stock pullover fleece and crew sweatshirts — all print-ready at a flat <b>$4.25/unit</b>, about <b>$2.92/unit by the 12-pack</b>, same price across every size. Stock varies, so styles can sell through.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What's the difference between fleece and French terry?", "answer": "<p>It's the inside of the knit. Fleece is brushed into a soft, fuzzy pile, so it's warmer and heavier. French terry leaves the inside as unbrushed loops, so it's lighter, smoother, and more breathable.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is French terry warmer than fleece?", "answer": "<p>No. Fleece is warmer — the brushed pile traps more heat, which is why it's the classic cold-weather hoodie. French terry is lighter and more breathable, better for spring or layering.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Which is better for hoodies?", "answer": "<p>It depends on the use. Fleece is best for cozy, cold-weather hoodies and sweatshirts; French terry is best for lighter, more structured layers and warmer weather. Both take prints well.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Is French terry good for printing?", "answer": "<p>Yes. Its flatter, smoother face can hold crisp prints with clean edges. Fleece prints well too, but its plusher surface is slightly more textured under the ink.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Does Bayou sell fleece or French terry blanks?", "answer": "<p>Mostly pullover fleece and crew sweatshirts, all print-ready and sold by the pack at a flat $4.25/unit ($2.92 by the 12-pack) — no account, every size the same price. Stock varies, so styles can sell through.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank Hoodies for Printing", "summary": "Which fleece and sweatshirts print best.", "cta": "Read guide", "url": "/pages/best-blank-hoodies-for-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is a Raglan Sleeve?", "summary": "The seam behind raglan sweatshirts.", "cta": "Read", "url": "/pages/what-is-a-raglan-sleeve" } },
+        "l3": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Print on a hoodie that <em>fits the season.</em>",
+        "subtext": "<p>Blank pullover fleece and sweatshirts from $4.25/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank Hoodies & Fleece",
+        "cta_collection": "hoodies-fleece",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

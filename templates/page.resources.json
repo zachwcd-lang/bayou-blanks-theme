@@ -142,9 +142,39 @@
             "cta": "Read",
             "url": "/pages/what-is-combed-cotton"
           }
+        },
+        "g4": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is a Raglan Sleeve?",
+            "dek": "The diagonal seam from underarm to collar — no shoulder seam — behind baseball tees and raglan sweatshirts.",
+            "cta": "Read",
+            "url": "/pages/what-is-a-raglan-sleeve"
+          }
+        },
+        "g5": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "Fleece vs French Terry",
+            "dek": "Brushed fuzzy pile runs warm; unbrushed loops run light. How the two hoodie fabrics compare.",
+            "cta": "Read",
+            "url": "/pages/fleece-vs-french-terry"
+          }
+        },
+        "g6": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Garment-Dyed?",
+            "dek": "Sewn first, then dyed as a finished piece — for a soft, broken-in feel and a lived-in, faded color.",
+            "cta": "Read",
+            "url": "/pages/what-is-garment-dyed"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",

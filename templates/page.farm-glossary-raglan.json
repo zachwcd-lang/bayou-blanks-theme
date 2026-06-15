@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> raglan picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is a <em>Raglan</em> Sleeve?",
+        "answer": "<p>A raglan sleeve is a sleeve that extends in one piece all the way to the collar, joined by a diagonal seam running from the underarm to the collarbone instead of a seam at the shoulder. It gives a fuller range of arm movement and the two-tone look you see on baseball tees and raglan sweatshirts.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>A raglan sleeve attaches with a diagonal seam from underarm to collar</b> — there's no seam sitting on top of the shoulder.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>A set-in sleeve, the more common kind, seams straight around the shoulder;</b> raglan trades that for the diagonal seam.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Raglan sleeves give a freer range of arm movement</b>, which is why they're common on athletic and baseball tees.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>'Raglan tee' and 'baseball tee' usually mean the same thing</b> — often with contrast-color sleeves.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>The style is named after Lord Raglan;</b> the one-piece diagonal seam is the defining feature.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>At Bayou, blank raglan tees and sweatshirts print clean</b> and start at a flat $4.25/unit.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"No shoulder seam, a diagonal cut to the collar — <em>that's the baseball-tee look.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Raglan sleeve" } },
+        "c3": { "type": "column", "settings": { "label": "Set-in sleeve" } },
+        "r1": { "type": "row", "settings": { "label": "Seam", "cell_1": "Diagonal, underarm to collar", "cell_2": "Around the shoulder" } },
+        "r2": { "type": "row", "settings": { "label": "Shoulder seam", "cell_1": "None", "badge_1": true, "cell_2": "Yes, on top of the shoulder" } },
+        "r3": { "type": "row", "settings": { "label": "Arm movement", "cell_1": "Fuller range", "badge_1": true, "cell_2": "More structured" } },
+        "r4": { "type": "row", "settings": { "label": "Common look", "cell_1": "Two-tone / baseball tee", "cell_2": "Classic single-color tee" } },
+        "r5": { "type": "row", "settings": { "label": "Print area", "cell_1": "Keep chest art clear of sleeve seams", "cell_2": "Flat chest, no diagonal seam" } },
+        "r6": { "type": "row", "settings": { "label": "Common use", "cell_1": "Athletic, baseball, raglan sweatshirts", "cell_2": "Everyday tees" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Raglan vs <em>Set-In</em> Sleeve",
+        "intro": "<p>Same shirt, two ways to attach a sleeve. Here's what the raglan seam changes.</p>",
+        "caption": "Raglan sleeve vs set-in sleeve"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Raglan · Contrast", "blurb": "The classic two-tone baseball-tee look — contrast raglan sleeves, a flat $4.25/unit, no account.", "sizes": "Adult sizes", "tag": "Baseball Tee" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-long-sleeve-raglan-tee", "kicker": "Raglan · Long Sleeve", "blurb": "A long-sleeve contrast raglan — our deepest-stock raglan, at a flat $4.25/unit.", "sizes": "Adult sizes", "tag": "Deep Stock" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Raglan · Plus", "blurb": "A striated raglan in plus sizes at the same flat $4.25/unit as a small.", "sizes": "Plus sizes", "tag": "Plus" } },
+        "p4": { "type": "pick", "settings": { "product": "adult-long-sleeve-raglan-tee-1", "kicker": "Raglan · Two-Tone", "blurb": "A two-tone long-sleeve raglan at one flat per-unit price, ready to print.", "sizes": "Adult sizes", "tag": "Two-Tone" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blank Raglans, <em>Ready to Print</em>",
+        "intro": "<p>Contrast and two-tone raglan tees on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every pick is sold by the pack at a flat <b>$4.25/unit</b>, dropping to about <b>$2.92/unit by the 12-pack</b> — same price across every size, no account required.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is a raglan sleeve?", "answer": "<p>A raglan sleeve is a sleeve cut in one piece that reaches all the way to the collar, joined by a diagonal seam from the underarm to the collarbone. Because there's no seam on top of the shoulder, it allows a fuller range of arm movement.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "What's the difference between raglan and set-in sleeves?", "answer": "<p>A set-in sleeve is sewn around the shoulder with a seam on top; a raglan sleeve runs diagonally to the collar with no shoulder seam. Raglan gives more arm movement and the two-tone baseball-tee look; set-in is the classic everyday tee.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is a raglan tee the same as a baseball tee?", "answer": "<p>Usually, yes. A baseball tee is a raglan tee — most have contrast-colored sleeves and sometimes 3/4-length sleeves. Both names point to that diagonal raglan seam.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Are raglan shirts good for printing?", "answer": "<p>Yes. The chest panel is flat and prints like any tee; just keep large chest artwork clear of the diagonal sleeve seams so the design doesn't cross them.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Why is it called a raglan sleeve?", "answer": "<p>It's named after Lord Raglan, who is said to have worn a coat with this one-piece, diagonal-seam sleeve. The name stuck for any sleeve cut that way.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does Bayou sell blank raglan tees?", "answer": "<p>Yes — short-sleeve and long-sleeve raglans, including contrast and two-tone styles, sold by the pack at a flat $4.25/unit ($2.92 by the 12-pack), no account, every size the same price.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "Fleece vs French Terry", "summary": "The two hoodie fabrics, compared.", "cta": "Read", "url": "/pages/fleece-vs-french-terry" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Ring-Spun Cotton?", "summary": "The yarn that prints cleanest.", "cta": "Read", "url": "/pages/what-is-ring-spun-cotton" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Which blanks hold the cleanest print.", "cta": "Read guide", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Print on a baseball tee <em>that moves.</em>",
+        "subtext": "<p>Blank raglan tees and sweatshirts from $4.25/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
