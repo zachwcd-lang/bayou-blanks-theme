@@ -133,7 +133,7 @@
         "heading": "Printing at volume?",
         "text": "Real per-unit pricing, shown up front — from $4.25 a unit by the pack, down to $2.92 by the 12-pack. Buying by the case or pallet? Talk to us for a quote.",
         "button_label": "Talk to us",
-        "button_link": "/pages/contact",
+        "button_link": "/pages/contact#wholesale-lead-form",
         "footnote": "Per-unit pricing, shown up front — no account needed"
       }
     },
@@ -180,8 +180,8 @@
   "order": [
     "live_hero",
     "bayou_ticker",
+    "bayou_wholesale",
     "featured_collection",
-    "live_channels",
-    "bayou_wholesale"
+    "live_channels"
   ]
 }

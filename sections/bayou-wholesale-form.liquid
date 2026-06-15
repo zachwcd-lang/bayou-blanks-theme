@@ -1,0 +1,477 @@
+{%- comment -%}
+  Bayou Blanks — Wholesale / bulk lead form.
+  Native Shopify {% form 'contact' %} (store still gets the email + admin
+  record) with extra qualifying fields. On submit it also fires a best-effort
+  beacon to a relay endpoint (section setting `slack_relay_url`) which posts a
+  Slack alert. Honeypot + the relay's own origin check guard against spam.
+{%- endcomment -%}
+
+{%- liquid
+  assign s = section.settings
+  assign uid = section.id
+-%}
+
+{%- style -%}
+  .bb-lead {
+    background-color: {{ s.background }};
+    padding: 4.8rem 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bb-lead {
+      padding: 7.2rem 0;
+    }
+  }
+
+  .bb-lead__wrap {
+    max-width: 78rem;
+    margin: 0 auto;
+  }
+
+  .bb-lead__card {
+    background-color: var(--bb-paper, #F4F1EA);
+    border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    border-radius: var(--bb-radius-card, 16px);
+    padding: 2.8rem 2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bb-lead__card {
+      padding: 4rem 4.4rem;
+    }
+  }
+
+  .bb-lead__eyebrow {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--bb-moss, #5C7A3A);
+    margin: 0 0 1.2rem;
+  }
+
+  .bb-lead__heading {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bb-lead__heading {
+      font-size: 3.4rem;
+    }
+  }
+
+  .bb-lead__intro {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--bb-ink-soft, #2D3B1E);
+    margin: 0 0 2.8rem;
+  }
+
+  .bb-lead__rule {
+    border: 0;
+    border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    margin: 0 0 2.8rem;
+  }
+
+  .bb-lead__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bb-lead__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .bb-lead__field--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .bb-lead__label {
+    display: block;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--bb-ink-soft, #2D3B1E);
+    margin: 0 0 0.8rem;
+  }
+
+  .bb-lead__label .bb-lead__req {
+    color: var(--bb-moss, #5C7A3A);
+  }
+
+  .bb-lead__input,
+  .bb-lead__select,
+  .bb-lead__textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--bb-paper, #F4F1EA);
+    border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    border-radius: var(--bb-radius-btn, 6px);
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.6rem;
+    color: var(--bb-ink, #1A2415);
+    padding: 1.2rem 1.4rem;
+    min-height: 4.8rem;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: border-color 0.18s ease;
+  }
+
+  .bb-lead__input::placeholder,
+  .bb-lead__textarea::placeholder {
+    color: rgba(26, 36, 21, 0.4);
+  }
+
+  .bb-lead__input:focus,
+  .bb-lead__select:focus,
+  .bb-lead__textarea:focus {
+    outline: none;
+    border-color: var(--bb-ink, #1A2415);
+  }
+
+  .bb-lead__select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%231A2415' stroke-width='1.4' d='M1 1.5 6 6.5 11 1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.4rem center;
+    padding-right: 3.6rem;
+  }
+
+  .bb-lead__textarea {
+    min-height: 12rem;
+    resize: vertical;
+    line-height: 1.55;
+  }
+
+  .bb-lead__honey {
+    position: absolute !important;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .bb-lead__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 2.8rem;
+  }
+
+  .bb-lead__submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: var(--bb-ink, #1A2415);
+    color: var(--bb-paper, #F4F1EA);
+    border: 1px solid var(--bb-ink, #1A2415);
+    border-radius: var(--bb-radius-btn, 6px);
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    min-height: 4.8rem;
+    padding: 1.3rem 2.8rem;
+    cursor: pointer;
+    transition: background-color 0.18s ease, color 0.18s ease;
+  }
+
+  .bb-lead__submit:hover {
+    background-color: transparent;
+    color: var(--bb-ink, #1A2415);
+  }
+
+  .bb-lead__note {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--bb-ink-soft, #2D3B1E);
+    opacity: 0.7;
+  }
+
+  .bb-lead__error {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #9b2c20;
+    border: 1px solid rgba(155, 44, 32, 0.4);
+    border-radius: var(--bb-radius-btn, 6px);
+    padding: 1.2rem 1.4rem;
+    margin: 0 0 2.4rem;
+  }
+
+  .bb-lead__success {
+    text-align: left;
+  }
+
+  .bb-lead__success-eyebrow {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--bb-moss, #5C7A3A);
+    margin: 0 0 1.2rem;
+  }
+
+  .bb-lead__success-heading {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 1rem;
+  }
+
+  .bb-lead__success-text {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--bb-ink-soft, #2D3B1E);
+    margin: 0;
+  }
+{%- endstyle -%}
+
+<section class="bb-lead" id="wholesale-lead-form">
+  <div class="page-width bb-lead__wrap">
+    <div class="bb-lead__card">
+      {%- form 'contact', id: 'WholesaleLeadForm', class: 'bb-lead__form' -%}
+        {%- if form.posted_successfully? -%}
+          <div class="bb-lead__success">
+            <p class="bb-lead__success-eyebrow">{{ s.success_eyebrow | escape }}</p>
+            <h2 class="bb-lead__success-heading">{{ s.success_heading | escape }}</h2>
+            <p class="bb-lead__success-text">{{ s.success_text | escape }}</p>
+          </div>
+        {%- else -%}
+          {%- if s.eyebrow != blank -%}
+            <p class="bb-lead__eyebrow">{{ s.eyebrow | escape }}</p>
+          {%- endif -%}
+          {%- if s.heading != blank -%}
+            <h2 class="bb-lead__heading">{{ s.heading | escape }}</h2>
+          {%- endif -%}
+          {%- if s.intro != blank -%}
+            <p class="bb-lead__intro">{{ s.intro | escape }}</p>
+          {%- endif -%}
+
+          <hr class="bb-lead__rule">
+
+          {%- if form.errors -%}
+            <div class="bb-lead__error" role="alert">
+              {{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}
+              {%- unless form.errors.messages.email -%}
+                Something went wrong sending your request. Please check your details and try again.
+              {%- endunless -%}
+            </div>
+          {%- endif -%}
+
+          {%- comment -%} Honeypot — real users never see or fill this. {%- endcomment -%}
+          <div class="bb-lead__honey" aria-hidden="true">
+            <label>Company website<input type="text" name="bb_hp" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <div class="bb-lead__grid">
+            <div class="bb-lead__field">
+              <label class="bb-lead__label" for="bb-name-{{ uid }}">Name <span class="bb-lead__req">*</span></label>
+              <input class="bb-lead__input" id="bb-name-{{ uid }}" type="text" name="contact[name]" value="{{ form.name }}" autocomplete="name" required>
+            </div>
+
+            <div class="bb-lead__field">
+              <label class="bb-lead__label" for="bb-company-{{ uid }}">Business / brand</label>
+              <input class="bb-lead__input" id="bb-company-{{ uid }}" type="text" name="contact[Company]" autocomplete="organization">
+            </div>
+
+            <div class="bb-lead__field">
+              <label class="bb-lead__label" for="bb-email-{{ uid }}">Email <span class="bb-lead__req">*</span></label>
+              <input class="bb-lead__input" id="bb-email-{{ uid }}" type="email" name="contact[email]" value="{{ form.email }}" autocomplete="email" autocorrect="off" autocapitalize="off" required>
+            </div>
+
+            <div class="bb-lead__field">
+              <label class="bb-lead__label" for="bb-phone-{{ uid }}">Phone</label>
+              <input class="bb-lead__input" id="bb-phone-{{ uid }}" type="tel" name="contact[Phone]" autocomplete="tel">
+            </div>
+
+            <div class="bb-lead__field">
+              <label class="bb-lead__label" for="bb-type-{{ uid }}">What do you do?</label>
+              <select class="bb-lead__select" id="bb-type-{{ uid }}" name="contact[Business type]">
+                <option value="" disabled selected>Select one…</option>
+                <option>Screen printer</option>
+                <option>Embroiderer</option>
+                <option>DTG / DTF printer</option>
+                <option>Reseller / boutique</option>
+                <option>Promotional products</option>
+                <option>Team / school / org</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="bb-lead__field">
+              <label class="bb-lead__label" for="bb-volume-{{ uid }}">Monthly volume</label>
+              <select class="bb-lead__select" id="bb-volume-{{ uid }}" name="contact[Monthly volume]">
+                <option value="" disabled selected>Select one…</option>
+                <option>Under 100 units</option>
+                <option>100–500 units</option>
+                <option>500–2,000 units</option>
+                <option>2,000–10,000 units</option>
+                <option>10,000+ units</option>
+              </select>
+            </div>
+
+            <div class="bb-lead__field bb-lead__field--full">
+              <label class="bb-lead__label" for="bb-products-{{ uid }}">What are you after?</label>
+              <select class="bb-lead__select" id="bb-products-{{ uid }}" name="contact[Products of interest]">
+                <option value="" disabled selected>Select one…</option>
+                <option>Tees</option>
+                <option>Hoodies &amp; fleece</option>
+                <option>Jerseys</option>
+                <option>Mixed / a bit of everything</option>
+                <option>Not sure yet — help me figure it out</option>
+              </select>
+            </div>
+
+            <div class="bb-lead__field bb-lead__field--full">
+              <label class="bb-lead__label" for="bb-body-{{ uid }}">Anything else? <span class="bb-lead__note">(sizes, colors, timeline, target price)</span></label>
+              <textarea class="bb-lead__textarea" id="bb-body-{{ uid }}" name="contact[body]" placeholder="Tell us what you run and what you're trying to hit — we'll quote it.">{{ form.body }}</textarea>
+            </div>
+          </div>
+
+          <div class="bb-lead__actions">
+            <button type="submit" class="bb-lead__submit">{{ s.submit_label | escape }} <span aria-hidden="true">&rarr;</span></button>
+            {%- if s.response_note != blank -%}
+              <span class="bb-lead__note">{{ s.response_note | escape }}</span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+
+{%- if s.slack_relay_url != blank -%}
+  <script>
+    (function () {
+      var form = document.querySelector('#wholesale-lead-form .bb-lead__form');
+      if (!form || form.dataset.bbBound) return;
+      form.dataset.bbBound = '1';
+      var RELAY = {{ s.slack_relay_url | json }};
+
+      form.addEventListener('submit', function () {
+        var hp = form.querySelector('[name="bb_hp"]');
+        if (hp && hp.value) return; // bot — let Shopify handle it, skip Slack
+        try {
+          var data = { _source: 'wholesale-form', _shop: location.host, _url: location.href };
+          form.querySelectorAll('[name^="contact["]').forEach(function (el) {
+            if (el.type === 'hidden') return;
+            var key = el.name.slice(8, -1); // strip "contact[" … "]"
+            if (el.value) data[key] = el.value;
+          });
+          // Beacon-style: keepalive + no-cors so it survives the page navigation
+          // that Shopify's native form submit triggers. Text/plain avoids preflight.
+          fetch(RELAY, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+            body: JSON.stringify(data),
+            keepalive: true,
+            mode: 'no-cors'
+          });
+        } catch (e) {
+          /* never block the real submission */
+        }
+      });
+    })();
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Wholesale Lead Form",
+  "tag": "section",
+  "class": "bayou-wholesale-form-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow (mono)",
+      "default": "Bulk & wholesale"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Request bulk pricing."
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro text",
+      "default": "Tell us what you run and what you're trying to hit. We quote case, half-pallet, and pallet orders direct from Hattiesburg — usually same business day."
+    },
+    {
+      "type": "text",
+      "id": "submit_label",
+      "label": "Submit button label",
+      "default": "Send request"
+    },
+    {
+      "type": "text",
+      "id": "response_note",
+      "label": "Note beside button (mono)",
+      "default": "We reply within 1 business day."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Section background",
+      "default": "#1A2415"
+    },
+    {
+      "type": "header",
+      "content": "Success state"
+    },
+    {
+      "type": "text",
+      "id": "success_eyebrow",
+      "label": "Success eyebrow (mono)",
+      "default": "Request received"
+    },
+    {
+      "type": "text",
+      "id": "success_heading",
+      "label": "Success heading",
+      "default": "Got it — we're on it."
+    },
+    {
+      "type": "textarea",
+      "id": "success_text",
+      "label": "Success text",
+      "default": "Thanks for reaching out. Someone from the Bayou Blanks team will get back to you within one business day with pricing. Keep an eye on your inbox."
+    },
+    {
+      "type": "header",
+      "content": "Slack alert"
+    },
+    {
+      "type": "url",
+      "id": "slack_relay_url",
+      "label": "Lead relay endpoint",
+      "info": "Supabase function URL that posts new leads to Slack. Leave blank to disable the Slack alert (the native email still works)."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wholesale Lead Form"
+    }
+  ]
+}
+{% endschema %}

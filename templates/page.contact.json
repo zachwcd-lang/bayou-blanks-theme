@@ -50,13 +50,9 @@
       }
     },
     "form": {
-      "type": "contact-form",
+      "type": "bayou-wholesale-form",
       "settings": {
-        "heading": "Request bulk pricing",
-        "heading_size": "h1",
-        "color_scheme": "scheme-3",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "slack_relay_url": "https://vvgjyvkjptgydqqwzked.supabase.co/functions/v1/bayou-lead"
       }
     }
   },
