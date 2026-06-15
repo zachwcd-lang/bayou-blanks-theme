@@ -72,9 +72,19 @@
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-blankstyle"
           }
+        },
+        "c4": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "Bayou Blanks vs Jiffy Shirts",
+            "dek": "Jiffy is the king of fast shipping; Bayou is the king of price — flat $4.25/unit, same in 4XL, from a single pack.",
+            "cta": "See the matchup",
+            "url": "/pages/bayou-blanks-vs-jiffy-shirts"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
