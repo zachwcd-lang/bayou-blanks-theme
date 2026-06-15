@@ -163,9 +163,9 @@
   opacity: 0.7;
 }
 .farm-hero h1 {
-  font-family: var(--farm-serif);
+  font-family: var(--farm-display);
   font-size: clamp(44px, 7.9vw, 98px);
-  font-weight: 560;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 0.96;
   max-width: 1000px;
@@ -311,7 +311,7 @@
 /* ---------- Pull quote ---------- */
 .farm-pullquote { padding: 36px 0 12px; text-align: center; }
 .farm-pullquote blockquote {
-  font-family: var(--farm-serif);
+  font-family: var(--farm-display);
   font-weight: 480;
   font-style: normal;
   font-size: clamp(25px, 3.8vw, 43px);
@@ -674,9 +674,9 @@
 .farm-hub__vol::before,
 .farm-hub__vol::after { content: ""; width: 40px; height: 1px; background: var(--farm-gold); opacity: 0.7; }
 .farm-hub__masthead h1 {
-  font-family: var(--farm-serif);
+  font-family: var(--farm-display);
   font-size: clamp(48px, 11vw, 130px);
-  font-weight: 560;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 0.92;
   margin: 0 auto 6px;
@@ -684,7 +684,7 @@
 }
 .farm-hub__nameplate {
   display: block;
-  font-family: var(--farm-serif);
+  font-family: var(--farm-display);
   font-size: clamp(20px, 2.6vw, 30px);
   font-weight: 500;
   letter-spacing: -0.01em;
