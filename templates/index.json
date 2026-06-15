@@ -1,43 +1,5 @@
 {
   "sections": {
-    "bayou_ticker": {
-      "type": "bayou-ticker",
-      "blocks": {
-        "item_1": {
-          "type": "item",
-          "settings": {
-            "text": "80,000+ units in stock"
-          }
-        },
-        "item_2": {
-          "type": "item",
-          "settings": {
-            "text": "New pallets weekly"
-          }
-        },
-        "item_3": {
-          "type": "item",
-          "settings": {
-            "text": "Live daily @bayou.blanks"
-          }
-        },
-        "item_4": {
-          "type": "item",
-          "settings": {
-            "text": "Ships from Hattiesburg, MS"
-          }
-        }
-      },
-      "block_order": [
-        "item_1",
-        "item_2",
-        "item_3",
-        "item_4"
-      ],
-      "settings": {
-        "speed": 60
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -179,7 +141,6 @@
   },
   "order": [
     "live_hero",
-    "bayou_ticker",
     "bayou_wholesale",
     "featured_collection",
     "live_channels"

@@ -36,17 +36,9 @@
       "settings": {
         "label": "Bulk & wholesale",
         "heading": "Printing at volume?",
-        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers \u2014 shipped from Hattiesburg. Tell us what you run and we'll quote it.",
+        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg. Tell us what you run and we'll quote it.",
         "button_label": "",
-        "footnote": "Placeholder pricing \u2014 request a current quote below"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "color_scheme": "scheme-3"
+        "footnote": "Placeholder pricing — request a current quote below"
       }
     },
     "form": {
@@ -58,7 +50,6 @@
   },
   "order": [
     "bulk_tiers",
-    "main",
     "form"
   ]
 }
