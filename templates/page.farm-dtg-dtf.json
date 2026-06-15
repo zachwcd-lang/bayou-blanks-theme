@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>7 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
+        "heading": "Best Blank Shirts for <em>DTG &amp; DTF</em> Printing",
+        "answer": "<p>The best blanks for DTG printing are <strong>smooth 100% ring-spun cotton tees in lighter colors</strong> — they absorb ink directly and need no white underbase. <strong>DTF is more forgiving</strong>: its film transfer bonds to cotton, polyester, and blends in any color. Both start at $4.25/unit by the pack.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>DTG needs cotton:</b> a smooth, high-cotton ring-spun face absorbs water-based ink best — 100% cotton is the safe default.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>DTF prints on anything:</b> cotton, polyester, triblend, and dark colors all work because the design transfers off a film, not into the fibers.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Light garments are the easiest DTG wins</b> — no white underbase needed, so color stays vivid and the hand stays soft.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>For darks and poly, reach for DTF</b> (or DTG with a pre-treat + white underbase) to keep the print opaque.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Smooth beats textured:</b> skip heavy slubs, space-dye, and ribbing where you want crisp photo-level detail.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — blanks from $4.25/unit, dropping toward $2.92/unit by the 12-pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "Key <em>Takeaways</em>",
+        "quote": "<p>\"The blank decides the method. <em>Cotton drinks DTG ink; DTF rides on top of anything.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Factor" } },
+        "c2": { "type": "column", "settings": { "label": "DTG (Direct-to-Garment)" } },
+        "c3": { "type": "column", "settings": { "label": "DTF (Direct-to-Film)" } },
+        "r1": { "type": "row", "settings": { "label": "Best fabric", "cell_1": "100% ring-spun cotton", "cell_2": "Cotton, poly, triblend — almost anything" } },
+        "r2": { "type": "row", "settings": { "label": "Garment color", "cell_1": "Shines on lights; darks need pre-treat + underbase", "cell_2": "Any color, lights or darks, no pre-treat" } },
+        "r3": { "type": "row", "settings": { "label": "Detail & gradients", "cell_1": "Excellent on cotton — photo-level", "cell_2": "Excellent — sharp edges and fine text" } },
+        "r4": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Soft, sinks into the fabric", "cell_2": "Slight film layer you can feel" } },
+        "r5": { "type": "row", "settings": { "label": "Best for", "cell_1": "Soft retail tees, full-color art on cotton", "cell_2": "Mixed fabrics, poly performance wear, small runs" } },
+        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — DTG vs DTF",
+        "heading": "Two Methods, <em>Compared</em>",
+        "intro": "<p>What each printing method needs from the blank — fabric, color, detail, and where it shines.</p>",
+        "caption": "DTG vs DTF on blank apparel — what each method needs from the shirt"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Light Cotton", "blurb": "Smooth-faced crew in a light Yellow Strike — the easy DTG default: no underbase, vivid color, soft hand.", "sizes": "Sizes S–XL", "tag": "DTG Default" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-poly-t-shirt", "kicker": "Crew · 100% Poly", "blurb": "100% polyester performance tee — DTG can't grip poly, but DTF transfers bond cleanly. Proof the right method beats the 'perfect' fabric.", "sizes": "Sizes S–XL", "tag": "DTF Only" } },
+        "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray v-neck with deep stock (20,000+ units) — a dark blank built for DTF, where the design pops with no separate white screen.", "sizes": "Sizes S–XL", "tag": "Dark · DTF" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · 2XL–3XL", "blurb": "Texas Orange v-neck in extended 2XL–3XL — the plus sizes most suppliers run short on, ready for either method.", "sizes": "Sizes S–3XL", "tag": "Extended Sizes" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Bayou's DTG &amp; DTF Blanks, <em>In Stock</em>",
+        "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No minimums beyond a pack, and deep stock in extended and plus sizes most suppliers run short on.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is the best blank shirt for DTG printing?", "answer": "<p>A smooth, 100% ring-spun cotton tee in a lighter color is the best blank for DTG. Cotton absorbs the water-based ink directly, ring-spun gives a tight surface for fine detail, and a light garment skips the white underbase — keeping the print vivid and the hand soft.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Can you DTG print on polyester or blends?", "answer": "<p>Not well. DTG ink is designed to bond with cotton, so 100% polyester resists it and high-poly blends print dull and wash out faster. If your blank is poly or a blend, use DTF instead — its film transfer bonds to any fabric.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "What blanks work best for DTF printing?", "answer": "<p>Almost any blank. Because DTF transfers a design off a film with a heat-activated adhesive, it bonds to cotton, polyester, triblend, and blends in any color — lights or darks — with no pre-treatment. That makes DTF the most flexible choice when your blanks vary.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Do I need to pre-treat shirts for DTG?", "answer": "<p>Only for darks. Light cotton garments can be printed straight from the pack. Dark garments need a pre-treat and a white underbase so the colors stay opaque — one reason many shops choose DTF for dark blanks instead.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Is DTG or DTF better for small orders?", "answer": "<p>Both skip screens, so both are great for small runs and one-offs. DTF edges ahead when you're printing across mixed fabrics or onto dark and poly garments, while DTG gives the softest hand on light cotton tees.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Can I buy DTG and DTF blanks cheaply in bulk?", "answer": "<p>Yes. Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation overstock blanks from $4.25 per unit — down toward $2.92 per unit by the 12-pack — with no minimum beyond a single pack.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt — from $4.25, down to about $2.92 by the 12-pack. No sale theater, no struck-through prices." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Around 85 blank styles — cotton, poly, and blends, light and dark, S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL and plus sizes at the same per-unit price — the sizes most suppliers run short on." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "The screen-print companion guide.", "cta": "Read guide", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank Hoodies for Printing", "summary": "DTF is a top choice for dark fleece.", "cta": "Read", "url": "/pages/best-blank-hoodies-for-printing" } },
+        "l3": { "type": "link", "settings": { "category": "Pricing", "title": "Cheapest Blank T-Shirts in Bulk", "summary": "Per-unit pricing, explained.", "cta": "See pricing", "url": "/pages/cheapest-blank-t-shirts-in-bulk" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Print it — DTG or <em>DTF.</em>",
+        "subtext": "<p>Smooth cotton for DTG, poly and darks for DTF — all in stock, all sold by the pack at per-unit prices.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

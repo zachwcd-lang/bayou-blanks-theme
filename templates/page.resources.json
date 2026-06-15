@@ -12,9 +12,39 @@
             "cta": "Read guide",
             "url": "/pages/best-blank-t-shirts-for-screen-printing"
           }
+        },
+        "e2": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Best Blank Shirts for DTG & DTF Printing",
+            "dek": "DTG wants smooth cotton; DTF rides on anything. Which blank suits each method, and why.",
+            "cta": "Compare methods",
+            "url": "/pages/best-blank-shirts-for-dtg-dtf-printing"
+          }
+        },
+        "e3": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Best Blank Hoodies for Printing",
+            "dek": "Fleece pullovers, crewnecks, and where the print actually lays flat — screen, DTF, and embroidery.",
+            "cta": "Read guide",
+            "url": "/pages/best-blank-hoodies-for-printing"
+          }
+        },
+        "e4": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Cheapest Blank T-Shirts in Bulk",
+            "dek": "Per-unit pricing explained: $4.25 a shirt at the 4-pack, down to about $2.92 by the 12-pack.",
+            "cta": "See pricing",
+            "url": "/pages/cheapest-blank-t-shirts-in-bulk"
+          }
         }
       },
-      "block_order": ["e1"],
+      "block_order": ["e1", "e2", "e3", "e4"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
