@@ -82,9 +82,19 @@
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-jiffy-shirts"
           }
+        },
+        "c5": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "Bayou Blanks vs S&S Activewear",
+            "dek": "S&S makes you register and file a resale certificate. Bayou is open to anyone — flat $4.25/unit, buy a single pack.",
+            "cta": "See the matchup",
+            "url": "/pages/bayou-blanks-vs-ss-activewear"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
