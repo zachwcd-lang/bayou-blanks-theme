@@ -332,6 +332,31 @@
       </div>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+        {%- endcase -%}
+      {%- endfor -%}
+
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+          {% if cart == empty %}
+            <span class="svg-wrapper">{{'icon-cart-empty.svg' | inline_asset_content }}</span>
+          {% else %}
+            <span class="svg-wrapper">{{'icon-cart.svg' | inline_asset_content }}</span>
+          {% endif %}
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+        {%- endif -%}
+      </a>
+
+      {%- comment -%} Account avatar last — sits as the 3rd icon after search and cart. {%- endcomment -%}
       {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -360,30 +385,6 @@
           </span>
         </a>
       {%- endif -%}
-
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
-        {%- endcase -%}
-      {%- endfor -%}
-
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-          {% if cart == empty %}
-            <span class="svg-wrapper">{{'icon-cart-empty.svg' | inline_asset_content }}</span>
-          {% else %}
-            <span class="svg-wrapper">{{'icon-cart.svg' | inline_asset_content }}</span>
-          {% endif %}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
-      </a>
     </div>
   </header>
 </{{ header_tag }}>

@@ -242,6 +242,10 @@
     color: var(--bb-ink-soft, #2D3B1E);
     margin: 0;
   }
+
+  .bb-lead__proof {
+    margin-top: 2.4rem;
+  }
 {%- endstyle -%}
 
 <section class="bb-lead" id="wholesale-lead-form">
@@ -355,6 +359,12 @@
         {%- endif -%}
       {%- endform -%}
     </div>
+
+    {%- if s.show_proof -%}
+      <div class="bb-lead__proof">
+        {% render 'bayou-proof-pills', align: 'center' %}
+      </div>
+    {%- endif -%}
   </div>
 </section>
 
@@ -434,6 +444,12 @@
       "id": "background",
       "label": "Section background",
       "default": "#1A2415"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_proof",
+      "label": "Show TikTok/Whatnot rating pills below the form",
+      "default": true
     },
     {
       "type": "header",

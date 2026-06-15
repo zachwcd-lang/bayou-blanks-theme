@@ -1,25 +1,5 @@
 {
   "sections": {
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Shop Blanks",
-        "heading_size": "h2",
-        "collection": "in-stock",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 96,
-        "padding_bottom": 96
-      }
-    },
     "live_channels": {
       "type": "bayou-live-channels",
       "blocks": {
@@ -101,30 +81,6 @@
     },
     "live_hero": {
       "type": "bayou-tiktok-cta",
-      "blocks": {
-        "chip_tiktok": {
-          "type": "chip",
-          "settings": {
-            "platform": "tiktok",
-            "rating": 5,
-            "text": "1,000s of 5-star reviews",
-            "link": "https://www.tiktok.com/@bayou.blanks"
-          }
-        },
-        "chip_whatnot": {
-          "type": "chip",
-          "settings": {
-            "platform": "whatnot",
-            "rating": 5,
-            "text": "Top-rated seller",
-            "link": "https://www.whatnot.com/user/west_coast_deals"
-          }
-        }
-      },
-      "block_order": [
-        "chip_tiktok",
-        "chip_whatnot"
-      ],
       "settings": {
         "color_scheme": "scheme-3",
         "heading": "Live daily.",
@@ -137,12 +93,67 @@
         "video_asset": "hattiesburg-hero.mov",
         "caption": "LIVE FROM THE WAREHOUSE, DAILY."
       }
+    },
+    "collection_cards": {
+      "type": "bayou-collection-cards",
+      "blocks": {
+        "card_tees": {
+          "type": "card",
+          "settings": {
+            "collection": "t-shirts"
+          }
+        },
+        "card_hoodies": {
+          "type": "card",
+          "settings": {
+            "collection": "hoodies-fleece"
+          }
+        },
+        "card_jerseys": {
+          "type": "card",
+          "settings": {
+            "collection": "jerseys"
+          }
+        },
+        "card_polos": {
+          "type": "card",
+          "settings": {
+            "collection": "polos-1"
+          }
+        },
+        "card_sweats": {
+          "type": "card",
+          "settings": {
+            "collection": "sweatshirts"
+          }
+        },
+        "card_womens": {
+          "type": "card",
+          "settings": {
+            "collection": "womens"
+          }
+        }
+      },
+      "block_order": [
+        "card_tees",
+        "card_hoodies",
+        "card_jerseys",
+        "card_polos",
+        "card_sweats",
+        "card_womens"
+      ],
+      "settings": {
+        "eyebrow": "Shop the full range",
+        "heading": "Shop Blanks",
+        "background": "#FAF8F2",
+        "columns_desktop": 3
+      }
     }
   },
   "order": [
     "live_hero",
     "bayou_wholesale",
-    "featured_collection",
+    "collection_cards",
     "live_channels"
   ]
 }

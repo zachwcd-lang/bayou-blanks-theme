@@ -1,0 +1,118 @@
+{%- comment -%}
+  Bayou Blanks — social-proof pills (reusable).
+  Renders TikTok + Whatnot rating pills. Built for dark bayou sections
+  (cream-on-ink). Used in the live hero and on the contact/lead page.
+
+  Accepts:
+  - align: 'center' to center the row (default: left)
+  - tiktok_url, whatnot_url: profile links
+{%- endcomment -%}
+
+{%- liquid
+  assign tt = tiktok_url | default: 'https://www.tiktok.com/@bayou.blanks'
+  assign wn = whatnot_url | default: 'https://www.whatnot.com/user/west_coast_deals'
+-%}
+
+{%- style -%}
+  .bb-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bb-proof--center {
+    justify-content: center;
+  }
+
+  .bb-proof__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.9rem 1.4rem;
+    border: 1px solid rgba(250, 248, 242, 0.22);
+    background: rgba(250, 248, 242, 0.05);
+    border-radius: 12px;
+    color: var(--bb-paper, #F4F1EA);
+    text-decoration: none;
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    transition: border-color 0.18s ease, background-color 0.18s ease;
+  }
+
+  .bb-proof__pill:hover {
+    border-color: rgba(250, 248, 242, 0.5);
+    background: rgba(250, 248, 242, 0.1);
+    color: var(--bb-paper, #F4F1EA);
+  }
+
+  .bb-proof__mark {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+
+  .bb-proof__mark svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+  }
+
+  .bb-proof__mark--w {
+    width: 18px;
+    height: 18px;
+    justify-content: center;
+    border-radius: 5px;
+    background: var(--bb-paper, #F4F1EA);
+    color: var(--bb-ink, #1A2415);
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  .bb-proof__stars {
+    color: var(--bb-gold, #C9B96B);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    flex: 0 0 auto;
+  }
+
+  .bb-proof__text {
+    opacity: 0.92;
+  }
+
+  .bb-proof__text strong {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bb-proof__sep {
+    opacity: 0.4;
+    margin: 0 0.1rem;
+  }
+{%- endstyle -%}
+
+<ul class="bb-proof{% if align == 'center' %} bb-proof--center{% endif %}" role="list">
+  <li>
+    <a class="bb-proof__pill" href="{{ tt }}" target="_blank" rel="noopener">
+      <span class="bb-proof__mark" aria-hidden="true">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M10.511 1.705h2.74s-.157 3.51 3.795 3.768v2.711s-2.114.129-3.796-1.158l.028 5.606A5.073 5.073 0 1 1 8.213 7.56h.708v2.785a2.298 2.298 0 1 0 1.618 2.205z"/></svg>
+      </span>
+      <span class="bb-proof__stars" role="img" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="bb-proof__text">1,000s of reviews</span>
+    </a>
+  </li>
+  <li>
+    <a class="bb-proof__pill" href="{{ wn }}" target="_blank" rel="noopener">
+      <span class="bb-proof__mark bb-proof__mark--w" aria-hidden="true">W</span>
+      <span class="bb-proof__stars" role="img" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="bb-proof__text"><strong>4.9</strong><span class="bb-proof__sep">·</span><strong>48.6K</strong> reviews</span>
+    </a>
+  </li>
+</ul>

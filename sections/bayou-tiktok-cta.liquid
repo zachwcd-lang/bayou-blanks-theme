@@ -23,79 +23,8 @@
     }
   }
 
-  /* Social-proof chips: glass over either scheme via foreground-tinted frost. */
-  .bayou-tiktok__chips {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    margin: 2.8rem 0 0;
-    padding: 0;
-    list-style: none;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .bayou-tiktok__chips::-webkit-scrollbar {
-    display: none;
-  }
-
-  .bayou-tiktok__chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 10px 16px;
-    border: 1px solid rgba(var(--color-foreground), 0.18);
-    background: rgba(var(--color-foreground), 0.06);
-    backdrop-filter: blur(var(--bb-blur, 18px)) saturate(1.4);
-    -webkit-backdrop-filter: blur(var(--bb-blur, 18px)) saturate(1.4);
-    border-radius: var(--bb-radius-card, 4px);
-    font-family: var(--font-display, 'Inter', sans-serif);
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.2;
-    color: rgb(var(--color-foreground));
-    white-space: nowrap;
-  }
-
-  .bayou-tiktok__chip-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .bayou-tiktok__chip--linked {
-    transition: border-color 0.2s ease, background-color 0.2s ease;
-  }
-
-  .bayou-tiktok__chip--linked:hover {
-    border-color: rgba(var(--color-foreground), 0.45);
-    background: rgba(var(--color-foreground), 0.1);
-  }
-
-  .bayou-tiktok__chip-mark {
-    display: inline-flex;
-    align-items: center;
-    color: rgb(var(--color-foreground));
-  }
-
-  .bayou-tiktok__chip-mark svg,
-  .bayou-tiktok__chip-mark img {
-    width: 16px;
-    height: 16px;
-    display: block;
-  }
-
-  .bayou-tiktok__chip-mark--text {
-    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
-    font-size: 13px;
-  }
-
-  .bayou-tiktok__chip-stars {
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--bb-gold, #C9B96B);
+  .bayou-tiktok__proof {
+    margin-top: 2.8rem;
   }
 
   .bayou-tiktok__heading {
@@ -284,42 +213,9 @@
         </div>
       {%- endif -%}
 
-      {%- if section.blocks.size > 0 -%}
-        <ul class="bayou-tiktok__chips" role="list">
-          {%- for block in section.blocks -%}
-            <li class="bayou-tiktok__chip{% if block.settings.link != blank %} bayou-tiktok__chip--linked{% endif %}" {{ block.shopify_attributes }}>
-              {%- if block.settings.link != blank -%}
-                <a class="bayou-tiktok__chip-link" href="{{ block.settings.link }}" target="_blank" rel="noopener">
-              {%- endif -%}
-              {%- case block.settings.platform -%}
-                {%- when 'tiktok' -%}
-                  <span class="bayou-tiktok__chip-mark" aria-hidden="true">
-                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M10.511 1.705h2.74s-.157 3.51 3.795 3.768v2.711s-2.114.129-3.796-1.158l.028 5.606A5.073 5.073 0 1 1 8.213 7.56h.708v2.785a2.298 2.298 0 1 0 1.618 2.205z"/></svg>
-                  </span>
-                {%- when 'whatnot' -%}
-                  <span class="bayou-tiktok__chip-mark" aria-hidden="true">
-                    {%- if block.settings.mark_image != blank -%}
-                      {{ block.settings.mark_image | image_url: width: 32 | image_tag: loading: 'lazy', alt: '' }}
-                    {%- else -%}
-                      <span class="bayou-tiktok__chip-mark--text">W·</span>
-                    {%- endif -%}
-                  </span>
-              {%- endcase -%}
-              {%- if block.settings.rating > 0 -%}
-                <span class="bayou-tiktok__chip-stars" role="img" aria-label="Rated {{ block.settings.rating }} out of 5 stars">
-                  {%- for i in (1..block.settings.rating) -%}&#9733;{%- endfor -%}
-                </span>
-              {%- endif -%}
-              {%- if block.settings.text != blank -%}
-                <span class="bayou-tiktok__chip-text">{{ block.settings.text }}</span>
-              {%- endif -%}
-              {%- if block.settings.link != blank -%}
-                </a>
-              {%- endif -%}
-            </li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
+      <div class="bayou-tiktok__proof">
+        {% render 'bayou-proof-pills' %}
+      </div>
     </div>
 
     <div class="bayou-tiktok__media-wrap">
@@ -443,66 +339,9 @@
       "default": "LIVE FROM THE WAREHOUSE, DAILY."
     }
   ],
-  "max_blocks": 4,
-  "blocks": [
-    {
-      "type": "chip",
-      "name": "Social-proof chip",
-      "settings": [
-        {
-          "type": "select",
-          "id": "platform",
-          "label": "Platform mark",
-          "options": [
-            { "value": "tiktok", "label": "TikTok" },
-            { "value": "whatnot", "label": "Whatnot" },
-            { "value": "none", "label": "None" }
-          ],
-          "default": "none"
-        },
-        {
-          "type": "image_picker",
-          "id": "mark_image",
-          "label": "Custom mark image (optional)",
-          "info": "Used for the Whatnot mark if set. 16px square works best."
-        },
-        {
-          "type": "range",
-          "id": "rating",
-          "min": 0,
-          "max": 5,
-          "step": 1,
-          "label": "Star rating",
-          "default": 5
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Chip text",
-          "default": "1,000s of 5-star reviews"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Chip link",
-          "info": "Opens in a new tab. Leave blank for a static chip."
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Bayou Live Hero",
-      "blocks": [
-        {
-          "type": "chip",
-          "settings": { "platform": "tiktok", "rating": 5, "text": "1,000s of 5-star reviews" }
-        },
-        {
-          "type": "chip",
-          "settings": { "platform": "whatnot", "rating": 5, "text": "Top-rated seller" }
-        }
-      ]
+      "name": "Bayou Live Hero"
     }
   ]
 }
