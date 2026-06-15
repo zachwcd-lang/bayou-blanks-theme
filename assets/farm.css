@@ -919,3 +919,71 @@
 .farm-hub__lede { color: var(--farm-onink-dim); }
 .farm-hub__by { color: rgba(250, 248, 242, 0.5); }
 .farm-hub__rule { background: rgba(250, 248, 242, 0.22); }
+
+/* Hub crops → bucket cards (containers), white interior on the light body */
+.farm-hub__buckets-wrap { padding: 14px 0 96px; }
+.farm-buckets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; align-items: start; }
+.farm-bucket {
+  background: #FFFFFF;
+  border: 1px solid var(--farm-line);
+  border-radius: var(--farm-radius-lg);
+  padding: 28px 28px 16px;
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 90px;
+}
+.farm-bucket--soon { background: transparent; border-style: dashed; }
+.farm-bucket__head { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
+.farm-bucket__name {
+  font-family: var(--farm-display);
+  font-weight: 700;
+  font-size: clamp(22px, 3vw, 28px);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0;
+  color: var(--farm-ink);
+}
+.farm-bucket__count {
+  color: var(--farm-moss-deep);
+  background: rgba(92, 122, 58, 0.12);
+  padding: 4px 11px;
+  border-radius: 40px;
+  font-size: 9.5px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+.farm-bucket--soon .farm-bucket__count { color: var(--farm-ink-fainter); background: rgba(26, 36, 21, 0.06); }
+.farm-bucket__desc { color: var(--farm-ink-faint); font-size: 14px; line-height: 1.5; margin: 12px 0 4px; }
+.farm-bucket__entries { margin-top: 10px; }
+.farm-bucket__entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 0;
+  border-top: 1px solid var(--farm-line-soft);
+  transition: padding-left .25s cubic-bezier(.2, .7, .2, 1);
+}
+.farm-bucket__entry:hover { padding-left: 6px; }
+.farm-bucket__entry-ttl { display: flex; flex-direction: column; gap: 5px; }
+.farm-bucket__entry h3 {
+  font-family: var(--farm-display);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--farm-ink);
+  transition: color .2s;
+}
+.farm-bucket__entry:hover h3 { color: var(--farm-moss-deep); }
+.farm-bucket__entry-dek { color: var(--farm-ink-faint); font-size: 13px; line-height: 1.5; }
+.farm-bucket__entry-arr { color: var(--farm-moss); flex: 0 0 auto; transition: transform .2s; }
+.farm-bucket__entry:hover .farm-bucket__entry-arr { transform: translateX(4px); }
+.farm-bucket__soon {
+  color: var(--farm-ink-fainter);
+  padding: 16px 0 10px;
+  border-top: 1px solid var(--farm-line-soft);
+  margin-top: 10px;
+}
+@media (max-width: 760px) { .farm-buckets { grid-template-columns: 1fr; } }

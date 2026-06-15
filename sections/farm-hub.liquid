@@ -10,6 +10,7 @@
 
 {%- assign crop_keys = "buying-guides,comparisons,who-its-for,glossary,tools" | split: "," -%}
 {%- assign crop_names = "Buying Guides|Comparisons|Who It's For|Glossary|Tools" | split: "|" -%}
+{%- assign crop_descs = "Best blanks for screen print, DTG/DTF, hoodies, and cheap bulk.|Bayou head-to-head vs the big distributors and brands.|Blanks for print shops, resellers, teams, and fundraisers.|Ring-spun, GSM, triblend, undecorated — the terms, explained.|Size charts and a per-unit price calculator." | split: "|" -%}
 
 <section class="farm" id="farm-hub-{{ section.id }}">
   <div class="farm-hub__masthead farm__rv">
@@ -44,53 +45,53 @@
     </div>
   {%- endif -%}
 
-  {%- for crop_key in crop_keys -%}
-    {%- assign ci = forloop.index0 -%}
+  <div class="farm-hub__buckets-wrap">
+    <div class="farm__wrap">
+      <div class="farm-buckets farm__rv">
+        {%- for crop_key in crop_keys -%}
+          {%- assign ci = forloop.index0 -%}
+          {%- assign crop_count = 0 -%}
+          {%- for block in section.blocks -%}
+            {%- if block.settings.cluster == crop_key -%}
+              {%- assign crop_count = crop_count | plus: 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
 
-    {%- assign crop_count = 0 -%}
-    {%- for block in section.blocks -%}
-      {%- if block.settings.cluster == crop_key -%}
-        {%- assign crop_count = crop_count | plus: 1 -%}
-      {%- endif -%}
-    {%- endfor -%}
-
-    {%- if crop_count > 0 -%}
-      {%- assign aside_name = crop_names[ci] -%}
-
-      <section class="farm-crop" id="{{ crop_key }}">
-        <div class="farm__wrap">
-          <div class="farm-crop__grid">
-            <aside class="farm-crop__aside farm__rv">
-              <h2>{{ aside_name }}</h2>
-              <div class="farm-crop__count">
-                {{ crop_count }}{% if crop_count == 1 %} entry{% else %} entries{% endif %}
-              </div>
-            </aside>
-            <div class="farm-entries farm__rv">
-              {%- assign n = 0 -%}
-              {%- for block in section.blocks -%}
-                {%- if block.settings.cluster == crop_key -%}
-                  {%- assign n = n | plus: 1 -%}
-                  <a class="farm-entry" href="{{ block.settings.url | default: '#' }}" {{ block.shopify_attributes }}>
-                    <span class="farm-entry__no farm__mono">{% if n < 10 %}0{% endif %}{{ n }}</span>
-                    <span class="farm-entry__ttl">
-                      <h3>{{ block.settings.title }}</h3>
-                      {%- if block.settings.dek != blank -%}
-                        <span class="farm-entry__dek">{{ block.settings.dek }}</span>
-                      {%- endif -%}
-                    </span>
-                    <span class="farm-entry__go">
-                      {{ block.settings.cta | default: 'Read' }} <span class="farm-entry__arr" aria-hidden="true">→</span>
-                    </span>
-                  </a>
-                {%- endif -%}
-              {%- endfor -%}
+          <div class="farm-bucket{% if crop_count == 0 %} farm-bucket--soon{% endif %}" id="{{ crop_key }}">
+            <div class="farm-bucket__head">
+              <h2 class="farm-bucket__name">{{ crop_names[ci] }}</h2>
+              <span class="farm-bucket__count farm__mono">
+                {%- if crop_count > 0 -%}{{ crop_count }} {% if crop_count == 1 %}entry{% else %}entries{% endif %}{%- else -%}Soon{%- endif -%}
+              </span>
             </div>
+            {%- if crop_descs[ci] != blank -%}
+              <p class="farm-bucket__desc">{{ crop_descs[ci] }}</p>
+            {%- endif -%}
+
+            {%- if crop_count > 0 -%}
+              <div class="farm-bucket__entries">
+                {%- for block in section.blocks -%}
+                  {%- if block.settings.cluster == crop_key -%}
+                    <a class="farm-bucket__entry" href="{{ block.settings.url | default: '#' }}" {{ block.shopify_attributes }}>
+                      <span class="farm-bucket__entry-ttl">
+                        <h3>{{ block.settings.title }}</h3>
+                        {%- if block.settings.dek != blank -%}
+                          <span class="farm-bucket__entry-dek">{{ block.settings.dek }}</span>
+                        {%- endif -%}
+                      </span>
+                      <span class="farm-bucket__entry-arr" aria-hidden="true">→</span>
+                    </a>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- else -%}
+              <div class="farm-bucket__soon farm__mono">Planted soon</div>
+            {%- endif -%}
           </div>
-        </div>
-      </section>
-    {%- endif -%}
-  {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
 </section>
 
 {% schema %}
