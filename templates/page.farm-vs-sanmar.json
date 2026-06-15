@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>7</b> factors compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Comparison · Updated June 2026",
+        "heading": "Bayou Blanks vs <em>SanMar</em>",
+        "answer": "<p>Bayou Blanks is the buy-it-now alternative to SanMar. SanMar is a trade-only wholesale distributor — to order at all you need a business account, a resale certificate, and a state sales tax license on file. Bayou is open to anyone: a flat <strong>$4.25/unit</strong>, no account, no paperwork, buy a single pack.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Comparisons",
+        "crop_anchor": "comparisons",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>SanMar is trade-only</b> — you need a business account, a resale certificate, and a state sales tax license on file before you can order. Bayou is open to anyone, no account, no paperwork.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>SanMar pricing is gated behind an account</b> you call to open; Bayou shows the per-unit price right on the page.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat $4.25/unit ($2.92 by the 12-pack)</b>, the same for everyone — no trade credentials to unlock it.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou</b> — a 4XL is the same $4.25/unit as a small — while the brands SanMar distributes upcharge for 2XL and up.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Where SanMar wins:</b> scale — one of the largest apparel distributors in the US, with a massive brand catalog and nationwide distribution built for established decorators.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Where Bayou wins:</b> the lowest per-unit on solid blanks with zero gatekeeping — ideal for individuals, side hustles, teams, and small makers, especially in extended and plus sizes.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Verdict</em>",
+        "quote": "<p>\"SanMar makes you file paperwork to get a price. <em>Bayou puts the price on the page.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Factor" } },
+        "c2": { "type": "column", "settings": { "label": "Bayou Blanks" } },
+        "c3": { "type": "column", "settings": { "label": "SanMar" } },
+        "r1": { "type": "row", "settings": { "label": "Who can buy", "cell_1": "Anyone — open to the public", "badge_1": true, "cell_2": "Trade only — decorators/distributors with an account" } },
+        "r2": { "type": "row", "settings": { "label": "Required to order", "cell_1": "Nothing — buy a single pack", "badge_1": true, "cell_2": "Resale certificate + state sales tax license on file" } },
+        "r3": { "type": "row", "settings": { "label": "Seeing the price", "cell_1": "Shown up front, no account", "badge_1": true, "cell_2": "Account required (call to open one)" } },
+        "r4": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $4.25/unit ($2.92 at the 12-pack)", "cell_2": "Trade wholesale (account pricing)" } },
+        "r5": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $4.25/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
+        "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "One of the largest catalogs in the US" } },
+        "r7": { "type": "row", "settings": { "label": "Best for", "cell_1": "Anyone wanting blanks now", "cell_2": "Established decorators/distributors at volume" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "fig": "Fig. III — Head To Head",
+        "heading": "Bayou vs SanMar, <em>Line by Line</em>",
+        "intro": "<p>An honest read on where each one wins — access, paperwork, pricing, and scale.</p>",
+        "caption": "Bayou Blanks vs SanMar — how the two stack up"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat $4.25/unit. No account, no resale certificate.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same $4.25/unit as a small — the plus-size upcharge brand distributors add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p3": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Pullover Fleece", "blurb": "Classic Gold pullover fleece — the flat per-unit deal isn't just tees; hoodies and fleece price the same way.", "sizes": "Sizes S–3XL", "tag": "Fleece" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Color", "blurb": "Texas Orange V-Neck in extended 2XL–3XL — color and size depth at one flat per-unit price, ready to print.", "sizes": "Sizes 2XL–3XL", "tag": "2XL–3XL" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "The Blanks That Make the <em>Case</em>",
+        "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account required.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no account, no resale certificate, no minimums beyond a pack, and the same per-unit price across every size. Pack pricing drops to about <b>$2.92/unit by the 12-pack</b>.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Can anyone buy from SanMar?", "answer": "<p>No. SanMar is a trade-only wholesale distributor. You need a business account, and they require a resale certificate plus a copy of your state sales tax license on file before orders can process; accounts are geared to decorators and promotional distributors. Bayou is open to anyone with no account.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than SanMar?", "answer": "<p>For anyone without a SanMar trade account, Bayou is the one you can actually buy from — a flat $4.25/unit with no credentials. An established decorator with a SanMar account buying brand cases at volume may get competitive trade pricing on specific brands; that's SanMar's lane.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "What do you need to open a SanMar account?", "answer": "<p>A business as an apparel decorator or distributor, a completed resale certificate, and a copy of your state sales tax license — and you call SanMar to open the account. Bayou needs none of that: the price is on the page and you can buy a single pack.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Does Bayou charge more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $4.25/unit as a small. The brand blanks SanMar distributes add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "What's the catch with Bayou's liquidation blanks?", "answer": "<p>Selection. Bayou stocks around 85 curated overstock styles, not SanMar's huge multi-brand catalog. If you're a decorator who needs a specific brand and color at volume, SanMar's range is far deeper; if you want the lowest per-unit on solid blanks with no account, Bayou wins.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "SanMar or Bayou — which should I use?", "answer": "<p>Use SanMar if you're an established decorator or distributor buying brand goods at volume and you have (or can open) a trade account. Use Bayou if you want blanks now with no account, license, or paperwork — ideal for individuals, side hustles, teams, and small-to-mid orders, especially extended or plus sizes.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Comparison", "title": "Bayou Blanks vs S&S Activewear", "summary": "The other big distributor, head-to-head.", "cta": "See the matchup", "url": "/pages/bayou-blanks-vs-ss-activewear" } },
+        "l2": { "type": "link", "settings": { "category": "Comparison", "title": "Bayou Blanks vs ShirtSpace", "summary": "The same matchup, vs ShirtSpace.", "cta": "See the matchup", "url": "/pages/bayou-blanks-vs-shirtspace" } },
+        "l3": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "No account. No paperwork. <em>Just blanks.</em>",
+        "subtext": "<p>Liquidation overstock blanks at a flat $4.25/unit — open to everyone, every size, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop In-Stock Blanks",
+        "cta_collection": "in-stock",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

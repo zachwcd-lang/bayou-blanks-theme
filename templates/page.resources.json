@@ -92,9 +92,19 @@
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-ss-activewear"
           }
+        },
+        "c6": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "Bayou Blanks vs SanMar",
+            "dek": "SanMar is trade-only — account, resale cert, sales tax license. Bayou is open to anyone, flat $4.25/unit, no paperwork.",
+            "cta": "See the matchup",
+            "url": "/pages/bayou-blanks-vs-sanmar"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
