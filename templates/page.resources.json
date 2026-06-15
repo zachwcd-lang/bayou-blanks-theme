@@ -102,9 +102,19 @@
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-sanmar"
           }
+        },
+        "c7": {
+          "type": "entry",
+          "settings": {
+            "cluster": "comparisons",
+            "title": "The Budget Alternative to Gildan Blanks",
+            "dek": "Gildan is the brand standard, but charges more for big sizes. Bayou is the unbranded blank — flat $4.25/unit, same price in every size, no account.",
+            "cta": "See the matchup",
+            "url": "/pages/the-budget-alternative-to-gildan-blanks"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6", "c7"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
