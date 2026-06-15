@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is a <em>Triblend</em> Shirt?",
+        "answer": "<p>A triblend shirt is a tee knit from three fibers blended together — typically about 50% polyester, 25% ring-spun cotton, and 25% rayon. That mix makes it exceptionally soft and lightweight, with a slight stretch, a draped fit, and the faded, heathered look triblend is known for.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>'Triblend' means three fibers in one fabric:</b> usually polyester, ring-spun cotton, and rayon.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>The common blend is about 50% polyester, 25% cotton, 25% rayon</b>, though ratios vary by maker.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Triblend is softer, lighter, and drapier than 100% cotton</b>, with a subtle stretch.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>It has a naturally heathered, vintage look</b> — colors read slightly faded or marled.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Polyester adds durability, rayon adds drape, cotton adds comfort</b> — that's the three-fiber tradeoff.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Triblend takes screen and DTF prints well</b>, but the heathered surface gives a softer, vintage finish.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Three fibers, one job: <em>the softest, drapiest tee in the rack.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Triblend" } },
+        "c3": { "type": "column", "settings": { "label": "100% cotton" } },
+        "c4": { "type": "column", "settings": { "label": "50/50 blend" } },
+        "r1": { "type": "row", "settings": { "label": "Fibers", "cell_1": "Poly + cotton + rayon", "cell_2": "All cotton", "cell_3": "Cotton + polyester" } },
+        "r2": { "type": "row", "settings": { "label": "Feel", "cell_1": "Softest, drapey", "badge_1": true, "cell_2": "Soft, structured", "cell_3": "Soft, smooth" } },
+        "r3": { "type": "row", "settings": { "label": "Weight", "cell_1": "Lightweight", "cell_2": "Mid to heavy", "cell_3": "Light to mid" } },
+        "r4": { "type": "row", "settings": { "label": "Look", "cell_1": "Heathered, vintage", "cell_2": "Solid, opaque", "cell_3": "Slightly heathered" } },
+        "r5": { "type": "row", "settings": { "label": "Stretch", "cell_1": "Slight stretch", "badge_1": true, "cell_2": "Minimal", "cell_3": "Minimal" } },
+        "r6": { "type": "row", "settings": { "label": "Print finish", "cell_1": "Soft, vintage", "cell_2": "Bold, opaque", "cell_3": "In between" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Triblend vs <em>Cotton vs Blend</em>",
+        "intro": "<p>How a triblend stacks up against a 100% cotton tee and a 50/50 blend — feel, look, and how it prints.</p>",
+        "caption": "Triblend vs 100% cotton vs 50/50 blend"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend", "blurb": "A true triblend tee — soft, lightweight, with that vintage drape. A flat $4.25/unit, no account.", "sizes": "Adult sizes", "tag": "Triblend" } },
+        "p2": { "type": "pick", "settings": { "product": "mr06-adult-short-sleeve-tee", "kicker": "Heather · Soft-Style", "blurb": "A heathered soft-style crew with the marled, triblend-style look. From $4.25/unit.", "sizes": "Adult sizes", "tag": "Soft-Style" } },
+        "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-extended-sizes", "kicker": "V-Neck · Extended", "blurb": "A heathered v-neck in extended sizes — same soft hand, one flat per-unit price.", "sizes": "Extended sizes", "tag": "Extended" } },
+        "p4": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-plus-sizes-2", "kicker": "V-Neck · Plus", "blurb": "A charcoal heather v-neck in plus sizes at the same flat $4.25/unit.", "sizes": "Plus sizes", "tag": "Plus" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "The Softest Blanks <em>We Stock</em>",
+        "intro": "<p>Triblend and heathered soft-style blanks come through as overstock, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Triblend stock is limited overstock, so colors can sell through — but every pick is the same flat <b>$4.25/unit</b> ($2.92 by the 12-pack), same price across every size.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What does triblend mean?", "answer": "<p>Triblend means the fabric is made from three fibers blended together — typically polyester, ring-spun cotton, and rayon. The three-fiber mix is what gives triblend its soft, lightweight, draped feel.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "What is triblend fabric made of?", "answer": "<p>Usually polyester, cotton, and rayon. Polyester adds durability and shape retention, cotton adds comfort, and rayon adds softness and drape. A common ratio is about 50% polyester, 25% cotton, and 25% rayon, but it varies.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is triblend better than 100% cotton?", "answer": "<p>It depends on what you want. Triblend is softer, lighter, and drapier with a vintage, heathered look; 100% cotton is more structured and opaque and prints bold, solid graphics better. They're different feels, not better or worse.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Can you print on triblend shirts?", "answer": "<p>Yes. Screen printing and DTF both work well. The heathered surface gives a softer, slightly vintage print; very dense, opaque prints will show the fabric texture more than they would on smooth cotton.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Why are triblend shirts more expensive?", "answer": "<p>The three-fiber blend, especially the rayon, costs more to produce than basic cotton. At Bayou, triblend blanks that come through as liquidation overstock are still a flat $4.25/unit.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does Bayou sell triblend blanks?", "answer": "<p>Yes, in limited overstock runs, at the same flat $4.25/unit ($2.92 by the 12-pack) — no account, every size the same price. Stock varies, so colors can sell through.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Ring-Spun Cotton?", "summary": "The cotton in a triblend, explained.", "cta": "Read", "url": "/pages/what-is-ring-spun-cotton" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Combed Cotton?", "summary": "Softer, smoother cotton yarn.", "cta": "Read", "url": "/pages/what-is-combed-cotton" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blanks for DTG & DTF", "summary": "How triblend prints with DTF.", "cta": "Read guide", "url": "/pages/best-blank-shirts-for-dtg-dtf-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "The softest blank <em>in the stack.</em>",
+        "subtext": "<p>Soft, vintage-feel blanks from $4.25/unit — no account, every size one price, shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

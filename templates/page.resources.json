@@ -112,9 +112,39 @@
             "cta": "See the matchup",
             "url": "/pages/the-budget-alternative-to-gildan-blanks"
           }
+        },
+        "g1": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Ring-Spun Cotton?",
+            "dek": "Twisted and thinned as it's spun — softer, smoother, stronger than open-end cotton, and it holds fine print detail.",
+            "cta": "Read",
+            "url": "/pages/what-is-ring-spun-cotton"
+          }
+        },
+        "g2": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is a Triblend Shirt?",
+            "dek": "Three fibers — poly, cotton, rayon — for a soft, lightweight tee with vintage drape and a heathered look.",
+            "cta": "Read",
+            "url": "/pages/what-is-a-triblend-shirt"
+          }
+        },
+        "g3": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Combed Cotton?",
+            "dek": "Combed to pull out the short, weak fibers before spinning — smoother, softer, stronger cotton that prints clean.",
+            "cta": "Read",
+            "url": "/pages/what-is-combed-cotton"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6", "c7"],
+      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",

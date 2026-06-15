@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is <em>Ring-Spun</em> Cotton?",
+        "answer": "<p>Ring-spun cotton is cotton yarn made by continuously twisting and thinning the strands as they're spun. That tightens the fibers into a softer, smoother, stronger yarn than standard open-end (carded) cotton — which is why ring-spun blanks feel better and hold fine print detail more cleanly.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Ring-spun cotton is spun by twisting and thinning the strands</b>, producing a finer, smoother, stronger yarn.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Open-end cotton — also called carded or 'regular'</b> — is spun faster and cheaper, giving a coarser, slightly rougher feel.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Ring-spun's smoother surface holds fine print detail</b>, like small text and halftones, more cleanly than open-end.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>'Combed ring-spun' adds a combing step</b> that removes short fibers for an even softer, stronger yarn.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Ring-spun costs a little more to make</b>, but most modern soft-feel blank tees are ring-spun.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>At Bayou, solid cotton blanks print clean</b> and start at a flat $4.25/unit.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Ring-spun is the smoother yarn. It feels better — <em>and it prints sharper.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Ring-spun cotton" } },
+        "c3": { "type": "column", "settings": { "label": "Open-end (carded) cotton" } },
+        "r1": { "type": "row", "settings": { "label": "Yarn surface", "cell_1": "Smooth, fine, even", "badge_1": true, "cell_2": "Coarser, more textured" } },
+        "r2": { "type": "row", "settings": { "label": "Feel", "cell_1": "Softer, smoother hand", "badge_1": true, "cell_2": "Rougher, more rugged" } },
+        "r3": { "type": "row", "settings": { "label": "Strength", "cell_1": "Stronger yarn", "badge_1": true, "cell_2": "Weaker, breaks easier" } },
+        "r4": { "type": "row", "settings": { "label": "Print detail", "cell_1": "Holds fine detail and halftones", "badge_1": true, "cell_2": "Best for bold, simple prints" } },
+        "r5": { "type": "row", "settings": { "label": "Cost to make", "cell_1": "Slightly higher", "cell_2": "Cheaper, faster to spin" } },
+        "r6": { "type": "row", "settings": { "label": "Common use", "cell_1": "Soft retail and fashion tees", "cell_2": "Value and promo tees" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Ring-Spun vs <em>Open-End</em>",
+        "intro": "<p>Same cotton, spun two different ways. Here's how the yarn — and the shirt — changes.</p>",
+        "caption": "Ring-spun vs open-end (carded) cotton"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Cotton", "blurb": "A smooth-face cotton v-neck that takes a clean print — our deepest-stock blank, a flat $4.25/unit.", "sizes": "Sizes S–XL", "tag": "Deep Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Cotton", "blurb": "A basic cotton crew that prints sharp — no account, no minimum beyond a pack. From $4.25/unit.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew · Extended", "blurb": "The same smooth cotton in 4XL–5XL at the same flat $4.25/unit as a small.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee-plus-sizes", "kicker": "V-Neck · Plus", "blurb": "A plus-size cotton v-neck at one flat per-unit price — no size upcharge.", "sizes": "Plus sizes", "tag": "Plus" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Cotton Blanks That <em>Print Clean</em>",
+        "intro": "<p>Solid, smooth-face cotton blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every pick is sold by the pack at a flat <b>$4.25/unit</b>, dropping to about <b>$2.92/unit by the 12-pack</b> — same price across every size, no account required.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is ring-spun cotton better than regular cotton?", "answer": "<p>For softness and print detail, yes. Ring-spun yarn is smoother and stronger than open-end (regular or carded) cotton, so the shirt feels better and holds fine print detail more cleanly. Open-end cotton is still a solid choice for bold, simple prints at the lowest cost.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "What's the difference between ring-spun and open-end cotton?", "answer": "<p>How the yarn is spun. Ring-spun twists and thins the fibers continuously for a fine, smooth yarn; open-end spins faster and cheaper for a coarser yarn. Ring-spun is softer and stronger; open-end is cheaper and more rugged.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is ring-spun cotton good for screen printing and DTF?", "answer": "<p>Yes. Its smooth, tight surface gives ink a clean, even base, so fine lines, small text, and halftones print sharper than on a coarse open-end tee. It works well for screen printing, DTF, and DTG.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "What is combed ring-spun cotton?", "answer": "<p>Cotton that's both combed (short fibers removed) and ring-spun (twisted and thinned). Combing plus ring-spinning makes the softest, strongest, smoothest cotton yarn — the feel you get on premium soft-style tees.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Does Bayou sell ring-spun cotton blanks?", "answer": "<p>Our cotton tees are solid, smooth-face blanks that print clean, sold by the pack at a flat $4.25/unit ($2.92 by the 12-pack) — no account, and every size is the same price.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Combed Cotton?", "summary": "The combing step that makes cotton softer.", "cta": "Read", "url": "/pages/what-is-combed-cotton" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is a Triblend Shirt?", "summary": "When cotton is blended with poly and rayon.", "cta": "Read", "url": "/pages/what-is-a-triblend-shirt" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Which blanks hold the cleanest print.", "cta": "Read guide", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Print on a blank that <em>holds the detail.</em>",
+        "subtext": "<p>Smooth-face cotton blanks from $4.25/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

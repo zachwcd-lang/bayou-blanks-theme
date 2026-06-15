@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is <em>Combed</em> Cotton?",
+        "answer": "<p>Combed cotton is cotton that's been brushed with fine combs before spinning to pull out the short, weak fibers and any impurities. What's left is a smoother, softer, stronger yarn — and when it's also ring-spun, you get the premium soft-feel surface that holds a clean print.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Combing removes the short, brittle fibers and debris</b> from cotton before it's spun into yarn.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>The result is a smoother, softer, stronger, more even yarn</b> with less fuzz and pilling.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>'Combed ring-spun cotton' is combed and ring-spun</b> — the softest, smoothest cotton yarn used in tees.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Combed cotton's smooth surface gives prints a clean, even base</b> for fine detail.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>It costs a bit more than uncombed cotton</b> because combing removes usable fiber and adds a step.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's cotton blanks print clean</b> and start at a flat $4.25/unit.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Comb out the short fibers and what's left is <em>smoother, softer, and stronger.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Combed cotton" } },
+        "c3": { "type": "column", "settings": { "label": "Regular (uncombed) cotton" } },
+        "r1": { "type": "row", "settings": { "label": "Process", "cell_1": "Short fibers combed out before spinning", "badge_1": true, "cell_2": "Spun without combing" } },
+        "r2": { "type": "row", "settings": { "label": "Smoothness", "cell_1": "Smoother, less fuzz", "badge_1": true, "cell_2": "More fuzz, can pill" } },
+        "r3": { "type": "row", "settings": { "label": "Softness", "cell_1": "Softer hand", "badge_1": true, "cell_2": "Slightly coarser" } },
+        "r4": { "type": "row", "settings": { "label": "Strength", "cell_1": "Stronger, more even yarn", "badge_1": true, "cell_2": "Less even, weaker" } },
+        "r5": { "type": "row", "settings": { "label": "Print surface", "cell_1": "Clean, fine-detail base", "badge_1": true, "cell_2": "Best for simple prints" } },
+        "r6": { "type": "row", "settings": { "label": "Cost", "cell_1": "Slightly higher", "cell_2": "Lower" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Combed vs <em>Uncombed</em> Cotton",
+        "intro": "<p>One extra step before spinning changes the whole shirt. Here's what combing does to the yarn.</p>",
+        "caption": "Combed vs regular (uncombed) cotton"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Cotton", "blurb": "A smooth-face cotton crew that prints clean — a flat $4.25/unit, no account.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
+        "p2": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Cotton", "blurb": "A soft cotton v-neck, our deepest-stock blank, at a flat $4.25/unit.", "sizes": "Sizes S–XL", "tag": "Deep Stock" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Extended", "blurb": "A cotton v-neck in extended sizes — same smooth surface, one flat per-unit price.", "sizes": "Sizes 2XL–3XL", "tag": "Extended" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew · Extended", "blurb": "The same cotton in 4XL–5XL at the same flat $4.25/unit as a small.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Smooth Cotton Blanks That <em>Print Clean</em>",
+        "intro": "<p>Solid, smooth-face cotton blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every pick is sold by the pack at a flat <b>$4.25/unit</b>, dropping to about <b>$2.92/unit by the 12-pack</b> — same price across every size, no account required.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What does combed cotton mean?", "answer": "<p>It means the cotton was combed before spinning to remove the short, weak fibers and impurities. That leaves a smoother, softer, stronger and more even yarn than uncombed cotton.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is combed cotton better than regular cotton?", "answer": "<p>For feel and durability, yes — combed cotton is softer, smoother, stronger, and pills less. Regular (uncombed) cotton is cheaper and works fine for simple, bold prints.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "What is combed ring-spun cotton?", "answer": "<p>Cotton that's both combed (short fibers removed) and ring-spun (twisted and thinned as it's spun). Combed ring-spun is the softest, smoothest cotton yarn, used in premium soft-style tees.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Is combed cotton good for printing?", "answer": "<p>Yes. The smooth, low-fuzz surface gives a clean, even base, so fine detail in screen printing, DTF, and DTG comes out sharper than on a fuzzier, uncombed tee.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Does combed cotton shrink?", "answer": "<p>Like most cotton, it can shrink a little, especially in a hot dryer; many cotton tees are pre-shrunk to limit it. Washing cold and tumbling low keeps shrinkage down.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does Bayou sell combed cotton blanks?", "answer": "<p>Our cotton tees are smooth-face blanks that print clean, sold by the pack at a flat $4.25/unit ($2.92 by the 12-pack) — no account, every size the same price.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Ring-Spun Cotton?", "summary": "The spinning step that pairs with combing.", "cta": "Read", "url": "/pages/what-is-ring-spun-cotton" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is a Triblend Shirt?", "summary": "When cotton is blended with poly and rayon.", "cta": "Read", "url": "/pages/what-is-a-triblend-shirt" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Which blanks hold the cleanest print.", "cta": "Read guide", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Soft cotton that <em>prints clean.</em>",
+        "subtext": "<p>Smooth-face cotton blanks from $4.25/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
