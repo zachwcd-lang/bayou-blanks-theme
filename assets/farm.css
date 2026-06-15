@@ -12,18 +12,23 @@
 
 .farm {
   /* paper + ink */
-  --farm-paper: #F4EFE3;
-  --farm-paper-2: #EFE9DA;
-  --farm-paper-deep: #E7DFCC;
-  --farm-ink: #20251A;
-  --farm-ink-soft: #3A4230;
-  --farm-ink-faint: rgba(32, 37, 26, 0.56);
-  --farm-ink-fainter: rgba(32, 37, 26, 0.40);
-  --farm-line: rgba(32, 37, 26, 0.16);
-  --farm-line-soft: rgba(32, 37, 26, 0.09);
+  --farm-paper: #FAF8F2;
+  --farm-paper-2: #F2EEE3;
+  --farm-paper-deep: #ECE7D9;
+  --farm-ink: #1A2415;
+  --farm-ink-soft: #2D3B1E;
+  --farm-ink-faint: rgba(26, 36, 21, 0.66);
+  --farm-ink-fainter: rgba(26, 36, 21, 0.50);
+  --farm-line: rgba(26, 36, 21, 0.15);
+  --farm-line-soft: rgba(26, 36, 21, 0.09);
   --farm-moss: #5C7A3A;
   --farm-moss-deep: #46602B;
-  --farm-gold: #B79A4A;
+  --farm-gold: #C9B96B;
+  /* dark-band (landing-matched) + bright accent for dark surfaces */
+  --farm-ink-bg: #1A2415;
+  --farm-onink: #FAF8F2;
+  --farm-onink-dim: rgba(250, 248, 242, 0.74);
+  --farm-bright: #A8D26A;
   --farm-radius: 7px;
   --farm-radius-lg: 14px;
   /* type system */
@@ -846,4 +851,55 @@
   .farm-hub__masthead { padding: 60px 0 50px; }
   .farm-entry { grid-template-columns: 30px 1fr; gap: 14px; }
   .farm-entry__go { display: none; }
+}
+
+/* ==========================================================================
+   DARK REFRESH — landing-matched dark hero + CTA, near-white readable body.
+   Appended override block (cascade-wins over the rules above). Display only.
+   ========================================================================== */
+
+/* Hero → dark-green band, white type, brighter accent (matches homepage) */
+.farm-hero {
+  background: var(--farm-ink-bg);
+  color: var(--farm-onink);
+  padding: 76px 0 78px;
+  border-radius: 0 0 var(--farm-radius-lg) var(--farm-radius-lg);
+}
+.farm-hero__eyebrow { color: var(--farm-gold); }
+.farm-hero h1 { color: var(--farm-onink); }
+.farm-hero h1 em { color: var(--farm-bright); font-style: normal; font-weight: 600; }
+.farm-hero__answer { color: var(--farm-onink-dim); }
+.farm-hero__answer strong { color: var(--farm-onink); }
+.farm-hero__rail { border-top-color: rgba(250, 248, 242, 0.20); border-bottom-color: rgba(250, 248, 242, 0.20); }
+.farm-hero__rail span { color: rgba(250, 248, 242, 0.62); border-right-color: rgba(250, 248, 242, 0.14); }
+.farm-hero__rail span b { color: var(--farm-onink); }
+
+/* Body headings: stronger green accent on the now-whiter background */
+.farm__block-head h2 em,
+.farm-takeaways h2 em,
+.farm-comparison h2 em,
+.farm-faq h2 em,
+.farm-picks h2 em,
+.farm-related h2 em { color: var(--farm-moss-deep); }
+
+/* CTA → dark-green filled card, white type, light button (matches homepage) */
+.farm-cta__inner {
+  background: var(--farm-ink-bg);
+  color: var(--farm-onink);
+  border: 0;
+  border-radius: var(--farm-radius-lg);
+  padding: 60px 48px;
+}
+.farm-cta__eyebrow { color: var(--farm-gold); }
+.farm-cta h2 { color: var(--farm-onink); }
+.farm-cta h2 em { color: var(--farm-bright); }
+.farm-cta__sub { color: var(--farm-onink-dim); }
+.farm-cta__ghost { color: var(--farm-onink); opacity: 0.07; }
+.farm-cta__btns .farm-btn--solid { background: var(--farm-onink); color: var(--farm-ink); border-color: var(--farm-onink); }
+.farm-cta__btns .farm-btn--solid:hover { background: var(--farm-gold); border-color: var(--farm-gold); color: var(--farm-ink); }
+.farm-cta__btns .farm-btn--ghost { color: var(--farm-onink); border-color: rgba(250, 248, 242, 0.30); }
+.farm-cta__btns .farm-btn--ghost:hover { border-color: var(--farm-onink); background: transparent; }
+
+@media (max-width: 680px) {
+  .farm-cta__inner { padding: 44px 26px; }
 }

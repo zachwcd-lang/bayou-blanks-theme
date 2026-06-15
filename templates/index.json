@@ -101,25 +101,25 @@
         "tier_1": {
           "type": "tier",
           "settings": {
-            "name": "Case",
-            "units": "48 units",
-            "price": "from $8.50/unit"
+            "name": "4-Pack",
+            "units": "4 units",
+            "price": "$4.25/unit"
           }
         },
         "tier_2": {
           "type": "tier",
           "settings": {
-            "name": "Half pallet",
-            "units": "288 units",
-            "price": "from $7.25/unit"
+            "name": "6-Pack",
+            "units": "6 units",
+            "price": "$3.50/unit"
           }
         },
         "tier_3": {
           "type": "tier",
           "settings": {
-            "name": "Pallet",
-            "units": "576+ units",
-            "price": "from $6.50/unit"
+            "name": "12-Pack",
+            "units": "12 units",
+            "price": "$2.92/unit"
           }
         }
       },
@@ -131,10 +131,10 @@
       "settings": {
         "label": "For businesses",
         "heading": "Printing at volume?",
-        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg.",
+        "text": "Real per-unit pricing, shown up front — from $4.25 a unit by the pack, down to $2.92 by the 12-pack. Buying by the case or pallet? Talk to us for a quote.",
         "button_label": "Talk to us",
         "button_link": "/pages/contact",
-        "footnote": "Placeholder pricing — talk to us for a current quote"
+        "footnote": "Per-unit pricing, shown up front — no account needed"
       }
     },
     "live_hero": {
