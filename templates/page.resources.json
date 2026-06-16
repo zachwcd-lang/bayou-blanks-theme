@@ -43,6 +43,16 @@
             "url": "/pages/cheapest-blank-t-shirts-in-bulk"
           }
         },
+        "e5": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Blank Jerseys Wholesale",
+            "dek": "Undecorated sleeveless team jerseys, and how to decorate polyester — sublimation, HTV, DTF, or screen. From $4.25/unit.",
+            "cta": "Read guide",
+            "url": "/pages/blank-jerseys-wholesale"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -174,7 +184,7 @@
           }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
