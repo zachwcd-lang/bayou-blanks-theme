@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>3</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>2</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$2.50/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Blank Polos for <em>Embroidery</em>",
-        "answer": "<p>The best blank polos for embroidery are <strong>textured-knit polo shirts</strong> — a piqué or striated surface grips the stitches and resists the puckering that plagues smooth knits. Buy them undecorated and by the pack, back the knit with a <strong>cut-away stabilizer</strong>, and stitch a clean left-chest logo. From $2.50/unit.</p>",
+        "answer": "<p>The best blank polos for embroidery are <strong>textured-knit polo shirts</strong> — a piqué or striated surface grips the stitches and resists the puckering that plagues smooth knits. Buy them undecorated and by the pack, back the knit with a <strong>cut-away stabilizer</strong>, and stitch a clean left-chest logo. From $4.25/unit.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Add a water-soluble topping on textured polos</b> so the stitches sit on top of the knit instead of sinking into the texture.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Left chest is the standard placement</b> — a roughly 3–4 inch design, about 7–9 inches down from the shoulder seam, above the placket.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Buy undecorated blanks by the pack</b> — no account, no resale certificate, no minimum beyond a single pack.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Pack pricing drops the per-unit cost</b> — from $2.50/unit at the 4-pack toward $1.25/unit by the 12-pack, the same flat price across sizes.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Pack pricing drops the per-unit cost</b> — from $4.25/unit at the 4-pack toward $2.92/unit by the 12-pack, the same flat price across sizes.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -49,7 +49,7 @@
         "r3": { "type": "row", "settings": { "label": "Works on textured / piqué knit?", "cell_1": "Excellent — stitches sit on the texture", "cell_2": "Good — needs a firm, even press", "cell_3": "Tricky — ink can sink into the knit" } },
         "r4": { "type": "row", "settings": { "label": "Durability", "cell_1": "Permanent — won't crack, peel, or fade", "cell_2": "Good — edges can lift over time", "cell_3": "High once cured" } },
         "r5": { "type": "row", "settings": { "label": "Setup", "cell_1": "Cut-away backing + water-soluble topping", "cell_2": "Heat press", "cell_3": "One screen per color" } },
-        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$2.50", "cell_2": "$2.50", "cell_3": "$2.50" } }
+        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25", "cell_3": "$4.25" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -71,7 +71,7 @@
         "heading": "Bayou's Blank Polos, <em>In Stock</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 2,
-        "note": "<p>Both picks are <b>undecorated striated (textured) polos</b> — a knit surface that embroiders cleanly with a cut-away backing and a topping. Sold by the pack, passed on by the unit, with pack pricing dropping toward <b>$1.25/unit by the 12-pack</b>. Core M and L runs rotate through as overstock lands — check the collection for current sizes.</p>"
+        "note": "<p>Both picks are <b>undecorated striated (textured) polos</b> — a knit surface that embroiders cleanly with a cut-away backing and a topping. Sold by the pack, passed on by the unit, with pack pricing dropping toward <b>$2.92/unit by the 12-pack</b>. Core M and L runs rotate through as overstock lands — check the collection for current sizes.</p>"
       }
     },
     "faq": {
@@ -82,7 +82,7 @@
         "q3": { "type": "qa", "settings": { "question": "Where does the logo go on an embroidered polo?", "answer": "<p>The standard placement is the left chest — a design about 3–4 inches wide, positioned roughly 7–9 inches down from the shoulder seam and above the placket. Monograms, names, and sleeve hits are common secondary placements.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Can you embroider a performance or polyester polo?", "answer": "<p>Yes. Polyester and poly-blend piqué polos embroider well — back them with a cut-away stabilizer and a water-soluble topping, and ease off the stitch density slightly so the knit doesn't pull. The textured surface actually helps the stitches sit cleanly.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "Is there a minimum order for blank polos?", "answer": "<p>No. Bayou Blanks sells blank polos by the pack — 4-pack, 6-pack, or 12-pack — with no minimum beyond a single pack, and no account or resale certificate required.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "How much do blank polos cost wholesale?", "answer": "<p>Bought undecorated by the pack, blank polos are the cheapest way to source for embroidery. Bayou Blanks sells liquidation-overstock polos from $2.50 per unit at the 4-pack, dropping toward $1.25 per unit by the 12-pack — the same flat price across sizes.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "How much do blank polos cost wholesale?", "answer": "<p>Bought undecorated by the pack, blank polos are the cheapest way to source for embroidery. Bayou Blanks sells liquidation-overstock polos from $4.25 per unit at the 4-pack, dropping toward $2.92 per unit by the 12-pack — the same flat price across sizes.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -95,7 +95,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per polo — from $2.50, down toward $1.25 by the 12-pack. No sale theater, no struck-through prices." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per polo — from $4.25, down toward $2.92 by the 12-pack. No sale theater, no struck-through prices." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Sold By The Pack", "text": "4-packs, 6-packs, and 12-packs — no minimum beyond a single pack, and no account or resale certificate required." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Big Sizes In Stock", "text": "Textured polos with real depth in the big sizes — 2XL through 5XL — the sizes most polo suppliers run short on." } }
@@ -126,7 +126,7 @@
         "eyebrow": "Fig. VIII — Stitch It Up",
         "heading": "Embroider the whole <em>team.</em>",
         "subtext": "<p>Textured-knit blank polos in S and big sizes through 5XL — undecorated, sold by the pack at per-unit prices, ready for a left-chest logo.</p>",
-        "ghost_price": "$2.50",
+        "ghost_price": "$4.25",
         "background": "paper",
         "cta_label": "Shop Blank Polos",
         "cta_collection": "polos",
