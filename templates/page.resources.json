@@ -63,6 +63,16 @@
             "url": "/pages/big-and-tall-blank-t-shirts"
           }
         },
+        "e7": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Blank Polos for Embroidery",
+            "dek": "Textured-knit polos that grip stitches and resist puckering — undecorated, by the pack, with a cut-away stabilizer. From $2.50/unit.",
+            "cta": "Read guide",
+            "url": "/pages/blank-polos-for-embroidery"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -194,7 +204,7 @@
           }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
