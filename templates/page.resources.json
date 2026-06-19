@@ -73,6 +73,26 @@
             "url": "/pages/blank-polos-for-embroidery"
           }
         },
+        "e8": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Blank Sweatshirts Wholesale",
+            "dek": "Midweight crewneck fleece for screen print, embroidery, and DTF — leaner than a hoodie, flat-priced to 5XL. From $4.25/unit.",
+            "cta": "Read guide",
+            "url": "/pages/blank-sweatshirts-wholesale"
+          }
+        },
+        "e9": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Wholesale Blank Hoodies",
+            "dek": "Midweight pullover fleece with the most print room — undecorated, by the pack, flat-priced across sizes. From $4.25/unit.",
+            "cta": "Read guide",
+            "url": "/pages/wholesale-blank-hoodies"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -204,7 +224,7 @@
           }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",

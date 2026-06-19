@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>7 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>3</b> styles compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
+        "heading": "Wholesale Blank <em>Hoodies</em>",
+        "answer": "<p>The best wholesale blank hoodies are <strong>midweight pullover fleece</strong> — warm cotton/poly blanks built for screen printing, embroidery, and DTF. <strong>Buying undecorated and by the pack is the cheapest way to source them</strong>, with no account or minimum. From $4.25/unit, flat across every size.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Wholesale blank hoodies are midweight cotton/poly pullover fleece</b> — warm, structured blanks that screen print, embroider, and take DTF cleanly.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Pullovers give the most print real estate</b> — a full front and back with no zipper to work around — which makes them the cheapest hoodie to decorate.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Midweight, cotton-rich fleece embroiders cleanest:</b> enough body to prevent hoop marks, with a cut-away backing for sharp stitches.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>No account, no resale certificate, and no minimum</b> beyond a single pack — anyone buys at the per-unit price.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Same flat price across every size we carry</b> — no plus-size upcharge.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — blank hoodies from $4.25/unit, dropping toward $2.92/unit by the 12-pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "Key <em>Takeaways</em>",
+        "quote": "<p>\"A pullover is the most print you can buy. <em>Screen it, stitch it, or transfer it — then buy it by the pack.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Pullover Hoodie" } },
+        "c3": { "type": "column", "settings": { "label": "Zip-Up Hoodie" } },
+        "c4": { "type": "column", "settings": { "label": "Crewneck" } },
+        "r1": { "type": "row", "settings": { "label": "Print real estate", "cell_1": "Full front & back", "badge_1": true, "cell_2": "Split front (zipper)", "cell_3": "Full flat front & back" } },
+        "r2": { "type": "row", "settings": { "label": "Best decoration", "cell_1": "Big front art, screen print", "cell_2": "Left-chest & back", "cell_3": "Screen print & embroidery" } },
+        "r3": { "type": "row", "settings": { "label": "Cost to decorate", "cell_1": "Low — flat front", "cell_2": "Higher — print around zip", "cell_3": "Lowest — no hood" } },
+        "r4": { "type": "row", "settings": { "label": "Best for", "cell_1": "Retail, streetwear, fundraisers", "cell_2": "Layering, staff zip-ups", "cell_3": "Spirit wear, staff, teams" } },
+        "r5": { "type": "row", "settings": { "label": "At Bayou", "cell_1": "In stock, by the pack", "cell_2": "Limited (quarter-zip)", "cell_3": "In stock, by the pack" } },
+        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25", "cell_3": "$4.25" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Hoodie Styles",
+        "heading": "Three Styles, <em>Compared</em>",
+        "intro": "<p>Pullover, zip-up, or crewneck — the right blank depends on how much you need to print and how you'll decorate it. Here's how the three stack up for wholesale runs.</p>",
+        "caption": "Wholesale blank hoodie styles compared"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-long-sleeve-fleece-pullover-hoodie", "kicker": "Pullover · Classic Fleece", "blurb": "Our deepest-stock hood — a classic midweight fleece pullover hoodie with full front-and-back print room. Screen print, DTF, or embroider it.", "sizes": "Sizes S–3XL", "tag": "Deepest Hooded Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-long-sleeve-pullover-hoodie-2", "kicker": "Pullover · Fleece", "blurb": "A second classic pullover hoodie colorway with deep stock for full runs — warm, structured fleece and a flat front for big logos.", "sizes": "Sizes S–2XL", "tag": "Pullover" } },
+        "p3": { "type": "pick", "settings": { "product": "bella-canvas-2805-unisex-triblend-pullover-hoodie", "kicker": "Lightweight · Triblend", "blurb": "A lightweight triblend pullover hoodie with a softer, retail-feel hand — the pick when you want a less bulky hoodie for a premium print.", "sizes": "Sizes S–2XL", "tag": "Lightweight" } },
+        "p4": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Crewneck · Pullover Fleece", "blurb": "Prefer a crewneck? The same midweight fleece without the hood — our deepest-stock fleece on the floor, leaner and cheaper to decorate.", "sizes": "Sizes S–3XL", "tag": "Crewneck Option" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Bayou's Blank Hoodies, <em>In Stock</em>",
+        "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
+        "products_to_show": 4,
+        "note": "<p>Bayou stocks both <b>pullover hoodies and crewneck fleece</b> — sold by the pack and passed on by the unit, with no minimum beyond a pack. We don't run full zip-ups (just a limited quarter-zip); for a hood with the most print room, the pullover is the pick. Pack pricing drops to about <b>$2.92/unit by the 12-pack</b>. Sizes rotate as overstock moves — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What blank hoodies are best for wholesale?", "answer": "<p>Midweight pullover fleece hoodies are the wholesale standard. The cotton/poly fleece is warm and structured, the flat pullover front gives the most room for a screen-printed or embroidered design, and buying blanks by the pack keeps the per-unit cost low for full runs of retail, spirit wear, or staff hoodies.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Pullover or zip-up hoodie — which is better for printing?", "answer": "<p>Pullovers. A pullover gives you an uninterrupted front and back, so big front art and full-back prints lay flat with nothing to print around. A zipper splits the front, which limits placement and adds cost to decorate. Bayou stocks pullover hoodies and crewneck fleece by the pack.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "How much do blank hoodies cost wholesale?", "answer": "<p>Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation-overstock hoodies from $4.25 per unit, dropping toward $2.92 per unit by the 12-pack — the same flat price across every size we carry, with no plus-size upcharge.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Is there a minimum order for wholesale blank hoodies?", "answer": "<p>No. Bayou Blanks sells blank hoodies by the pack — 4-pack, 6-pack, or 12-pack — with no minimum beyond a single pack and no account or resale certificate required. The larger the pack, the lower the per-unit price.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Can you embroider a blank hoodie?", "answer": "<p>Yes — midweight, cotton-rich fleece is one of the better garments to embroider. It has enough body to prevent hoop marks and keep stitches sharp; use a cut-away backing for stability. A left-chest logo (about 3–4 inches) is the standard placement on a hoodie.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What is the difference between a blank hoodie and a sweatshirt?", "answer": "<p>A hoodie has a hood and usually a front pocket; a crewneck sweatshirt is leaner, with no hood to print around, so it's cheaper to decorate. Both are midweight cotton/poly fleece and take the same screen print, embroidery, or DTF. Bayou stocks both, so pick the silhouette your design calls for.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per hoodie — from $4.25, down toward $2.92 by the 12-pack. No sale theater, no struck-through prices." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Sold By The Pack", "text": "4-packs, 6-packs, and 12-packs — no minimum beyond a single pack, and no account or resale certificate required." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Pullover & Crewneck Fleece", "text": "Pullover hoodies and crewneck fleece in classic and extended sizes — the same flat price across every size we carry." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank Hoodies for Printing", "summary": "Which blank hoodie to print on, by method.", "cta": "Read guide", "url": "/pages/best-blank-hoodies-for-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Blank Sweatshirts Wholesale", "summary": "Crewneck instead? The wholesale sweatshirt guide.", "cta": "Read guide", "url": "/pages/blank-sweatshirts-wholesale" } },
+        "l3": { "type": "link", "settings": { "category": "Pricing", "title": "Cheapest Blank T-Shirts in Bulk", "summary": "The same per-unit pack math, on tees.", "cta": "See pricing", "url": "/pages/cheapest-blank-t-shirts-in-bulk" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Stock Up",
+        "heading": "Print the whole <em>batch.</em>",
+        "subtext": "<p>Pullover hoodies and crewneck fleece in classic and extended sizes — all in stock, all sold by the pack at per-unit prices.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank Hoodies",
+        "cta_collection": "hoodies-fleece",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
