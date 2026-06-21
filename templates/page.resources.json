@@ -222,9 +222,19 @@
             "cta": "Read",
             "url": "/pages/what-is-garment-dyed"
           }
+        },
+        "g7": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "Cotton vs Polyester vs Blend",
+            "dek": "Which t-shirt fabric to print on: cotton holds detail, polyester sublimates, blends do both. The fabric decides the method.",
+            "cta": "Read",
+            "url": "/pages/cotton-vs-polyester-t-shirts"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
