@@ -1,0 +1,52 @@
+{%- comment -%}
+  Bayou Blanks brand entity schema — Organization + WebSite.
+  Strengthens the "Bayou Blanks" branded SERP (~1,100 brand searches/mo come from the lives).
+  sameAs is pulled from the theme's social link settings — set TikTok / Instagram / etc.
+  in Customizer > Theme settings > Social media for them to appear here.
+{%- endcomment -%}
+{%- liquid
+  assign sames = ''
+  if settings.social_tiktok_link != blank
+    assign sames = sames | append: '"' | append: settings.social_tiktok_link | append: '",'
+  endif
+  if settings.social_instagram_link != blank
+    assign sames = sames | append: '"' | append: settings.social_instagram_link | append: '",'
+  endif
+  if settings.social_facebook_link != blank
+    assign sames = sames | append: '"' | append: settings.social_facebook_link | append: '",'
+  endif
+  if settings.social_youtube_link != blank
+    assign sames = sames | append: '"' | append: settings.social_youtube_link | append: '",'
+  endif
+  if settings.social_twitter_link != blank
+    assign sames = sames | append: '"' | append: settings.social_twitter_link | append: '",'
+  endif
+  assign sames_len = sames | size | minus: 1
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Bayou Blanks",
+  "alternateName": "Shop Bayou Blanks",
+  "url": "{{ shop.url }}",
+  {%- if settings.favicon != blank %}
+  "logo": "https:{{ settings.favicon | image_url: width: 512 }}",
+  {%- endif %}
+  "description": "Liquidation blank apparel sold by the pack from $4.25/unit, based in Hattiesburg, Mississippi."{% if sames != '' %},
+  "sameAs": [{{ sames | slice: 0, sames_len }}]{% endif %}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Bayou Blanks",
+  "url": "{{ shop.url }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ shop.url }}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
