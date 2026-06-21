@@ -1255,3 +1255,24 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+/* ── Bayou: active filter pill — readable contrast fix ──
+   The pill renders as a filled .button (dark moss fill) but inherited
+   --color-foreground for its text, giving dark-green-on-dark-green. Force
+   the scheme's foreground/background pair so the chip and its × are always
+   legible (dark-green chip, cream text) in any color scheme. */
+span.active-facets__button-inner.button--tertiary {
+  background: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+  box-shadow: none;
+  border: none;
+}
+.active-facets__button:hover span.active-facets__button-inner.button--tertiary,
+.active-facets__button:focus-visible span.active-facets__button-inner.button--tertiary {
+  background: rgba(var(--color-foreground), 0.82);
+  color: rgb(var(--color-background));
+  box-shadow: none;
+}
+.active-facets__button .svg-wrapper {
+  color: rgb(var(--color-background));
+}
