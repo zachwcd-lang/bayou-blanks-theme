@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
+        "heading": "Sublimation vs <em>DTF</em>",
+        "answer": "<p>Sublimation vs DTF comes down to fabric: <strong>sublimation only prints on polyester in light colors</strong>, where it dyes the fabric for a zero-feel, permanent finish — while DTF prints full color on any fabric and any color, including cotton and darks. Both blanks start at $4.25/unit by the pack.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>The fabric decides:</b> sublimation needs polyester; DTF prints on cotton, poly, blends, and anything else.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Sublimation can't print white or work on dark garments</b> — the dye is translucent, so it's light colors only.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Sublimation dyes the fabric itself</b> for a zero-feel, permanent print that never cracks or peels on poly.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>DTF lays a thin full-color film on top</b> with a built-in white underbase, so it prints on dark blanks too.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Sublimation shines for all-over and photographic prints on poly;</b> DTF wins for versatility across fabrics.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees from $4.25/unit, down toward $2.92 by the 12-pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Light poly goes to sublimation, everything else goes to film: <em>sublimation for performance prints, DTF for any fabric, any color.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Sublimation" } },
+        "c3": { "type": "column", "settings": { "label": "DTF Transfer" } },
+        "r1": { "type": "row", "settings": { "label": "Fabric needed", "cell_1": "Polyester (65%+)", "cell_2": "Any — cotton, poly, blends", "badge_2": true } },
+        "r2": { "type": "row", "settings": { "label": "Garment color", "cell_1": "Light / white only", "cell_2": "Any color, including dark" } },
+        "r3": { "type": "row", "settings": { "label": "How it bonds", "cell_1": "Dyes into the fabric", "cell_2": "Film bonded on top" } },
+        "r4": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "None — zero feel", "cell_2": "Slight film layer on top" } },
+        "r5": { "type": "row", "settings": { "label": "Durability", "cell_1": "Permanent on poly; no crack or peel", "cell_2": "Flexes; 50+ washes" } },
+        "r6": { "type": "row", "settings": { "label": "Best for", "cell_1": "All-over & photo prints on poly", "cell_2": "Versatile full color on any blank" } },
+        "r7": { "type": "row", "settings": { "label": "Setup / minimum", "cell_1": "None", "cell_2": "None" } },
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Two Methods, <em>Compared</em>",
+        "intro": "<p>Sublimation and DTF are both heat-press digital methods, but they work in opposite ways. Sublimation dyes polyester from the inside; DTF bonds a printed film on the outside. That one difference decides which fabrics and colors each can handle. Here's how they stack up.</p>",
+        "caption": "Sublimation vs DTF, head to head"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-poly-t-shirt", "kicker": "Sublimation · Polyester", "blurb": "A polyester performance tee — the one blank here you can sublimate. The dye bonds into the polyester for a zero-feel, permanent print, on light colors.", "sizes": "S–3XL", "tag": "Poly = Sublimate" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "DTF · Cotton", "blurb": "A solid cotton crew with deep stock. Cotton can't be sublimated — the dye washes out — so DTF is the answer: full color bonded on top, no poly required.", "sizes": "S–2XL", "tag": "Cotton → DTF" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "DTF · Dark Colors", "blurb": "Deep-stock athletic raglan in a dark heather. Dark blanks are off-limits to sublimation, but DTF's built-in white underbase prints full color on them.", "sizes": "S–5XL", "tag": "Deepest Stock" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "DTF · Blend", "blurb": "A cotton-rich triblend. Sublimation would only tint the small share of polyester for a faded look, so DTF gives true, solid full color.", "sizes": "S–3XL", "tag": "S–3XL" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks for Both <em>Methods, In Stock</em>",
+        "intro": "<p>Polyester, cotton, blend, and dark blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank is a flat <b>$4.25/unit</b>, about <b>$2.92/unit by the 12-pack</b>, same price across every size. Sublimation needs the polyester, light-colored pieces; DTF prints on any of them. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is sublimation or DTF better?", "answer": "<p>Neither is universally better — it depends on the blank. Sublimation is unbeatable on light polyester: a zero-feel, permanent print that's perfect for all-over and photographic designs on performance wear. DTF is far more versatile, printing full color on cotton, blends, and dark garments where sublimation can't go.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Can you sublimate cotton?", "answer": "<p>No, not directly. Sublimation dye only bonds permanently to polyester; on 100% cotton it has nothing to bond to and washes out. For cotton blanks, use DTF or screen printing instead. Cotton/poly blends take a faded partial print at best.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Can you sublimate dark or black shirts?", "answer": "<p>No. Sublimation dye is translucent and there is no white sublimation ink, so the print only shows on light or white garments — it disappears into a dark fabric. For dark or black blanks, DTF is the method: every transfer includes a white underbase, so full color prints cleanly.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Which lasts longer, sublimation or DTF?", "answer": "<p>On polyester, sublimation is essentially permanent — the design is dyed into the fabric, so it won't crack, peel, or fade as long as the shirt lasts. Quality DTF is very durable too, typically 50+ washes, and works on far more fabrics; the trade-off is a slight film hand versus sublimation's zero feel.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Does sublimation or DTF feel better on the shirt?", "answer": "<p>Sublimation has no hand at all — the design is dyed into the fabric, so the shirt feels untouched and breathes fully, which is why it suits performance wear. A DTF transfer leaves a thin, flexible film you can feel, most noticeably on large solid prints. Both are comfortable and wash well.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What fabric and color do I need for each method?", "answer": "<p>Sublimation needs polyester — ideally 100%, at least about 65% — in a light or white color. DTF works on cotton, polyester, blends, and any color, including darks, so it's the catch-all whenever your blank isn't light polyester.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Poly, Cotton & Dark Blanks", "text": "Polyester for sublimation, plus cotton, blend, and dark overstock — S–5XL — print-ready for DTF, with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTF vs Screen Printing", "summary": "When screens beat film, and when they don't.", "cta": "Compare methods", "url": "/pages/dtf-vs-screen-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Blank Jerseys Wholesale", "summary": "Poly team jerseys — prime sublimation blanks.", "cta": "Read guide", "url": "/pages/blank-jerseys-wholesale" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "Cotton vs Polyester vs Blend", "summary": "Why the fabric decides the method.", "cta": "Read", "url": "/pages/cotton-vs-polyester-t-shirts" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Pick your <em>blank.</em>",
+        "subtext": "<p>Light polyester for sublimation, anything at all for DTF — the blank is the same flat price either way. Cotton, poly, and blend tees from $4.25/unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
