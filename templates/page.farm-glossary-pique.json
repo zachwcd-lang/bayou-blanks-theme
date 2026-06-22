@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>5 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>Polo</b> fabric" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>S–5XL</b> in stock" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is <em>Piqué</em> Fabric?",
+        "answer": "<p>Piqué is a knit fabric with a raised, waffle- or honeycomb-textured surface — <strong>the classic fabric for polo shirts</strong>. The texture makes it breathable, structured, and wrinkle-resistant, and it grips embroidery cleanly. Piqué can be cotton, polyester, or a blend; Bayou's blank polos are a textured knit from $4.25/unit.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Piqué is a knit, not a fiber</b> — a raised, waffle- or honeycomb-textured surface made by knitting some yarns tighter than others.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>It's the classic polo fabric:</b> the texture is breathable, holds its shape, and resists wrinkles better than smooth jersey.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Piqué can be cotton, polyester, or a blend</b> — the texture is the same; the fiber changes the feel.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>The bumpy surface grips embroidery cleanly</b> — which is why polos are the go-to for stitched logos and uniforms.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>For printing, the texture softens ultra-fine detail</b> — DTF, HTV, and embroidery sit on piqué best; keep screen art bold.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's blank polos are a textured (striated) knit,</b> full S–5XL, by the pack from $4.25/unit toward $2.92 by the 12-pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Piqué isn't a fiber — it's a <em>weave with texture.</em> That bumpy surface is what makes a polo a polo.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Piqué Knit" } },
+        "c3": { "type": "column", "settings": { "label": "Jersey (Smooth) Knit" } },
+        "r1": { "type": "row", "settings": { "label": "Surface", "cell_1": "Raised waffle / honeycomb texture", "badge_1": true, "cell_2": "Flat and smooth" } },
+        "r2": { "type": "row", "settings": { "label": "Feel", "cell_1": "Structured, substantial", "cell_2": "Soft, light, drapey" } },
+        "r3": { "type": "row", "settings": { "label": "Best for", "cell_1": "Classic polos, uniforms, golf", "cell_2": "Casual/fashion polos, tees" } },
+        "r4": { "type": "row", "settings": { "label": "Breathability", "cell_1": "High — texture moves air", "cell_2": "Medium" } },
+        "r5": { "type": "row", "settings": { "label": "Wrinkle resistance", "cell_1": "High", "cell_2": "Lower" } },
+        "r6": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Grips embroidery; softens fine print", "cell_2": "Takes fine print flatter" } },
+        "r7": { "type": "row", "settings": { "label": "At Bayou (per unit)", "sub": "By the pack", "cell_1": "From $4.25", "cell_2": "Not stocked" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Piqué vs <em>Jersey</em> Knit",
+        "intro": "<p>Both are knits, but they wear very differently. Piqué's raised texture is what gives a polo its structure and breathability; smooth jersey is the soft, flat knit of a classic tee. Here's how they compare.</p>",
+        "caption": "Piqué knit vs smooth jersey knit for polos"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-polo", "kicker": "Textured Knit · S–5XL", "blurb": "A textured (striated) knit polo in Slate Gray — a full S–5XL run, the same flat price every size. The pique-family texture grips embroidery and reads polished for uniforms and teams.", "sizes": "S–5XL", "tag": "Full Size Run" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-polo-2", "kicker": "Textured Knit · Extended", "blurb": "The same striated-knit polo in Storm Gray, stocked deep in extended 3XL–5XL — textured, structured, and embroidery-ready.", "sizes": "3XL–5XL", "tag": "Extended Sizes" } }
+      },
+      "block_order": ["p1", "p2"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Textured-Knit Polos, <em>In Stock</em>",
+        "intro": "<p>Bayou's blank polos in a pique-family textured knit, on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 2,
+        "note": "<p>Bayou's polos are an undecorated <b>textured (striated) knit</b> — a pique-family surface, not a claimed cotton piqué — sold print-ready at a flat <b>$4.25/unit</b>, about <b>$2.92/unit by the 12-pack</b>, same price across every size. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is piqué fabric?", "answer": "<p>Piqué is a knit fabric with a raised, textured surface — usually a waffle, honeycomb, or fine geometric pattern — created by knitting some yarns tighter than others. It's most associated with polo shirts. The texture makes it more breathable, structured, and wrinkle-resistant than a smooth jersey knit.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is piqué always cotton?", "answer": "<p>No. Piqué describes the knit structure, not the fiber. You'll find piqué in 100% cotton, 100% polyester, and cotton/poly blends. The texture stays the same; the fiber changes the feel — cotton piqué is soft and breathable, while polyester piqué wicks moisture and resists shrinking.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Why are polo shirts made of piqué?", "answer": "<p>The textured knit gives a polo its signature look and a few practical wins: it's more breathable than smooth fabric, it holds its shape and resists wrinkles, and the surface hides minor marks. It also grips embroidery thread cleanly, which is why piqué polos are the standard for stitched logos and uniforms.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "How do you decorate a piqué polo?", "answer": "<p>Embroidery is the classic choice — the textured surface grips stitches and a left-chest logo reads crisp with a cut-away stabilizer. For full-color art, DTF transfers and heat-transfer vinyl (HTV) sit on piqué well. Fine-detail screen printing is harder because the bumpy texture breaks up small lines, so keep printed art bold and simple.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "What's the difference between piqué and jersey knit?", "answer": "<p>Jersey is a smooth, flat, lightweight knit — the feel of a classic t-shirt. Piqué is a thicker double-knit with a raised, textured surface. Piqué is more structured, more breathable, and more wrinkle-resistant, which suits collared polos; jersey is softer and drapier, which suits tees and casual fashion polos.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What polos does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated adult short-sleeve polos in a textured (striated) knit — a pique-family surface — across a full S–5XL run, including deep extended sizes. They're sold by the pack at a flat $4.25/unit, dropping toward $2.92 by the 12-pack, the same price in every size, with no account required.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per polo — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Textured-Knit Polos", "text": "Undecorated striated-knit polos in deep overstock — a full S–5XL run, including extended 3XL–5XL — with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Blank Polos for Embroidery", "summary": "How to embroider textured-knit polos cleanly.", "cta": "Read guide", "url": "/pages/blank-polos-for-embroidery" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "Cotton vs Polyester vs Blend", "summary": "How the fiber changes feel and print method.", "cta": "Read", "url": "/pages/cotton-vs-polyester-t-shirts" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Combed Cotton?", "summary": "Another fabric term, explained.", "cta": "Read", "url": "/pages/what-is-combed-cotton" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank <em>polos.</em>",
+        "subtext": "<p>Textured-knit polos, full S–5XL, from $4.25/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank Polos",
+        "cta_collection": "polos",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

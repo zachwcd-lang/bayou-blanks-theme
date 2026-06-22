@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
+        "heading": "DTF vs <em>Screen Printing</em>",
+        "answer": "<p>DTF vs screen printing comes down to your run and your fabric: <strong>screen printing is cheapest and most durable for big runs of bold, few-color designs on cotton</strong>, while DTF prints full color on any fabric — including dark and polyester blanks — with no screens and no minimum. Both blanks start at $4.25/unit by the pack.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>The choice comes down to run size and fabric:</b> screen printing for big cotton runs, DTF for full-color art on any blank.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Screen printing is cheapest per shirt at volume</b> — but you pay a setup cost per color, so it favors bold, few-color designs.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>DTF has no setup and no minimum,</b> so it wins small runs, one-offs, and full-color or photographic art.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>DTF prints on any fabric</b> — cotton, polyester, blends, and dark colors — with a white underbase built in at no upcharge.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Screen printing is the durability gold standard on cotton;</b> quality DTF flexes and lasts 50–100+ washes.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees from $4.25/unit, down toward $2.92 by the 12-pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Screen the big simple runs, DTF the rest: <em>volume and cotton go to screens, color and any fabric go to film.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Screen Printing" } },
+        "c3": { "type": "column", "settings": { "label": "DTF Transfer" } },
+        "r1": { "type": "row", "settings": { "label": "Best run size", "cell_1": "Large runs (50+)", "cell_2": "Any size — one-offs to bulk", "badge_2": true } },
+        "r2": { "type": "row", "settings": { "label": "Color & detail", "cell_1": "Bold spot colors, few colors", "cell_2": "Full color, photos, gradients" } },
+        "r3": { "type": "row", "settings": { "label": "Fabrics", "cell_1": "Best on cotton", "cell_2": "Any fabric — cotton, poly, blends" } },
+        "r4": { "type": "row", "settings": { "label": "Dark garments", "cell_1": "Needs a printed underbase", "cell_2": "White underbase built in" } },
+        "r5": { "type": "row", "settings": { "label": "Setup cost", "cell_1": "Per color (one screen each)", "cell_2": "None" } },
+        "r6": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Soft — ink cures into the fabric", "cell_2": "Slight film layer on top" } },
+        "r7": { "type": "row", "settings": { "label": "Durability", "cell_1": "Gold standard; can crack over years", "cell_2": "Flexes; 50–100+ washes" } },
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Two Methods, <em>Compared</em>",
+        "intro": "<p>Screen printing and DTF are the two workhorses for decorating blank tees. The right one depends on how many you're printing, how many colors, and what fabric the blank is. Here's how they stack up.</p>",
+        "caption": "DTF vs screen printing, head to head"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Screen Print · Cotton", "blurb": "A solid-color cotton crew with deep stock — the classic screen-print blank. Bold spot-color art on cotton is exactly where screen printing is cheapest and longest-lasting.", "sizes": "S–2XL", "tag": "Big Runs" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-poly-t-shirt", "kicker": "DTF · Polyester", "blurb": "A polyester performance tee. Screen-printing poly risks dye migration, so this is a DTF blank — full-color transfers bond clean to polyester with no bleed.", "sizes": "S–3XL", "tag": "Any Fabric" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "DTF · Dark Colors", "blurb": "Deep-stock athletic raglan in a dark heather. DTF's built-in white underbase prints full color on dark blanks with no extra screen — where screen printing would add an underbase step.", "sizes": "S–5XL", "tag": "Deepest Stock" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Either Method", "blurb": "A contrast crew raglan in a full size run — versatile for either method: screen-print a bold logo on the body, or DTF a full-color design.", "sizes": "S–5XL", "tag": "S–5XL" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks for Both <em>Methods, In Stock</em>",
+        "intro": "<p>Cotton, polyester, and dark blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank prints either way at a flat <b>$4.25/unit</b>, about <b>$2.92/unit by the 12-pack</b>, same price across every size. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is DTF or screen printing better?", "answer": "<p>Neither is universally better — it depends on your order. Screen printing is cheapest and most durable for large runs of bold, few-color designs on cotton. DTF wins for small runs, full-color or photographic art, and printing on polyester or dark blanks, because it has no per-color setup and no minimum.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Which lasts longer, DTF or screen printing?", "answer": "<p>On cotton, properly cured screen printing is the durability gold standard — the ink becomes part of the fabric and can outlast the shirt, though heavy plastisol can crack over many years. Quality DTF stays flexible and typically lasts 50–100+ washes with a slight fade over time, and it often holds up better than screen printing on polyester and stretch fabrics.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is DTF cheaper than screen printing?", "answer": "<p>For small orders, yes — DTF has no screens to set up, so it's cheaper under roughly 50 shirts and for multicolor designs. Screen printing gets cheaper per shirt as the run grows because the setup cost spreads across more pieces, so it usually wins above 50–150 shirts with a low color count. The blank itself costs the same either way.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Can you screen print or DTF on polyester?", "answer": "<p>You can screen print polyester, but dark poly can suffer dye migration — the fabric dye bleeds into the ink under curing heat — so it needs low-bleed inks and careful temperature control. DTF bonds cleanly to polyester without that problem, which makes it the easier method for performance and jersey blanks.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Which is better for dark shirts?", "answer": "<p>DTF is simpler on dark garments: every transfer includes a white underbase, so full-color art prints on black or dark blanks at no extra cost. Screen printing a dark shirt requires printing and flashing a separate white underbase first, which adds a screen and a step.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does DTF feel different from screen printing?", "answer": "<p>Slightly. Screen-printed ink cures into the fabric for a soft, flat hand, and water-based inks feel softest. A DTF transfer sits as a thin film on top of the fabric, so you can feel a light raised layer, especially on large solid prints. Both are comfortable and wash well.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Dark Blanks", "text": "Cotton, polyester, and dark overstock — S–5XL — print-ready for screens or DTF, with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank Shirts for DTG & DTF", "summary": "Which blank suits each digital method.", "cta": "Compare methods", "url": "/pages/best-blank-shirts-for-dtg-dtf-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "The cotton blanks that hold a crisp print.", "cta": "Read guide", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "Cotton vs Polyester vs Blend", "summary": "Why the fabric decides the method.", "cta": "Read", "url": "/pages/cotton-vs-polyester-t-shirts" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Pick your <em>blank.</em>",
+        "subtext": "<p>Whichever method you print, the blank is the same flat price — cotton, poly, and blend tees from $4.25/unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$4.25",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

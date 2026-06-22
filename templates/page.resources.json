@@ -93,6 +93,16 @@
             "url": "/pages/wholesale-blank-hoodies"
           }
         },
+        "e10": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "DTF vs Screen Printing",
+            "dek": "Which method for which blank: screen print big cotton runs of bold colors; DTF for full color on any fabric, including darks and poly. From $4.25/unit.",
+            "cta": "Compare methods",
+            "url": "/pages/dtf-vs-screen-printing"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -232,9 +242,19 @@
             "cta": "Read",
             "url": "/pages/cotton-vs-polyester-t-shirts"
           }
+        },
+        "g8": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Piqué Fabric?",
+            "dek": "The raised, waffle-textured knit behind classic polos — breathable, structured, and built to grip embroidery. Cotton, poly, or blend.",
+            "cta": "Read",
+            "url": "/pages/what-is-pique-fabric"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
