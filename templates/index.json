@@ -118,13 +118,13 @@
         "card_polos": {
           "type": "card",
           "settings": {
-            "collection": "polos-1"
+            "collection": "polos"
           }
         },
-        "card_sweats": {
+        "card_tanks": {
           "type": "card",
           "settings": {
-            "collection": "sweatshirts"
+            "collection": "tanks"
           }
         },
         "card_womens": {
@@ -139,7 +139,7 @@
         "card_hoodies",
         "card_jerseys",
         "card_polos",
-        "card_sweats",
+        "card_tanks",
         "card_womens"
       ],
       "settings": {
