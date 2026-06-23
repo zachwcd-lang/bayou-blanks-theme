@@ -101,6 +101,25 @@
     color: rgba(26, 36, 21, 0.7);
     margin: 0;
   }
+
+  /* Trust pills adapt to the light hero background (snippet defaults are for dark sections) */
+  .ww-hero .bb-proof__pill {
+    border-color: rgba(26, 36, 21, 0.18);
+    background: rgba(26, 36, 21, 0.04);
+    color: var(--bb-ink, #1A2415);
+  }
+  .ww-hero .bb-proof__pill:hover {
+    border-color: rgba(26, 36, 21, 0.45);
+    background: rgba(26, 36, 21, 0.08);
+    color: var(--bb-ink, #1A2415);
+  }
+  .ww-hero .bb-proof__mark--w {
+    background: var(--bb-ink, #1A2415);
+    color: var(--bb-paper, #FAF8F2);
+  }
+  .ww-hero .bb-proof__stars {
+    color: #9a7d2c;
+  }
 {%- endstyle -%}
 
 <section class="ww-hero" id="bayou-ww-hero-{{ section.id }}">

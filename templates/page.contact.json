@@ -28,7 +28,7 @@
           "settings": {
             "name": "Case",
             "units": "48 units",
-            "price": "Volume pricing"
+            "price": "from $2.92/unit"
           }
         },
         "tier_2": {
@@ -36,7 +36,7 @@
           "settings": {
             "name": "Half pallet",
             "units": "288 units",
-            "price": "Better per-unit"
+            "price": "from $2.92/unit"
           }
         },
         "tier_3": {
@@ -44,7 +44,7 @@
           "settings": {
             "name": "Pallet",
             "units": "576+ units",
-            "price": "Best per-unit"
+            "price": "from $2.92/unit"
           }
         }
       },
