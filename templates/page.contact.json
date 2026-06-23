@@ -1,5 +1,25 @@
 {
   "sections": {
+    "wholesale_hero": {
+      "type": "bayou-wholesale-hero",
+      "blocks": {
+        "p1": { "type": "point", "settings": { "kicker": "Volume", "title": "Cheaper by the case", "text": "Per-unit price drops as you scale, case to pallet." } },
+        "p2": { "type": "point", "settings": { "kicker": "Flat pricing", "title": "Every size, one price", "text": "S to 5XL costs the same per unit. Mixed runs never cost more." } },
+        "p3": { "type": "point", "settings": { "kicker": "Authentic", "title": "Real overstock, inspected", "text": "Genuine Fanatics overstock, received and checked in-house." } },
+        "p4": { "type": "point", "settings": { "kicker": "Logistics", "title": "Ships from Hattiesburg", "text": "Fast, trackable freight straight from our Mississippi warehouse." } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "eyebrow": "Wholesale & bulk",
+        "heading": "Blank apparel by the case and pallet.",
+        "lead": "Authentic Fanatics overstock, sold by the case and pallet at per-unit prices that drop with volume. The same low price in every size, shipped from our Hattiesburg warehouse. Tell us what you run and we'll quote it.",
+        "cta1_label": "Request bulk pricing",
+        "cta1_link": "/pages/contact#wholesale-lead-form",
+        "cta2_label": "Shop by the pack",
+        "cta2_link": "/collections/in-stock",
+        "show_pills": true
+      }
+    },
     "bulk_tiers": {
       "type": "bayou-wholesale",
       "blocks": {
@@ -35,7 +55,7 @@
       ],
       "settings": {
         "label": "Bulk & wholesale",
-        "heading": "Printing at volume?",
+        "heading": "Volume pricing.",
         "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers, shipped from Hattiesburg. Tell us what you run and we'll quote it.",
         "button_label": "",
         "footnote": "Per-unit price drops with volume. Request a current quote below."
@@ -52,6 +72,7 @@
     }
   },
   "order": [
+    "wholesale_hero",
     "bulk_tiers",
     "form"
   ]

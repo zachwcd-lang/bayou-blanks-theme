@@ -1,0 +1,192 @@
+{%- style -%}
+  .ww-hero {
+    background: var(--bb-paper, #FAF8F2);
+    padding: 5.6rem 0 4rem;
+  }
+  @media screen and (min-width: 750px) {
+    .ww-hero { padding: 8rem 0 5.6rem; }
+  }
+
+  .ww-hero__eyebrow {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bb-gold, #b8922f);
+    margin: 0 0 1.4rem;
+  }
+
+  .ww-hero__h1 {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: clamp(3.2rem, 2.4rem + 2.6vw, 5rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 1.6rem;
+    max-width: 20ch;
+  }
+
+  .ww-hero__lead {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.7rem;
+    line-height: 1.55;
+    color: rgba(26, 36, 21, 0.82);
+    max-width: 58rem;
+    margin: 0 0 2.6rem;
+  }
+
+  .ww-hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .ww-btn {
+    display: inline-block;
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 1.5rem 3.2rem;
+    border-radius: var(--bb-radius-btn, 2px);
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+  }
+  .ww-btn--primary {
+    background: var(--bb-ink, #1A2415);
+    color: var(--bb-paper, #FAF8F2);
+    border: 1px solid var(--bb-ink, #1A2415);
+  }
+  .ww-btn--primary:hover { opacity: 0.88; color: var(--bb-paper, #FAF8F2); }
+  .ww-btn--secondary {
+    background: transparent;
+    color: var(--bb-ink, #1A2415);
+    border: 1px solid rgba(26, 36, 21, 0.4);
+  }
+  .ww-btn--secondary:hover { border-color: var(--bb-ink, #1A2415); background: rgba(26, 36, 21, 0.04); }
+
+  .ww-hero__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-top: 4.8rem;
+    border-top: 1px solid rgba(26, 36, 21, 0.12);
+    padding-top: 3.6rem;
+  }
+  @media screen and (min-width: 750px) {
+    .ww-hero__grid { grid-template-columns: repeat(4, 1fr); gap: 3.2rem; }
+  }
+
+  .ww-point__k {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bb-gold, #b8922f);
+    margin: 0 0 0.8rem;
+  }
+  .ww-point__t {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: var(--bb-ink, #1A2415);
+    margin: 0 0 0.6rem;
+  }
+  .ww-point__d {
+    font-family: var(--font-display, 'Inter', sans-serif);
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: rgba(26, 36, 21, 0.7);
+    margin: 0;
+  }
+{%- endstyle -%}
+
+<section class="ww-hero" id="bayou-ww-hero-{{ section.id }}">
+  <div class="page-width">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="ww-hero__eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h1 class="ww-hero__h1">{{ section.settings.heading }}</h1>
+    {%- endif -%}
+    {%- if section.settings.lead != blank -%}
+      <p class="ww-hero__lead">{{ section.settings.lead }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.cta1_label != blank or section.settings.cta2_label != blank -%}
+      <div class="ww-hero__cta">
+        {%- if section.settings.cta1_label != blank -%}
+          <a class="ww-btn ww-btn--primary" href="{{ section.settings.cta1_link | default: '#wholesale-lead-form' }}">{{ section.settings.cta1_label }}</a>
+        {%- endif -%}
+        {%- if section.settings.cta2_label != blank -%}
+          <a class="ww-btn ww-btn--secondary" href="{{ section.settings.cta2_link | default: '/collections/in-stock' }}">{{ section.settings.cta2_label }}</a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.show_pills -%}
+      <div class="ww-hero__pills">{% render 'bayou-proof-pills' %}</div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="ww-hero__grid">
+        {%- for block in section.blocks -%}
+          <div class="ww-point" {{ block.shopify_attributes }}>
+            {%- if block.settings.kicker != blank -%}
+              <p class="ww-point__k">{{ block.settings.kicker }}</p>
+            {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <h3 class="ww-point__t">{{ block.settings.title }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <p class="ww-point__d">{{ block.settings.text }}</p>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bayou Wholesale Hero",
+  "tag": "section",
+  "class": "bayou-wholesale-hero-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Wholesale & bulk" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Blank apparel by the case and pallet." },
+    { "type": "textarea", "id": "lead", "label": "Lead paragraph", "default": "Authentic Fanatics overstock, sold by the case and pallet at per-unit prices that drop with volume. The same low price in every size, shipped from our Hattiesburg warehouse. Tell us what you run and we'll quote it." },
+    { "type": "text", "id": "cta1_label", "label": "Primary button label", "default": "Request bulk pricing" },
+    { "type": "url", "id": "cta1_link", "label": "Primary button link", "info": "Point at the quote form, e.g. /pages/contact#wholesale-lead-form" },
+    { "type": "text", "id": "cta2_label", "label": "Secondary button label", "default": "Shop by the pack" },
+    { "type": "url", "id": "cta2_link", "label": "Secondary button link" },
+    { "type": "checkbox", "id": "show_pills", "label": "Show trust pills", "default": true }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Value point",
+      "settings": [
+        { "type": "text", "id": "kicker", "label": "Kicker (gold)", "default": "Volume" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Cheaper by the case" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Per-unit price drops as you scale, case to pallet." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bayou Wholesale Hero",
+      "blocks": [
+        { "type": "point", "settings": { "kicker": "Volume", "title": "Cheaper by the case", "text": "Per-unit price drops as you scale, case to pallet." } },
+        { "type": "point", "settings": { "kicker": "Flat pricing", "title": "Every size, one price", "text": "S to 5XL costs the same per unit. Mixed runs never cost more." } },
+        { "type": "point", "settings": { "kicker": "Authentic", "title": "Real overstock, inspected", "text": "Genuine Fanatics overstock, received and checked in-house." } },
+        { "type": "point", "settings": { "kicker": "Logistics", "title": "Ships from Hattiesburg", "text": "Fast, trackable freight straight from our Mississippi warehouse." } }
+      ]
+    }
+  ]
+}
+{% endschema %}
