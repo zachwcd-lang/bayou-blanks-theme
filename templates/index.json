@@ -71,12 +71,12 @@
         "tier_3"
       ],
       "settings": {
-        "label": "For businesses",
-        "heading": "Printing at volume?",
-        "text": "Real per-unit pricing, shown up front — from $4.25 a unit by the pack, down to $2.92 by the 12-pack. Buying by the case or pallet? Talk to us for a quote.",
-        "button_label": "Talk to us",
-        "button_link": "/pages/contact#wholesale-lead-form",
-        "footnote": "Per-unit pricing, shown up front — no account needed"
+        "label": "Priced by the pack",
+        "heading": "Cheaper by the pack.",
+        "text": "Every blank is priced per unit and sold by the pack, from $4.25 a unit down to $2.92 by the 12-pack. The same low price in every size, no account, no minimums.",
+        "button_label": "Shop blanks",
+        "button_link": "/collections/in-stock",
+        "footnote": "Per-unit pricing, up front. No account, no minimums."
       }
     },
     "live_hero": {
@@ -85,11 +85,11 @@
         "color_scheme": "scheme-3",
         "heading": "Live daily.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
-        "subline": "Authentic Fanatics overstock, sold by the pack at per-unit prices.",
-        "button_label": "Follow @bayou.blanks",
-        "button_link": "https://www.tiktok.com/@bayou.blanks",
-        "button_secondary_label": "Shop now",
-        "button_secondary_link": "/collections/in-stock",
+        "subline": "Authentic Fanatics overstock, sold by the pack from $4.25 a unit. No account, no minimums.",
+        "button_label": "Shop now",
+        "button_link": "/collections/in-stock",
+        "button_secondary_label": "Follow @bayou.blanks",
+        "button_secondary_link": "https://www.tiktok.com/@bayou.blanks",
         "video_asset": "hattiesburg-hero.mov",
         "caption": "LIVE FROM THE WAREHOUSE, DAILY."
       }

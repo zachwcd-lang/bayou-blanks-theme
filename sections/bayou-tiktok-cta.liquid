@@ -5,7 +5,7 @@
 
   @media screen and (min-width: 750px) {
     .bayou-tiktok {
-      padding: 9.6rem 0 5.6rem;
+      padding: 6.4rem 0 4.8rem;
     }
   }
 
@@ -14,6 +14,12 @@
     grid-template-columns: 1fr;
     gap: 4rem;
     align-items: center;
+  }
+
+  @media screen and (min-width: 750px) {
+    .bayou-tiktok__inner {
+      align-items: start;
+    }
   }
 
   @media screen and (min-width: 750px) {
@@ -109,7 +115,7 @@
 
   .bayou-tiktok__media {
     aspect-ratio: 9 / 16;
-    max-height: 50rem;
+    max-height: 44rem;
     overflow: hidden;
     border-radius: var(--bb-radius-card, 4px);
     border: 1px solid rgba(var(--color-foreground), 0.18);
@@ -201,12 +207,12 @@
       {%- if section.settings.button_label != blank or section.settings.button_secondary_label != blank -%}
         <div class="bayou-tiktok__buttons">
           {%- if section.settings.button_label != blank -%}
-            <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button bayou-tiktok__button--primary" target="_blank" rel="noopener">
+            <a href="{{ section.settings.button_link }}" class="bayou-tiktok__button bayou-tiktok__button--primary">
               {{- section.settings.button_label -}}
             </a>
           {%- endif -%}
           {%- if section.settings.button_secondary_label != blank -%}
-            <a href="{{ section.settings.button_secondary_link }}" class="bayou-tiktok__button bayou-tiktok__button--secondary">
+            <a href="{{ section.settings.button_secondary_link }}" class="bayou-tiktok__button bayou-tiktok__button--secondary" target="_blank" rel="noopener">
               {{- section.settings.button_secondary_label -}}
             </a>
           {%- endif -%}
