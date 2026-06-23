@@ -8,7 +8,7 @@
           "settings": {
             "name": "Case",
             "units": "48 units",
-            "price": "from $8.50/unit"
+            "price": "Volume pricing"
           }
         },
         "tier_2": {
@@ -16,7 +16,7 @@
           "settings": {
             "name": "Half pallet",
             "units": "288 units",
-            "price": "from $7.25/unit"
+            "price": "Better per-unit"
           }
         },
         "tier_3": {
@@ -24,7 +24,7 @@
           "settings": {
             "name": "Pallet",
             "units": "576+ units",
-            "price": "from $6.50/unit"
+            "price": "Best per-unit"
           }
         }
       },
@@ -36,9 +36,9 @@
       "settings": {
         "label": "Bulk & wholesale",
         "heading": "Printing at volume?",
-        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg. Tell us what you run and we'll quote it.",
+        "text": "Case, half-pallet, and pallet pricing for printers, decorators, and resellers, shipped from Hattiesburg. Tell us what you run and we'll quote it.",
         "button_label": "",
-        "footnote": "Placeholder pricing — request a current quote below"
+        "footnote": "Per-unit price drops with volume. Request a current quote below."
       }
     },
     "form": {
