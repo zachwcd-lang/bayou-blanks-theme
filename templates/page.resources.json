@@ -113,6 +113,16 @@
             "url": "/pages/sublimation-vs-dtf"
           }
         },
+        "e12": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "DTG vs Screen Printing",
+            "dek": "DTG prints full-color art with no minimum on cotton; screen printing is cheapest and most durable for big, bold runs. From $4.25/unit.",
+            "cta": "Compare methods",
+            "url": "/pages/dtg-vs-screen-printing"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -264,7 +274,7 @@
           }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
