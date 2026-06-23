@@ -83,13 +83,13 @@
       "type": "bayou-tiktok-cta",
       "settings": {
         "color_scheme": "scheme-3",
-        "heading": "Live daily.",
+        "heading": "Missed the live? Shop 24/7.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
-        "subline": "Authentic Fanatics overstock, sold by the pack from $4.25 a unit. No account, no minimums.",
+        "subline": "The same Fanatics overstock we sell live, by the pack from $4.25 a unit. No account, no minimums. Buying in bulk? Talk to us.",
         "button_label": "Shop now",
         "button_link": "/collections/in-stock",
-        "button_secondary_label": "Follow @bayou.blanks",
-        "button_secondary_link": "https://www.tiktok.com/@bayou.blanks",
+        "button_secondary_label": "Buy in bulk",
+        "button_secondary_link": "/pages/contact",
         "video_asset": "hattiesburg-hero.mov",
         "caption": "LIVE FROM THE WAREHOUSE, DAILY."
       }
