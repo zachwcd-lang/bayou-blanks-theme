@@ -168,8 +168,8 @@
   "order": [
     "live_hero",
     "bayou_wholesale",
-    "collection_cards",
     "lead_form",
+    "collection_cards",
     "live_channels"
   ]
 }
