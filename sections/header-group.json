@@ -2,6 +2,27 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "ann1": {
+          "type": "announcement",
+          "settings": {
+            "text": "99¢ tees. $2 hoodies. Real overstock, while it lasts.",
+            "link": "/collections/in-stock"
+          }
+        }
+      },
+      "block_order": ["ann1"],
+      "settings": {
+        "auto_rotate": false,
+        "color_scheme": "scheme-3",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -21,6 +42,7 @@
     }
   },
   "order": [
+    "announcement-bar",
     "header"
   ]
 }

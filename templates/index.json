@@ -45,7 +45,7 @@
           "settings": {
             "name": "Tees",
             "units": "any size",
-            "price": "$1.00/unit"
+            "price": "99¢/unit"
           }
         },
         "tier_2": {
@@ -71,21 +71,21 @@
         "tier_3"
       ],
       "settings": {
-        "label": "New pricing",
-        "heading": "Tees, a buck. Hoodies, two.",
-        "text": "Every blank tee is now $1 a unit. Every hoodie and fleece, $1.98. The same low price in every size, sold by the pack, no account and no minimums.",
+        "label": "Prices that don't exist",
+        "heading": "This doesn't exist anywhere.",
+        "text": "99¢ blank tees. $1.98 hoodies and fleece. Real Fanatics overstock, the same price in every size, sold by the pack. We can only do this because it's liquidation, and it lasts while the stock does.",
         "button_label": "Shop blanks",
         "button_link": "/collections/in-stock",
-        "footnote": "The same price in every size. No account, no minimums."
+        "footnote": "While the overstock lasts. No account, no minimums."
       }
     },
     "live_hero": {
       "type": "bayou-tiktok-cta",
       "settings": {
         "color_scheme": "scheme-3",
-        "heading": "Missed the live? Shop 24/7.",
+        "heading": "99¢ tees. $2 hoodies.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
-        "subline": "The same Fanatics overstock we sell live, by the pack from $1 a unit. No account, no minimums. Buying in bulk? Talk to us.",
+        "subline": "Blank apparel at prices that don't exist anywhere else. Real Fanatics overstock, sold by the pack while it lasts. No account, no minimums. Buying in bulk? Talk to us.",
         "button_label": "Shop now",
         "button_link": "/collections/in-stock",
         "button_secondary_label": "Buy in bulk",
