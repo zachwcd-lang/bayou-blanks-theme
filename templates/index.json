@@ -153,14 +153,15 @@
       "type": "bayou-wholesale-form",
       "settings": {
         "eyebrow": "Bulk & wholesale",
-        "heading": "Request bulk pricing.",
-        "intro": "Tell us what you run and what you're trying to hit — sizes, colors, quantities. We quote case, half-pallet, and pallet orders direct from Hattiesburg, usually same business day.",
+        "heading": "Get wholesale pricing.",
+        "intro": "Tell us where to reach you and what you're after. We'll send case-to-pallet pricing, usually same business day.",
         "background": "#1A2415",
         "show_proof": true,
         "success_heading": "We got it.",
         "manifest_label": "View entire manifest",
         "manifest_link": "https://admin.shopbayoublanks.com/m/85ff1cf403484d169314ed3547c34166",
-        "slack_relay_url": "https://vvgjyvkjptgydqqwzked.supabase.co/functions/v1/bayou-lead"
+        "slack_relay_url": "https://vvgjyvkjptgydqqwzked.supabase.co/functions/v1/bayou-lead",
+        "compact": true
       }
     }
   },

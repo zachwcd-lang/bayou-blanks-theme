@@ -478,10 +478,12 @@
               <input class="bb-lead__input" id="bb-name-{{ uid }}" type="text" name="contact[name]" value="{{ form.name }}" autocomplete="name" required>
             </div>
 
-            <div class="bb-lead__field">
-              <label class="bb-lead__label" for="bb-company-{{ uid }}">Business / brand</label>
-              <input class="bb-lead__input" id="bb-company-{{ uid }}" type="text" name="contact[Company]" autocomplete="organization">
-            </div>
+            {%- unless s.compact -%}
+              <div class="bb-lead__field">
+                <label class="bb-lead__label" for="bb-company-{{ uid }}">Business / brand</label>
+                <input class="bb-lead__input" id="bb-company-{{ uid }}" type="text" name="contact[Company]" autocomplete="organization">
+              </div>
+            {%- endunless -%}
 
             <div class="bb-lead__field">
               <label class="bb-lead__label" for="bb-email-{{ uid }}">Email <span class="bb-lead__req">*</span></label>
@@ -493,33 +495,35 @@
               <input class="bb-lead__input" id="bb-phone-{{ uid }}" type="tel" name="contact[Phone]" autocomplete="tel" required>
             </div>
 
-            <div class="bb-lead__field">
-              <label class="bb-lead__label" for="bb-type-{{ uid }}">What do you do?</label>
-              <select class="bb-lead__select" id="bb-type-{{ uid }}" name="contact[Business type]">
-                <option value="" disabled selected>Select one…</option>
-                <option>Screen printer</option>
-                <option>Embroiderer</option>
-                <option>DTG / DTF printer</option>
-                <option>Reseller / boutique</option>
-                <option>Promotional products</option>
-                <option>Team / school / org</option>
-                <option>Other</option>
-              </select>
-            </div>
+            {%- unless s.compact -%}
+              <div class="bb-lead__field">
+                <label class="bb-lead__label" for="bb-type-{{ uid }}">What do you do?</label>
+                <select class="bb-lead__select" id="bb-type-{{ uid }}" name="contact[Business type]">
+                  <option value="" disabled selected>Select one…</option>
+                  <option>Screen printer</option>
+                  <option>Embroiderer</option>
+                  <option>DTG / DTF printer</option>
+                  <option>Reseller / boutique</option>
+                  <option>Promotional products</option>
+                  <option>Team / school / org</option>
+                  <option>Other</option>
+                </select>
+              </div>
 
-            <div class="bb-lead__field">
-              <label class="bb-lead__label" for="bb-volume-{{ uid }}">Monthly volume</label>
-              <select class="bb-lead__select" id="bb-volume-{{ uid }}" name="contact[Monthly volume]">
-                <option value="" disabled selected>Select one…</option>
-                <option>Under 100 units</option>
-                <option>100–500 units</option>
-                <option>500–2,000 units</option>
-                <option>2,000–10,000 units</option>
-                <option>10,000+ units</option>
-              </select>
-            </div>
+              <div class="bb-lead__field">
+                <label class="bb-lead__label" for="bb-volume-{{ uid }}">Monthly volume</label>
+                <select class="bb-lead__select" id="bb-volume-{{ uid }}" name="contact[Monthly volume]">
+                  <option value="" disabled selected>Select one…</option>
+                  <option>Under 100 units</option>
+                  <option>100–500 units</option>
+                  <option>500–2,000 units</option>
+                  <option>2,000–10,000 units</option>
+                  <option>10,000+ units</option>
+                </select>
+              </div>
+            {%- endunless -%}
 
-            <div class="bb-lead__field bb-lead__field--full">
+            <div class="bb-lead__field{% unless s.compact %} bb-lead__field--full{% endunless %}">
               <label class="bb-lead__label" for="bb-products-{{ uid }}">What are you after?</label>
               <select class="bb-lead__select" id="bb-products-{{ uid }}" name="contact[Products of interest]">
                 <option value="" disabled selected>Select one…</option>
@@ -531,10 +535,12 @@
               </select>
             </div>
 
-            <div class="bb-lead__field bb-lead__field--full">
-              <label class="bb-lead__label" for="bb-body-{{ uid }}">Anything else? <span class="bb-lead__note">(sizes, colors, timeline, target price)</span></label>
-              <textarea class="bb-lead__textarea" id="bb-body-{{ uid }}" name="contact[body]" placeholder="Tell us what you run and what you're trying to hit. We'll quote it.">{{ form.body }}</textarea>
-            </div>
+            {%- unless s.compact -%}
+              <div class="bb-lead__field bb-lead__field--full">
+                <label class="bb-lead__label" for="bb-body-{{ uid }}">Anything else? <span class="bb-lead__note">(sizes, colors, timeline, target price)</span></label>
+                <textarea class="bb-lead__textarea" id="bb-body-{{ uid }}" name="contact[body]" placeholder="Tell us what you run and what you're trying to hit. We'll quote it.">{{ form.body }}</textarea>
+              </div>
+            {%- endunless -%}
           </div>
 
           <div class="bb-lead__actions">
@@ -614,6 +620,13 @@
       "id": "intro",
       "label": "Intro text",
       "default": "Tell us what you run and what you're trying to hit. We quote case, half-pallet, and pallet orders direct from Hattiesburg, usually same business day."
+    },
+    {
+      "type": "checkbox",
+      "id": "compact",
+      "label": "Compact form (name, email, phone, what they're after only)",
+      "info": "Lower-friction lead capture. Hides business, what-you-do, volume, and notes.",
+      "default": false
     },
     {
       "type": "text",
