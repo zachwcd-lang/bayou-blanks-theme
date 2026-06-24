@@ -86,10 +86,10 @@
         "heading": "99¢ tees. $2 hoodies.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
         "subline": "Blank apparel at prices that don't exist anywhere else. Real Fanatics overstock, sold by the pack while it lasts. No account, no minimums. Buying in bulk? Talk to us.",
-        "button_label": "Shop now",
-        "button_link": "/collections/in-stock",
-        "button_secondary_label": "Buy in bulk",
-        "button_secondary_link": "/pages/contact",
+        "button_label": "Buy in bulk",
+        "button_link": "#wholesale-lead-form",
+        "button_secondary_label": "Shop now",
+        "button_secondary_link": "/collections/in-stock",
         "video_asset": "hattiesburg-hero.mov",
         "caption": "LIVE FROM THE WAREHOUSE, DAILY."
       }
@@ -148,12 +148,27 @@
         "background": "#FAF8F2",
         "columns_desktop": 3
       }
+    },
+    "lead_form": {
+      "type": "bayou-wholesale-form",
+      "settings": {
+        "eyebrow": "Bulk & wholesale",
+        "heading": "Request bulk pricing.",
+        "intro": "Tell us what you run and what you're trying to hit — sizes, colors, quantities. We quote case, half-pallet, and pallet orders direct from Hattiesburg, usually same business day.",
+        "background": "#1A2415",
+        "show_proof": true,
+        "success_heading": "We got it.",
+        "manifest_label": "View entire manifest",
+        "manifest_link": "https://admin.shopbayoublanks.com/m/85ff1cf403484d169314ed3547c34166",
+        "slack_relay_url": "https://vvgjyvkjptgydqqwzked.supabase.co/functions/v1/bayou-lead"
+      }
     }
   },
   "order": [
     "live_hero",
     "bayou_wholesale",
     "collection_cards",
+    "lead_form",
     "live_channels"
   ]
 }
