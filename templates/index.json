@@ -43,25 +43,25 @@
         "tier_1": {
           "type": "tier",
           "settings": {
-            "name": "4-Pack",
-            "units": "4 units",
-            "price": "$4.25/unit"
+            "name": "Tees",
+            "units": "any size",
+            "price": "$1.00/unit"
           }
         },
         "tier_2": {
           "type": "tier",
           "settings": {
-            "name": "6-Pack",
-            "units": "6 units",
-            "price": "$3.50/unit"
+            "name": "Hoodies & fleece",
+            "units": "any size",
+            "price": "$1.98/unit"
           }
         },
         "tier_3": {
           "type": "tier",
           "settings": {
-            "name": "12-Pack",
-            "units": "12 units",
-            "price": "$2.92/unit"
+            "name": "Jerseys, polos & more",
+            "units": "by the pack",
+            "price": "from $2.92/unit"
           }
         }
       },
@@ -71,12 +71,12 @@
         "tier_3"
       ],
       "settings": {
-        "label": "Priced by the pack",
-        "heading": "Cheaper by the pack.",
-        "text": "Every blank is priced per unit and sold by the pack, from $4.25 a unit down to $2.92 by the 12-pack. The same low price in every size, no account, no minimums.",
+        "label": "New pricing",
+        "heading": "Tees, a buck. Hoodies, two.",
+        "text": "Every blank tee is now $1 a unit. Every hoodie and fleece, $1.98. The same low price in every size, sold by the pack, no account and no minimums.",
         "button_label": "Shop blanks",
         "button_link": "/collections/in-stock",
-        "footnote": "Per-unit pricing, up front. No account, no minimums."
+        "footnote": "The same price in every size. No account, no minimums."
       }
     },
     "live_hero": {
@@ -85,7 +85,7 @@
         "color_scheme": "scheme-3",
         "heading": "Missed the live? Shop 24/7.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
-        "subline": "The same Fanatics overstock we sell live, by the pack from $4.25 a unit. No account, no minimums. Buying in bulk? Talk to us.",
+        "subline": "The same Fanatics overstock we sell live, by the pack from $1 a unit. No account, no minimums. Buying in bulk? Talk to us.",
         "button_label": "Shop now",
         "button_link": "/collections/in-stock",
         "button_secondary_label": "Buy in bulk",
