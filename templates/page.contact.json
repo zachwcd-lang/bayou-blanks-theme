@@ -26,25 +26,25 @@
         "tier_1": {
           "type": "tier",
           "settings": {
-            "name": "Case",
-            "units": "48 units",
+            "name": "Tees, tanks, jerseys & polos",
+            "units": "any size",
             "price": "99¢/unit"
           }
         },
         "tier_2": {
           "type": "tier",
           "settings": {
-            "name": "Half pallet",
-            "units": "288 units",
-            "price": "$1.75/unit"
+            "name": "Hoodies, fleece, sweats & outerwear",
+            "units": "any size",
+            "price": "$1.50/unit"
           }
         },
         "tier_3": {
           "type": "tier",
           "settings": {
-            "name": "Pallet",
-            "units": "576+ units",
-            "price": "$1.50/unit"
+            "name": "By the pack",
+            "units": "4 · 6 · 8 · 12",
+            "price": "per-unit pricing"
           }
         }
       },

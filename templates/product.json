@@ -79,7 +79,7 @@
           "type": "feature",
           "settings": {
             "icon": "discount",
-            "text": "Tiered Volume Discounts"
+            "text": "Flat 99¢/$1.50 Per-Unit Pricing"
           }
         },
         "feature-1": {
@@ -114,7 +114,7 @@
         "bg_color": "#1A2415",
         "label": "For Businesses",
         "heading": "Bulk & Wholesale Pricing",
-        "subtext": "Volume discounts for screen printers, decorators, resellers, and teams. Premium Fanatics blanks shipped fast from Mississippi.",
+        "subtext": "Flat per-unit pricing — 99¢ tees, $1.50 fleece, the same in every size and pack — for screen printers, decorators, resellers, and teams. Premium Fanatics blanks shipped fast from Mississippi.",
         "mode": "form",
         "cta_heading": "Get a Custom Quote",
         "cta_label": "Request Pricing"

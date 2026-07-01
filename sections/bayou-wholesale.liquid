@@ -209,7 +209,7 @@
       "type": "text",
       "id": "footnote",
       "label": "Panel footnote (gold)",
-      "default": "Placeholder pricing — talk to us for a current quote"
+      "default": "One flat price per unit — the same whether you buy a 4-pack or a pallet."
     }
   ],
   "max_blocks": 4,
@@ -228,14 +228,14 @@
           "type": "text",
           "id": "units",
           "label": "Units",
-          "default": "48 units"
+          "default": "any size"
         },
         {
           "type": "text",
           "id": "price",
           "label": "Price text",
           "info": "Placeholder — edit with real pricing.",
-          "default": "$2.00/unit"
+          "default": "99¢/unit"
         }
       ]
     }
@@ -246,15 +246,15 @@
       "blocks": [
         {
           "type": "tier",
-          "settings": { "name": "Case", "units": "48 units", "price": "$2.00/unit" }
+          "settings": { "name": "Tees, tanks, jerseys & polos", "units": "any size", "price": "99¢/unit" }
         },
         {
           "type": "tier",
-          "settings": { "name": "Half pallet", "units": "288 units", "price": "$1.75/unit" }
+          "settings": { "name": "Hoodies, fleece, sweats & outerwear", "units": "any size", "price": "$1.50/unit" }
         },
         {
           "type": "tier",
-          "settings": { "name": "Pallet", "units": "576+ units", "price": "$1.50/unit" }
+          "settings": { "name": "By the pack", "units": "4 · 6 · 8 · 12", "price": "per-unit pricing" }
         }
       ]
     }
