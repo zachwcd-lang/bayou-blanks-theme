@@ -322,9 +322,19 @@
             "cta": "Read",
             "url": "/pages/what-is-jersey-knit"
           }
+        },
+        "g13": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Heather Fabric?",
+            "dek": "The soft, flecked look you see on gray tees — different-colored fibers blended into the yarn before spinning. A coloring technique, not a fiber.",
+            "cta": "Read",
+            "url": "/pages/what-is-heather-fabric"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12", "g13"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",

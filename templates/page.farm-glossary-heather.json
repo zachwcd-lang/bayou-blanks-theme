@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>Blended</b> yarn" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>Print</b>-ready" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated July 2026",
+        "heading": "What Is <em>Heather Fabric</em>?",
+        "answer": "<p>Heather fabric is knit from heathered yarn — yarn spun from two or more different-colored fibers blended together before spinning, which gives a soft, flecked, multi-tonal look. <strong>It's a coloring technique, not a fiber,</strong> so heather can be cotton, polyester, or a blend. Classic heather gray blends white and gray fibers.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Heather is a color effect, not a fiber</b> — made by blending two or more different-colored fibers into the yarn before it's spun, so the color runs all the way through.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Classic heather gray</b> blends white and gray or black fibers; any colors work — heather navy, heather green, oatmeal — always a soft, flecked look.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>It's a blending technique,</b> so heather shows up in 100% cotton, polyester, and especially triblends. The fiber changes the feel; the fleck stays.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Many heathers include some polyester or rayon</b> — especially heather gray — to hold the melange evenly, which is worth knowing before you print.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>It prints with a vintage, lived-in look</b> and takes screen and vinyl well; on poly-containing heathers, use a low-bleed ink or gray underbase to stop dye migration.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's heather tees</b> come in crew, V-neck, triblend, and extended and plus sizes — by the pack at a flat 99¢/unit, the same price in every size.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Heather isn't a fabric you can buy by name — it's a look. Blend a little gray fiber into white before you spin the yarn, and every shirt off that knit reads soft, flecked, and a little vintage.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Heather" } },
+        "c3": { "type": "column", "settings": { "label": "Solid" } },
+        "c4": { "type": "column", "settings": { "label": "Space-Dye" } },
+        "r1": { "type": "row", "settings": { "label": "How it's colored", "cell_1": "Different-colored fibers blended before spinning", "badge_1": true, "cell_2": "One color, piece- or garment-dyed", "cell_3": "Yarn dyed several colors along its length" } },
+        "r2": { "type": "row", "settings": { "label": "Look", "cell_1": "Soft, even fleck / mottled", "badge_1": true, "cell_2": "Flat and uniform", "cell_3": "Pixelated, static-like specks" } },
+        "r3": { "type": "row", "settings": { "label": "Fiber", "cell_1": "Cotton, poly, or blend (often some poly/rayon)", "cell_2": "Any fiber", "cell_3": "Usually poly / performance" } },
+        "r4": { "type": "row", "settings": { "label": "Best for", "cell_1": "Casual, vintage tees and fleece", "cell_2": "Clean, bold prints", "cell_3": "Athletic and activewear" } },
+        "r5": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Screen and vinyl; watch poly dye migration", "cell_2": "Every method", "cell_3": "Sublimation, DTF, HTV" } },
+        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Heather tees from 99¢/unit", "cell_2": "Solid tees from 99¢/unit", "cell_3": "Space-dye tees from 99¢/unit" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Heather vs <em>Solid</em> vs Space-Dye",
+        "intro": "<p>Heather, solid, and space-dye are three ways to color a knit — the difference is <em>when</em> and <em>how</em> the color goes in. Here's how heather's blended fleck stacks up against a flat solid and the pixel-speckled space-dye you'll see on athletic tees.</p>",
+        "caption": "How heather compares to solid and space-dyed fabric"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-crew-neck-tee", "kicker": "Heather Cotton Crew", "blurb": "Maroon Heather Crew Neck Tee — the textbook heather: dark and light fibers blended into a soft, flecked crew that reads vintage the second it's on.", "sizes": "Adult sizes", "tag": "The Classic" } },
+        "p2": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-plus-sizes-2", "kicker": "Heather Gray V-Neck · Plus", "blurb": "Charcoal Heather V-Neck Tee — true heather gray in a plus-size V-neck, the same flecked melange most people picture when they hear 'heather.'", "sizes": "Plus sizes", "tag": "Extended & Plus" } },
+        "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-extended-sizes", "kicker": "Heather V-Neck · Extended", "blurb": "Heather V-Neck Tee — the heathered look carried through extended sizes, so the whole run matches from S to the big end.", "sizes": "Extended sizes", "tag": "Full Size Run" } },
+        "p4": { "type": "pick", "settings": { "product": "adult-short-sleeve-triblend-tee", "kicker": "Heather Triblend", "blurb": "Maroon Heather Triblend Tee — heather at its softest: cotton, poly, and rayon tri-blended for the deepest melange and the most drape.", "sizes": "Adult sizes", "tag": "Softest Drape" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Heather Blanks With That <em>Vintage</em> Fleck",
+        "intro": "<p>Real in-stock heather tees — the soft, flecked melange in cotton, triblend, and deep extended sizes. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every heather tee is sold by the pack at a flat <b>99¢/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is heather fabric?", "answer": "<p>Heather fabric is fabric knit or woven from heathered yarn — yarn made by blending two or more different-colored fibers together before spinning. The result is a soft, flecked, multi-tonal color instead of a flat solid. It's a coloring technique rather than a specific fiber, so heather shows up in cotton, polyester, and blended tees, sweatshirts, and fleece.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Why is it called 'heather'?", "answer": "<p>The name comes from the heather plant that covers Scottish moorland in a mottled mix of purples, greens, and browns. Early Scottish tweeds blended different-colored wool fibers to imitate that muted, speckled look, and the word 'heather' stuck for any yarn or fabric with that blended, multi-tone color.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is heather gray cotton or polyester?", "answer": "<p>It can be either, and it's often a blend. True heather gray needs at least two fiber colors, so it's usually made by blending white and dark fibers — sometimes all cotton, but very often with some polyester or rayon added to hold the melange evenly. Always check the tag: a 'heather gray' tee may be 100% cotton, a 50/50 blend, or a triblend.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Can you screen print or DTF on heather shirts?", "answer": "<p>Yes. Heather takes screen printing, DTF, and heat-transfer vinyl well, and the flecked base gives prints a soft, vintage look. The one thing to watch is dye migration: heathers that contain polyester can bleed dye into light inks under the heat of curing or pressing. A low-bleed (poly) ink or a gray underbase blocks it, and a lower press temperature helps.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "What's the difference between heather and a solid color?", "answer": "<p>A solid tee is dyed one uniform color, usually after the yarn or garment is made, so the color is flat and even. Heather is colored earlier and differently — different-colored fibers are blended into the yarn itself, so the finished fabric has a soft, mottled fleck. Heather hides wrinkles and minor marks better and reads more casual and vintage.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What heather blanks does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated heather tees — heather gray and heather colors — in crew necks, V-necks, soft triblends, and deep extended and plus sizes. They're sold by the pack at a flat 99¢/unit, the same price in every size, with no account required, and inspected and shipped from our Hattiesburg, Mississippi warehouse.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat 99¢/unit on heather tees, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Heather, Deep Stock", "text": "Flecked heather tees in cotton and soft triblend — the vintage melange look in real overstock depth, through extended and plus sizes." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is a Triblend Shirt?", "summary": "The cotton/poly/rayon blend that's almost always heathered.", "cta": "Read", "url": "/pages/what-is-a-triblend-shirt" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Garment-Dyed?", "summary": "The other coloring story — dyed as a finished garment, not blended.", "cta": "Read", "url": "/pages/what-is-garment-dyed" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "How to print heather without dye migration.", "cta": "Read", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank <em>heather tees.</em>",
+        "subtext": "<p>Soft, flecked heather tees in cotton, triblend, and extended and plus sizes — the vintage melange look, sold by the pack at a flat 99¢/unit, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
