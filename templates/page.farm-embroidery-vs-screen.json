@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$2/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "From <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Embroidery vs <em>Screen Printing</em>",
-        "answer": "<p>Embroidery vs screen printing comes down to look, fabric, and run size: <strong>embroidery stitches thread for a premium, near-permanent finish on polos, fleece, and caps</strong>, while screen printing lays ink for bold, large, low-cost graphics on tees at volume. Blanks for both start at $2/unit by the pack.</p>",
+        "answer": "<p>Embroidery vs screen printing comes down to look, fabric, and run size: <strong>embroidery stitches thread for a premium, near-permanent finish on polos, fleece, and caps</strong>, while screen printing lays ink for bold, large, low-cost graphics on tees at volume. Blanks for both start at 99¢/unit by the pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Embroidery looks most premium on structured garments</b> — polos, fleece, jackets, and caps; screen printing looks best on tees and hoodies.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Embroidery is priced by stitch count,</b> so added colors are free once the logo is digitized; screen printing charges per color, with a screen set up for each.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Screen printing is cheapest per shirt at volume</b> for big runs of few-color art; embroidery wins small runs and simple logos, with lower minimums (often 6+).</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — tees and polos a flat $2/unit, fleece $4/unit, the same per-unit price at every pack and size.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — tees and polos a flat 99¢/unit, fleece $1.50/unit, the same per-unit price at every pack and size.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -50,7 +50,7 @@
         "r5": { "type": "row", "settings": { "label": "Durability", "cell_1": "Lasts the life of the garment — won't crack or fade", "cell_2": "40–60+ washes; heavy plastisol can crack over years", "badge_1": true } },
         "r6": { "type": "row", "settings": { "label": "Minimums", "cell_1": "Low — often 6+ pieces", "cell_2": "Usually 25+; setup pays off across a batch", "badge_1": true } },
         "r7": { "type": "row", "settings": { "label": "Cost driver", "cell_1": "Per stitch count (colors free once digitized)", "cell_2": "Per color (one screen each)" } },
-        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$2 polo · $4 fleece", "cell_2": "$2 tee" } }
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "99¢ polo · $1.50 fleece", "cell_2": "$2 tee" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
       "settings": {
@@ -74,7 +74,7 @@
         "heading": "Blanks for Both <em>Methods, In Stock</em>",
         "intro": "<p>Structured polos and fleece that grip stitches, plus smooth cotton tees for bold screen prints — on the floor in Hattiesburg, sold by the pack. Prices shown per unit, no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Tees and polos are a flat <b>$2/unit</b>, fleece <b>$4/unit</b> — the same per-unit price whether you buy a 4-pack or a 12-pack, same price across every size. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+        "note": "<p>Tees and polos are a flat <b>99¢/unit</b>, fleece <b>$1.50/unit</b> — the same per-unit price whether you buy a 4-pack or a 12-pack, same price across every size. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -98,7 +98,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per piece — tees and polos a flat $2/unit, fleece $4/unit. Shown up front, no account, same price every size and pack." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per piece — tees and polos a flat 99¢/unit, fleece $1.50/unit. Shown up front, no account, same price every size and pack." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Embroidery & Screen Blanks", "text": "Structured polos and fleece that grip stitches, plus smooth cotton tees for bold screen prints — S–5XL, print-ready, with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -128,8 +128,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Pick your <em>blank.</em>",
-        "subtext": "<p>Whichever way you decorate — stitched or screened — the blank is the same flat price. Structured polos and fleece for embroidery, smooth cotton tees for screen printing, from $2/unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$2",
+        "subtext": "<p>Whichever way you decorate — stitched or screened — the blank is the same flat price. Structured polos and fleece for embroidery, smooth cotton tees for screen printing, from 99¢/unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

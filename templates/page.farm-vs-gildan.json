@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>7</b> factors compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Comparison · Updated June 2026",
         "heading": "The Budget Alternative to <em>Gildan</em> Blanks",
-        "answer": "<p>Bayou Blanks is the budget alternative to Gildan blanks. Gildan is the industry-standard brand — you buy it through distributors, usually after logging into a wholesale account, and pay a size upcharge on 2XL and up. Bayou is unbranded liquidation overstock: a flat <strong>$1 a unit</strong>, the same price in every size, no account.</p>",
+        "answer": "<p>Bayou Blanks is the budget alternative to Gildan blanks. Gildan is the industry-standard brand — you buy it through distributors, usually after logging into a wholesale account, and pay a size upcharge on 2XL and up. Bayou is unbranded liquidation overstock: a flat <strong>99¢ a unit</strong>, the same price in every size, no account.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Comparisons",
         "crop_anchor": "comparisons",
@@ -24,8 +24,8 @@
       "blocks": {
         "t1": { "type": "point", "settings": { "text": "<p><b>Gildan is a brand you buy through distributors</b> — Bayou is the unbranded blank itself, sold direct by the pack with no account.</p>" } },
         "t2": { "type": "point", "settings": { "text": "<p><b>Gildan's wholesale price is usually gated behind a distributor login;</b> Bayou shows the per-unit price right on the page.</p>" } },
-        "t3": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat $1/unit, the same in every size and pack.</b></p>" } },
-        "t4": { "type": "point", "settings": { "text": "<p><b>Gildan adds a plus-size upcharge</b> — about +$2 at 2XL, +$3 at 3XL, +$5 at 4XL — while Bayou charges the same $1/unit through 4XL–5XL, so extended sizes is where Bayou wins on price.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat 99¢/unit, the same in every size and pack.</b></p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Gildan adds a plus-size upcharge</b> — about +$2 at 2XL, +$3 at 3XL, +$5 at 4XL — while Bayou charges the same 99¢/unit through 4XL–5XL, so extended sizes is where Bayou wins on price.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Where Gildan wins:</b> brand recognition, around 70 colors, consistent sizing, and rock-bottom pricing on basic S–XL tees at high volume.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>Where Bayou wins:</b> the lowest no-strings per-unit on solid blanks — no account, no brand premium, the same price in every size — ideal for plus and extended sizes, side hustles, teams, and makers.</p>" } }
       },
@@ -46,8 +46,8 @@
         "r1": { "type": "row", "settings": { "label": "Who can buy", "cell_1": "Anyone — open to the public", "badge_1": true, "cell_2": "Anyone, but usually through a distributor" } },
         "r2": { "type": "row", "settings": { "label": "What you're buying", "cell_1": "Unbranded liquidation overstock blank", "cell_2": "Brand-name Gildan blank (e.g. 5000 / G500)" } },
         "r3": { "type": "row", "settings": { "label": "Seeing the price", "cell_1": "Shown up front, no account", "badge_1": true, "cell_2": "Often behind a distributor login" } },
-        "r4": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $1/unit, every size and pack", "cell_2": "About $2–4/unit S–XL at volume (varies)" } },
-        "r5": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $1/unit through 4XL–5XL", "badge_1": true, "cell_2": "Upcharge: about +$2 (2XL), +$3 (3XL), +$5 (4XL)" } },
+        "r4": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat 99¢/unit, every size and pack", "cell_2": "About $2–4/unit S–XL at volume (varies)" } },
+        "r5": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same 99¢/unit through 4XL–5XL", "badge_1": true, "cell_2": "Upcharge: about +$2 (2XL), +$3 (3XL), +$5 (4XL)" } },
         "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "~70 colors, extended sizes, sold everywhere" } },
         "r7": { "type": "row", "settings": { "label": "Best for", "cell_1": "Lowest price on every size, no account", "cell_2": "Brand-name consistency and color range" } }
       },
@@ -62,10 +62,10 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew Neck · Cotton", "blurb": "A basic cotton crew that goes head-to-head with a Gildan 5000 — same job, unbranded, a flat $1 a unit with no account.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same $1/unit as a small — the plus-size upcharge Gildan adds at 2XL and up, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew Neck · Cotton", "blurb": "A basic cotton crew that goes head-to-head with a Gildan 5000 — same job, unbranded, a flat 99¢ a unit with no account.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same 99¢/unit as a small — the plus-size upcharge Gildan adds at 2XL and up, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
         "p3": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee-plus-sizes", "kicker": "V-Neck · Plus", "blurb": "A plus-size V-neck at one flat per-unit price — no size premium, and no login to see it.", "sizes": "Plus sizes", "tag": "Plus" } },
-        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend · Soft", "blurb": "A softer heathered triblend than a basic heavy-cotton brand tee — ready to print, still a flat $1 a unit.", "sizes": "Adult sizes", "tag": "Triblend" } }
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend · Soft", "blurb": "A softer heathered triblend than a basic heavy-cotton brand tee — ready to print, still a flat 99¢ a unit.", "sizes": "Adult sizes", "tag": "Triblend" } }
       },
       "block_order": ["p1", "p2", "p3", "p4"],
       "settings": {
@@ -73,14 +73,14 @@
         "heading": "The Blanks That Make the <em>Case</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account, no brand premium.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats a name brand on the things that cost you money</b> — no account, no plus-size upcharge, and the same per-unit price across every size. The price is a flat <b>$1/unit, the same in every pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats a name brand on the things that cost you money</b> — no account, no plus-size upcharge, and the same per-unit price across every size. The price is a flat <b>99¢/unit, the same in every pack</b>.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "Does Bayou Blanks sell Gildan?", "answer": "<p>No. Bayou doesn't sell Gildan or any brand — we sell unbranded liquidation overstock blanks. Think of us as the budget alternative to a Gildan blank: the same kind of solid cotton tee, without the brand label or the brand price, at a flat $1 a unit.</p>" } },
-        "q2": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than Gildan?", "answer": "<p>It depends on the size. On basic S–XL tees bought at high volume through a distributor, Gildan's rock-bottom brand pricing can match or beat our $1/unit. But Gildan adds a plus-size upcharge — about +$2 at 2XL, +$3 at 3XL, +$5 at 4XL — while Bayou charges the same $1/unit through 4XL–5XL, so on extended and plus sizes Bayou is usually the cheaper blank.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "Does Bayou Blanks sell Gildan?", "answer": "<p>No. Bayou doesn't sell Gildan or any brand — we sell unbranded liquidation overstock blanks. Think of us as the budget alternative to a Gildan blank: the same kind of solid cotton tee, without the brand label or the brand price, at a flat 99¢ a unit.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than Gildan?", "answer": "<p>It depends on the size. On basic S–XL tees bought at high volume through a distributor, Gildan's rock-bottom brand pricing can match or beat our 99¢/unit. But Gildan adds a plus-size upcharge — about +$2 at 2XL, +$3 at 3XL, +$5 at 4XL — while Bayou charges the same 99¢/unit through 4XL–5XL, so on extended and plus sizes Bayou is usually the cheaper blank.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "How do you normally buy Gildan blanks?", "answer": "<p>Through a wholesale distributor — S&amp;S Activewear, BlankApparel, BlankStyle, BulkApparel and others — and wholesale pricing is often shown only after you create an account and log in. Bayou shows the per-unit price on the page and you can buy a single pack with no account.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Do I need an account or resale certificate to buy from Bayou?", "answer": "<p>No. Bayou is open to anyone — no account, no business, no resale certificate. The price is on the page and the minimum is a single pack.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the catch with unbranded liquidation blanks?", "answer": "<p>Selection and consistency. You're buying curated overstock — around 85 styles — not Gildan's roughly 70-color, sold-everywhere lineup, and a given color can sell through. If you need an exact brand and color restocked on demand, Gildan's range is deeper; if you want the lowest no-strings per-unit on a solid blank, Bayou wins.</p>" } },
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size. Shown up front, no account." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size. Shown up front, no account." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "The budget blank, <em>minus the brand premium.</em>",
-        "subtext": "<p>Unbranded liquidation overstock at a flat $1 a unit, every size the same price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Unbranded liquidation overstock at a flat 99¢ a unit, every size the same price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

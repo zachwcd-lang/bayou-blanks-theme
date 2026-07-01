@@ -6,7 +6,7 @@
         "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Color can vary subtly between pieces</b>, which is part of the vintage look — not a defect.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Garment-dyed pieces may shrink a little and can bleed on the first wash;</b> wash cold and separately at first.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Comfort Colors is the best-known garment-dyed brand;</b> the look is popular for vintage and retail tees.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou stocks pre-dyed liquidation blanks (not garment-dyed)</b> in solids and heathers at a flat $1 a unit.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou stocks pre-dyed liquidation blanks (not garment-dyed)</b> in solids and heathers at a flat 99¢ a unit.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -62,9 +62,9 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Cotton", "blurb": "A solid pre-dyed cotton crew — not garment-dyed, but print-ready at a flat $1 a unit.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend · Heather", "blurb": "A soft heathered triblend for that vintage feel — a flat $1 a unit, no account.", "sizes": "Adult sizes", "tag": "Vintage Feel" } },
-        "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Cotton", "blurb": "A smooth cotton v-neck, our deepest-stock blank, at a flat $1 a unit.", "sizes": "Sizes S–XL", "tag": "Deep Stock" } },
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Cotton", "blurb": "A solid pre-dyed cotton crew — not garment-dyed, but print-ready at a flat 99¢ a unit.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend · Heather", "blurb": "A soft heathered triblend for that vintage feel — a flat 99¢ a unit, no account.", "sizes": "Adult sizes", "tag": "Vintage Feel" } },
+        "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Cotton", "blurb": "A smooth cotton v-neck, our deepest-stock blank, at a flat 99¢ a unit.", "sizes": "Sizes S–XL", "tag": "Deep Stock" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Extended", "blurb": "A cotton v-neck in extended sizes at one flat per-unit price.", "sizes": "Sizes 2XL–3XL", "tag": "Extended" } }
       },
       "block_order": ["p1", "p2", "p3", "p4"],
@@ -73,7 +73,7 @@
         "heading": "The Closest Feel <em>We Stock</em>",
         "intro": "<p>Bayou's blanks are pre-dyed liquidation overstock — not garment-dyed — but our triblends and heathers carry the softest, most vintage feel. Prices shown per unit.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick is sold by the pack at a flat <b>$1/unit</b>, the same in every size and pack, no account, no brand premium.</p>"
+        "note": "<p>Every pick is sold by the pack at a flat <b>99¢/unit</b>, the same in every size and pack, no account, no brand premium.</p>"
       }
     },
     "faq": {
@@ -83,7 +83,7 @@
         "q2": { "type": "qa", "settings": { "question": "Why are garment-dyed shirts softer?", "answer": "<p>Dyeing the finished garment, usually with a wash step, relaxes the fibers and seams and breaks the shirt in. That's why garment-dyed tees feel softer and more lived-in than a standard piece-dyed tee.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Do garment-dyed shirts shrink or fade?", "answer": "<p>They can shrink a little and may bleed slightly on the first wash, and the gently faded look is intentional. Wash cold and separately the first few times to keep the color and fit.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "What's the difference between garment-dyed and pigment-dyed?", "answer": "<p>Pigment dyeing is one common way to garment-dye: pigment sits more on the surface for an extra-faded, washed-out look that keeps fading over time. Both give a vintage, broken-in character.</p>" } },
-        "q5": { "type": "qa", "settings": { "question": "Does Bayou sell garment-dyed blanks?", "answer": "<p>Bayou stocks pre-dyed liquidation blanks — solids and heathers — not true garment-dyed pieces, at a flat $1 a unit. For a soft, vintage feel, our triblends and heathers are the closest in the lineup.</p>" } }
+        "q5": { "type": "qa", "settings": { "question": "Does Bayou sell garment-dyed blanks?", "answer": "<p>Bayou stocks pre-dyed liquidation blanks — solids and heathers — not true garment-dyed pieces, at a flat 99¢ a unit. For a soft, vintage feel, our triblends and heathers are the closest in the lineup.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5"],
       "settings": {
@@ -96,7 +96,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Soft, print-ready blanks — <em>without the brand price.</em>",
-        "subtext": "<p>Pre-dyed liquidation blanks at a flat $1 a unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Pre-dyed liquidation blanks at a flat 99¢ a unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

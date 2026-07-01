@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>4</b> fabrics compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Glossary · Updated June 2026",
         "heading": "Cotton vs Polyester vs <em>Blend</em>",
-        "answer": "<p>For t-shirt printing, the fabric decides the method: <strong>100% cotton holds the crispest screen-print and DTG detail</strong>, polyester wicks moisture and takes sublimation and DTF, and cotton/poly blends split the difference — soft, durable, and shrink-resistant. All three are a flat $1 a unit by the pack.</p>",
+        "answer": "<p>For t-shirt printing, the fabric decides the method: <strong>100% cotton holds the crispest screen-print and DTG detail</strong>, polyester wicks moisture and takes sublimation and DTF, and cotton/poly blends split the difference — soft, durable, and shrink-resistant. All three are a flat 99¢ a unit by the pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Glossary",
         "crop_anchor": "glossary",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Polyester wicks moisture and is the only fabric that takes dye-sublimation</b> — best for activewear and all-over prints on light colors.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Cotton/poly blends (like 50/50) split the difference:</b> softer, more shrink-resistant, and durable through commercial washing.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Triblend adds rayon for the softest, drapiest, retail-feel tee</b> — print it with screen or DTF.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Buying by the pack is the cheapest way to source</b> — blank tees at a flat $1 a unit, the same in every size and pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Buying by the pack is the cheapest way to source</b> — blank tees at a flat 99¢ a unit, the same in every size and pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -50,7 +50,7 @@
         "r3": { "type": "row", "settings": { "label": "Best for", "cell_1": "Everyday tees, fine detail", "cell_2": "All-purpose, durable runs", "cell_3": "Activewear, sublimation", "cell_4": "Premium, retail-feel" } },
         "r4": { "type": "row", "settings": { "label": "Breathability", "cell_1": "High", "cell_2": "Medium", "cell_3": "Wicks, runs warm", "cell_4": "Medium" } },
         "r5": { "type": "row", "settings": { "label": "Shrinkage", "cell_1": "More", "cell_2": "Less", "cell_3": "Minimal", "cell_4": "Minimal" } },
-        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$1.00", "cell_2": "$1.00", "cell_3": "$1.00", "cell_4": "$1.00" } }
+        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99", "cell_3": "$0.99", "cell_4": "$0.99" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "c5", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -74,7 +74,7 @@
         "heading": "One Blank Per Fabric, <em>In Stock</em>",
         "intro": "<p>Cotton, polyester, blend, and triblend tees on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Bayou stocks cotton, polyester, blend, and triblend tees — all print-ready at a flat <b>$1/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and fabrics rotate — check each product for live availability.</p>"
+        "note": "<p>Bayou stocks cotton, polyester, blend, and triblend tees — all print-ready at a flat <b>99¢/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and fabrics rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -85,7 +85,7 @@
         "q3": { "type": "qa", "settings": { "question": "What is a 50/50 (cotton/poly) blend shirt?", "answer": "<p>A 50/50 blend is roughly half cotton and half polyester. It's softer than 100% cotton, more shrink-resistant, and durable through repeated washing, which makes it a popular all-purpose blank. It takes screen printing and DTF well and is a forgiving middle ground between cotton and polyester.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Can you sublimate on cotton?", "answer": "<p>No. Dye-sublimation bonds only to polyester, and it shows best on light or white colors. For 100% cotton, use screen printing, DTG, or DTF transfers instead. If you need sublimation, choose a polyester or high-poly performance blank.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What is a triblend shirt?", "answer": "<p>A triblend mixes three fibers — typically cotton, polyester, and rayon — for the softest hand, a lightweight drape, and a heathered look. It's the retail-feel choice for fashion brands. Print it with screen printing or DTF; its texture is less suited to ultra-fine detail than smooth 100% cotton.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "Which blank t-shirt fabric is cheapest in bulk?", "answer": "<p>At Bayou Blanks, cotton, polyester, blend, and triblend tees are all sold by the pack at the same flat $1 a unit, the same in every size and pack. Cotton is the most common workhorse, but you pay the same per-unit price whichever fabric your design calls for.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "Which blank t-shirt fabric is cheapest in bulk?", "answer": "<p>At Bayou Blanks, cotton, polyester, blend, and triblend tees are all sold by the pack at the same flat 99¢ a unit, the same in every size and pack. Cotton is the most common workhorse, but you pay the same per-unit price whichever fabric your design calls for.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -98,7 +98,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Blend", "text": "Cotton, polyester, blend, and triblend tees in deep overstock — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -128,8 +128,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Pick your <em>blank.</em>",
-        "subtext": "<p>Cotton, polyester, blend, and triblend tees at a flat $1 a unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Cotton, polyester, blend, and triblend tees at a flat 99¢ a unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

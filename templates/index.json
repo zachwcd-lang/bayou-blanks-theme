@@ -45,7 +45,7 @@
           "settings": {
             "name": "Tees, tanks, jerseys & polos",
             "units": "any size",
-            "price": "$2/unit"
+            "price": "99¢/unit"
           }
         },
         "tier_2": {
@@ -53,7 +53,7 @@
           "settings": {
             "name": "Hoodies, fleece, sweats & outerwear",
             "units": "any size",
-            "price": "$4/unit"
+            "price": "$1.50/unit"
           }
         },
         "tier_3": {
@@ -73,7 +73,7 @@
       "settings": {
         "label": "Prices that don't exist",
         "heading": "This doesn't exist anywhere.",
-        "text": "$2 blank tees, tanks, jerseys, and polos. $4 hoodies, fleece, and sweats. Real Fanatics overstock — the same price in every size, sold by the pack. We can only do this because it's liquidation, and it lasts while the stock does.",
+        "text": "99¢ blank tees, tanks, jerseys, and polos. $1.50 hoodies, fleece, and sweats. Real Fanatics overstock — the same price in every size, sold by the pack. We can only do this because it's liquidation, and it lasts while the stock does.",
         "button_label": "Shop blanks",
         "button_link": "/collections/in-stock",
         "footnote": "While the overstock lasts. No account, no minimums."
@@ -83,7 +83,7 @@
       "type": "bayou-tiktok-cta",
       "settings": {
         "color_scheme": "scheme-3",
-        "heading": "$2 tees. $4 hoodies.",
+        "heading": "99¢ tees. $1.50 hoodies.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
         "subline": "Blank apparel at prices that don't exist anywhere else. Real Fanatics overstock, sold by the pack while it lasts. No account, no minimums. Buying in bulk? Talk to us.",
         "button_label": "Buy in bulk",

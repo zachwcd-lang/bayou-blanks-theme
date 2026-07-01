@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "DTF vs <em>Screen Printing</em>",
-        "answer": "<p>DTF vs screen printing comes down to your run and your fabric: <strong>screen printing is cheapest and most durable for big runs of bold, few-color designs on cotton</strong>, while DTF prints full color on any fabric — including dark and polyester blanks — with no screens and no minimum. Both blanks are a flat $1 a unit by the pack.</p>",
+        "answer": "<p>DTF vs screen printing comes down to your run and your fabric: <strong>screen printing is cheapest and most durable for big runs of bold, few-color designs on cotton</strong>, while DTF prints full color on any fabric — including dark and polyester blanks — with no screens and no minimum. Both blanks are a flat 99¢ a unit by the pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>DTF has no setup and no minimum,</b> so it wins small runs, one-offs, and full-color or photographic art.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>DTF prints on any fabric</b> — cotton, polyester, blends, and dark colors — with a white underbase built in at no upcharge.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Screen printing is the durability gold standard on cotton;</b> quality DTF flexes and lasts 50–100+ washes.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat $1 a unit, the same in every size and pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat 99¢ a unit, the same in every size and pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -50,7 +50,7 @@
         "r5": { "type": "row", "settings": { "label": "Setup cost", "cell_1": "Per color (one screen each)", "cell_2": "None" } },
         "r6": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Soft — ink cures into the fabric", "cell_2": "Slight film layer on top" } },
         "r7": { "type": "row", "settings": { "label": "Durability", "cell_1": "Gold standard; can crack over years", "cell_2": "Flexes; 50–100+ washes" } },
-        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$1.00", "cell_2": "$1.00" } }
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
       "settings": {
@@ -74,7 +74,7 @@
         "heading": "Blanks for Both <em>Methods, In Stock</em>",
         "intro": "<p>Cotton, polyester, and dark blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every blank prints either way at a flat <b>$1/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+        "note": "<p>Every blank prints either way at a flat <b>99¢/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -98,7 +98,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Dark Blanks", "text": "Cotton, polyester, and dark overstock — S–5XL — print-ready for screens or DTF, with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -128,8 +128,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Pick your <em>blank.</em>",
-        "subtext": "<p>Whichever method you print, the blank is the same flat price — cotton, poly, and blend tees a flat $1 a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Whichever method you print, the blank is the same flat price — cotton, poly, and blend tees a flat 99¢ a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

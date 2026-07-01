@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>7 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Best Blank Shirts for <em>DTG &amp; DTF</em> Printing",
-        "answer": "<p>The best blanks for DTG printing are <strong>smooth 100% ring-spun cotton tees in lighter colors</strong> — they absorb ink directly and need no white underbase. <strong>DTF is more forgiving</strong>: its film transfer bonds to cotton, polyester, and blends in any color. Both are a flat $1 a unit by the pack.</p>",
+        "answer": "<p>The best blanks for DTG printing are <strong>smooth 100% ring-spun cotton tees in lighter colors</strong> — they absorb ink directly and need no white underbase. <strong>DTF is more forgiving</strong>: its film transfer bonds to cotton, polyester, and blends in any color. Both are a flat 99¢ a unit by the pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Light garments are the easiest DTG wins</b> — no white underbase needed, so color stays vivid and the hand stays soft.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>For darks and poly, reach for DTF</b> (or DTG with a pre-treat + white underbase) to keep the print opaque.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Smooth beats textured:</b> skip heavy slubs, space-dye, and ribbing where you want crisp photo-level detail.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — blanks at a flat $1 a unit, the same in every size and pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — blanks at a flat 99¢ a unit, the same in every size and pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -48,7 +48,7 @@
         "r3": { "type": "row", "settings": { "label": "Detail & gradients", "cell_1": "Excellent on cotton — photo-level", "cell_2": "Excellent — sharp edges and fine text" } },
         "r4": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Soft, sinks into the fabric", "cell_2": "Slight film layer you can feel" } },
         "r5": { "type": "row", "settings": { "label": "Best for", "cell_1": "Soft retail tees, full-color art on cotton", "cell_2": "Mixed fabrics, poly performance wear, small runs" } },
-        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$1.00", "cell_2": "$1.00" } }
+        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -83,7 +83,7 @@
         "q3": { "type": "qa", "settings": { "question": "What blanks work best for DTF printing?", "answer": "<p>Almost any blank. Because DTF transfers a design off a film with a heat-activated adhesive, it bonds to cotton, polyester, triblend, and blends in any color — lights or darks — with no pre-treatment. That makes DTF the most flexible choice when your blanks vary.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Do I need to pre-treat shirts for DTG?", "answer": "<p>Only for darks. Light cotton garments can be printed straight from the pack. Dark garments need a pre-treat and a white underbase so the colors stay opaque — one reason many shops choose DTF for dark blanks instead.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "Is DTG or DTF better for small orders?", "answer": "<p>Both skip screens, so both are great for small runs and one-offs. DTF edges ahead when you're printing across mixed fabrics or onto dark and poly garments, while DTG gives the softest hand on light cotton tees.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "Can I buy DTG and DTF blanks cheaply in bulk?", "answer": "<p>Yes. Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation overstock blanks at a flat $1 a unit, the same in every size and pack, with no minimum beyond a single pack.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "Can I buy DTG and DTF blanks cheaply in bulk?", "answer": "<p>Yes. Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation overstock blanks at a flat 99¢ a unit, the same in every size and pack, with no minimum beyond a single pack.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -96,7 +96,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt: a flat $1 a unit, the same in every size and pack. No sale theater, no struck-through prices." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt: a flat 99¢ a unit, the same in every size and pack. No sale theater, no struck-through prices." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Around 85 blank styles — cotton, poly, and blends, light and dark, S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL and plus sizes at the same per-unit price — the sizes most suppliers run short on." } }
@@ -127,7 +127,7 @@
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Print it — DTG or <em>DTF.</em>",
         "subtext": "<p>Smooth cotton for DTG, poly and darks for DTF — all in stock, all sold by the pack at per-unit prices.</p>",
-        "ghost_price": "$1",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop T-Shirts",
         "cta_collection": "t-shirts",

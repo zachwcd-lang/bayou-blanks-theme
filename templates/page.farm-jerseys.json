@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>7 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>3</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "From <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Blank Jerseys <em>Wholesale</em>",
-        "answer": "<p>The best blank jerseys to buy wholesale are <strong>undecorated polyester sleeveless athletic jerseys</strong> — moisture-wicking team jerseys built for sublimation, heat-transfer vinyl, and screen printing. Pick <strong>white or light colors</strong> for full-color sublimation, and buy by the pack to drop the per-unit price. From $4.25/unit.</p>",
+        "answer": "<p>The best blank jerseys to buy wholesale are <strong>undecorated polyester sleeveless athletic jerseys</strong> — moisture-wicking team jerseys built for sublimation, heat-transfer vinyl, and screen printing. Pick <strong>white or light colors</strong> for full-color sublimation, and buy by the pack to drop the per-unit price. From 99¢/unit.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>For dark jerseys, use HTV, DTF, or a screen print with a white underbase</b> — sublimation won't show on dark fabric.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Sleeveless jerseys give a clean, flat front and back panel</b> — an easy canvas for numbers, names, and team logos.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Skip DTG on jerseys.</b> Direct-to-garment is built for cotton and won't bond to polyester athletic fabric.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — blank jerseys from $4.25/unit, dropping toward $2.92/unit by the 12-pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — blank jerseys from 99¢/unit, dropping toward 99¢/unit by the 12-pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -49,7 +49,7 @@
         "r3": { "type": "row", "settings": { "label": "Full-color graphics", "cell_1": "Excellent — dye bonds into the fabric", "cell_2": "Good — limited by the transfer", "cell_3": "Possible, but more screens" } },
         "r4": { "type": "row", "settings": { "label": "Durability", "cell_1": "Permanent — won't crack or peel", "cell_2": "Good — edges can lift over time", "cell_3": "High — cured ink lasts" } },
         "r5": { "type": "row", "settings": { "label": "Best jersey color", "cell_1": "White / light", "cell_2": "Any", "cell_3": "Any" } },
-        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25", "cell_3": "$4.25" } }
+        "r6": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "99¢", "cell_2": "99¢", "cell_3": "99¢" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -73,7 +73,7 @@
         "heading": "Bayou's Blank Jerseys, <em>In Stock</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is an <b>undecorated sleeveless athletic jersey</b> — polyester performance knit, sold by the pack and passed on by the unit. No minimums beyond a pack, with team colors and extended sizes ready for sublimation, HTV, DTF, or screen print. Pack pricing drops to about <b>$2.92/unit by the 12-pack</b>.</p>"
+        "note": "<p>Every pick here is an <b>undecorated sleeveless athletic jersey</b> — polyester performance knit, sold by the pack and passed on by the unit. No minimums beyond a pack, with team colors and extended sizes ready for sublimation, HTV, DTF, or screen print. Pack pricing drops to about <b>99¢/unit by the 12-pack</b>.</p>"
       }
     },
     "faq": {
@@ -84,7 +84,7 @@
         "q3": { "type": "qa", "settings": { "question": "Can you sublimate a colored jersey?", "answer": "<p>No. Sublimation dye is translucent and only shows on white or light fabric — on a dark jersey the design disappears. To decorate dark or colored jerseys, use heat-transfer vinyl, DTF transfers, or a screen print laid over a white underbase.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Can you DTG print on a polyester jersey?", "answer": "<p>Not well. Direct-to-garment (DTG) ink is made to bond with cotton and won't cure properly on polyester athletic fabric. For jerseys, use sublimation (light poly), HTV, DTF transfers, or screen printing instead.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "Is there a minimum order for blank jerseys?", "answer": "<p>No. Bayou Blanks sells blank jerseys by the pack — 4-pack, 6-pack, or 12-pack — with no minimum beyond a single pack. The larger the pack, the lower the per-unit price.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "How much do blank jerseys cost wholesale?", "answer": "<p>Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation-overstock sleeveless jerseys from $4.25 per unit, dropping toward $2.92 per unit by the 12-pack — the same flat price across sizes.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "How much do blank jerseys cost wholesale?", "answer": "<p>Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation-overstock sleeveless jerseys from 99¢ per unit, dropping toward 99¢ per unit by the 12-pack — the same flat price across sizes.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per jersey — from $4.25, down toward $2.92 by the 12-pack. No sale theater, no struck-through prices." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per jersey — from 99¢, down toward 99¢ by the 12-pack. No sale theater, no struck-through prices." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Sold By The Pack", "text": "4-packs, 6-packs, and 12-packs — no minimum beyond a single pack, and no account or resale certificate required." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Team Colors & Extended Sizes", "text": "Sleeveless jerseys in team colors and sizes up to 3XL — ready for sublimation, HTV, DTF, or screen print." } }
@@ -128,7 +128,7 @@
         "eyebrow": "Fig. VIII — Suit Up",
         "heading": "Outfit the whole <em>roster.</em>",
         "subtext": "<p>Sleeveless athletic jerseys in team colors and extended sizes — all in stock, all sold by the pack at per-unit prices.</p>",
-        "ghost_price": "$4.25",
+        "ghost_price": "99¢",
         "background": "paper",
         "cta_label": "Shop Blank Jerseys",
         "cta_collection": "jerseys",

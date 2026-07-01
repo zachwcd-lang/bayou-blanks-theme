@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "Same price <b>to 5XL</b>" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Big &amp; Tall Blank <em>T-Shirts</em>",
-        "answer": "<p>The best big &amp; tall blank t-shirts to buy wholesale are <strong>mid-weight cotton and cotton-blend tees that run a full size range through 4XL and 5XL</strong> — and stay <strong>one flat price at every size</strong>. Bayou Blanks stocks extended-size blanks at a flat $1 a unit, the same price in 5XL as in medium, with no plus-size upcharge.</p>",
+        "answer": "<p>The best big &amp; tall blank t-shirts to buy wholesale are <strong>mid-weight cotton and cotton-blend tees that run a full size range through 4XL and 5XL</strong> — and stay <strong>one flat price at every size</strong>. Bayou Blanks stocks extended-size blanks at a flat 99¢ a unit, the same price in 5XL as in medium, with no plus-size upcharge.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -26,7 +26,7 @@
         "t2": { "type": "point", "settings": { "text": "<p><b>The catch at most suppliers is the upcharge.</b> 2XL and up cost more, and the jump climbs at 4XL and 5XL. Bayou holds one flat price at every size.</p>" } },
         "t3": { "type": "point", "settings": { "text": "<p><b>Mid-weight 100% cotton (about 5.5–6.0 oz) is the safe big-&amp;-tall print blank</b> — opaque, durable, and it lays flat for screen print, DTF, or HTV.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>\"Big\" and \"tall\" aren't the same.</b> Big sizing adds width and girth; tall / B sizing adds body and sleeve length. Check the one you actually need.</p>" } },
-        "t5": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — extended-size blanks at a flat $1 a unit, the same in every size and pack, the same in 5XL.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b> — extended-size blanks at a flat 99¢ a unit, the same in every size and pack, the same in 5XL.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>No account, no resale certificate, no minimum beyond a single pack</b> — anyone can buy extended sizes at the per-unit price.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
@@ -44,11 +44,11 @@
         "c2": { "type": "column", "settings": { "label": "Bayou (per unit)" } },
         "c3": { "type": "column", "settings": { "label": "Bayou (any pack)" } },
         "c4": { "type": "column", "settings": { "label": "Typical industry upcharge" } },
-        "r1": { "type": "row", "settings": { "label": "S–XL", "cell_1": "$1.00", "badge_1": true, "cell_2": "$1.00", "cell_3": "Base price" } },
-        "r2": { "type": "row", "settings": { "label": "2XL", "cell_1": "$1.00", "badge_1": true, "cell_2": "$1.00", "cell_3": "Often +$1–2 / shirt" } },
-        "r3": { "type": "row", "settings": { "label": "3XL", "cell_1": "$1.00", "badge_1": true, "cell_2": "$1.00", "cell_3": "Often +$2–3 / shirt" } },
-        "r4": { "type": "row", "settings": { "label": "4XL", "cell_1": "$1.00", "badge_1": true, "cell_2": "$1.00", "cell_3": "Often +$3–5 / shirt" } },
-        "r5": { "type": "row", "settings": { "label": "5XL", "cell_1": "$1.00", "badge_1": true, "cell_2": "$1.00", "cell_3": "Often +$4–7 / shirt, or unavailable" } }
+        "r1": { "type": "row", "settings": { "label": "S–XL", "cell_1": "$0.99", "badge_1": true, "cell_2": "$0.99", "cell_3": "Base price" } },
+        "r2": { "type": "row", "settings": { "label": "2XL", "cell_1": "$0.99", "badge_1": true, "cell_2": "$0.99", "cell_3": "Often +$1–2 / shirt" } },
+        "r3": { "type": "row", "settings": { "label": "3XL", "cell_1": "$0.99", "badge_1": true, "cell_2": "$0.99", "cell_3": "Often +$2–3 / shirt" } },
+        "r4": { "type": "row", "settings": { "label": "4XL", "cell_1": "$0.99", "badge_1": true, "cell_2": "$0.99", "cell_3": "Often +$3–5 / shirt" } },
+        "r5": { "type": "row", "settings": { "label": "5XL", "cell_1": "$0.99", "badge_1": true, "cell_2": "$0.99", "cell_3": "Often +$4–7 / shirt, or unavailable" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5"],
       "settings": {
@@ -62,7 +62,7 @@
       "type": "farm-picks",
       "blocks": {
         "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Crew Neck · Full Run", "blurb": "The workhorse big-&-tall blank — a cotton crew-neck raglan that runs an unbroken size ladder from M all the way to 5XL, every size the same flat price. Deep stock for mixed-size group orders.", "sizes": "Sizes M–5XL", "tag": "Full Size Run" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Big Sizes", "blurb": "Pure big-size depth: thousands of 4XL and 5XL on the floor in slate gray. When you need the biggest sizes in real quantity — at the same $1 a unit as a medium — this is the one.", "sizes": "Sizes 4XL–5XL", "tag": "Deepest 4XL–5XL" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Big Sizes", "blurb": "Pure big-size depth: thousands of 4XL and 5XL on the floor in slate gray. When you need the biggest sizes in real quantity — at the same 99¢ a unit as a medium — this is the one.", "sizes": "Sizes 4XL–5XL", "tag": "Deepest 4XL–5XL" } },
         "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-plus-sizes-1", "kicker": "V-Neck · Plus", "blurb": "A plus-cut v-neck spanning standard L–4XL plus women's 0X–4X — softer neckline, roomier body, flat per-unit pricing across the whole extended run.", "sizes": "Sizes L–4XL + 0X–4X", "tag": "Plus V-Neck" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-adult-long-sleeve-crew-neck-tee-1", "kicker": "Long Sleeve · True Tall", "blurb": "Genuine true-tall sizing — 1XB and 3XB add body and sleeve length, not just width, for taller frames. A long-sleeve cotton crew in limited tall runs; grab the B-lengths while they last.", "sizes": "Sizes 1X–3XB", "tag": "True Tall (B-Length)" } }
       },
@@ -72,17 +72,17 @@
         "heading": "Bayou's Extended-Size Tees, <em>In Stock</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Most of our extended depth is in <b>big (wide) sizes through 5XL</b>; <b>true-tall (B-length) runs are limited</b> liquidation lots, so quantities there are smaller. Every size is the same flat price: a flat $1 a unit, the same in every size and pack, with no plus-size upcharge, no account, and no minimum beyond a pack.</p>"
+        "note": "<p>Most of our extended depth is in <b>big (wide) sizes through 5XL</b>; <b>true-tall (B-length) runs are limited</b> liquidation lots, so quantities there are smaller. Every size is the same flat price: a flat 99¢ a unit, the same in every size and pack, with no plus-size upcharge, no account, and no minimum beyond a pack.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
         "q1": { "type": "qa", "settings": { "question": "What are big and tall blank t-shirts?", "answer": "<p>Big and tall blank t-shirts are undecorated tees cut larger than a standard size run. \"Big\" sizes add width and girth (commonly 2XL through 5XL); \"tall\" sizes add extra body and sleeve length for taller frames and are usually marked with a T or B. They're sold blank so you can screen print, DTF, HTV, or embroider them yourself.</p>" } },
-        "q2": { "type": "qa", "settings": { "question": "Do big and tall blanks cost more than regular sizes?", "answer": "<p>At most suppliers, yes — sizes 2XL and up carry a per-shirt upcharge that climbs as the size grows, often a few dollars more at 4XL and 5XL. Bayou Blanks is the exception: extended sizes are the same flat price as the smaller ones, a flat $1 a unit, the same in every size and pack, with no plus-size upcharge.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Do big and tall blanks cost more than regular sizes?", "answer": "<p>At most suppliers, yes — sizes 2XL and up carry a per-shirt upcharge that climbs as the size grows, often a few dollars more at 4XL and 5XL. Bayou Blanks is the exception: extended sizes are the same flat price as the smaller ones, a flat 99¢ a unit, the same in every size and pack, with no plus-size upcharge.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "What's the difference between \"big\" and \"tall\" sizes?", "answer": "<p>Big sizing adds width and a fuller cut for girth — think 2XL, 3XL, 4XL, 5XL. Tall sizing adds length in the body and sleeves for height without adding much width, and is often marked T or B (for example 1XB or 3XB). Some people need both. Check the dimension you actually need before ordering, since a 4XL big and a 2XLT tall fit very differently.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "What sizes of blank t-shirts does Bayou Blanks carry?", "answer": "<p>Bayou stocks extended big sizes through 4XL and 5XL across crew necks and v-necks, plus women's 0X–4X plus sizing, and limited true-tall (B-length) long-sleeve runs. Most of the depth is in big (wide) extended sizes; true-tall length runs are smaller liquidation lots, so quantities there are limited.</p>" } },
-        "q5": { "type": "qa", "settings": { "question": "Is there a minimum order for big & tall blanks?", "answer": "<p>No. Bayou sells extended-size blanks by the pack, 4-pack, 6-pack, or 12-pack, with no minimum beyond a single pack, and no account or resale certificate required. Every pack is the same flat $1 a unit, the same in every size and pack, and the price is the same flat rate in 5XL as in medium.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Is there a minimum order for big & tall blanks?", "answer": "<p>No. Bayou sells extended-size blanks by the pack, 4-pack, 6-pack, or 12-pack, with no minimum beyond a single pack, and no account or resale certificate required. Every pack is the same flat 99¢ a unit, the same in every size and pack, and the price is the same flat rate in 5XL as in medium.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "What's the best big & tall blank t-shirt for printing?", "answer": "<p>A mid-weight 100% cotton crew (about 5.5–6.0 oz) is the safe choice: it's opaque enough to hide the platen, durable through wash cycles, and it lays flat for screen printing, DTF, or HTV. Darker colors hide the press and resist showing wear. Buy by the pack to keep the per-unit cost down across a mixed-size order.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
@@ -97,7 +97,7 @@
       "type": "farm-trust",
       "blocks": {
         "w1": { "type": "cell", "settings": { "icon": "sizes", "heading": "Same Price, Every Size", "text": "A 5XL is the same flat per-unit price as a medium — no plus-size upcharge, no struck-through prices, no sale theater." } },
-        "w2": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt: a flat $1 a unit, the same in every size and pack. The only number that matters." } },
+        "w2": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt: a flat 99¢ a unit, the same in every size and pack. The only number that matters." } },
         "w3": { "type": "cell", "settings": { "icon": "box", "heading": "Sold By The Pack", "text": "4-packs, 6-packs, and 12-packs — no minimum beyond a single pack, and no account or resale certificate required." } },
         "w4": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } }
       },
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Size Up",
         "heading": "Every size, <em>one price.</em>",
-        "subtext": "<p>Extended-size blank tees through 4XL and 5XL — all in stock, all sold by the pack, the same flat $1 a unit as a medium.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Extended-size blank tees through 4XL and 5XL — all in stock, all sold by the pack, the same flat 99¢ a unit as a medium.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

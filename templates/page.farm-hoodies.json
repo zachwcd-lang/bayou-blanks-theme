@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>8 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>3</b> styles compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1.98/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1.50/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Best Blank Hoodies for <em>Printing</em>",
-        "answer": "<p>The best blank hoodies for printing are <strong>mid-weight fleece pullovers</strong> — the flat chest panel above the kangaroo pocket gives screen printing and DTF a clean canvas, and the thick fleece is an ideal embroidery base. For the <strong>largest print area</strong>, a crewneck sweatshirt skips the hood and pocket. A flat $1.98 a unit, the same in every size and pack.</p>",
+        "answer": "<p>The best blank hoodies for printing are <strong>mid-weight fleece pullovers</strong> — the flat chest panel above the kangaroo pocket gives screen printing and DTF a clean canvas, and the thick fleece is an ideal embroidery base. For the <strong>largest print area</strong>, a crewneck sweatshirt skips the hood and pocket. A flat $1.50 a unit, the same in every size and pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Pullover hoodies beat zip-ups for front graphics</b> — a zipper splits a centered design, while a pullover gives one unbroken canvas.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Crewneck sweatshirts are the easiest hoodie-style blank to decorate:</b> no hood or pocket means the flattest, largest print and embroidery area.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Fleece is a premium embroidery substrate</b> — its thickness supports dense left-chest and back stitching far better than a thin tee.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b>, blank hoodies and fleece a flat $1.98 a unit, the same in every size and pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Buy by the pack for the real cost</b>, blank hoodies and fleece a flat $1.50 a unit, the same in every size and pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -49,7 +49,7 @@
         "r3": { "type": "row", "settings": { "label": "Hand & weight", "cell_1": "Mid-weight fleece, warm", "cell_2": "Mid-weight fleece, warm", "cell_3": "Lighter, softer, retail feel" } },
         "r4": { "type": "row", "settings": { "label": "Best print method", "cell_1": "Screen, DTF, embroidery", "cell_2": "Screen, DTF, embroidery", "cell_3": "DTF or soft-hand screen" } },
         "r5": { "type": "row", "settings": { "label": "Embroidery", "cell_1": "Excellent — thick fleece holds stitches", "cell_2": "Excellent — flat panel, easy to hoop", "cell_3": "Good — use backing on the lighter knit" } },
-        "r6": { "type": "row", "settings": { "label": "Per unit", "sub": "Flat, every pack", "cell_1": "$1.98", "cell_2": "$1.98", "cell_3": "$1.98" } }
+        "r6": { "type": "row", "settings": { "label": "Per unit", "sub": "Flat, every pack", "cell_1": "$1.50", "cell_2": "$1.50", "cell_3": "$1.50" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -73,7 +73,7 @@
         "heading": "Bayou's Blank Hoodies &amp; Fleece, <em>In Stock</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No minimums beyond a pack, and deep stock in extended and plus sizes most suppliers run short on. Pricing is <b>a flat $1.98 a unit, the same in every size and pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No minimums beyond a pack, and deep stock in extended and plus sizes most suppliers run short on. Pricing is <b>a flat $1.50 a unit, the same in every size and pack</b>.</p>"
       }
     },
     "faq": {
@@ -85,7 +85,7 @@
         "q4": { "type": "qa", "settings": { "question": "What weight hoodie is best for printing?", "answer": "<p>A mid-weight fleece — roughly 8 oz / 280 gsm — is the standard. It's heavy enough to stay opaque and hang well after printing, but not so heavy that it's slow to cure. Lighter triblend hoodies feel softer and more retail, but show ink through less and suit DTF or soft-hand prints.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "Can you print on dark hoodies?", "answer": "<p>Yes. For screen printing a dark hoodie, lay down a white underbase first so the colors stay vivid. DTF is the easier route — its film transfer bonds to any color with no separate underbase screen, which is why many shops use it for dark and mixed fleece.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "Are blank hoodies good for embroidery?", "answer": "<p>They're one of the best substrates for it. Fleece is thick enough to support dense stitching without puckering, making left-chest logos and back designs look crisp. Hoop the flat chest panel and avoid stitching across the pocket opening; a crewneck sweatshirt is the easiest of all to hoop.</p>" } },
-        "q7": { "type": "qa", "settings": { "question": "How much do blank hoodies cost in bulk?", "answer": "<p>Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation overstock hoodies and fleece at a flat $1.98 a unit, the same in every size and pack, with no minimum beyond a single pack.</p>" } }
+        "q7": { "type": "qa", "settings": { "question": "How much do blank hoodies cost in bulk?", "answer": "<p>Undecorated blanks bought by the pack are the cheapest way to source. Bayou Blanks sells liquidation overstock hoodies and fleece at a flat $1.50 a unit, the same in every size and pack, with no minimum beyond a single pack.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
       "settings": {
@@ -98,7 +98,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per hoodie: a flat $1.98 a unit, the same in every size and pack. No sale theater, no struck-through prices." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per hoodie: a flat $1.50 a unit, the same in every size and pack. No sale theater, no struck-through prices." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep inventory across hoodies, fleece, and crewnecks — light and dark, S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL and plus fleece — the sizes most suppliers run short on, ready for screen, DTF, or embroidery." } }
@@ -129,7 +129,7 @@
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Shop blank hoodies &amp; <em>fleece.</em>",
         "subtext": "<p>Fleece pullovers, crewnecks, and plus-size hoodies — all in stock, all sold by the pack at per-unit prices.</p>",
-        "ghost_price": "$1.98",
+        "ghost_price": "$1.50",
         "background": "paper",
         "cta_label": "Shop Hoodies &amp; Fleece",
         "cta_collection": "hoodies-fleece",

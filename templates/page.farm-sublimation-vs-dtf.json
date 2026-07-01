@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Sublimation vs <em>DTF</em>",
-        "answer": "<p>Sublimation vs DTF comes down to fabric: <strong>sublimation only prints on polyester in light colors</strong>, where it dyes the fabric for a zero-feel, permanent finish — while DTF prints full color on any fabric and any color, including cotton and darks. Both blanks are a flat $1 a unit by the pack.</p>",
+        "answer": "<p>Sublimation vs DTF comes down to fabric: <strong>sublimation only prints on polyester in light colors</strong>, where it dyes the fabric for a zero-feel, permanent finish — while DTF prints full color on any fabric and any color, including cotton and darks. Both blanks are a flat 99¢ a unit by the pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Sublimation dyes the fabric itself</b> for a zero-feel, permanent print that never cracks or peels on poly.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>DTF lays a thin full-color film on top</b> with a built-in white underbase, so it prints on dark blanks too.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Sublimation shines for all-over and photographic prints on poly;</b> DTF wins for versatility across fabrics.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat $1 a unit, the same in every size and pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat 99¢ a unit, the same in every size and pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -50,7 +50,7 @@
         "r5": { "type": "row", "settings": { "label": "Durability", "cell_1": "Permanent on poly; no crack or peel", "cell_2": "Flexes; 50+ washes" } },
         "r6": { "type": "row", "settings": { "label": "Best for", "cell_1": "All-over & photo prints on poly", "cell_2": "Versatile full color on any blank" } },
         "r7": { "type": "row", "settings": { "label": "Setup / minimum", "cell_1": "None", "cell_2": "None" } },
-        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$1.00", "cell_2": "$1.00" } }
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
       "settings": {
@@ -74,7 +74,7 @@
         "heading": "Blanks for Both <em>Methods, In Stock</em>",
         "intro": "<p>Polyester, cotton, blend, and dark blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every blank is a flat <b>$1/unit</b>, the same in every size and pack. Sublimation needs the polyester, light-colored pieces; DTF prints on any of them. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+        "note": "<p>Every blank is a flat <b>99¢/unit</b>, the same in every size and pack. Sublimation needs the polyester, light-colored pieces; DTF prints on any of them. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -98,7 +98,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Poly, Cotton & Dark Blanks", "text": "Polyester for sublimation, plus cotton, blend, and dark overstock — S–5XL — print-ready for DTF, with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -128,8 +128,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Pick your <em>blank.</em>",
-        "subtext": "<p>Light polyester for sublimation, anything at all for DTF — the blank is the same flat price either way. Cotton, poly, and blend tees a flat $1 a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Light polyester for sublimation, anything at all for DTF — the blank is the same flat price either way. Cotton, poly, and blend tees a flat 99¢ a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

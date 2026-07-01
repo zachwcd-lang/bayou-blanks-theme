@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>7</b> factors compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Comparison · Updated June 2026",
         "heading": "Bayou Blanks vs <em>ShirtSpace</em>",
-        "answer": "<p>Bayou Blanks is the <strong>cheaper way to buy blanks</strong> than ShirtSpace. ShirtSpace resells first-quality, brand-name apparel at tiered wholesale that only drops when you buy deep. Bayou sells <strong>liquidation overstock by the pack at a flat $1 a unit</strong>, the same price on a 4XL as a small, with no account needed to see it.</p>",
+        "answer": "<p>Bayou Blanks is the <strong>cheaper way to buy blanks</strong> than ShirtSpace. ShirtSpace resells first-quality, brand-name apparel at tiered wholesale that only drops when you buy deep. Bayou sells <strong>liquidation overstock by the pack at a flat 99¢ a unit</strong>, the same price on a 4XL as a small, with no account needed to see it.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Comparisons",
         "crop_anchor": "comparisons",
@@ -23,9 +23,9 @@
       "type": "farm-takeaways",
       "blocks": {
         "t1": { "type": "point", "settings": { "text": "<p><b>ShirtSpace resells first-quality brand-name blanks</b> at tiered wholesale; Bayou sells liquidation overstock at a flat per-unit price that lands lower at typical order sizes.</p>" } },
-        "t2": { "type": "point", "settings": { "text": "<p><b>Same price on every size.</b> A Bayou 4XL is the same $1/unit as a small — most brands ShirtSpace carries upcharge for 2XL and up.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Same price on every size.</b> A Bayou 4XL is the same 99¢/unit as a small — most brands ShirtSpace carries upcharge for 2XL and up.</p>" } },
         "t3": { "type": "point", "settings": { "text": "<p><b>No account to see the price.</b> Bayou shows per-unit pricing on the page; ShirtSpace puts wholesale pricing behind a free registration.</p>" } },
-        "t4": { "type": "point", "settings": { "text": "<p><b>Neither has order minimums</b>, and Bayou's price is a flat $1 a unit, the same in every pack with no volume tiers to chase.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Neither has order minimums</b>, and Bayou's price is a flat 99¢ a unit, the same in every pack with no volume tiers to chase.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Where ShirtSpace wins:</b> selection — hundreds of brands and colors — and 14-warehouse same-day shipping. Reach for them when you need a specific style fast.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>Where Bayou wins:</b> the lowest per-unit on solid blanks, especially in extended and plus sizes.</p>" } }
       },
@@ -43,9 +43,9 @@
         "c1": { "type": "column", "settings": { "label": "Factor" } },
         "c2": { "type": "column", "settings": { "label": "Bayou Blanks" } },
         "c3": { "type": "column", "settings": { "label": "ShirtSpace" } },
-        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $1/unit, every size and pack", "badge_1": true, "cell_2": "Tiered wholesale — lowest only at high volume" } },
+        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat 99¢/unit, every size and pack", "badge_1": true, "cell_2": "Tiered wholesale — lowest only at high volume" } },
         "r2": { "type": "row", "settings": { "label": "What you're buying", "cell_1": "Liquidation overstock blanks", "cell_2": "First-quality, brand-name apparel" } },
-        "r3": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $1/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
+        "r3": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same 99¢/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
         "r4": { "type": "row", "settings": { "label": "Order minimum", "cell_1": "None — buy a single pack", "cell_2": "None" } },
         "r5": { "type": "row", "settings": { "label": "Seeing the price", "cell_1": "Shown up front, no account", "cell_2": "Free registration for wholesale pricing" } },
         "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "Hundreds of brands and colors" } },
@@ -62,8 +62,8 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Our deepest-stock blank (20,000+ units), a flat $1 a unit by the pack. No tier to chase.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "4XL–5XL at the same $1/unit as a small — the plus-size upcharge most catalogs add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Our deepest-stock blank (20,000+ units), a flat 99¢ a unit by the pack. No tier to chase.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "4XL–5XL at the same 99¢/unit as a small — the plus-size upcharge most catalogs add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
         "p3": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Pullover Fleece", "blurb": "Proof the flat per-unit deal isn't just tees — hoodies and fleece price the same way.", "sizes": "Sizes S–3XL", "tag": "Fleece" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Color", "blurb": "Color and extended-size depth at one flat per-unit price — 2XL–3XL, ready to print.", "sizes": "Sizes 2XL–3XL", "tag": "2XL–3XL" } }
       },
@@ -73,16 +73,16 @@
         "heading": "The Blanks That Make the <em>Case</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>$1/unit, the same in every pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>99¢/unit, the same in every pack</b>.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than ShirtSpace?", "answer": "<p>For comparable blanks, yes at the per-unit level. ShirtSpace prices first-quality brand goods on a volume tier, so the lowest price needs a bulk order. Bayou sells liquidation overstock at a flat $1 a unit, the same in every size and pack, so you hit a low per-unit cost without ordering deep.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than ShirtSpace?", "answer": "<p>For comparable blanks, yes at the per-unit level. ShirtSpace prices first-quality brand goods on a volume tier, so the lowest price needs a bulk order. Bayou sells liquidation overstock at a flat 99¢ a unit, the same in every size and pack, so you hit a low per-unit cost without ordering deep.</p>" } },
         "q2": { "type": "qa", "settings": { "question": "Does ShirtSpace have order minimums?", "answer": "<p>No. ShirtSpace sells by the piece with no minimum, and so does Bayou — you can buy a single pack. The difference isn't the minimum, it's the price and the model: ShirtSpace resells new brand-name apparel; Bayou passes on liquidation overstock by the pack.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Do I need an account to see Bayou's prices?", "answer": "<p>No. Bayou shows the per-unit price right on the page with no sign-up. ShirtSpace requires a free registration (email and phone) to unlock its wholesale pricing.</p>" } },
-        "q4": { "type": "qa", "settings": { "question": "Does Bayou charge more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $1/unit as a small. Most brand blanks ShirtSpace carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Does Bayou charge more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same 99¢/unit as a small. Most brand blanks ShirtSpace carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the catch with liquidation blanks?", "answer": "<p>The trade for the price is selection. Bayou carries around 85 curated in-stock styles from overstock, not the full brand catalog, so you won't find every brand and color. If you need a specific Bella+Canvas or Gildan style in a specific color, ShirtSpace's catalog is deeper; if you want the lowest per-unit on solid blanks, Bayou wins.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "ShirtSpace or Bayou — which should I use?", "answer": "<p>Use ShirtSpace when you need a specific brand, color, or style restocked fast from one of their 14 warehouses. Use Bayou when per-unit price is the priority — especially for extended and plus sizes — and you're fine choosing from a curated set of overstock blanks.</p>" } }
       },
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size. No account to see it." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size. No account to see it." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL at the same per-unit price — the sizes most catalogs upcharge or run short on." } }
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Skip the markup. Buy the <em>blank.</em>",
-        "subtext": "<p>Liquidation overstock blanks at a flat $1 a unit, every size, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Liquidation overstock blanks at a flat 99¢ a unit, every size, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop In-Stock Blanks",
         "cta_collection": "in-stock",

@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>5 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>Polo</b> fabric" } },
         "s3": { "type": "stat", "settings": { "text": "<b>S–5XL</b> in stock" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "From <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Glossary · Updated June 2026",
         "heading": "What Is <em>Piqué</em> Fabric?",
-        "answer": "<p>Piqué is a knit fabric with a raised, waffle- or honeycomb-textured surface — <strong>the classic fabric for polo shirts</strong>. The texture makes it breathable, structured, and wrinkle-resistant, and it grips embroidery cleanly. Piqué can be cotton, polyester, or a blend; Bayou's blank polos are a textured knit from $4.25/unit.</p>",
+        "answer": "<p>Piqué is a knit fabric with a raised, waffle- or honeycomb-textured surface — <strong>the classic fabric for polo shirts</strong>. The texture makes it breathable, structured, and wrinkle-resistant, and it grips embroidery cleanly. Piqué can be cotton, polyester, or a blend; Bayou's blank polos are a textured knit from 99¢/unit.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Glossary",
         "crop_anchor": "glossary",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Piqué can be cotton, polyester, or a blend</b> — the texture is the same; the fiber changes the feel.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>The bumpy surface grips embroidery cleanly</b> — which is why polos are the go-to for stitched logos and uniforms.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>For printing, the texture softens ultra-fine detail</b> — DTF, HTV, and embroidery sit on piqué best; keep screen art bold.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's blank polos are a textured (striated) knit,</b> full S–5XL, by the pack from $4.25/unit toward $2.92 by the 12-pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's blank polos are a textured (striated) knit,</b> full S–5XL, by the pack from 99¢/unit toward 99¢ by the 12-pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -49,7 +49,7 @@
         "r4": { "type": "row", "settings": { "label": "Breathability", "cell_1": "High — texture moves air", "cell_2": "Medium" } },
         "r5": { "type": "row", "settings": { "label": "Wrinkle resistance", "cell_1": "High", "cell_2": "Lower" } },
         "r6": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Grips embroidery; softens fine print", "cell_2": "Takes fine print flatter" } },
-        "r7": { "type": "row", "settings": { "label": "At Bayou (per unit)", "sub": "By the pack", "cell_1": "From $4.25", "cell_2": "Not stocked" } }
+        "r7": { "type": "row", "settings": { "label": "At Bayou (per unit)", "sub": "By the pack", "cell_1": "From 99¢", "cell_2": "Not stocked" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
       "settings": {
@@ -71,7 +71,7 @@
         "heading": "Textured-Knit Polos, <em>In Stock</em>",
         "intro": "<p>Bayou's blank polos in a pique-family textured knit, on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 2,
-        "note": "<p>Bayou's polos are an undecorated <b>textured (striated) knit</b> — a pique-family surface, not a claimed cotton piqué — sold print-ready at a flat <b>$4.25/unit</b>, about <b>$2.92/unit by the 12-pack</b>, same price across every size. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+        "note": "<p>Bayou's polos are an undecorated <b>textured (striated) knit</b> — a pique-family surface, not a claimed cotton piqué — sold print-ready at a flat <b>99¢/unit</b>, about <b>99¢/unit by the 12-pack</b>, same price across every size. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -82,7 +82,7 @@
         "q3": { "type": "qa", "settings": { "question": "Why are polo shirts made of piqué?", "answer": "<p>The textured knit gives a polo its signature look and a few practical wins: it's more breathable than smooth fabric, it holds its shape and resists wrinkles, and the surface hides minor marks. It also grips embroidery thread cleanly, which is why piqué polos are the standard for stitched logos and uniforms.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "How do you decorate a piqué polo?", "answer": "<p>Embroidery is the classic choice — the textured surface grips stitches and a left-chest logo reads crisp with a cut-away stabilizer. For full-color art, DTF transfers and heat-transfer vinyl (HTV) sit on piqué well. Fine-detail screen printing is harder because the bumpy texture breaks up small lines, so keep printed art bold and simple.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the difference between piqué and jersey knit?", "answer": "<p>Jersey is a smooth, flat, lightweight knit — the feel of a classic t-shirt. Piqué is a thicker double-knit with a raised, textured surface. Piqué is more structured, more breathable, and more wrinkle-resistant, which suits collared polos; jersey is softer and drapier, which suits tees and casual fashion polos.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "What polos does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated adult short-sleeve polos in a textured (striated) knit — a pique-family surface — across a full S–5XL run, including deep extended sizes. They're sold by the pack at a flat $4.25/unit, dropping toward $2.92 by the 12-pack, the same price in every size, with no account required.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "What polos does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated adult short-sleeve polos in a textured (striated) knit — a pique-family surface — across a full S–5XL run, including deep extended sizes. They're sold by the pack at a flat 99¢/unit, dropping toward 99¢ by the 12-pack, the same price in every size, with no account required.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -95,7 +95,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per polo — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per polo — from 99¢, down toward 99¢ by the 12-pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Textured-Knit Polos", "text": "Undecorated striated-knit polos in deep overstock — a full S–5XL run, including extended 3XL–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -125,8 +125,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Shop blank <em>polos.</em>",
-        "subtext": "<p>Textured-knit polos, full S–5XL, from $4.25/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$4.25",
+        "subtext": "<p>Textured-knit polos, full S–5XL, from 99¢/unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "99¢",
         "background": "paper",
         "cta_label": "Shop Blank Polos",
         "cta_collection": "polos",

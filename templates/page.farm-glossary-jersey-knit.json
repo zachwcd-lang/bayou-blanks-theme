@@ -6,7 +6,7 @@
         "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>Single</b> knit" } },
         "s3": { "type": "stat", "settings": { "text": "<b>Print</b>-ready" } },
-        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>It's the standard t-shirt fabric</b> — light, soft, and drapey, with moderate stretch and the most drape of the common knits.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>It curls at the cut edges.</b> That's loop-tension imbalance, not a defect — which is why tee hems, necks, and cuffs are finished with a band.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>The smooth flat face is the easiest canvas</b> — screen print, DTG, DTF, and HTV all sit clean on jersey, where a textured knit would break up fine detail.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's jersey tees</b> run cotton, blend, triblend, and performance poly — by the pack at a flat $2.00/unit, the same price in every size.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's jersey tees</b> run cotton, blend, triblend, and performance poly — by the pack at a flat 99¢/unit, the same price in every size.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -49,7 +49,7 @@
         "r3": { "type": "row", "settings": { "label": "Feel", "cell_1": "Light, soft, drapey", "cell_2": "Structured, breathable", "cell_3": "Heavier, stable, no curl" } },
         "r4": { "type": "row", "settings": { "label": "Best for", "cell_1": "T-shirts", "badge_1": true, "cell_2": "Polos", "cell_3": "Premium tees, activewear" } },
         "r5": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Takes fine print flat", "badge_1": true, "cell_2": "Grips embroidery; softens fine print", "cell_3": "Crisp DTG / high-detail screen" } },
-        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Jersey tees from $2.00/unit", "cell_2": "Textured polos from $2.00/unit", "cell_3": "Not stocked" } }
+        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Jersey tees from 99¢/unit", "cell_2": "Textured polos from 99¢/unit", "cell_3": "Not stocked" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -73,7 +73,7 @@
         "heading": "Jersey-Knit Blanks That Print <em>Clean</em>",
         "intro": "<p>Real in-stock jersey tees — the smooth single knit in cotton, blend, triblend, and performance poly. Prices shown per unit, no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every jersey tee is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+        "note": "<p>Every jersey tee is sold by the pack at a flat <b>99¢/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -84,7 +84,7 @@
         "q3": { "type": "qa", "settings": { "question": "Why does jersey knit curl at the edges?", "answer": "<p>Because it's a single knit. The loops on the front and back pull with slightly different tension, so a raw cut edge rolls — toward the front at the top and bottom, toward the back at the sides. It isn't a defect; it's a built-in trait of single jersey, which is why t-shirt hems, necks, and sleeves are finished with a band or a folded hem.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Is jersey knit good for printing?", "answer": "<p>Yes — it's the easiest blank to decorate. The smooth, flat front gives ink a clean, even surface, so screen printing, DTG, DTF transfers, and heat-transfer vinyl all sit crisp on jersey. That flat face is exactly why it beats a textured knit like piqué for fine detail, and why nearly every printable blank tee is a jersey knit.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the difference between jersey and interlock?", "answer": "<p>Jersey is a single knit — smooth on one side, looped on the other, light and drapey, and it curls at the edges. Interlock is a double knit made on two needle beds, so it's smooth and stable on both sides, a bit heavier, and it doesn't curl. Interlock feels more premium and prints high detail beautifully, but jersey is lighter, softer, and far more common on everyday tees.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "What jersey-knit blanks does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated jersey-knit tees in smooth cotton, cotton/poly blend, soft triblend, and performance polyester, across a full size range with deep extended sizes. They're sold by the pack at a flat $2.00/unit — the same price in every size, with no account required — and inspected and shipped from our Hattiesburg, Mississippi warehouse.</p>" } }
+        "q6": { "type": "qa", "settings": { "question": "What jersey-knit blanks does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated jersey-knit tees in smooth cotton, cotton/poly blend, soft triblend, and performance polyester, across a full size range with deep extended sizes. They're sold by the pack at a flat 99¢/unit — the same price in every size, with no account required — and inspected and shipped from our Hattiesburg, Mississippi warehouse.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit on jersey tees, shown up front, no account, the same price in every size and pack." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat 99¢/unit on jersey tees, shown up front, no account, the same price in every size and pack." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Jersey, Deep Stock", "text": "Smooth jersey tees in cotton, blend, triblend, and performance poly — the print-ready single knit in real overstock depth, through extended sizes." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -127,8 +127,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Shop blank <em>jersey tees.</em>",
-        "subtext": "<p>Smooth jersey-knit tees in cotton, blend, triblend, and performance poly — light and print-ready, through extended sizes — sold by the pack at a flat $2.00/unit, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$2.00",
+        "subtext": "<p>Smooth jersey-knit tees in cotton, blend, triblend, and performance poly — light and print-ready, through extended sizes — sold by the pack at a flat 99¢/unit, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

@@ -6,7 +6,7 @@
         "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>Round</b> neckline" } },
         "s3": { "type": "stat", "settings": { "text": "<b>Print</b>-ready" } },
-        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
@@ -49,7 +49,7 @@
         "r3": { "type": "row", "settings": { "label": "Decoration area", "cell_1": "Largest, uninterrupted", "badge_1": true, "cell_2": "Slightly cut by the V", "cell_3": "Tighter near the collar" } },
         "r4": { "type": "row", "settings": { "label": "Layering", "cell_1": "Easy over and under", "badge_1": true, "cell_2": "Good under open collars", "cell_3": "Snug and warmer" } },
         "r5": { "type": "row", "settings": { "label": "Common on", "cell_1": "Tees, sweatshirts, sweaters", "badge_1": true, "cell_2": "Tees, sweaters", "cell_3": "Tees, base layers, pullovers" } },
-        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Crew tees from $2.00/unit", "cell_2": "V-neck tees from $2.00/unit", "cell_3": "Not stocked" } }
+        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Crew tees from 99¢/unit", "cell_2": "V-neck tees from 99¢/unit", "cell_3": "Not stocked" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
       "settings": {
@@ -73,7 +73,7 @@
         "heading": "Crew-Neck Blanks That Print <em>Clean</em>",
         "intro": "<p>Real in-stock crew-neck tees — the classic round collar in cotton, heather, extended sizes, and performance knit. Prices shown per unit, no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every crew-neck tee is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+        "note": "<p>Every crew-neck tee is sold by the pack at a flat <b>99¢/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit on crew-neck tees, shown up front, no account, the same price in every size and pack." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat 99¢/unit on crew-neck tees, shown up front, no account, the same price in every size and pack." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Crew Necks, Deep Stock", "text": "Crew-neck tees in cotton, heather, and performance knit, plus dark raglans through 5XL — the round, print-ready collar in real overstock depth." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -127,8 +127,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Shop blank <em>crew necks.</em>",
-        "subtext": "<p>Crew-neck tees in cotton, heather, and performance knits — light and dark, through 5XL — sold by the pack at a flat $2.00/unit, press-ready, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$2.00",
+        "subtext": "<p>Crew-neck tees in cotton, heather, and performance knits — light and dark, through 5XL — sold by the pack at a flat 99¢/unit, press-ready, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

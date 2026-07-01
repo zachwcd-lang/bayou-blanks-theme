@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>7</b> factors compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Comparison · Updated June 2026",
         "heading": "Bayou Blanks vs <em>Jiffy Shirts</em>",
-        "answer": "<p>Bayou Blanks is the lower-cost alternative to Jiffy. Jiffy is the gold standard for fast shipping and a massive brand catalog, with bulk discounts on $99+ orders. Bayou trades the giant catalog for a flat <strong>$1 a unit</strong> on liquidation overstock, the same price on a 4XL as a small, from a single pack.</p>",
+        "answer": "<p>Bayou Blanks is the lower-cost alternative to Jiffy. Jiffy is the gold standard for fast shipping and a massive brand catalog, with bulk discounts on $99+ orders. Bayou trades the giant catalog for a flat <strong>99¢ a unit</strong> on liquidation overstock, the same price on a 4XL as a small, from a single pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Comparisons",
         "crop_anchor": "comparisons",
@@ -23,8 +23,8 @@
       "type": "farm-takeaways",
       "blocks": {
         "t1": { "type": "point", "settings": { "text": "<p><b>Jiffy resells first-quality goods from top brands</b> with bulk discounts that kick in on $99+ orders; Bayou's flat per-unit price needs no order threshold.</p>" } },
-        "t2": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat $1/unit from a single pack</b>, with no $99 target to clear.</p>" } },
-        "t3": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou:</b> a 4XL is the same $1/unit as a small, while the brands Jiffy carries upcharge for 2XL and up.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat 99¢/unit from a single pack</b>, with no $99 target to clear.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou:</b> a 4XL is the same 99¢/unit as a small, while the brands Jiffy carries upcharge for 2XL and up.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Jiffy's real edge is speed</b> — same-day shipping (order by 6pm) and a 4.6-star service reputation; if turnaround is everything, Jiffy is hard to beat.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Both sell with no minimum, no account, and free shipping (around $59–79)</b> — the difference is the price model and the goods.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>Where Bayou wins:</b> the lowest per-unit on solid blanks, especially in extended and plus sizes.</p>" } }
@@ -43,9 +43,9 @@
         "c1": { "type": "column", "settings": { "label": "Factor" } },
         "c2": { "type": "column", "settings": { "label": "Bayou Blanks" } },
         "c3": { "type": "column", "settings": { "label": "Jiffy Shirts" } },
-        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $1/unit, every size and pack", "badge_1": true, "cell_2": "Brand wholesale + bulk discounts on $99+" } },
+        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat 99¢/unit, every size and pack", "badge_1": true, "cell_2": "Brand wholesale + bulk discounts on $99+" } },
         "r2": { "type": "row", "settings": { "label": "What you're buying", "cell_1": "Liquidation overstock blanks", "cell_2": "First-quality goods from top brands" } },
-        "r3": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $1/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
+        "r3": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same 99¢/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
         "r4": { "type": "row", "settings": { "label": "Shipping", "cell_1": "Ships from Hattiesburg, MS", "cell_2": "Same-day (by 6pm), known for speed" } },
         "r5": { "type": "row", "settings": { "label": "Minimum / account", "cell_1": "None / none needed", "cell_2": "None / none needed" } },
         "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "Tens of thousands of items" } },
@@ -62,8 +62,8 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat $1 a unit from pack one. No $99 threshold.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same $1/unit as a small — the plus-size upcharge brand blanks add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat 99¢ a unit from pack one. No $99 threshold.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same 99¢/unit as a small — the plus-size upcharge brand blanks add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
         "p3": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Pullover Fleece", "blurb": "Classic Gold pullover fleece — the flat per-unit deal isn't just tees; hoodies and fleece price the same way.", "sizes": "Sizes S–3XL", "tag": "Fleece" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Color", "blurb": "Texas Orange V-Neck in extended 2XL–3XL — color and size depth at one flat per-unit price, ready to print.", "sizes": "Sizes 2XL–3XL", "tag": "2XL–3XL" } }
       },
@@ -73,16 +73,16 @@
         "heading": "The Blanks That Make the <em>Case</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no threshold, no account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>$1/unit, the same in every pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no threshold, no account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>99¢/unit, the same in every pack</b>.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than Jiffy Shirts?", "answer": "<p>For the blank itself on small and mid-size orders, yes. Jiffy's bulk discounts kick in around $99 per order, so the lowest price needs volume. Bayou is a flat $1 a unit, the same in every size and pack, with no order threshold. On very large brand orders, Jiffy's catalog and volume pricing can close the gap.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than Jiffy Shirts?", "answer": "<p>For the blank itself on small and mid-size orders, yes. Jiffy's bulk discounts kick in around $99 per order, so the lowest price needs volume. Bayou is a flat 99¢ a unit, the same in every size and pack, with no order threshold. On very large brand orders, Jiffy's catalog and volume pricing can close the gap.</p>" } },
         "q2": { "type": "qa", "settings": { "question": "Does Jiffy Shirts have a minimum or require an account?", "answer": "<p>No and no — Jiffy sells with no quantity, size, or style minimum and no resellers' permit. Bayou is the same. The difference isn't access, it's the price model and the product: Jiffy resells first-quality brand goods; Bayou passes on liquidation overstock by the pack.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Is Jiffy faster to ship than Bayou?", "answer": "<p>Jiffy is known for it — same-day shipping when you order by 6pm and a 4.6-star service reputation across tens of thousands of reviews. If turnaround is your top priority, Jiffy is hard to beat. Bayou ships from its Hattiesburg warehouse; that's the trade-off for a lower blank price.</p>" } },
-        "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $1/unit as a small. The brand blanks Jiffy carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same 99¢/unit as a small. The brand blanks Jiffy carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the catch with Bayou's liquidation blanks?", "answer": "<p>Selection. Bayou stocks around 85 curated overstock styles, not Jiffy's tens of thousands of items. If you need a specific brand, color, or style, Jiffy's range is far deeper; if you want the lowest per-unit on solid blanks, Bayou wins.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "Jiffy Shirts or Bayou — which should I use?", "answer": "<p>Use Jiffy when speed and selection matter most — a specific style shipped fast. Use Bayou when per-unit price is the priority, especially on small-to-mid orders and extended or plus sizes, and a curated set of overstock blanks works for you.</p>" } }
       },
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size. No threshold." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size. No threshold." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL at the same per-unit price — the sizes most catalogs upcharge or run short on." } }
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Less per blank. <em>Every size.</em>",
-        "subtext": "<p>Liquidation overstock blanks at a flat $1 a unit, every size, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Liquidation overstock blanks at a flat 99¢ a unit, every size, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop In-Stock Blanks",
         "cta_collection": "in-stock",

@@ -6,7 +6,7 @@
         "s1": { "type": "stat", "settings": { "text": "<b>5 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>Cut</b> &amp; press" } },
         "s3": { "type": "stat", "settings": { "text": "<b>Any</b> fabric" } },
-        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
@@ -51,7 +51,7 @@
         "r5": { "type": "row", "settings": { "label": "Dark garments", "cell_1": "Opaque — covers darks", "badge_1": true, "cell_2": "Built-in white underbase", "cell_3": "Needs underbase" } },
         "r6": { "type": "row", "settings": { "label": "Small text / detail", "cell_1": "Limited by weeding", "cell_2": "Excellent", "cell_3": "Good" } },
         "r7": { "type": "row", "settings": { "label": "Durability", "cell_1": "50+ washes pressed right", "cell_2": "50+ washes", "cell_3": "Gold standard, 60–100+" } },
-        "r8": { "type": "row", "settings": { "label": "Blank cost at Bayou", "sub": "By the pack", "cell_1": "From $2.00/unit", "cell_2": "From $2.00/unit", "cell_3": "From $2.00/unit" } }
+        "r8": { "type": "row", "settings": { "label": "Blank cost at Bayou", "sub": "By the pack", "cell_1": "From 99¢/unit", "cell_2": "From 99¢/unit", "cell_3": "From 99¢/unit" } }
       },
       "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
       "settings": {
@@ -75,7 +75,7 @@
         "heading": "Blanks That Press <em>Clean</em>",
         "intro": "<p>Real in-stock blanks for HTV jobs — cotton for the easiest press, poly for performance, and dark raglans where opaque vinyl wins. Prices shown per unit, no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every blank is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+        "note": "<p>Every blank is sold by the pack at a flat <b>99¢/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -99,7 +99,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit, shown up front, no account, the same price in every size and pack." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat 99¢/unit, shown up front, no account, the same price in every size and pack." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Darks", "text": "Undecorated tees in cotton, performance poly, and dark raglans through 5XL — the full range HTV presses on, in deep overstock." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -129,8 +129,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Shop blank <em>t-shirts.</em>",
-        "subtext": "<p>Cotton, poly, and blend tees, light and dark, sold by the pack at a flat $2.00/unit — press-ready, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$2.00",
+        "subtext": "<p>Cotton, poly, and blend tees, light and dark, sold by the pack at a flat 99¢/unit — press-ready, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

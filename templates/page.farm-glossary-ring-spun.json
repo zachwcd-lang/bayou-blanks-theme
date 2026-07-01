@@ -6,7 +6,7 @@
         "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Ring-spun's smoother surface holds fine print detail</b>, like small text and halftones, more cleanly than open-end.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>'Combed ring-spun' adds a combing step</b> that removes short fibers for an even softer, stronger yarn.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Ring-spun costs a little more to make</b>, but most modern soft-feel blank tees are ring-spun.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>At Bayou, solid cotton blanks print clean</b> and are a flat $1 a unit.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>At Bayou, solid cotton blanks print clean</b> and are a flat 99¢ a unit.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -61,9 +61,9 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Cotton", "blurb": "A smooth-face cotton v-neck that takes a clean print — our deepest-stock blank, a flat $1 a unit.", "sizes": "Sizes S–XL", "tag": "Deep Stock" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Cotton", "blurb": "A basic cotton crew that prints sharp — no account, no minimum beyond a pack. A flat $1 a unit.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
-        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew · Extended", "blurb": "The same smooth cotton in 4XL–5XL at the same flat $1 a unit as a small.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Cotton", "blurb": "A smooth-face cotton v-neck that takes a clean print — our deepest-stock blank, a flat 99¢ a unit.", "sizes": "Sizes S–XL", "tag": "Deep Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Crew · Cotton", "blurb": "A basic cotton crew that prints sharp — no account, no minimum beyond a pack. A flat 99¢ a unit.", "sizes": "Sizes S–XL", "tag": "The Basic" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew · Extended", "blurb": "The same smooth cotton in 4XL–5XL at the same flat 99¢ a unit as a small.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee-plus-sizes", "kicker": "V-Neck · Plus", "blurb": "A plus-size cotton v-neck at one flat per-unit price — no size upcharge.", "sizes": "Plus sizes", "tag": "Plus" } }
       },
       "block_order": ["p1", "p2", "p3", "p4"],
@@ -72,7 +72,7 @@
         "heading": "Cotton Blanks That <em>Print Clean</em>",
         "intro": "<p>Solid, smooth-face cotton blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick is sold by the pack at a flat <b>$1/unit</b>, the same in every size and pack, no account required.</p>"
+        "note": "<p>Every pick is sold by the pack at a flat <b>99¢/unit</b>, the same in every size and pack, no account required.</p>"
       }
     },
     "faq": {
@@ -82,7 +82,7 @@
         "q2": { "type": "qa", "settings": { "question": "What's the difference between ring-spun and open-end cotton?", "answer": "<p>How the yarn is spun. Ring-spun twists and thins the fibers continuously for a fine, smooth yarn; open-end spins faster and cheaper for a coarser yarn. Ring-spun is softer and stronger; open-end is cheaper and more rugged.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Is ring-spun cotton good for screen printing and DTF?", "answer": "<p>Yes. Its smooth, tight surface gives ink a clean, even base, so fine lines, small text, and halftones print sharper than on a coarse open-end tee. It works well for screen printing, DTF, and DTG.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "What is combed ring-spun cotton?", "answer": "<p>Cotton that's both combed (short fibers removed) and ring-spun (twisted and thinned). Combing plus ring-spinning makes the softest, strongest, smoothest cotton yarn — the feel you get on premium soft-style tees.</p>" } },
-        "q5": { "type": "qa", "settings": { "question": "Does Bayou sell ring-spun cotton blanks?", "answer": "<p>Our cotton tees are solid, smooth-face blanks that print clean, sold by the pack at a flat $1 a unit, the same in every size and pack — no account, and every size is the same price.</p>" } }
+        "q5": { "type": "qa", "settings": { "question": "Does Bayou sell ring-spun cotton blanks?", "answer": "<p>Our cotton tees are solid, smooth-face blanks that print clean, sold by the pack at a flat 99¢ a unit, the same in every size and pack — no account, and every size is the same price.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5"],
       "settings": {
@@ -95,7 +95,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -125,8 +125,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Print on a blank that <em>holds the detail.</em>",
-        "subtext": "<p>Smooth-face cotton blanks at a flat $1 a unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Smooth-face cotton blanks at a flat 99¢ a unit — every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

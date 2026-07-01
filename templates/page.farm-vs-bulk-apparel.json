@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>7</b> factors compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Comparison · Updated June 2026",
         "heading": "Bayou Blanks vs <em>Bulk Apparel</em>",
-        "answer": "<p>Bayou Blanks beats Bulk Apparel on small and mid-size orders. Bulk Apparel's volume discounts don't kick in until you spend $250 — and top out at 14% over $5,000. Bayou's liquidation blanks are a flat <strong>$1 a unit</strong>, the same in every size and pack, with the same price on a 4XL as a small.</p>",
+        "answer": "<p>Bayou Blanks beats Bulk Apparel on small and mid-size orders. Bulk Apparel's volume discounts don't kick in until you spend $250 — and top out at 14% over $5,000. Bayou's liquidation blanks are a flat <strong>99¢ a unit</strong>, the same in every size and pack, with the same price on a 4XL as a small.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Comparisons",
         "crop_anchor": "comparisons",
@@ -23,8 +23,8 @@
       "type": "farm-takeaways",
       "blocks": {
         "t1": { "type": "point", "settings": { "text": "<p><b>Bulk Apparel resells first-quality brand blanks</b> with volume discounts that only start at $250 spend and top out at 14% over $5,000; Bayou's flat per-unit price needs no spend threshold.</p>" } },
-        "t2": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat $1/unit from a single pack</b>, while Bulk Apparel needs $1,000+ in one order just to reach 10% off.</p>" } },
-        "t3": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou:</b> a 4XL is the same $1/unit as a small, while the brands Bulk Apparel carries upcharge for 2XL and up.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat 99¢/unit from a single pack</b>, while Bulk Apparel needs $1,000+ in one order just to reach 10% off.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou:</b> a 4XL is the same 99¢/unit as a small, while the brands Bulk Apparel carries upcharge for 2XL and up.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>Both sell with no minimums, no account, and free shipping over $79</b> — the real difference is the price model and the goods: liquidation overstock vs first-quality brand.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Where Bulk Apparel wins:</b> a deep multi-brand catalog (Gildan, Bella+Canvas, Hanes, Next Level, Comfort Colors), 100-day returns, and fast shipping.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>Where Bayou wins:</b> the lowest per-unit on small-to-mid orders, especially in extended and plus sizes.</p>" } }
@@ -43,10 +43,10 @@
         "c1": { "type": "column", "settings": { "label": "Factor" } },
         "c2": { "type": "column", "settings": { "label": "Bayou Blanks" } },
         "c3": { "type": "column", "settings": { "label": "Bulk Apparel" } },
-        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $1/unit, every size and pack", "badge_1": true, "cell_2": "Brand wholesale + volume discounts" } },
+        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat 99¢/unit, every size and pack", "badge_1": true, "cell_2": "Brand wholesale + volume discounts" } },
         "r2": { "type": "row", "settings": { "label": "Lowest price needs", "cell_1": "A single pack", "badge_1": true, "cell_2": "$1,000+ spend for 10% off (max 14% over $5,000)" } },
         "r3": { "type": "row", "settings": { "label": "What you're buying", "cell_1": "Liquidation overstock blanks", "cell_2": "First-quality, brand-name apparel" } },
-        "r4": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $1/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
+        "r4": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same 99¢/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
         "r5": { "type": "row", "settings": { "label": "Minimum / account", "cell_1": "None / none needed", "cell_2": "None / none needed" } },
         "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "Multi-brand catalog, deep color range" } },
         "r7": { "type": "row", "settings": { "label": "Best for", "cell_1": "Lowest per-unit at small–mid orders", "cell_2": "Big-volume brand orders, specific styles" } }
@@ -62,8 +62,8 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat $1 a unit from pack one. No $250 threshold to clear.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same $1/unit as a small — the plus-size upcharge brand blanks add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat 99¢ a unit from pack one. No $250 threshold to clear.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same 99¢/unit as a small — the plus-size upcharge brand blanks add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
         "p3": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Pullover Fleece", "blurb": "Classic Gold pullover fleece — the flat per-unit deal isn't just tees; hoodies and fleece price the same way.", "sizes": "Sizes S–3XL", "tag": "Fleece" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Color", "blurb": "Texas Orange V-Neck in extended 2XL–3XL: color and size depth at one flat per-unit price, ready to print.", "sizes": "Sizes 2XL–3XL", "tag": "2XL–3XL" } }
       },
@@ -73,16 +73,16 @@
         "heading": "The Blanks That Make the <em>Case</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no spend threshold, no account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>$1/unit, the same in every pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no spend threshold, no account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>99¢/unit, the same in every pack</b>.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than Bulk Apparel?", "answer": "<p>On small and mid-size orders, yes. Bulk Apparel's discounts don't start until $250 in one order and only reach 10% at $1,000+. Bayou is a flat $1 a unit, the same in every size and pack, with no spend target. On very large brand orders, Bulk Apparel's catalog and deeper volume tiers can close the gap.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than Bulk Apparel?", "answer": "<p>On small and mid-size orders, yes. Bulk Apparel's discounts don't start until $250 in one order and only reach 10% at $1,000+. Bayou is a flat 99¢ a unit, the same in every size and pack, with no spend target. On very large brand orders, Bulk Apparel's catalog and deeper volume tiers can close the gap.</p>" } },
         "q2": { "type": "qa", "settings": { "question": "Does Bulk Apparel have a minimum or require an account?", "answer": "<p>No and no — Bulk Apparel is open to the public with no order minimum. Bayou is the same. The difference isn't access, it's the price model and the product: Bulk Apparel resells first-quality brand goods; Bayou passes on liquidation overstock by the pack.</p>" } },
-        "q3": { "type": "qa", "settings": { "question": "How do Bulk Apparel's volume discounts work?", "answer": "<p>They're tiered by total spend: about 5% over $250, 7% over $500, 10% over $1,000, 12% over $2,500, and 14% over $5,000. Bayou's price is a flat $1/unit, the same in every pack, so you don't need a big order to hit a low per-unit cost.</p>" } },
-        "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $1/unit as a small. The brand blanks Bulk Apparel carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "How do Bulk Apparel's volume discounts work?", "answer": "<p>They're tiered by total spend: about 5% over $250, 7% over $500, 10% over $1,000, 12% over $2,500, and 14% over $5,000. Bayou's price is a flat 99¢/unit, the same in every pack, so you don't need a big order to hit a low per-unit cost.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same 99¢/unit as a small. The brand blanks Bulk Apparel carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the catch with Bayou's liquidation blanks?", "answer": "<p>Selection. Bayou stocks around 85 curated overstock styles, not a full multi-brand catalog. If you need a specific Gildan or Bella+Canvas style and color, Bulk Apparel's range is deeper; if you want the lowest per-unit on solid blanks, Bayou wins.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "Bulk Apparel or Bayou — which should I use?", "answer": "<p>Use Bulk Apparel for big-volume brand orders or a specific style and color from their catalog. Use Bayou when per-unit price matters most — especially on small-to-mid orders and extended or plus sizes — and a curated set of overstock blanks works for you.</p>" } }
       },
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size. No spend threshold." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size. No spend threshold." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL at the same per-unit price — the sizes most catalogs upcharge or run short on." } }
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "No spend threshold. Just the <em>blank.</em>",
-        "subtext": "<p>Liquidation overstock blanks at a flat $1 a unit from pack one, every size, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$1",
+        "subtext": "<p>Liquidation overstock blanks at a flat 99¢ a unit from pack one, every size, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
         "background": "paper",
         "cta_label": "Shop In-Stock Blanks",
         "cta_collection": "in-stock",
