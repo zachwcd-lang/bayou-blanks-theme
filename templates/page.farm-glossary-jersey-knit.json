@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>Single</b> knit" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>Print</b>-ready" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is <em>Jersey Knit</em>?",
+        "answer": "<p>Jersey knit is the soft, stretchy single-knit fabric most t-shirts are made from — smooth and flat on the front, lightly looped on the back. <strong>It's a knit structure, not a fiber,</strong> so jersey can be cotton, polyester, rayon, or a blend, and its flat face is the easiest surface to print.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Jersey is a single (weft) knit</b> made on one set of needles — smooth V-stitches on the front, looped purl stitches on the back, so it has a distinct right and wrong side.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>It's a structure, not a fiber:</b> jersey can be 100% cotton, polyester, rayon, or a blend. The knit stays the same; the fiber changes the feel.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>It's the standard t-shirt fabric</b> — light, soft, and drapey, with moderate stretch and the most drape of the common knits.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>It curls at the cut edges.</b> That's loop-tension imbalance, not a defect — which is why tee hems, necks, and cuffs are finished with a band.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>The smooth flat face is the easiest canvas</b> — screen print, DTG, DTF, and HTV all sit clean on jersey, where a textured knit would break up fine detail.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou's jersey tees</b> run cotton, blend, triblend, and performance poly — by the pack at a flat $2.00/unit, the same price in every size.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"If you've ever worn a t-shirt, you've worn jersey. It's the smooth, soft single knit that drapes, stretches a little, and gives a print the flattest, cleanest face on the shirt.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Single Jersey" } },
+        "c3": { "type": "column", "settings": { "label": "Piqué" } },
+        "c4": { "type": "column", "settings": { "label": "Interlock" } },
+        "r1": { "type": "row", "settings": { "label": "Knit type", "cell_1": "Single knit, one needle bed", "cell_2": "Textured double knit", "cell_3": "Smooth double knit, two beds" } },
+        "r2": { "type": "row", "settings": { "label": "Surface", "cell_1": "Smooth face, looped back", "badge_1": true, "cell_2": "Raised waffle / honeycomb", "cell_3": "Smooth, even on both sides" } },
+        "r3": { "type": "row", "settings": { "label": "Feel", "cell_1": "Light, soft, drapey", "cell_2": "Structured, breathable", "cell_3": "Heavier, stable, no curl" } },
+        "r4": { "type": "row", "settings": { "label": "Best for", "cell_1": "T-shirts", "badge_1": true, "cell_2": "Polos", "cell_3": "Premium tees, activewear" } },
+        "r5": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Takes fine print flat", "badge_1": true, "cell_2": "Grips embroidery; softens fine print", "cell_3": "Crisp DTG / high-detail screen" } },
+        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Jersey tees from $2.00/unit", "cell_2": "Textured polos from $2.00/unit", "cell_3": "Not stocked" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Jersey vs <em>Piqué</em> vs Interlock",
+        "intro": "<p>Jersey is the smooth, single-knit default. Here's how it stacks up against the two other knits you'll meet on a blank — the textured piqué of a polo and the stable double-knit interlock — and why jersey is the one most printers reach for.</p>",
+        "caption": "How single jersey compares to piqué and interlock knits"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "Smooth Cotton Jersey · S–3XL", "blurb": "Nebula Dark Gray smooth cotton jersey — our deepest-stock tee and the textbook single jersey: a flat, soft face that takes screen, DTF, or HTV clean.", "sizes": "S–3XL", "tag": "The Standard" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Cotton Jersey Crew · S–2XL", "blurb": "Yellow Strike cotton jersey crew — the classic smooth-knit tee, light and drapey with a flat, uninterrupted print area front and back.", "sizes": "S–2XL", "tag": "The Classic" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend Jersey · S–3XL", "blurb": "Heather Triblend jersey — the same single-knit structure, but cotton/poly/rayon for the softest drape and a vintage heathered look.", "sizes": "S–3XL", "tag": "Softest Drape" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-poly-t-shirt", "kicker": "Performance Jersey · S–3XL", "blurb": "Polyester Performance jersey — proof jersey isn't only cotton: a poly single knit that wicks and sublimates, ideal for DTF or team work.", "sizes": "S, M, L, 2XL, 3XL", "tag": "Performance" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Jersey-Knit Blanks That Print <em>Clean</em>",
+        "intro": "<p>Real in-stock jersey tees — the smooth single knit in cotton, blend, triblend, and performance poly. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every jersey tee is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is jersey knit fabric?", "answer": "<p>Jersey knit is a single, weft-knit fabric made on one set of needles. It has a smooth face of V-shaped stitches on the front and a looped, slightly rougher purl surface on the back, which gives it a distinct right and wrong side. It's soft, lightweight, drapey, and lightly stretchy — the fabric most t-shirts are made from.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is jersey knit always cotton?", "answer": "<p>No. Jersey describes the knit structure, not the fiber. You'll find jersey in 100% cotton, polyester, rayon, wool, and cotton/poly blends. The looped single-knit construction stays the same; the fiber changes how it feels and performs — cotton jersey is soft and breathable, poly jersey wicks moisture, and a triblend jersey drapes the softest.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Why does jersey knit curl at the edges?", "answer": "<p>Because it's a single knit. The loops on the front and back pull with slightly different tension, so a raw cut edge rolls — toward the front at the top and bottom, toward the back at the sides. It isn't a defect; it's a built-in trait of single jersey, which is why t-shirt hems, necks, and sleeves are finished with a band or a folded hem.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Is jersey knit good for printing?", "answer": "<p>Yes — it's the easiest blank to decorate. The smooth, flat front gives ink a clean, even surface, so screen printing, DTG, DTF transfers, and heat-transfer vinyl all sit crisp on jersey. That flat face is exactly why it beats a textured knit like piqué for fine detail, and why nearly every printable blank tee is a jersey knit.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "What's the difference between jersey and interlock?", "answer": "<p>Jersey is a single knit — smooth on one side, looped on the other, light and drapey, and it curls at the edges. Interlock is a double knit made on two needle beds, so it's smooth and stable on both sides, a bit heavier, and it doesn't curl. Interlock feels more premium and prints high detail beautifully, but jersey is lighter, softer, and far more common on everyday tees.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What jersey-knit blanks does Bayou Blanks stock?", "answer": "<p>Bayou carries undecorated jersey-knit tees in smooth cotton, cotton/poly blend, soft triblend, and performance polyester, across a full size range with deep extended sizes. They're sold by the pack at a flat $2.00/unit — the same price in every size, with no account required — and inspected and shipped from our Hattiesburg, Mississippi warehouse.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit on jersey tees, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Jersey, Deep Stock", "text": "Smooth jersey tees in cotton, blend, triblend, and performance poly — the print-ready single knit in real overstock depth, through extended sizes." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Piqué Fabric?", "summary": "The textured polo knit — the opposite of smooth jersey.", "cta": "Read", "url": "/pages/what-is-pique-fabric" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Ring-Spun Cotton?", "summary": "The smooth yarn most jersey tees are knit from.", "cta": "Read", "url": "/pages/what-is-ring-spun-cotton" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Why jersey tees are the printer's default canvas.", "cta": "Read", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank <em>jersey tees.</em>",
+        "subtext": "<p>Smooth jersey-knit tees in cotton, blend, triblend, and performance poly — light and print-ready, through extended sizes — sold by the pack at a flat $2.00/unit, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$2.00",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

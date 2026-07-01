@@ -38,7 +38,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "Cheapest Blank T-Shirts in Bulk",
-            "dek": "Per-unit pricing explained: $4.25 a shirt at the 4-pack, down to about $2.92 by the 12-pack.",
+            "dek": "Per-unit pricing explained: a flat $1 a unit, the same in every size and pack.",
             "cta": "See pricing",
             "url": "/pages/cheapest-blank-t-shirts-in-bulk"
           }
@@ -58,7 +58,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "Big & Tall Blank T-Shirts",
-            "dek": "Extended-size cotton tees through 4XL and 5XL — at one flat price, with no plus-size upcharge. From $4.25/unit.",
+            "dek": "Extended-size cotton tees through 4XL and 5XL, at one flat price, with no plus-size upcharge. A flat $1 a unit.",
             "cta": "Read guide",
             "url": "/pages/big-and-tall-blank-t-shirts"
           }
@@ -78,7 +78,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "Blank Sweatshirts Wholesale",
-            "dek": "Midweight crewneck fleece for screen print, embroidery, and DTF — leaner than a hoodie, flat-priced to 5XL. From $4.25/unit.",
+            "dek": "Midweight crewneck fleece for screen print, embroidery, and DTF, leaner than a hoodie, flat-priced to 5XL. A flat $1.98 a unit.",
             "cta": "Read guide",
             "url": "/pages/blank-sweatshirts-wholesale"
           }
@@ -88,7 +88,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "Wholesale Blank Hoodies",
-            "dek": "Midweight pullover fleece with the most print room — undecorated, by the pack, flat-priced across sizes. From $4.25/unit.",
+            "dek": "Midweight pullover fleece with the most print room, undecorated, by the pack, flat-priced across sizes. A flat $1.98 a unit.",
             "cta": "Read guide",
             "url": "/pages/wholesale-blank-hoodies"
           }
@@ -98,7 +98,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "DTF vs Screen Printing",
-            "dek": "Which method for which blank: screen print big cotton runs of bold colors; DTF for full color on any fabric, including darks and poly. From $4.25/unit.",
+            "dek": "Which method for which blank: screen print big cotton runs of bold colors; DTF for full color on any fabric, including darks and poly. A flat $1 a unit.",
             "cta": "Compare methods",
             "url": "/pages/dtf-vs-screen-printing"
           }
@@ -108,7 +108,7 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "Sublimation vs DTF",
-            "dek": "Sublimation only prints on light polyester; DTF prints full color on any fabric or color, including cotton and darks. From $4.25/unit.",
+            "dek": "Sublimation only prints on light polyester; DTF prints full color on any fabric or color, including cotton and darks. A flat $1 a unit.",
             "cta": "Compare methods",
             "url": "/pages/sublimation-vs-dtf"
           }
@@ -118,9 +118,19 @@
           "settings": {
             "cluster": "buying-guides",
             "title": "DTG vs Screen Printing",
-            "dek": "DTG prints full-color art with no minimum on cotton; screen printing is cheapest and most durable for big, bold runs. From $4.25/unit.",
+            "dek": "DTG prints full-color art with no minimum on cotton; screen printing is cheapest and most durable for big, bold runs. A flat $1 a unit.",
             "cta": "Compare methods",
             "url": "/pages/dtg-vs-screen-printing"
+          }
+        },
+        "e13": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Embroidery vs Screen Printing",
+            "dek": "Stitch the polos and fleece, screen the tees: embroidery for premium, near-permanent logos; screen printing for bold, low-cost graphics. A flat $2 a unit.",
+            "cta": "Compare methods",
+            "url": "/pages/embroidery-vs-screen-printing"
           }
         },
         "c1": {
@@ -128,7 +138,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "Bayou Blanks vs ShirtSpace",
-            "dek": "ShirtSpace has the bigger brand catalog — but Bayou is a flat $4.25/unit, same price in 4XL, no account needed.",
+            "dek": "ShirtSpace has the bigger brand catalog, but Bayou is a flat $1 a unit, same price in 4XL, no account needed.",
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-shirtspace"
           }
@@ -138,7 +148,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "Bayou Blanks vs Bulk Apparel",
-            "dek": "Bulk Apparel's discounts start at $250 spend; Bayou hits $2.92/unit on a single 12-pack, every size flat.",
+            "dek": "Bulk Apparel's discounts start at $250 spend; Bayou is a flat $1 a unit, the same in every size and pack.",
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-bulk-apparel"
           }
@@ -148,7 +158,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "Bayou Blanks vs BlankStyle",
-            "dek": "BlankStyle has 120+ brands and prints too; Bayou just supplies the blank — flat $4.25/unit, same price in 4XL.",
+            "dek": "BlankStyle has 120+ brands and prints too; Bayou just supplies the blank, a flat $1 a unit, same price in 4XL.",
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-blankstyle"
           }
@@ -158,7 +168,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "Bayou Blanks vs Jiffy Shirts",
-            "dek": "Jiffy is the king of fast shipping; Bayou is the king of price — flat $4.25/unit, same in 4XL, from a single pack.",
+            "dek": "Jiffy is the king of fast shipping; Bayou is the king of price, a flat $1 a unit, same in 4XL, from a single pack.",
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-jiffy-shirts"
           }
@@ -168,7 +178,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "Bayou Blanks vs S&S Activewear",
-            "dek": "S&S makes you register and file a resale certificate. Bayou is open to anyone — flat $4.25/unit, buy a single pack.",
+            "dek": "S&S makes you register and file a resale certificate. Bayou is open to anyone, a flat $1 a unit, buy a single pack.",
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-ss-activewear"
           }
@@ -178,7 +188,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "Bayou Blanks vs SanMar",
-            "dek": "SanMar is trade-only — account, resale cert, sales tax license. Bayou is open to anyone, flat $4.25/unit, no paperwork.",
+            "dek": "SanMar is trade-only: account, resale cert, sales tax license. Bayou is open to anyone, a flat $1 a unit, no paperwork.",
             "cta": "See the matchup",
             "url": "/pages/bayou-blanks-vs-sanmar"
           }
@@ -188,7 +198,7 @@
           "settings": {
             "cluster": "comparisons",
             "title": "The Budget Alternative to Gildan Blanks",
-            "dek": "Gildan is the brand standard, but charges more for big sizes. Bayou is the unbranded blank — flat $4.25/unit, same price in every size, no account.",
+            "dek": "Gildan is the brand standard, but charges more for big sizes. Bayou is the unbranded blank, a flat $1 a unit, same price in every size, no account.",
             "cta": "See the matchup",
             "url": "/pages/the-budget-alternative-to-gildan-blanks"
           }
@@ -272,9 +282,49 @@
             "cta": "Read",
             "url": "/pages/what-is-pique-fabric"
           }
+        },
+        "g9": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is HTV (Heat-Transfer Vinyl)?",
+            "dek": "Cut-and-press vinyl that bonds to a shirt with heat — opaque, so it covers darks, and the easiest method for small custom runs.",
+            "cta": "Read",
+            "url": "/pages/what-is-htv"
+          }
+        },
+        "g10": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is a Crew Neck?",
+            "dek": "The round, collarless neckline at the base of the neck — the print-ready default on tees and sweatshirts, named for rowing crews.",
+            "cta": "Read",
+            "url": "/pages/what-is-a-crewneck"
+          }
+        },
+        "g11": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Puff Print?",
+            "dek": "The raised, 3D ink effect — a heat-expanding additive that puffs the print into a soft foam texture. Bold shapes, best on cotton.",
+            "cta": "Read",
+            "url": "/pages/what-is-puff-print"
+          }
+        },
+        "g12": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Jersey Knit?",
+            "dek": "The soft, stretchy single knit most t-shirts are made from — smooth front, looped back. A structure, not a fiber, and the easiest face to print.",
+            "cta": "Read",
+            "url": "/pages/what-is-jersey-knit"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",

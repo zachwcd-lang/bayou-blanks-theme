@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>5 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>Cut</b> &amp; press" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>Any</b> fabric" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is <em>HTV</em> (Heat-Transfer Vinyl)?",
+        "answer": "<p>HTV (heat-transfer vinyl) is a thin sheet of colored polyurethane with a heat-activated backing. You cut a design, weed away the excess, and heat-press it onto a garment, where it bonds as a smooth, opaque layer. <strong>It works on cotton, polyester, and blends — light or dark</strong> — and is the easiest method for small runs.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>HTV is cut-and-press vinyl</b> — a colored polyurethane sheet with a heat-activated adhesive that you cut, weed, and press onto fabric.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>It bonds with time, temperature, and pressure</b> — most HTV presses at about 305–320°F for 10–15 seconds with firm pressure.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>It's opaque and sits on top of the fabric,</b> so it covers dark garments cleanly with no white underbase — unlike sublimation.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>It works on almost any fabric</b> — cotton, polyester, blends, even nylon — with smooth cotton the most forgiving surface.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Durable but semi-permanent:</b> quality HTV lasts 50+ washes when pressed right; wait 24 hours, then turn inside-out and wash cold.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Best for names, numbers, and bold solid shapes;</b> for full-color or photographic art, DTF or screen printing win.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"HTV is the gateway method: a cutter, a heat press, and a sheet of vinyl will put a clean logo on a dark shirt — <em>no screens, no minimum.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "HTV (Vinyl)" } },
+        "c3": { "type": "column", "settings": { "label": "DTF Transfer" } },
+        "c4": { "type": "column", "settings": { "label": "Screen Printing" } },
+        "r1": { "type": "row", "settings": { "label": "Color range", "cell_1": "Solid colors, one per layer", "cell_2": "Full color, photographic", "cell_3": "Per-color screens" } },
+        "r2": { "type": "row", "settings": { "label": "Best run size", "cell_1": "1–50, simple art", "badge_1": true, "cell_2": "1–500, any art", "cell_3": "50+ for low cost" } },
+        "r3": { "type": "row", "settings": { "label": "Setup cost", "cell_1": "Cutter + press, no per-design fee", "badge_1": true, "cell_2": "No setup, no minimum", "cell_3": "Per-color screen setup" } },
+        "r4": { "type": "row", "settings": { "label": "Fabric", "cell_1": "Cotton, poly, blends, nylon", "cell_2": "Any fabric", "cell_3": "Almost any fabric" } },
+        "r5": { "type": "row", "settings": { "label": "Dark garments", "cell_1": "Opaque — covers darks", "badge_1": true, "cell_2": "Built-in white underbase", "cell_3": "Needs underbase" } },
+        "r6": { "type": "row", "settings": { "label": "Small text / detail", "cell_1": "Limited by weeding", "cell_2": "Excellent", "cell_3": "Good" } },
+        "r7": { "type": "row", "settings": { "label": "Durability", "cell_1": "50+ washes pressed right", "cell_2": "50+ washes", "cell_3": "Gold standard, 60–100+" } },
+        "r8": { "type": "row", "settings": { "label": "Blank cost at Bayou", "sub": "By the pack", "cell_1": "From $2.00/unit", "cell_2": "From $2.00/unit", "cell_3": "From $2.00/unit" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "HTV vs <em>DTF</em> vs Screen Printing",
+        "intro": "<p>HTV is the cut-and-press method: cheap to start, perfect for solid-color names and numbers, and unbeatable for one-off custom shirts. Here's where it sits next to the other two ways to put a logo on a blank.</p>",
+        "caption": "How HTV compares to DTF and screen printing"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Cotton · S–2XL", "blurb": "Yellow Strike crew in smooth cotton — HTV's most forgiving surface. Cotton takes heat and bonds clean, so names, numbers, and bold shapes press crisp the first time.", "sizes": "S–2XL", "tag": "Easiest Surface" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "Performance Poly · S–2XL", "blurb": "A space-dye athletic tee for poly jobs — press HTV cooler (around 270–300°F) to avoid scorching, and reach for stretch or low-temp vinyl on the athletic knit.", "sizes": "S–2XL", "tag": "Poly / Low-Temp" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Dark Raglan · Through 5XL", "blurb": "Athletic Navy Striated raglan — a dark garment where HTV shines: the vinyl is opaque, so colors stay true on top with no underbase. Deep stock through 5XL.", "sizes": "S, L, 3XL–5XL", "tag": "Covers Darks" } },
+        "p4": { "type": "pick", "settings": { "product": "adult-long-sleeve-raglan-tee", "kicker": "Contrast Raglan · S–3XL", "blurb": "Gray and navy contrast long-sleeve raglan — a versatile blank for left-chest logos, sleeve hits, or back numbers in any vinyl color.", "sizes": "S–3XL", "tag": "Versatile" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks That Press <em>Clean</em>",
+        "intro": "<p>Real in-stock blanks for HTV jobs — cotton for the easiest press, poly for performance, and dark raglans where opaque vinyl wins. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is HTV (heat-transfer vinyl)?", "answer": "<p>HTV, or heat-transfer vinyl, is a thin sheet of colored polyurethane with a heat-activated adhesive on the back. You cut a design into it with a craft cutter, weed away the parts you don't want, then use a heat press or iron to bond it to a shirt. It applies as a smooth, opaque layer and is one of the easiest ways to decorate apparel in small runs.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "What temperature do you press HTV at?", "answer": "<p>Most standard HTV presses at about 305–320°F for 10–15 seconds with firm, even pressure. Glitter and metallic vinyls usually want a hotter press (around 320–350°F), while delicate foil and stretch vinyls press cooler (around 270–300°F). Always follow the specific vinyl's instructions — a heat press gives far more consistent results than a household iron.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Can you use HTV on polyester?", "answer": "<p>Yes. HTV works on cotton, polyester, blends, and even nylon. On polyester and performance fabrics, press at a lower temperature (around 270–300°F) to avoid scorching or dye migration, and choose a vinyl rated for low-temp or stretch fabric. Smooth cotton is the most forgiving surface, but poly and blends bond well with the right settings.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Does HTV work on dark shirts?", "answer": "<p>Yes, and it's one of HTV's biggest advantages. Because the vinyl is opaque and sits on top of the fabric, colors stay true on black and dark garments with no white underbase needed. That's a real edge over sublimation, which is translucent and only works on light-colored polyester.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "How long does HTV last?", "answer": "<p>Pressed correctly, quality HTV lasts 50 or more wash cycles and often the life of the shirt. To get there, wait at least 24 hours before the first wash, turn the garment inside-out, wash in cold water, and skip high-heat drying and ironing directly over the design. Peeling usually traces back to too little heat, time, or pressure at application.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "HTV vs DTF — which is better?", "answer": "<p>HTV is best for solid-color names, numbers, and bold shapes on a budget — all you need is a cutter and a heat press, with no per-design cost. DTF (direct-to-film) prints full-color, photographic art in one pass and handles fine detail and gradients HTV can't weed. Both are heat-pressed and both work on dark garments, so the choice comes down to how much color and detail your design needs.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Darks", "text": "Undecorated tees in cotton, performance poly, and dark raglans through 5XL — the full range HTV presses on, in deep overstock." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTF vs Screen Printing", "summary": "The two big print methods, compared.", "cta": "Compare", "url": "/pages/dtf-vs-screen-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Sublimation vs DTF", "summary": "The two transfer methods for poly and any fabric.", "cta": "Compare", "url": "/pages/sublimation-vs-dtf" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "Cotton vs Polyester vs Blend", "summary": "HTV press temperature depends on the fabric.", "cta": "Read", "url": "/pages/cotton-vs-polyester-t-shirts" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank <em>t-shirts.</em>",
+        "subtext": "<p>Cotton, poly, and blend tees, light and dark, sold by the pack at a flat $2.00/unit — press-ready, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$2.00",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

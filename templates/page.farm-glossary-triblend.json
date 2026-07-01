@@ -6,7 +6,7 @@
         "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>1</b> term, explained" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
@@ -62,10 +62,10 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend", "blurb": "A true triblend tee — soft, lightweight, with that vintage drape. A flat $4.25/unit, no account.", "sizes": "Adult sizes", "tag": "Triblend" } },
-        "p2": { "type": "pick", "settings": { "product": "mr06-adult-short-sleeve-tee", "kicker": "Heather · Soft-Style", "blurb": "A heathered soft-style crew with the marled, triblend-style look. From $4.25/unit.", "sizes": "Adult sizes", "tag": "Soft-Style" } },
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-triblend-tee-1", "kicker": "Triblend", "blurb": "A true triblend tee — soft, lightweight, with that vintage drape. A flat $1 a unit, no account.", "sizes": "Adult sizes", "tag": "Triblend" } },
+        "p2": { "type": "pick", "settings": { "product": "mr06-adult-short-sleeve-tee", "kicker": "Heather · Soft-Style", "blurb": "A heathered soft-style crew with the marled, triblend-style look. A flat $1 a unit.", "sizes": "Adult sizes", "tag": "Soft-Style" } },
         "p3": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-extended-sizes", "kicker": "V-Neck · Extended", "blurb": "A heathered v-neck in extended sizes — same soft hand, one flat per-unit price.", "sizes": "Extended sizes", "tag": "Extended" } },
-        "p4": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-plus-sizes-2", "kicker": "V-Neck · Plus", "blurb": "A charcoal heather v-neck in plus sizes at the same flat $4.25/unit.", "sizes": "Plus sizes", "tag": "Plus" } }
+        "p4": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee-plus-sizes-2", "kicker": "V-Neck · Plus", "blurb": "A charcoal heather v-neck in plus sizes at the same flat $1 a unit.", "sizes": "Plus sizes", "tag": "Plus" } }
       },
       "block_order": ["p1", "p2", "p3", "p4"],
       "settings": {
@@ -73,7 +73,7 @@
         "heading": "The Softest Blanks <em>We Stock</em>",
         "intro": "<p>Triblend and heathered soft-style blanks come through as overstock, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Triblend stock is limited overstock, so colors can sell through — but every pick is the same flat <b>$4.25/unit</b> ($2.92 by the 12-pack), same price across every size.</p>"
+        "note": "<p>Triblend stock is limited overstock, so colors can sell through — but every pick is the same flat <b>$1/unit</b>, the same in every size and pack.</p>"
       }
     },
     "faq": {
@@ -83,8 +83,8 @@
         "q2": { "type": "qa", "settings": { "question": "What is triblend fabric made of?", "answer": "<p>Usually polyester, cotton, and rayon. Polyester adds durability and shape retention, cotton adds comfort, and rayon adds softness and drape. A common ratio is about 50% polyester, 25% cotton, and 25% rayon, but it varies.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Is triblend better than 100% cotton?", "answer": "<p>It depends on what you want. Triblend is softer, lighter, and drapier with a vintage, heathered look; 100% cotton is more structured and opaque and prints bold, solid graphics better. They're different feels, not better or worse.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Can you print on triblend shirts?", "answer": "<p>Yes. Screen printing and DTF both work well. The heathered surface gives a softer, slightly vintage print; very dense, opaque prints will show the fabric texture more than they would on smooth cotton.</p>" } },
-        "q5": { "type": "qa", "settings": { "question": "Why are triblend shirts more expensive?", "answer": "<p>The three-fiber blend, especially the rayon, costs more to produce than basic cotton. At Bayou, triblend blanks that come through as liquidation overstock are still a flat $4.25/unit.</p>" } },
-        "q6": { "type": "qa", "settings": { "question": "Does Bayou sell triblend blanks?", "answer": "<p>Yes, in limited overstock runs, at the same flat $4.25/unit ($2.92 by the 12-pack) — no account, every size the same price. Stock varies, so colors can sell through.</p>" } }
+        "q5": { "type": "qa", "settings": { "question": "Why are triblend shirts more expensive?", "answer": "<p>The three-fiber blend, especially the rayon, costs more to produce than basic cotton. At Bayou, triblend blanks that come through as liquidation overstock are still a flat $1 a unit.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does Bayou sell triblend blanks?", "answer": "<p>Yes, in limited overstock runs, at the same flat $1 a unit, the same in every size and pack — no account, every size the same price. Stock varies, so colors can sell through.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
       "settings": {
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -127,8 +127,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "The softest blank <em>in the stack.</em>",
-        "subtext": "<p>Soft, vintage-feel blanks from $4.25/unit — no account, every size one price, shipped from Hattiesburg.</p>",
-        "ghost_price": "$4.25",
+        "subtext": "<p>Soft, vintage-feel blanks at a flat $1 a unit — no account, every size one price, shipped from Hattiesburg.</p>",
+        "ghost_price": "$1",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

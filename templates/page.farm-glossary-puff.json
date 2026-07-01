@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>Raised</b> 3D ink" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>Cotton</b>-best" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is <em>Puff Print</em>?",
+        "answer": "<p>Puff print is a raised, 3D printing effect made by mixing a heat-reactive additive into screen-printing ink — when the print cures, <strong>the ink expands into a soft, foam-like texture you can feel.</strong> It works best on cotton and cotton-blend blanks, and the look can also be made with puff HTV or puff DTF transfers.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Puff print is a raised, 3D effect:</b> a heat-reactive additive is mixed into the ink, and it expands into a soft foam when the print is cured under high heat.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Three ways to get it</b> — puff additive in screen-print ink (best for runs), puff HTV (cut-and-press, great for small custom jobs), and puff DTF transfers (raised plus full color).</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>It works best on cotton and cotton blends,</b> especially midweight and heavyweight — and on bold solid shapes or block text, not fine lines or small detail.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Puff ink feels soft and flexible</b> and moves with the fabric, giving custom apparel a tactile, premium look that reads more expensive.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Cared for right it lasts 50+ washes:</b> turn the garment inside out, wash cold, skip bleach, and air-dry or tumble low — hot water weakens the bond and can crack it.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Opaque puff ink covers darks</b> with no separate underbase, and it can print on polyester too — though cotton gives the cleanest rise.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Puff is the easiest way to make a plain logo feel custom: bold shapes, a soft raised texture, and a finish people reach out and touch — all from one additive in the ink.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Puff Print" } },
+        "c3": { "type": "column", "settings": { "label": "Flat Screen Print" } },
+        "c4": { "type": "column", "settings": { "label": "DTF" } },
+        "r1": { "type": "row", "settings": { "label": "Texture", "cell_1": "Raised, 3D foam you can feel", "badge_1": true, "cell_2": "Flat and smooth", "cell_3": "Flat, thin film" } },
+        "r2": { "type": "row", "settings": { "label": "Best designs", "cell_1": "Bold shapes & block text", "badge_1": true, "cell_2": "Detail, halftones, fine lines", "cell_3": "Full-color & photographic" } },
+        "r3": { "type": "row", "settings": { "label": "Color handling", "cell_1": "A few solid colors", "cell_2": "A screen per color", "cell_3": "Unlimited color, no setup" } },
+        "r4": { "type": "row", "settings": { "label": "Best fabric", "cell_1": "Cotton & cotton blends", "badge_1": true, "cell_2": "Almost any fabric", "cell_3": "Any fabric, incl. darks & poly" } },
+        "r5": { "type": "row", "settings": { "label": "Run size", "cell_1": "Medium to large runs", "cell_2": "Medium to large runs", "cell_3": "Any size, even one-offs" } },
+        "r6": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Soft, raised, flexible", "cell_2": "Soft, cures into the fabric", "cell_3": "Thin film on top" } },
+        "r7": { "type": "row", "settings": { "label": "Durability", "cell_1": "50+ washes, cared for", "cell_2": "50–100+ washes", "cell_3": "50+ washes" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Puff Print vs <em>Flat Screen Print</em> vs DTF",
+        "intro": "<p>Puff is a screen-print technique with one job the others can't match: lifting the design off the shirt. Here's where its raised, bold-shape look wins — and where a flat method serves you better.</p>",
+        "caption": "How puff print compares to flat screen printing and DTF"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Cotton Crew · S–2XL", "blurb": "Yellow Strike cotton crew — cotton is the ideal puff surface, where the additive rises clean and the texture grips best. A smooth, midweight canvas for a bold puff logo.", "sizes": "S–2XL", "tag": "Best Surface" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Dark · Through 5XL", "blurb": "Athletic Navy Striated crew with deep stock through 5XL — opaque puff ink raises clean and bright on a dark blank with no separate underbase needed.", "sizes": "S, L, 3XL–5XL", "tag": "On Darks" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Full Run · S–5XL", "blurb": "Contrast 2G08 raglan with a full S–5XL run — a versatile cotton-feel blank for big puff runs across the whole size curve.", "sizes": "S–5XL", "tag": "Big Runs" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-poly-t-shirt", "kicker": "Performance · S–3XL", "blurb": "Polyester Performance tee — puff prints on poly too for athletic and team jobs. Cotton gives the cleanest rise, so cure low and test on performance fabric.", "sizes": "S–3XL", "tag": "Performance" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks That <em>Puff</em> Clean",
+        "intro": "<p>Real in-stock blanks suited to puff print — smooth cotton for the cleanest rise, dark blanks for opaque puff, full size runs, and a poly option for team jobs. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every tee is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is puff print?", "answer": "<p>Puff print is a printing technique that creates a raised, three-dimensional design that stands up off the fabric. It's a variation of screen printing: a special heat-reactive additive is mixed into the ink, and when the print passes through a high-heat dryer the additive expands, puffing the ink into a soft, foam-like texture you can feel. The same raised look can also be made with puff heat-transfer vinyl or puff DTF transfers.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "How does the puff effect actually work?", "answer": "<p>The puff additive is made of tiny microspheres that expand when they reach a specific temperature. It's blended into plastisol screen-printing ink, printed onto the garment through a stencil, then cured under heat. As the ink heats, the microspheres swell and lift the print off the surface, creating the raised 3D effect. The amount of rise depends on the additive ratio and the cure temperature.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is puff print the same as embroidery?", "answer": "<p>No. Both add dimension, but puff print is raised ink and <a href=\"/pages/blank-polos-for-embroidery\">embroidery</a> is stitched thread. Puff is faster and cheaper for bold solid graphics and gives a soft, rubbery feel; embroidery is stitched into the fabric for a premium, durable, textured logo that suits polos, caps, and fleece. Puff reads as streetwear and graphic apparel; embroidery reads as uniform and corporate.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "What fabric is best for puff print?", "answer": "<p>Cotton and cotton-blend garments give the best results, especially midweight and heavyweight fabrics where the surface is stable enough for the ink to rise cleanly. Puff can be printed on polyester and blends too, but poly needs a lower cure temperature and the rise is slightly less pronounced. Smooth-faced, solid-color blanks puff the cleanest.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Does puff print crack or peel over time?", "answer": "<p>Quality puff print is durable and routinely lasts 50 or more washes without cracking when it's cared for. The thing that damages it is heat: hot water and high-heat drying weaken the bond and can cause cracking or peeling. To make it last, turn the garment inside out, wash in cold water, skip the bleach and harsh detergent, and air-dry or tumble on low. Avoid ironing directly over the print.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Puff additive, puff HTV, or puff DTF — which should I use?", "answer": "<p>Puff additive (screen printing) is most cost-effective for medium-to-large runs of a bold, few-color design. Puff <a href=\"/pages/what-is-htv\">HTV</a> is cut-and-press vinyl that's ideal for small custom runs, names, and numbers with no screens to set up. Puff <a href=\"/pages/dtf-vs-screen-printing\">DTF</a> transfers let you combine raised puff elements with full-color, photographic detail — the most versatile option for one-offs and complex art. Choose by run size and how much detail and color the design needs.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit on tees, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Deep Stock", "text": "Smooth cotton and cotton-feel tees in light and dark, plus extended sizes through 5XL — the stable, midweight surface puff ink rises on cleanest." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Puff is a screen-print variant — start with the right cotton canvas.", "cta": "Read", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "What Is HTV (Heat-Transfer Vinyl)?", "summary": "Puff HTV is the cut-and-press route to a raised print.", "cta": "Read", "url": "/pages/what-is-htv" } },
+        "l3": { "type": "link", "settings": { "category": "Method", "title": "DTF vs Screen Printing", "summary": "Where puff DTF and screen-print puff each win.", "cta": "Read", "url": "/pages/dtf-vs-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blanks for <em>puff print.</em>",
+        "subtext": "<p>Cotton and cotton-blend tees in light and dark, through 5XL — sold by the pack at a flat $2.00/unit, press-ready for puff, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$2.00",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

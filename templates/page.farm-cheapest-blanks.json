@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>3</b> pack sizes" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$2.92/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "Cheapest Blank T-Shirts in Bulk, <em>Explained</em>",
-        "answer": "<p>The cheapest blank t-shirts in bulk are <strong>undecorated liquidation overstock tees</strong> sold by the case pack. Bayou Blanks prices every blank tee <strong>by the unit</strong> — from <strong>$4.25</strong> in a 4-pack, dropping to about <strong>$2.92 a shirt</strong> by the 12-pack — undercutting name-brand blanks with no wholesale account required.</p>",
+        "answer": "<p>The cheapest blank t-shirts in bulk are <strong>undecorated liquidation overstock tees</strong> sold by the case pack. Bayou Blanks prices every blank tee <strong>by the unit</strong> at a flat <strong>$1 a shirt</strong>, the same in every size and pack, undercutting name-brand blanks with no wholesale account required.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -22,8 +22,8 @@
     "takeaways": {
       "type": "farm-takeaways",
       "blocks": {
-        "t1": { "type": "point", "settings": { "text": "<p><b>Judge bulk blanks by their per-unit price, not the pack sticker</b> — the real cost is the pack price divided by how many shirts are in it.</p>" } },
-        "t2": { "type": "point", "settings": { "text": "<p><b>The pricing ladder:</b> $4.25 a shirt in a 4-pack ($17), $3.50 in a 6-pack ($21), and about $2.92 in a 12-pack ($35) — the more you pack, the less each shirt costs.</p>" } },
+        "t1": { "type": "point", "settings": { "text": "<p><b>Judge bulk blanks by their per-unit price, not the pack sticker.</b> The real cost is the pack price divided by how many shirts are in it.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Flat pricing:</b> a flat $1 a shirt, the same in every size and pack. No tiering, no math, just the same low per-unit price every time.</p>" } },
         "t3": { "type": "point", "settings": { "text": "<p><b>These tees are cheap because they're liquidation overstock</b> — real, inspected blank apparel that simply isn't first-run, passed on by the unit instead of marked up.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>No wholesale account, no reseller license, and no minimum beyond a single pack</b> — the per-unit price is the same whether you buy one pack or twenty.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Deep extended and plus sizing (2XL–5XL) is in stock at the same per-unit price</b> — the sizes most discount suppliers run short on.</p>" } },
@@ -33,7 +33,7 @@
       "settings": {
         "fig": "Fig. II — The Short Version",
         "heading": "Key <em>Takeaways</em>",
-        "quote": "<p>\"The pack price is theater. <em>The per-unit price is the truth — and ours starts at $2.92 a shirt.</em>\"</p>",
+        "quote": "<p>\"The pack price is theater. <em>The per-unit price is the truth, and ours is a flat $1 a shirt.</em>\"</p>",
         "quote_cite": "— The Press Room, Bayou Blanks"
       }
     },
@@ -48,10 +48,10 @@
           "type": "row",
           "settings": {
             "label": "4-Pack",
-            "sub": "The floor",
-            "cell_1": "$17.00",
-            "cell_2": "$4.25",
-            "cell_3": "Lowest commitment — the entry per-unit price."
+            "sub": "Lowest commitment",
+            "cell_1": "$4.00",
+            "cell_2": "$1.00",
+            "cell_3": "A flat $1 a shirt, the same as every other pack."
           }
         },
         "r2": {
@@ -59,21 +59,21 @@
           "settings": {
             "label": "6-Pack",
             "sub": "Mid pack",
-            "cell_1": "$21.00",
-            "cell_2": "$3.50",
-            "cell_3": "About $0.75 less per shirt than the 4-pack."
+            "cell_1": "$6.00",
+            "cell_2": "$1.00",
+            "cell_3": "The same flat $1 a shirt, just more of them."
           }
         },
         "r3": {
           "type": "row",
           "settings": {
             "label": "12-Pack",
-            "sub": "Best value",
+            "sub": "Most units",
             "is_pick": true,
-            "cell_1": "$35.00",
-            "cell_2": "$2.92",
+            "cell_1": "$12.00",
+            "cell_2": "$1.00",
             "badge_2": true,
-            "cell_3": "About $1.33 less per shirt than the 4-pack."
+            "cell_3": "Still a flat $1 a shirt, with the most units per order."
           }
         }
       },
@@ -81,8 +81,8 @@
       "settings": {
         "fig": "Fig. III — The Per-Unit Ladder",
         "heading": "What a Blank Tee <em>Really</em> Costs",
-        "intro": "<p>Every pack is the same shirt — the only thing that changes is how many come in the pack, and therefore the price per shirt. Buy deeper, pay less per unit.</p>",
-        "caption": "Bayou Blanks per-unit pricing by pack size"
+        "intro": "<p>Every pack is the same shirt at the same price. The only thing that changes is how many come in the pack. A flat $1 a unit, the same in every size and pack.</p>",
+        "caption": "Bayou Blanks flat per-unit pricing across pack sizes"
       }
     },
     "picks": {
@@ -99,19 +99,19 @@
         "heading": "Cheapest Blanks On The Floor, <em>In Stock</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No wholesale account, no minimum beyond a pack, and deep stock in extended and plus sizes most suppliers run short on. Pack pricing drops to about <b>$2.92/unit by the 12-pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — sourced from liquidation overstock and passed on by the unit. No wholesale account, no minimum beyond a pack, and deep stock in extended and plus sizes most suppliers run short on. A flat <b>$1 a unit, the same in every size and pack</b>.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "What are the cheapest blank t-shirts to buy in bulk?", "answer": "<p>The cheapest blank t-shirts in bulk are undecorated liquidation overstock tees bought by the case pack rather than as singles. Because there's no decoration, no brand markup, and the stock is overrun inventory, the per-shirt cost lands well below typical wholesale — Bayou Blanks tees start at $4.25 a shirt and drop to about $2.92 by the 12-pack.</p>" } },
-        "q2": { "type": "qa", "settings": { "question": "How does per-unit pricing work?", "answer": "<p>Every pack shows one price, but the number that matters is the per-unit price: the pack price divided by how many shirts are inside. A $17 4-pack is $4.25 a shirt; a $35 12-pack is about $2.92 a shirt. Pricing by the unit lets you compare a 4-pack to a 12-pack honestly instead of being fooled by the bigger sticker.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "What are the cheapest blank t-shirts to buy in bulk?", "answer": "<p>The cheapest blank t-shirts in bulk are undecorated liquidation overstock tees bought by the case pack rather than as singles. Because there's no decoration, no brand markup, and the stock is overrun inventory, the per-shirt cost lands well below typical wholesale. Bayou Blanks tees are a flat $1 a shirt, the same in every size and pack.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "How does per-unit pricing work?", "answer": "<p>Every pack shows one price, but the number that matters is the per-unit price: the pack price divided by how many shirts are inside. At Bayou that's a flat $1 a shirt, the same in every size and pack, so a 4-pack is $4 and a 12-pack is $12. Pricing by the unit lets you compare honestly instead of being fooled by the bigger sticker.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Why are Bayou Blanks' t-shirts so cheap?", "answer": "<p>They're liquidation overstock — genuine, inspected blank apparel that was overproduced or cleared by the original supplier. Bayou buys it by the pallet and passes it on by the unit, so you get real blanks at clearance economics instead of paying first-run wholesale markups.</p>" } },
         "q4": { "type": "qa", "settings": { "question": "Is there a minimum order for bulk blank t-shirts?", "answer": "<p>No. The smallest order is a single 4-pack, and the per-unit price doesn't change based on how many packs you buy — one pack costs the same per shirt as twenty. You scale up only when you want more units, not to unlock a price.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "Do I need a wholesale or reseller account to get these prices?", "answer": "<p>No. There's no application, reseller license, or business account required. The per-unit price is public and the same for everyone — decorators, resellers, teams, and one-off buyers all pay the same rate by the pack.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "Can I get plus and extended sizes in bulk at the same price?", "answer": "<p>Yes. Extended and plus sizes (2XL through 5XL) are stocked deep and priced at the same per-unit rate as standard sizes — there's no upcharge for going big. Extended sizing is one of the areas most discount blank suppliers run short on, so it's a genuine strength of the in-stock catalog.</p>" } },
-        "q7": { "type": "qa", "settings": { "question": "How cheap do blank t-shirts get per shirt?", "answer": "<p>On the standard tee ladder, the floor is $4.25 per shirt in a 4-pack, $3.50 in a 6-pack, and about $2.92 in a 12-pack. The 12-pack is the best value — the more shirts per pack, the lower the cost of each one.</p>" } }
+        "q7": { "type": "qa", "settings": { "question": "How cheap do blank t-shirts get per shirt?", "answer": "<p>Every blank tee is a flat $1 a shirt, the same in every size and pack. There's no tiering and no upcharge for big sizes, so the per-shirt cost is the same whether you buy a 4-pack or a 12-pack.</p>" } }
       },
       "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
       "settings": {
@@ -124,7 +124,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt — from $4.25, down to about $2.92 by the 12-pack. No sale theater, no struck-through prices." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "You see the real cost per shirt: a flat $1 a unit, the same in every size and pack. No sale theater, no struck-through prices." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Around 85 blank styles across tees, fleece, and more — light and dark, S–5XL — with new liquidation pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL and plus sizes at the same per-unit price — no account, no minimum beyond a single pack." } }
@@ -153,8 +153,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Start buying by the <em>unit.</em>",
-        "subtext": "<p>Around 85 blank styles in stock, all sold by the pack at per-unit prices from $4.25 — inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$2.92",
+        "subtext": "<p>Around 85 blank styles in stock, all sold by the pack at a flat $1 a unit, the same in every size, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$1",
         "background": "paper",
         "cta_label": "Shop In-Stock Blanks",
         "cta_collection": "in-stock",

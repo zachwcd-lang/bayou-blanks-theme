@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
         "heading": "DTG vs <em>Screen Printing</em>",
-        "answer": "<p>DTG vs screen printing comes down to your run, color count, and fabric: <strong>DTG prints unlimited colors and photos with no setup and no minimum — best for small runs on 100% cotton</strong>, while screen printing is cheapest per shirt and most durable for big runs of bold, few-color designs. Both blanks start at $4.25/unit by the pack.</p>",
+        "answer": "<p>DTG vs screen printing comes down to your run, color count, and fabric: <strong>DTG prints unlimited colors and photos with no setup and no minimum — best for small runs on 100% cotton</strong>, while screen printing is cheapest per shirt and most durable for big runs of bold, few-color designs. Both blanks are a flat $1 a unit by the pack.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Buying Guides",
         "crop_anchor": "buying-guides",
@@ -27,7 +27,7 @@
         "t3": { "type": "point", "settings": { "text": "<p><b>Screen printing is cheapest per shirt at volume</b> — it usually wins above roughly 50 shirts with a low color count, because the setup cost spreads across the run.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>DTG needs a high-cotton blank</b> — ideally 100% ring-spun cotton; it struggles on polyester and needs pretreat plus a white underbase on darks.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Screen printing is the durability gold standard</b> and prints on any fabric — cotton, blends, polyester, and dark colors.</p>" } },
-        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees from $4.25/unit, down toward $2.92 by the 12-pack.</p>" } }
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat $1 a unit, the same in every size and pack.</p>" } }
       },
       "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
       "settings": {
@@ -50,7 +50,7 @@
         "r5": { "type": "row", "settings": { "label": "Setup cost", "cell_1": "None", "cell_2": "Per color (one screen each)", "badge_1": true } },
         "r6": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Very soft — ink absorbs into cotton", "cell_2": "Soft; more hand on big solids" } },
         "r7": { "type": "row", "settings": { "label": "Durability", "cell_1": "40–60 washes on cotton", "cell_2": "Gold standard; 60–100+ washes", "badge_2": true } },
-        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$4.25", "cell_2": "$4.25" } }
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$1.00", "cell_2": "$1.00" } }
       },
       "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
       "settings": {
@@ -74,7 +74,7 @@
         "heading": "Blanks for Both <em>Methods, In Stock</em>",
         "intro": "<p>Cotton, polyester, and dark blanks on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
         "products_to_show": 4,
-        "note": "<p>Every blank prints either way at a flat <b>$4.25/unit</b>, about <b>$2.92/unit by the 12-pack</b>, same price across every size. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+        "note": "<p>Every blank prints either way at a flat <b>$1/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
       }
     },
     "faq": {
@@ -98,7 +98,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. Shown up front, no account, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Dark Blanks", "text": "100% cotton tees for DTG, plus poly and dark overstock for screens — S–5XL, print-ready, with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
@@ -128,8 +128,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Pick your <em>blank.</em>",
-        "subtext": "<p>Whichever method you print, the blank is the same flat price — 100% cotton tees for DTG, any fabric for screens, from $4.25/unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$4.25",
+        "subtext": "<p>Whichever method you print, the blank is the same flat price — 100% cotton tees for DTG, any fabric for screens, a flat $1 a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$1",
         "background": "paper",
         "cta_label": "Shop Blank T-Shirts",
         "cta_collection": "t-shirts",

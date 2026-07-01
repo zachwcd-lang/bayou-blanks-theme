@@ -6,13 +6,13 @@
         "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
         "s2": { "type": "stat", "settings": { "text": "<b>7</b> factors compared" } },
         "s3": { "type": "stat", "settings": { "text": "<b>4</b> Bayou picks" } },
-        "s4": { "type": "stat", "settings": { "text": "From <b>$4.25/unit</b>" } }
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>$1/unit</b>" } }
       },
       "block_order": ["s1", "s2", "s3", "s4"],
       "settings": {
         "eyebrow": "Fig. I — Comparison · Updated June 2026",
         "heading": "Bayou Blanks vs <em>BlankStyle</em>",
-        "answer": "<p>Bayou Blanks is the lower-cost blank supplier next to BlankStyle. BlankStyle is a full-service shop — 120+ brands plus in-house printing — with cart bulk discounts that scale with quantity. Bayou skips the extras and passes on liquidation overstock at a flat <strong>$4.25/unit</strong>, the same price on a 4XL as a small.</p>",
+        "answer": "<p>Bayou Blanks is the lower-cost blank supplier next to BlankStyle. BlankStyle is a full-service shop — 120+ brands plus in-house printing — with cart bulk discounts that scale with quantity. Bayou skips the extras and passes on liquidation overstock at a flat <strong>$1 a unit</strong>, the same price on a 4XL as a small.</p>",
         "show_breadcrumbs": true,
         "eyebrow_crumb": "Comparisons",
         "crop_anchor": "comparisons",
@@ -23,8 +23,8 @@
       "type": "farm-takeaways",
       "blocks": {
         "t1": { "type": "point", "settings": { "text": "<p><b>BlankStyle resells first-quality goods from 120+ brands</b> with cart bulk discounts that scale with quantity; Bayou's flat per-unit price needs no volume to unlock.</p>" } },
-        "t2": { "type": "point", "settings": { "text": "<p><b>Bayou hits its low per-unit — down to $2.92 — on a single 12-pack</b>, with no tiers to chase.</p>" } },
-        "t3": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou:</b> a 4XL is the same $4.25/unit as a small, while the brands BlankStyle carries upcharge for 2XL and up.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Bayou is a flat $1/unit from a single pack</b>, with no tiers to chase.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Same price on every size at Bayou:</b> a 4XL is the same $1/unit as a small, while the brands BlankStyle carries upcharge for 2XL and up.</p>" } },
         "t4": { "type": "point", "settings": { "text": "<p><b>BlankStyle also decorates</b> — screen print, embroidery, DTG — while Bayou supplies blanks only, which is part of why the blank itself costs less.</p>" } },
         "t5": { "type": "point", "settings": { "text": "<p><b>Both sell with no minimum, no account, and free shipping (around $69+)</b> — the real difference is the price model and the goods.</p>" } },
         "t6": { "type": "point", "settings": { "text": "<p><b>Where BlankStyle wins:</b> a 120-brand catalog, 30+ warehouses, and one-stop printing. <b>Where Bayou wins:</b> the lowest per-unit on solid blanks, especially extended and plus sizes.</p>" } }
@@ -43,9 +43,9 @@
         "c1": { "type": "column", "settings": { "label": "Factor" } },
         "c2": { "type": "column", "settings": { "label": "Bayou Blanks" } },
         "c3": { "type": "column", "settings": { "label": "BlankStyle" } },
-        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat from $4.25/unit ($2.92 at the 12-pack)", "badge_1": true, "cell_2": "Brand wholesale + cart bulk discounts" } },
+        "r1": { "type": "row", "settings": { "label": "Per-unit price", "cell_1": "Flat $1/unit, every size and pack", "badge_1": true, "cell_2": "Brand wholesale + cart bulk discounts" } },
         "r2": { "type": "row", "settings": { "label": "What you're buying", "cell_1": "Liquidation overstock blanks", "cell_2": "First-quality goods from 120+ brands" } },
-        "r3": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $4.25/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
+        "r3": { "type": "row", "settings": { "label": "Plus-size pricing", "cell_1": "Same $1/unit through 4XL–5XL", "badge_1": true, "cell_2": "Most brands upcharge for 2XL and up" } },
         "r4": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Blanks only — you print", "cell_2": "Blanks + in-house screen, embroidery, DTG" } },
         "r5": { "type": "row", "settings": { "label": "Minimum / account", "cell_1": "None / none needed", "cell_2": "None / none needed" } },
         "r6": { "type": "row", "settings": { "label": "Selection", "cell_1": "~85 curated in-stock styles", "cell_2": "120+ brands, huge range" } },
@@ -62,8 +62,8 @@
     "picks": {
       "type": "farm-picks",
       "blocks": {
-        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat $4.25/unit from pack one. No tier to unlock.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
-        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same $4.25/unit as a small — the plus-size upcharge brand blanks add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
+        "p1": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "V-Neck · Dark", "blurb": "Nebula Dark Gray V-Neck — our deepest-stock blank (20,000+ units), a flat $1 a unit from pack one. No tier to unlock.", "sizes": "Sizes S–XL", "tag": "Deepest Stock" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Crew Neck · Extended", "blurb": "Slate Gray crew in 4XL–5XL at the same $1/unit as a small — the plus-size upcharge brand blanks add, gone.", "sizes": "Sizes 4XL–5XL", "tag": "4XL–5XL" } },
         "p3": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Pullover Fleece", "blurb": "Classic Gold pullover fleece — the flat per-unit deal isn't just tees; hoodies and fleece price the same way.", "sizes": "Sizes S–3XL", "tag": "Fleece" } },
         "p4": { "type": "pick", "settings": { "product": "undecorated-short-sleeve-v-neck-tee", "kicker": "V-Neck · Color", "blurb": "Texas Orange V-Neck in extended 2XL–3XL — color and size depth at one flat per-unit price, ready to print.", "sizes": "Sizes 2XL–3XL", "tag": "2XL–3XL" } }
       },
@@ -73,16 +73,16 @@
         "heading": "The Blanks That Make the <em>Case</em>",
         "intro": "<p>Real liquidation overstock on the floor in Hattiesburg, sold by the pack. Prices shown per unit — the only number that matters.</p>",
         "products_to_show": 4,
-        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no tier, no account, no minimums beyond a pack, and the same per-unit price across every size. Pack pricing drops to about <b>$2.92/unit by the 12-pack</b>.</p>"
+        "note": "<p>Every pick here is the <b>budget blank that beats name brands on price</b> — no tier, no account, no minimums beyond a pack, and the same per-unit price across every size. The price is a flat <b>$1/unit, the same in every pack</b>.</p>"
       }
     },
     "faq": {
       "type": "farm-faq",
       "blocks": {
-        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than BlankStyle?", "answer": "<p>For the blank itself on small and mid-size orders, yes. BlankStyle's bulk discounts apply in the cart and scale with quantity, so the lowest price needs volume. Bayou is a flat $4.25/unit from the first 4-pack, dropping to $2.92/unit by the 12-pack — no tier to reach. On very large brand orders, BlankStyle's catalog and volume pricing can close the gap.</p>" } },
+        "q1": { "type": "qa", "settings": { "question": "Is Bayou Blanks cheaper than BlankStyle?", "answer": "<p>For the blank itself on small and mid-size orders, yes. BlankStyle's bulk discounts apply in the cart and scale with quantity, so the lowest price needs volume. Bayou is a flat $1 a unit, the same in every size and pack, with no tier to reach. On very large brand orders, BlankStyle's catalog and volume pricing can close the gap.</p>" } },
         "q2": { "type": "qa", "settings": { "question": "Does BlankStyle have a minimum or require an account?", "answer": "<p>No and no — BlankStyle sells at wholesale with no minimum and no account or resale license. Bayou is the same. The difference isn't access, it's the price model and the product: BlankStyle resells first-quality brand goods; Bayou passes on liquidation overstock by the pack.</p>" } },
         "q3": { "type": "qa", "settings": { "question": "Does BlankStyle print shirts, and does Bayou?", "answer": "<p>BlankStyle offers in-house decoration — screen printing, embroidery, and DTG — so it can be a one-stop shop. Bayou supplies blanks only; you print them yourself or hand them to your decorator. That focus is part of why Bayou's blank price is lower.</p>" } },
-        "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $4.25/unit as a small. The brand blanks BlankStyle carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Does Bayou cost more for plus sizes like 2XL–5XL?", "answer": "<p>No. Bayou prices every size the same — a 4XL is the same $1/unit as a small. The brand blanks BlankStyle carries add a size upcharge starting at 2XL, so extended sizes is where Bayou's gap is widest.</p>" } },
         "q5": { "type": "qa", "settings": { "question": "What's the catch with Bayou's liquidation blanks?", "answer": "<p>Selection. Bayou stocks around 85 curated overstock styles, not a 120-brand catalog. If you need a specific brand and color, BlankStyle's range is far deeper; if you want the lowest per-unit on solid blanks, Bayou wins.</p>" } },
         "q6": { "type": "qa", "settings": { "question": "BlankStyle or Bayou — which should I use?", "answer": "<p>Use BlankStyle when you want a specific brand and color, or want one company to print your order too. Use Bayou when per-unit price matters most — especially on small-to-mid orders and extended or plus sizes — and you decorate yourself or just need the blank.</p>" } }
       },
@@ -97,7 +97,7 @@
     "trust": {
       "type": "farm-trust",
       "blocks": {
-        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — from $4.25, down toward $2.92 by the 12-pack. No tier, same price every size." } },
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat $1 a unit, the same in every size. No tier." } },
         "w2": { "type": "cell", "settings": { "icon": "box", "heading": "80,000+ In Stock", "text": "Deep overstock across tees, fleece, and more — S–5XL — with new pallets landing weekly." } },
         "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
         "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Deep Extended Sizing", "text": "Real depth in 2XL–5XL at the same per-unit price — the sizes most catalogs upcharge or run short on." } }
@@ -126,8 +126,8 @@
       "settings": {
         "eyebrow": "Fig. VIII — Start Your Run",
         "heading": "Just the blank, for <em>less.</em>",
-        "subtext": "<p>Liquidation overstock blanks at a flat $4.25/unit — every size, no account, inspected and shipped from Hattiesburg.</p>",
-        "ghost_price": "$4.25",
+        "subtext": "<p>Liquidation overstock blanks at a flat $1 a unit, every size, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$1",
         "background": "paper",
         "cta_label": "Shop In-Stock Blanks",
         "cta_collection": "in-stock",

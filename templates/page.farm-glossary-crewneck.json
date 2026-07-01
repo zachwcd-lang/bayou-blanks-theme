@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>Round</b> neckline" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>Print</b>-ready" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>$2.00/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated June 2026",
+        "heading": "What Is a <em>Crew Neck</em>?",
+        "answer": "<p>A crew neck is a round, collarless neckline that sits snug at the base of the neck — named for the rowing crews who first wore it. <strong>It's a neckline, not a garment,</strong> so you'll find it on t-shirts, sweatshirts, and sweaters, where its flat, open front makes an ideal canvas for printing and embroidery.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>A crew neck is a neckline, not a garment</b> — a round, collarless opening that sits at the base of the neck. It appears on tees, sweatshirts, and sweaters alike.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>The name comes from rowing:</b> early-1900s crews wore collarless round-neck shirts for easy movement, and the term \"crew neck\" was in print by 1939.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>A ribbed knit collar gives it shape</b> and helps it bounce back wash after wash — a quality crew neck collar lays flat and doesn't stretch out.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Crew vs V-neck vs mock:</b> a crew sits round at the collarbone, a V-neck dips to open the chest, and a mock neck is a short stand-up band.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>It's the easiest decoration canvas</b> — flat, collarless, with no hood or drawstring — so chest and back prints and embroidery land clean.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>\"Crewneck\" on its own usually means a crewneck sweatshirt:</b> the same round, hood-free neckline on midweight fleece.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Crew neck is the default for a reason: a clean round collar, the biggest flat print area on the shirt, and nothing — no hood, no V, no collar — getting in the logo's way.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Crew Neck" } },
+        "c3": { "type": "column", "settings": { "label": "V-Neck" } },
+        "c4": { "type": "column", "settings": { "label": "Mock Neck" } },
+        "r1": { "type": "row", "settings": { "label": "Neckline shape", "cell_1": "Round, collarless at the neck base", "cell_2": "V-shaped dip in front", "cell_3": "Short stand-up band" } },
+        "r2": { "type": "row", "settings": { "label": "Neck coverage", "cell_1": "Up to the collarbone", "cell_2": "Lower — opens the chest", "cell_3": "Highest — wraps the neck" } },
+        "r3": { "type": "row", "settings": { "label": "Decoration area", "cell_1": "Largest, uninterrupted", "badge_1": true, "cell_2": "Slightly cut by the V", "cell_3": "Tighter near the collar" } },
+        "r4": { "type": "row", "settings": { "label": "Layering", "cell_1": "Easy over and under", "badge_1": true, "cell_2": "Good under open collars", "cell_3": "Snug and warmer" } },
+        "r5": { "type": "row", "settings": { "label": "Common on", "cell_1": "Tees, sweatshirts, sweaters", "badge_1": true, "cell_2": "Tees, sweaters", "cell_3": "Tees, base layers, pullovers" } },
+        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Crew tees from $2.00/unit", "cell_2": "V-neck tees from $2.00/unit", "cell_3": "Not stocked" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Crew Neck vs <em>V-Neck</em> vs Mock Neck",
+        "intro": "<p>The crew neck is the round, collarless standard. Here's how it stacks up against the other two necklines you'll see on a blank — and why it's the one most printers reach for first.</p>",
+        "caption": "How a crew neck compares to a V-neck and a mock neck"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "mr06-adult-short-sleeve-tee", "kicker": "Classic Crew · S–XL", "blurb": "A heather short-sleeve tee with the classic round crew collar — the quintessential crew neck and a smooth, flat canvas for screen print, DTF, or HTV across the chest.", "sizes": "S–XL", "tag": "The Classic" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Crew Neck · Through 5XL", "blurb": "Athletic Navy Striated crew with raglan sleeves and deep stock through 5XL — a round, collarless neckline on an extended-size blank that holds a logo clean.", "sizes": "S, L, 3XL–5XL", "tag": "Extended Sizes" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-rag", "kicker": "Big Sizes · 4XL–5XL", "blurb": "Slate Gray crew neck built for the big end of the range — same flat crew collar and uninterrupted print area, in 4XL and 5XL depth.", "sizes": "4XL–5XL", "tag": "Big & Tall" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "Performance Crew · S–2XL", "blurb": "A space-dye athletic crew in performance knit — the same round neckline for team and active jobs, ideal for DTF or low-temp HTV on poly.", "sizes": "S–2XL", "tag": "Performance" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Crew-Neck Blanks That Print <em>Clean</em>",
+        "intro": "<p>Real in-stock crew-neck tees — the classic round collar in cotton, heather, extended sizes, and performance knit. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every crew-neck tee is sold by the pack at a flat <b>$2.00/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is a crew neck?", "answer": "<p>A crew neck is a round, collarless neckline that sits close to the base of the neck. It's a neckline style, not a type of garment, so you'll find it on t-shirts, sweatshirts, and sweaters. The opening is finished with a ribbed knit band that holds its shape, and it sits lower than a mock neck or turtleneck while staying higher and more closed than a V-neck.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Is a crew neck the same as a crewneck sweatshirt?", "answer": "<p>Not exactly — \"crew neck\" describes the round, collarless neckline, while \"sweatshirt\" describes the garment. They share the same neckline, but a crewneck tee and a crewneck sweatshirt are different products. In everyday use, when people say \"a crewneck\" with no other context, they usually mean a crewneck sweatshirt: that same hood-free round neckline on midweight fleece.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "What's the difference between a crew neck and a V-neck?", "answer": "<p>The shape of the opening. A crew neck is round and sits up at the collarbone; a V-neck dips into a V that opens the chest and shows more skin. Crew necks give you a larger, uninterrupted area for a chest print and layer easily under and over other pieces, while V-necks read a little dressier and sit well under an open collar.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Where does the name \"crew neck\" come from?", "answer": "<p>From rowing. In the early 1900s, rowing teams — \"crews\" — wore collarless, round-neck shirts and sweaters that didn't bind during the stroke. The style took the name of the athletes who favored it, and the term \"crew neck\" was appearing in print by 1939. It has been a wardrobe staple ever since.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Why are crew necks good for screen printing and embroidery?", "answer": "<p>Because the front is flat and clear. With no hood, drawstring, collar, or V cutting into the chest, a crew neck gives you the largest uninterrupted canvas on the shirt, so logos, text, and back numbers land crisp and centered. The even surface helps embroidery stitch cleanly too, which is why crew-neck tees and crewneck fleece are decorator favorites.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Crewneck or hoodie — which should I print on?", "answer": "<p>A crewneck sweatshirt has no hood or drawstring, so it gives a cleaner front for a big chest or back print and layers more neatly. A <a href=\"/pages/wholesale-blank-hoodies\">hoodie</a> brings warmth, a pocket, and streetwear appeal but the hood and drawstring crowd the upper chest. For uniforms, embroidery, and simple bold graphics, crewnecks win; for casual retail and merch, hoodies often sell better.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat $2.00/unit on crew-neck tees, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Crew Necks, Deep Stock", "text": "Crew-neck tees in cotton, heather, and performance knit, plus dark raglans through 5XL — the round, print-ready collar in real overstock depth." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is a Raglan Sleeve?", "summary": "The other construction term to know on a blank.", "cta": "Read", "url": "/pages/what-is-a-raglan-sleeve" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Blank Sweatshirts Wholesale", "summary": "The crew neckline on midweight fleece, by the pack.", "cta": "Shop", "url": "/pages/blank-sweatshirts-wholesale" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Why crew tees are the printer's default canvas.", "cta": "Read", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank <em>crew necks.</em>",
+        "subtext": "<p>Crew-neck tees in cotton, heather, and performance knits — light and dark, through 5XL — sold by the pack at a flat $2.00/unit, press-ready, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$2.00",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

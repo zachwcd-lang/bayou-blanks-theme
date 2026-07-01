@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "From <b>$2/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated June 2026",
+        "heading": "Embroidery vs <em>Screen Printing</em>",
+        "answer": "<p>Embroidery vs screen printing comes down to look, fabric, and run size: <strong>embroidery stitches thread for a premium, near-permanent finish on polos, fleece, and caps</strong>, while screen printing lays ink for bold, large, low-cost graphics on tees at volume. Blanks for both start at $2/unit by the pack.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>The choice comes down to look, fabric, and run:</b> embroidery for premium stitched logos, screen printing for bold, large, low-cost graphics.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Embroidery stitches thread into the fabric</b> for a raised, near-permanent finish that lasts the life of the garment; screen printing lays ink flat and holds 40–60+ washes.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Embroidery looks most premium on structured garments</b> — polos, fleece, jackets, and caps; screen printing looks best on tees and hoodies.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Embroidery is priced by stitch count,</b> so added colors are free once the logo is digitized; screen printing charges per color, with a screen set up for each.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Screen printing is cheapest per shirt at volume</b> for big runs of few-color art; embroidery wins small runs and simple logos, with lower minimums (often 6+).</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — tees and polos a flat $2/unit, fleece $4/unit, the same per-unit price at every pack and size.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Stitch the polos and fleece, screen the tees: <em>logos and longevity go to thread, bold graphics and volume go to ink.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Embroidery" } },
+        "c3": { "type": "column", "settings": { "label": "Screen Printing" } },
+        "r1": { "type": "row", "settings": { "label": "Best for", "cell_1": "Logos on polos, fleece, caps, uniforms", "cell_2": "Tees & hoodies, bold or large graphics", "badge_1": true } },
+        "r2": { "type": "row", "settings": { "label": "Look & feel", "cell_1": "Raised, dimensional stitched thread", "cell_2": "Flat ink, smooth on the fabric" } },
+        "r3": { "type": "row", "settings": { "label": "Color & detail", "cell_1": "Solid thread colors; photos/gradients hard", "cell_2": "Bold spot colors to full-color, large coverage", "badge_2": true } },
+        "r4": { "type": "row", "settings": { "label": "Best fabric", "cell_1": "Dense & structured — piqué polos, fleece, twill", "cell_2": "Almost any — cotton, blends, poly, darks", "badge_2": true } },
+        "r5": { "type": "row", "settings": { "label": "Durability", "cell_1": "Lasts the life of the garment — won't crack or fade", "cell_2": "40–60+ washes; heavy plastisol can crack over years", "badge_1": true } },
+        "r6": { "type": "row", "settings": { "label": "Minimums", "cell_1": "Low — often 6+ pieces", "cell_2": "Usually 25+; setup pays off across a batch", "badge_1": true } },
+        "r7": { "type": "row", "settings": { "label": "Cost driver", "cell_1": "Per stitch count (colors free once digitized)", "cell_2": "Per color (one screen each)" } },
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$2 polo · $4 fleece", "cell_2": "$2 tee" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Two Methods, <em>Compared</em>",
+        "intro": "<p>Embroidery and screen printing solve different jobs. One stitches thread for a premium, lasting logo; the other lays ink for bold, large, low-cost graphics. The right call depends on the garment, the design, and how many you're making. Here's how they stack up.</p>",
+        "caption": "Embroidery vs screen printing, head to head"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-polo", "kicker": "Embroidery · Textured Knit", "blurb": "A structured striated-knit polo — embroidery's natural home. The textured surface grips stitches and resists puckering, so a left-chest logo lays clean and crisp with a cut-away stabilizer.", "sizes": "S, M, L, 2XL–5XL", "tag": "Embroidery-Ready" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Screen · 100% Cotton", "blurb": "A smooth cotton crew with deep stock — the classic screen-print blank. The tight, even knit holds bold spot colors and large graphics flat and sharp.", "sizes": "S–2XL", "tag": "Screen-Ready" } },
+        "p3": { "type": "pick", "settings": { "product": "adult-long-sleeve-pullover-fleece", "kicker": "Embroidery · Fleece", "blurb": "A midweight pullover fleece with deep stock — cotton-rich fleece embroiders cleanly with a cut-away backing for a premium left-chest crest. It screen-prints well too.", "sizes": "S–3XL", "tag": "Deepest Stock" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Screen · Big Runs", "blurb": "A contrast crew raglan in a full size run — built for bold screen graphics across a big order, with extended sizes that hold one flat price.", "sizes": "S–5XL", "tag": "S–5XL" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks for Both <em>Methods, In Stock</em>",
+        "intro": "<p>Structured polos and fleece that grip stitches, plus smooth cotton tees for bold screen prints — on the floor in Hattiesburg, sold by the pack. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Tees and polos are a flat <b>$2/unit</b>, fleece <b>$4/unit</b> — the same per-unit price whether you buy a 4-pack or a 12-pack, same price across every size. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is embroidery or screen printing better?", "answer": "<p>Neither is universally better — it depends on the garment, the design, and the run. Embroidery gives a premium, near-permanent finish for logos on structured garments like polos, fleece, and caps. Screen printing wins bold, large, or full-color graphics on tees and hoodies, at the lowest per-shirt cost once the run gets big.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Which lasts longer, embroidery or screen printing?", "answer": "<p>Embroidery generally lasts longest — the polyester thread is stitched into the fabric and won't crack, peel, or fade, so it often outlives the garment. Quality screen printing holds up well too (typically 40–60+ washes, and premium plastisol for years), but ink can eventually fade or crack, especially on large solid prints.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Is embroidery more expensive than screen printing?", "answer": "<p>For small orders and simple logos, embroidery is often competitive or cheaper — it has low minimums and no per-color charge. For large runs of bold, few-color designs, screen printing is cheaper per shirt because the setup cost spreads across the batch. Embroidery is priced by stitch count; screen printing by the number of colors. The blank itself costs the same either way.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "What garments work best for embroidery?", "answer": "<p>Dense, structured pieces hold stitches best: piqué polos, fleece and sweatshirts, twill caps, jackets, and woven button-downs. Lightweight single-jersey tees can pucker under heavy stitching, so on a thin tee embroidery is usually limited to a small left-chest logo with a cut-away stabilizer.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Can you embroider a t-shirt?", "answer": "<p>Yes, but keep it small. A left-chest logo or a sleeve hit works well with the right cut-away backing. Large or dense designs can distort a thin jersey tee, so for big graphics on a t-shirt, screen printing (or DTF) is the better fit.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does embroidery or screen printing look more premium?", "answer": "<p>Embroidery reads as higher-end — the raised, dimensional thread signals quality, which is why it's the standard for corporate polos, uniforms, and caps. Screen printing looks best for casual, graphic-forward tees and hoodies where you want bold color and large coverage.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per piece — tees and polos a flat $2/unit, fleece $4/unit. Shown up front, no account, same price every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Embroidery & Screen Blanks", "text": "Structured polos and fleece that grip stitches, plus smooth cotton tees for bold screen prints — S–5XL, print-ready, with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Blank Polos for Embroidery", "summary": "The textured-knit polos that grip stitches.", "cta": "Read guide", "url": "/pages/blank-polos-for-embroidery" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTF vs Screen Printing", "summary": "The other way to put a graphic on a tee.", "cta": "Compare methods", "url": "/pages/dtf-vs-screen-printing" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank Hoodies for Printing", "summary": "Fleece that screen-prints and embroiders clean.", "cta": "Read guide", "url": "/pages/best-blank-hoodies-for-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Pick your <em>blank.</em>",
+        "subtext": "<p>Whichever way you decorate — stitched or screened — the blank is the same flat price. Structured polos and fleece for embroidery, smooth cotton tees for screen printing, from $2/unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$2",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
