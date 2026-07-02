@@ -133,6 +133,16 @@
             "url": "/pages/embroidery-vs-screen-printing"
           }
         },
+        "e14": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "DTG vs DTF Printing",
+            "dek": "DTG for the hand, DTF for the range: soft full-color prints into cotton, or a pressed film on any fabric — poly, blends, and darks included. A flat 99¢ a unit.",
+            "cta": "Compare methods",
+            "url": "/pages/dtg-vs-dtf"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -334,7 +344,7 @@
           }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12", "g13"],
+      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "e14", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12", "g13"],
       "settings": {
         "vol": "Resources",
         "nameplate": "",

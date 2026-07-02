@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated July 2026",
+        "heading": "DTG vs <em>DTF Printing</em>",
+        "answer": "<p>DTG vs DTF comes down to fabric and feel: <strong>DTG prints water-based ink straight into the garment for the softest hand but needs high-cotton blanks, while DTF presses a printed film onto any fabric</strong> — cotton, poly, blends, and darks — with no pretreat. Soft cotton retail prints go DTG; everything else goes DTF.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Fabric decides it:</b> DTG needs a high-cotton blank (ideally 100% cotton); DTF prints on almost anything — cotton, polyester, blends, fleece, even nylon.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Hand feel is DTG's edge:</b> the water-based ink absorbs into cotton for a near-no-feel print, while DTF sits as a thin, slightly raised film on top.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Both are no-setup, no-minimum digital methods</b> — one-offs and small full-color runs are practical either way.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Startup cost isn't close:</b> pre-made DTF transfers need only a heat press (roughly $200–300), while a DTG setup runs $10,000+ with pretreat gear and daily maintenance.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Quality DTF is flexible and crack-resistant</b> — typically 50–100 washes — while DTG on cotton usually holds 40–60 washes with a gradual fade.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat 99¢ a unit, the same in every size and pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Soft cotton jobs go direct-to-garment, everything else goes on film: <em>DTG for the hand, DTF for the range.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "DTG (Direct-to-Garment)" } },
+        "c3": { "type": "column", "settings": { "label": "DTF (Direct-to-Film)" } },
+        "r1": { "type": "row", "settings": { "label": "Fabrics", "cell_1": "Best on 100% cotton (≥~80%)", "cell_2": "Any — cotton, poly, blends, nylon", "badge_2": true } },
+        "r2": { "type": "row", "settings": { "label": "Dark garments", "cell_1": "Needs pretreat + white underbase", "cell_2": "White underbase built into the film", "badge_2": true } },
+        "r3": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Softest — ink absorbs into cotton", "cell_2": "Thin, slightly raised film on top", "badge_1": true } },
+        "r4": { "type": "row", "settings": { "label": "Durability", "cell_1": "40–60 washes on cotton", "cell_2": "Flexible, crack-resistant; 50–100 washes", "badge_2": true } },
+        "r5": { "type": "row", "settings": { "label": "Equipment to start", "cell_1": "$10,000+ printer, pretreat, daily upkeep", "cell_2": "Heat press + bought transfers", "badge_2": true } },
+        "r6": { "type": "row", "settings": { "label": "Setup & minimums", "cell_1": "None — print one", "cell_2": "None — press one" } },
+        "r7": { "type": "row", "settings": { "label": "Best for", "cell_1": "Soft, full-color retail prints on cotton", "cell_2": "Poly, darks, blends, mixed-fabric runs" } },
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Two Methods, <em>Compared</em>",
+        "intro": "<p>DTG and DTF are the two no-minimum digital methods — the difference is where the ink ends up. DTG jets it into the fabric; DTF prints it on a film and heat-presses it on. Here's how they stack up.</p>",
+        "caption": "DTG vs DTF, head to head"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "DTG · 100% Cotton", "blurb": "A smooth cotton crew with deep stock — DTG's ideal blank. High cotton content lets full-color, photographic prints absorb soft and sharp. Takes a DTF transfer just as cleanly.", "sizes": "S–2XL", "tag": "DTG-Ready" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "DTF · Polyester", "blurb": "A polyester performance tee — exactly where DTG struggles and DTF shines. No poly-pretreat, no dye-migration gamble: the transfer's adhesive layer bonds to the knit.", "sizes": "S–2XL", "tag": "Poly" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "DTF · Dark + Plus", "blurb": "Deep-stock dark athletic raglan with real 4XL–5XL depth. On darks, DTG needs pretreat plus a white underbase; DTF's underbase is already in the film — press and go.", "sizes": "S, 3XL–5XL", "tag": "Deepest Stock" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Either Method", "blurb": "A contrast crew raglan in a full M–5XL run — DTG a full-color design on the cotton-rich body, or press one DTF transfer across every fabric in the order.", "sizes": "M–5XL", "tag": "M–5XL" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks for Both <em>Methods, In Stock</em>",
+        "intro": "<p>Cotton for DTG, poly and darks for DTF — on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank prints either way at a flat <b>99¢/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is DTG or DTF better?", "answer": "<p>Neither is universally better. DTG wins on hand feel — its water-based ink absorbs into cotton for the softest, most retail-feeling print — but it needs high-cotton blanks and serious equipment. DTF wins on versatility: it prints on any fabric and any color with no pretreat, costs far less to start, and its flexible film resists cracking. Soft cotton retail prints go DTG; almost everything else goes DTF.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Does DTF last longer than DTG?", "answer": "<p>Often, yes. A quality DTF transfer is a flexible, elastic film that resists cracking and typically survives 50–100 washes. Well-executed DTG on 100% cotton usually holds 40–60 washes with a gradual fade rather than cracking. Both depend heavily on a proper cure and cold, inside-out washing.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Can DTF print on polyester and dark shirts?", "answer": "<p>Yes — that's DTF's biggest edge over DTG. The transfer carries its own white underbase and bonds to cotton, polyester, blends, fleece, and nylon alike, in any garment color, with no pretreatment. DTG on polyester needs a special poly-pretreat and still risks dye migration, and darks need pretreat plus a white underbase.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Which is cheaper to start, DTG or DTF?", "answer": "<p>DTF, by a wide margin. Buying pre-made DTF transfers (gang sheets often work out to roughly $0.50–4 per print) means your only equipment is a heat press, typically $200–300. A DTG printer runs $10,000–15,000+ plus a pretreatment machine, and the printheads need regular use and maintenance to avoid expensive clogs.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Does DTF feel different from DTG?", "answer": "<p>Yes. DTF cures as a thin, slightly raised film on top of the fabric — smooth, but you can feel it, especially on large solid designs. DTG ink absorbs into the cotton for an almost no-feel print, which is why high-end retail brands often prefer it for soft graphic tees.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What blank should I buy for DTG vs DTF?", "answer": "<p>For DTG, use a smooth, high-cotton tee — ideally 100% ring-spun cotton in a light color — so the water-based ink bonds vivid and soft. For DTF, almost any blank works: polyester performance tees, dark heathers, blends, and fleece all take the transfer. Either way, buying blanks by the pack at a flat per-unit price keeps test prints cheap.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Cotton, Poly & Dark Blanks", "text": "High-cotton tees for DTG, plus poly and dark overstock DTF loves — S–5XL, print-ready, with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank Shirts for DTG & DTF", "summary": "The blanks each method prints cleanest.", "cta": "Read guide", "url": "/pages/best-blank-shirts-for-dtg-dtf-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTG vs Screen Printing", "summary": "DTG against the analog workhorse.", "cta": "Compare methods", "url": "/pages/dtg-vs-screen-printing" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Sublimation vs DTF", "summary": "DTF against the poly specialist.", "cta": "Compare methods", "url": "/pages/sublimation-vs-dtf" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Pick your <em>blank.</em>",
+        "subtext": "<p>Whichever method you print, the blank is the same flat price — high-cotton tees for DTG, any fabric for DTF, a flat 99¢ a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
