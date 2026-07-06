@@ -143,6 +143,16 @@
             "url": "/pages/dtg-vs-dtf"
           }
         },
+        "e15": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "DTF vs HTV",
+            "dek": "Print the film or cut the vinyl: DTF for full-color art with no weeding, HTV for bold names, numbers, and glitter-metallic effects. A flat 99¢ a unit.",
+            "cta": "Compare methods",
+            "url": "/pages/dtf-vs-htv"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -342,9 +352,67 @@
             "cta": "Read",
             "url": "/pages/what-is-heather-fabric"
           }
+        },
+        "g14": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Screen Printing?",
+            "dek": "Ink squeegeed through a mesh stencil, one screen per color — the most durable, cheapest-at-volume way to print a tee.",
+            "cta": "Read",
+            "url": "/pages/what-is-screen-printing"
+          }
+        },
+        "g15": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is GSM in Fabric?",
+            "dek": "Grams per square meter — the number that tells you if a blank is a featherweight summer tee or a heavyweight streetwear brick. With the oz conversion.",
+            "cta": "Read",
+            "url": "/pages/what-is-gsm-in-fabric"
+          }
         }
       },
-      "block_order": ["e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11", "e12", "e13", "e14", "c1", "c2", "c3", "c4", "c5", "c6", "c7", "g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12", "g13"],
+      "block_order": [
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e11",
+        "e12",
+        "e13",
+        "e14",
+        "e15",
+        "c1",
+        "c2",
+        "c3",
+        "c4",
+        "c5",
+        "c6",
+        "c7",
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12",
+        "g13",
+        "g14",
+        "g15"
+      ],
       "settings": {
         "vol": "Resources",
         "nameplate": "",
@@ -356,5 +424,7 @@
       }
     }
   },
-  "order": ["hub"]
+  "order": [
+    "hub"
+  ]
 }

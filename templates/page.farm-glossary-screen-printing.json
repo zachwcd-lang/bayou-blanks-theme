@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>5 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>1 screen</b> per color" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>50+</b> wash life" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated July 2026",
+        "heading": "What Is <em>Screen Printing</em>?",
+        "answer": "<p>Screen printing is a printing method that pushes ink through a fine mesh stencil onto fabric with a squeegee, one screen per color. <strong>The thick ink layer makes it the most durable and vivid of the common print methods</strong> — and the cheapest per shirt on bulk runs of simple designs, which is why it dominates custom tees.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Screen printing</b> (also called silk screening or serigraphy) pushes ink through a mesh screen stencil with a squeegee — the design areas are open mesh, everything else is blocked by hardened photo emulsion.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>One screen per color:</b> each color in the design gets its own screen, registered on a press. That's why simple 1–3 color designs are where screen printing is cheapest.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>It's the durability king</b> — plastisol ink is heat-cured (roughly 300–330°F) into a thick bonded layer that commonly outlasts 50+ washes when cured right.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>The economics favor volume:</b> shops typically charge about $15–25 setup per screen and want minimums around 24–72 pieces; the per-shirt price falls fast as quantity climbs.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Under roughly 24–48 pieces,</b> DTF or DTG usually wins on total cost (no screens to burn); past that, screen printing takes over — and it's not close on big runs.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Cotton and cotton-rich blends</b> are the easiest canvas; poly can be printed but needs low-bleed ink and lower cure temps. Bayou's cotton-rich blank tees run a flat 99¢/unit in every size.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Every classic band tee you've ever owned was screen printed. Burn a stencil into a screen, drag ink across it, cure it hot — do it a thousand times and the thousandth shirt costs almost nothing.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Screen Printing" } },
+        "c3": { "type": "column", "settings": { "label": "DTF" } },
+        "c4": { "type": "column", "settings": { "label": "DTG" } },
+        "r1": { "type": "row", "settings": { "label": "How it works", "cell_1": "Ink squeegeed through a mesh stencil, one screen per color, heat-cured", "badge_1": true, "cell_2": "Design printed on film, powder adhesive, heat-pressed on", "cell_3": "Water-based ink printed directly into the fabric" } },
+        "r2": { "type": "row", "settings": { "label": "Best designs", "cell_1": "Bold shapes, solid colors, 1–3 color art", "badge_1": true, "cell_2": "Full-color art, small custom runs", "cell_3": "Photorealistic full-color on cotton" } },
+        "r3": { "type": "row", "settings": { "label": "Best fabrics", "cell_1": "Cotton and cotton blends; poly needs low-bleed ink", "cell_2": "Any fabric, any color", "cell_3": "100% (or mostly) cotton" } },
+        "r4": { "type": "row", "settings": { "label": "Sweet spot", "cell_1": "Bulk runs — 24+ and especially 100+ pieces", "badge_1": true, "cell_2": "1–50 pieces, no setup fees", "cell_3": "One-offs and small cotton runs" } },
+        "r5": { "type": "row", "settings": { "label": "Durability", "cell_1": "50+ washes; thick bonded ink layer", "badge_1": true, "cell_2": "40–100 washes; flexible film", "cell_3": "40–60 washes; softest fade" } },
+        "r6": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Sits on top; soft with water-based ink", "cell_2": "Thin film, slightly raised", "cell_3": "Near-zero feel" } },
+        "r7": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Cotton-rich tees from 99¢/unit", "cell_2": "Any tee from 99¢/unit", "cell_3": "Cotton tees from 99¢/unit" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Screen Printing vs <em>DTF</em> vs DTG",
+        "intro": "<p>Screen printing is the volume method; DTF and DTG are the digital methods that took over small runs. Here's where each one actually wins — by design, fabric, order size, and durability.</p>",
+        "caption": "Screen printing vs DTF and DTG at a glance"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Cotton Crew · The Canvas", "blurb": "Yellow Strike Crew Neck Tee — a smooth cotton crew, the textbook screen-print canvas: flat face, bold base color, clean ink laydown.", "sizes": "Adult sizes", "tag": "The Classic" } },
+        "p2": { "type": "pick", "settings": { "product": "short-sleeve-v-neck-tee", "kicker": "Deepest Stock · Big Runs", "blurb": "Nebula Dark Gray V-Neck Tee — the deepest stock in the warehouse (19,000+ units), so one set of screens can run for months without a color change.", "sizes": "Adult sizes", "tag": "Volume Pick" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Dark Blank · Underbase", "blurb": "Athletic Navy Striated Crew Raglan — a dark blank for practicing the white-underbase workflow, with real plus-size depth (3XL–5XL) at the same price.", "sizes": "S–5XL depth", "tag": "Extended & Plus" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "Full Size Run · Teams", "blurb": "Contrast Crew Neck Raglan (2G08) — a full S–5XL size run for team and merch orders, so the whole print run matches end to end.", "sizes": "S–5XL", "tag": "Team Orders" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks Built For <em>The Press</em>",
+        "intro": "<p>Real in-stock tees that feed a screen-print press — cotton-rich crews, a dark blank for underbase work, and deep size runs for team orders. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every tee is sold by the pack at a flat <b>99¢/unit</b>, the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is screen printing?", "answer": "<p>Screen printing is a printing method where ink is pushed through a fine mesh screen onto fabric using a rubber squeegee. A stencil made of hardened photo emulsion blocks the mesh everywhere except the design, so ink only passes through where the art is. It's also called silk screening or serigraphy, and it's the standard method for printing custom t-shirts in bulk.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "How does screen printing work, step by step?", "answer": "<p>A screen is coated with light-sensitive emulsion and dried. The design is exposed onto it with light, which hardens the emulsion everywhere except the artwork; the unhardened area washes out, leaving open mesh in the shape of the design. The screen is clamped to a press, ink is flooded across it, and a squeegee pushes the ink through the open mesh onto the shirt. The print is then heat-cured — plastisol ink cures at roughly 300–330°F — so it bonds permanently. Each color in the design repeats this with its own screen.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "How many shirts do I need for screen printing to be worth it?", "answer": "<p>Most shops charge a setup fee of about $15–25 per screen (one per color) and set minimums around 24–72 pieces, because burning screens for a handful of shirts isn't economical. As a rule of thumb, screen printing starts beating DTF on per-shirt cost somewhere around 24–48 pieces of the same design, and it pulls far ahead on runs in the hundreds. Under that, DTF or DTG — with no setup fees — is usually cheaper.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "How long does a screen print last?", "answer": "<p>Cured correctly, a screen print is the most durable of the common methods — commonly 50+ washes, and prints often outlast the shirt itself. The thick ink layer bonds to the fabric during heat curing. Over many years plastisol prints can eventually crack with wear, but wash-for-wash, screen printing is the benchmark other methods get measured against.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "What fabric is best for screen printing?", "answer": "<p>100% cotton and cotton-rich blends are the easiest and most forgiving canvas — smooth surface, high cure temperatures without complications, crisp ink laydown. Polyester and poly blends can absolutely be screen printed, but they need low-bleed inks and lower cure temperatures, because heat can make polyester dye migrate into the ink and tint it. Dark garments of any fiber need a white underbase layer for bright colors.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What blanks does Bayou Blanks stock for screen printing?", "answer": "<p>Bayou stocks undecorated cotton and cotton-blend tees — crews, V-necks, and raglans, including deep plus and extended sizes — sold by the pack at a flat 99¢/unit, the same price in every size, no account or resale certificate required. Stock is liquidation overstock inspected and shipped from our Hattiesburg, Mississippi warehouse, so it's a cheap way to feed a press or practice your workflow.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt — a flat 99¢/unit on blank tees, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Press-Ready Depth", "text": "Cotton-rich crews, V-necks, and raglans in real overstock depth — thousands of units per style, so one set of screens keeps running." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Best Blank T-Shirts for Screen Printing", "summary": "Now that you know the method — the blanks that take ink best.", "cta": "Read", "url": "/pages/best-blank-t-shirts-for-screen-printing" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTF vs Screen Printing", "summary": "The head-to-head: when transfers beat screens and when they don't.", "cta": "Read", "url": "/pages/dtf-vs-screen-printing" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Puff Print?", "summary": "The raised 3D effect built on a screen-printing base.", "cta": "Read", "url": "/pages/what-is-puff-print" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blank tees <em>for your press.</em>",
+        "subtext": "<p>Cotton-rich blank tees in bold colors and deep size runs — sold by the pack at a flat 99¢/unit, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

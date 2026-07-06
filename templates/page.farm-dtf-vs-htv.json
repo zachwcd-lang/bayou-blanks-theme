@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated July 2026",
+        "heading": "DTF vs <em>HTV</em>",
+        "answer": "<p>DTF vs HTV comes down to color and workflow: <strong>DTF is a full-color printed transfer you press onto any fabric with no weeding, while HTV is cut sheets of solid-color vinyl</strong> — cheapest to start and great for names and numbers, but every color adds a layer to cut and weed. Multi-color art goes DTF; simple text goes HTV.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Color decides it:</b> DTF prints unlimited colors, gradients, and photos at one price; HTV is one solid color per sheet — every extra color is another layer to cut, weed, and press.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Workflow favors DTF:</b> a transfer arrives ready to press, no weeding. A complex 3-color HTV design can add 20–30 minutes of cutting and weeding per item.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>HTV's real edge is special effects and entry cost:</b> glitter, metallic, foil, and puff finishes DTF can't match, on gear as cheap as a craft cutter and a heat press.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Durability:</b> quality DTF is a flexible, crack-resistant film good for 50–100 washes; HTV holds up well pressed right, but layered designs can lift at the edges sooner.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>Both cover dark garments with no underbase step</b> — HTV is opaque vinyl, and DTF's white underbase is printed into the film.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank costs the same either way</b> — print-ready tees at a flat 99¢ a unit, the same in every size and pack.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"If it's a photo, print a film. If it's a name and a number, <em>cut the vinyl.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "DTF (Direct-to-Film)" } },
+        "c3": { "type": "column", "settings": { "label": "HTV (Heat Transfer Vinyl)" } },
+        "r1": { "type": "row", "settings": { "label": "What it is", "cell_1": "Full-color design printed on film, heat-pressed on", "cell_2": "Solid-color vinyl sheet, cut and heat-pressed on" } },
+        "r2": { "type": "row", "settings": { "label": "Colors & detail", "cell_1": "Unlimited — photos, gradients, fine text", "cell_2": "One color per layer; bold shapes and text", "badge_1": true } },
+        "r3": { "type": "row", "settings": { "label": "Workflow", "cell_1": "Press and done — no weeding", "cell_2": "Cut → weed → press, once per color", "badge_1": true } },
+        "r4": { "type": "row", "settings": { "label": "Special effects", "cell_1": "Standard print finish", "cell_2": "Glitter, metallic, foil, puff, flock", "badge_2": true } },
+        "r5": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Thin, flexible film", "cell_2": "Thicker; stacked layers add stiffness" } },
+        "r6": { "type": "row", "settings": { "label": "Durability", "cell_1": "Crack-resistant, 50–100 washes", "cell_2": "Solid pressed right; layered edges can lift sooner", "badge_1": true } },
+        "r7": { "type": "row", "settings": { "label": "Equipment to start", "cell_1": "Heat press + bought transfers", "cell_2": "Vinyl cutter (~$200–500) + heat press" } },
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Two Transfers, <em>Compared</em>",
+        "intro": "<p>DTF and HTV both end at the same place — a heat press — but get there differently. DTF prints the whole design, colors and all, onto a film; HTV starts as solid-color vinyl you cut and weed into shape. Here's how they stack up.</p>",
+        "caption": "DTF vs HTV, head to head"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Either Method · Cotton", "blurb": "A smooth cotton crew with deep stock — the easiest surface for either method. Press a full-color DTF transfer or a crisp single-color HTV design; cotton is the most forgiving vinyl surface.", "sizes": "S–2XL", "tag": "Easiest Press" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-tee", "kicker": "HTV · Names & Numbers", "blurb": "A contrast crew raglan in a full M–5XL run — the classic HTV job: team names and numbers in one bold color, one layer, no weeding marathon. DTF handles the full-color crest.", "sizes": "M–5XL", "tag": "Team Runs" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Darks · Both Methods", "blurb": "Deep-stock dark athletic raglan with real 4XL–5XL depth. Darks are easy for both methods here — HTV is opaque, and DTF's white underbase is already in the film.", "sizes": "S, 3XL–5XL", "tag": "Deepest Stock" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "Poly · Low-Temp", "blurb": "A polyester performance tee — press HTV at the lower temps poly needs (stretch and low-temp vinyls shine here), or skip the guesswork with a DTF transfer that bonds to any knit.", "sizes": "S–2XL", "tag": "Poly" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks for Both <em>Transfers, In Stock</em>",
+        "intro": "<p>Cotton for easy pressing, darks and poly for either method — on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank presses either way at a flat <b>99¢/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is DTF better than HTV?", "answer": "<p>Neither is universally better. DTF wins on color — photos, gradients, and multi-color art print as one ready-to-press transfer with no weeding. HTV wins on special effects (glitter, metallic, foil, puff), works with gear as simple as a craft cutter and heat press, and is quick for one- or two-color designs. Complex art goes DTF; bold simple designs and effect finishes go HTV.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Does DTF last longer than HTV?", "answer": "<p>Usually. A quality DTF transfer cures as a thin, flexible, crack-resistant film that typically survives 50–100 washes. Single-layer HTV pressed at the right time and temperature also holds up well, but multi-layer HTV designs can lift at the edges sooner. Both last longest washed cold and inside-out.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Can you do multiple colors with HTV?", "answer": "<p>Yes, but every color is a separate piece of vinyl — cut, weeded, aligned, and pressed as its own layer. A simple one-color design might weed in a few minutes, while a complex three-color design can add 20–30 minutes per item, and the stacked layers get thicker and stiffer. That per-color labor is exactly what DTF eliminates: all colors print at once.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "What equipment do you need for DTF vs HTV?", "answer": "<p>For HTV: a vinyl cutter (entry machines run roughly $200–500) and a heat press. For DTF: if you buy pre-made transfers — gang sheets often work out to roughly $0.50–4 per print — the only equipment is a heat press, typically $200–300. Owning a DTF printer is a much bigger investment, which is why most small shops buy transfers instead.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "Do DTF and HTV work on polyester and dark shirts?", "answer": "<p>Yes on both counts. Both methods cover dark garments with no underbase step — HTV is opaque vinyl, and DTF prints its white underbase into the film. On polyester, press at lower temperatures to protect the fabric: standard HTV presses around 305–320°F, with stretch and low-temp vinyls made for delicate synthetics, and DTF transfers bond to poly without dye-migration pretreatment.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What blank should I buy for DTF or HTV?", "answer": "<p>A smooth cotton crew is the easiest canvas for both — vinyl grips it predictably and DTF bonds clean. Darks work fine either way, and poly tees just need lower press temps. Buying blanks by the pack at a flat 99¢ a unit keeps test presses cheap, in every size from S to 5XL at the same price.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Press-Ready Blanks", "text": "Smooth cotton for easy vinyl, plus poly and dark overstock DTF loves — S–5XL, print-ready, with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is HTV?", "summary": "Heat transfer vinyl, defined — temps, tools, and when to use it.", "cta": "Read definition", "url": "/pages/what-is-htv" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTF vs Screen Printing", "summary": "DTF against the analog workhorse.", "cta": "Compare methods", "url": "/pages/dtf-vs-screen-printing" } },
+        "l3": { "type": "link", "settings": { "category": "Buying Guide", "title": "Sublimation vs DTF", "summary": "DTF against the poly specialist.", "cta": "Compare methods", "url": "/pages/sublimation-vs-dtf" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Pick your <em>blank.</em>",
+        "subtext": "<p>Whichever transfer you press, the blank is the same flat price — cotton for easy vinyl, poly and darks for DTF, a flat 99¢ a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>4 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>g/m²</b> weight" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>÷ 33.9</b> = oz" } },
+        "s4": { "type": "stat", "settings": { "text": "Tees from <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated July 2026",
+        "heading": "What Is <em>GSM</em> in Fabric?",
+        "answer": "<p>GSM stands for <strong>grams per square meter</strong> — the weight of one square meter of fabric in grams, and the standard measure of fabric weight. Higher GSM means a heavier, denser fabric. Most blank tees run roughly <strong>140–200 GSM</strong> (about 4–6 oz per square yard), while hoodies and fleece run about 280–350 GSM and up.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>GSM (g/m²) is the weight of one square meter of fabric</b> in grams. Higher GSM = heavier, thicker, denser fabric; lower GSM = lighter and airier.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>US brands often list ounces per square yard</b> instead. Convert: GSM ÷ 33.9 ≈ oz/yd², and oz × 33.9 ≈ GSM. A 5 oz tee is about 170 GSM.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>T-shirt ranges:</b> lightweight is roughly under 150 GSM (3–4.5 oz), midweight about 150–200 GSM (4.5–6 oz), heavyweight about 200 GSM and up (6 oz+).</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Hoodies and fleece live much higher</b> — roughly 280–350 GSM for standard weights, with 350+ GSM considered heavyweight.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>GSM is a weight, not a grade</b> — a well-made ring-spun 150 GSM tee can outlast a coarse 200 GSM one. Judge yarn and knit quality alongside weight.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Weight drives printing:</b> midweight and up is the screen-print standard, while light performance poly is the lane for sublimation and DTF. Bayou blanks are priced per unit — tees from 99¢, fleece from $1.50.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"GSM is just the scale reading: what a square meter of the fabric weighs. It won't tell you if a shirt is good — but it tells you exactly what kind of shirt it is.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Lightweight (~100–150 GSM)" } },
+        "c3": { "type": "column", "settings": { "label": "Midweight (~150–200 GSM)" } },
+        "c4": { "type": "column", "settings": { "label": "Heavyweight (200+ GSM)" } },
+        "r1": { "type": "row", "settings": { "label": "Oz per square yard", "cell_1": "About 3–4.5 oz", "cell_2": "About 4.5–6 oz", "cell_3": "About 6–7 oz and up" } },
+        "r2": { "type": "row", "settings": { "label": "Feel & drape", "cell_1": "Thin, soft, drapey", "cell_2": "Balanced — the everyday tee", "badge_2": true, "cell_3": "Thick, structured, holds shape" } },
+        "r3": { "type": "row", "settings": { "label": "Opacity", "cell_1": "Can go semi-sheer, especially light colors", "cell_2": "Opaque for most jobs", "cell_3": "Fully opaque", "badge_3": true } },
+        "r4": { "type": "row", "settings": { "label": "Decoration", "cell_1": "Soft hand; performance poly here takes sublimation & DTF", "cell_2": "The screen-print standard — takes every method", "badge_2": true, "cell_3": "Bold prints and embroidery without distortion" } },
+        "r5": { "type": "row", "settings": { "label": "Best for", "cell_1": "Hot weather, athletic wear, layering", "cell_2": "Everyday tees, retail runs, events", "cell_3": "Streetwear tees; hoodies & fleece run 280 GSM+" } },
+        "r6": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Athletic/performance tees from 99¢/unit", "cell_2": "Cotton crews & raglans from 99¢/unit", "cell_3": "Fleece hoodies from $1.50/unit" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Light vs <em>Mid</em> vs Heavyweight",
+        "intro": "<p>Same shirt shape, very different garments. Here's how the three weight classes compare — in both units, and in what each one is actually for.</p>",
+        "caption": "T-shirt and fleece fabric weights by GSM"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Everyday Cotton Crew", "blurb": "Yellow Strike Crew Neck Tee — the classic everyday cotton crew, the weight class most screen printers reach for first.", "sizes": "Adult sizes", "tag": "The Standard" } },
+        "p2": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-crew-neck-raglan-2", "kicker": "Athletic Raglan · Plus", "blurb": "Athletic Navy Striated Crew Neck Raglan — a dark, athletic-style raglan in plus sizes with serious stock depth, so a whole run stays one weight and one look.", "sizes": "Plus sizes", "tag": "Deep Stock" } },
+        "p3": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "Lightweight Performance", "blurb": "Space Dye Athletic Tee — the light end of the chart: a lightweight performance knit built for breathability, and the poly surface sublimation and DTF want.", "sizes": "Adult sizes", "tag": "Light End" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-long-sleeve-fleece-pullover-hoodie", "kicker": "Heavyweight Fleece", "blurb": "Classic Fleece Pullover Hoodie — the top of the GSM range: kangaroo-pocket fleece with the heft a hoodie should have.", "sizes": "Adult sizes", "tag": "Heavy End" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "One Rack, <em>Every</em> Weight Class",
+        "intro": "<p>Real in-stock blanks across the weight chart — light performance knits, everyday cotton, and heavyweight fleece. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Tees are sold by the pack at a flat <b>99¢/unit</b> and fleece at <b>$1.50/unit</b> — the same price in every size and pack. Stock is liquidation overstock, so colors and size runs rotate; check each product for live availability.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What does GSM mean in fabric?", "answer": "<p>GSM stands for grams per square meter (g/m²). It's the weight of one square meter of a fabric in grams, and it's the standard way the apparel industry states fabric weight. A higher GSM means a heavier, denser, usually thicker fabric; a lower GSM means a lighter, airier one. A 180 GSM tee is noticeably more substantial than a 130 GSM tee.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "How do you convert GSM to oz?", "answer": "<p>Divide GSM by about 33.9 to get ounces per square yard, the measure US apparel brands usually list. So 170 GSM ≈ 5.0 oz, 200 GSM ≈ 5.9 oz. Going the other way, multiply ounces by 33.9: a 6.1 oz heavyweight tee is roughly 207 GSM. The two numbers describe the same thing in different units.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "What is a good GSM for a t-shirt?", "answer": "<p>For most decorated tees, midweight — roughly 150–200 GSM (about 4.5–6 oz) — is the sweet spot: opaque enough to print, durable through washes, and comfortable year-round. Go lighter (under 150 GSM) for athletic and hot-weather shirts, and heavier (200 GSM+) for the boxy, structured streetwear look.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "What GSM are hoodies and fleece?", "answer": "<p>Much heavier than tees. Standard hoodies and fleece typically run about 280–350 GSM, and 350 GSM and up is generally considered heavyweight. The extra weight comes from the brushed fleece interior, and it's what gives a hoodie warmth and structure — and a stable, forgiving surface for printing and embroidery.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "How is fabric GSM measured?", "answer": "<p>With a GSM round cutter and a scale. The cutter punches a circle of exactly 100 square centimeters — one hundredth of a square meter — which is weighed in grams and multiplied by 100. A swatch that weighs 1.8 g is 180 GSM. Mills usually cut and average several swatches from different spots for an accurate number.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "Does a higher GSM mean better quality?", "answer": "<p>Not by itself. GSM measures weight, not quality — a well-made 150 GSM tee knit from ring-spun or combed cotton can feel better and outlast a coarse, open-end 200 GSM one. Weight tells you about heft, opacity, and drape. Judge quality by the yarn and knit, and use GSM to pick the right weight for the job.</p>" } },
+        "q7": { "type": "qa", "settings": { "question": "What GSM should I choose for printing?", "answer": "<p>Midweight and up (150 GSM+) is the safe zone for screen printing and DTF: the fabric sits flat, hides the platen, and carries bold graphics without distorting. Embroidery likes heavier fabric still — fleece is ideal. Lightweight polyester performance fabric is the exception: it's the right base for sublimation, which needs poly, not weight.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per piece — a flat 99¢/unit on tees and $1.50/unit on fleece, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Every Weight Class", "text": "Light performance knits, everyday cotton crews, and heavyweight fleece — real overstock depth, through extended and plus sizes." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Ring-Spun Cotton?", "summary": "Why the yarn matters as much as the weight.", "cta": "Read", "url": "/pages/what-is-ring-spun-cotton" } },
+        "l2": { "type": "link", "settings": { "category": "Glossary", "title": "Cotton vs Polyester vs Blend", "summary": "The fiber decision that pairs with the weight decision.", "cta": "Read", "url": "/pages/cotton-vs-polyester-t-shirts" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "Fleece vs French Terry", "summary": "The two heavyweight knits, compared.", "cta": "Read", "url": "/pages/fleece-vs-french-terry" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop blanks <em>by weight.</em>",
+        "subtext": "<p>Lightweight performance tees, everyday cotton crews, and heavyweight fleece — sold by the pack at flat per-unit prices: tees from 99¢, fleece from $1.50. No account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank T-Shirts",
+        "cta_collection": "t-shirts",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
