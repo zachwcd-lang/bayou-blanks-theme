@@ -16,6 +16,58 @@
   .collection-hero__description {
     margin-bottom: 28px;
   }
+
+  /* Mobile: collapse the description behind a mono "more" toggle so
+     products start within the first viewport. Desktop shows it in full. */
+  .collection-hero__description-toggle {
+    display: none;
+    margin-bottom: 28px;
+  }
+
+  .collection-hero__description-toggle summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
+  }
+
+  .collection-hero__description-toggle summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .collection-hero__description-toggle summary::after {
+    content: ' +';
+  }
+
+  .collection-hero__description-toggle[open] summary::after {
+    content: ' \2212';
+  }
+
+  .collection-hero__description-toggle .rte {
+    margin-top: 1.2rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .collection-hero__description {
+      display: none;
+    }
+
+    .collection-hero__description-toggle {
+      display: block;
+    }
+  }
+
+  .collection-hero__subline {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
+    margin: 1.6rem 0 0;
+  }
 {%- endstyle -%}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
@@ -26,11 +78,19 @@
         {{- collection.title | escape -}}
       </h1>
 
-      {%- if section.settings.show_collection_description -%}
+      {%- if section.settings.show_collection_description and collection.description != blank -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
+        <details class="collection-hero__description-toggle">
+          <summary>{{ section.settings.description_toggle_label | default: 'More' }}</summary>
+          <div class="rte">{{ collection.description }}</div>
+        </details>
       {%- endif -%}
 
       {% render 'collection-nav' %}
+
+      {%- if section.settings.subline != blank -%}
+        <p class="collection-hero__subline">{{ section.settings.subline | escape }}</p>
+      {%- endif -%}
     </div>
 
     {%- if section.settings.show_collection_image and collection.image -%}
@@ -76,6 +136,19 @@
       "id": "show_collection_image",
       "default": false,
       "label": "t:sections.main-collection-banner.settings.show_collection_image.label"
+    },
+    {
+      "type": "text",
+      "id": "description_toggle_label",
+      "label": "Mobile description toggle label",
+      "default": "More"
+    },
+    {
+      "type": "text",
+      "id": "subline",
+      "label": "Mono subline (under the pill nav)",
+      "info": "Leave blank to hide.",
+      "default": "EVERY SIZE, SAME PRICE · SOLD BY THE PACK"
     },
     {
       "type": "color_scheme",
