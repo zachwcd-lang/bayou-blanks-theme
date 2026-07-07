@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>6 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>2</b> methods compared" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>4</b> blank picks" } },
+        "s4": { "type": "stat", "settings": { "text": "A flat <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Buying Guide · Updated July 2026",
+        "heading": "Sublimation vs <em>HTV</em>",
+        "answer": "<p>Sublimation vs HTV splits on fabric: <strong>sublimation dyes the design into light-colored polyester permanently with zero hand feel, while HTV is cut vinyl pressed on top</strong> — it works on any fabric and any color, including cotton and darks. Poly and performance blanks go sublimation; cotton, darks, and simple text go HTV.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Buying Guides",
+        "crop_anchor": "buying-guides",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Fabric decides it:</b> sublimation only bonds to polyester — roughly 65% poly or higher, and the higher the poly, the brighter the print. HTV works on cotton, poly, blends, even nylon.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Garment color is the second gate:</b> sublimation dyes are transparent, so they only show on white and light garments. HTV is opaque vinyl — darks are no problem.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Durability goes to sublimation:</b> the dye becomes part of the fiber, so it won't crack or peel and lasts the life of the garment. HTV sits on top and is typically rated around 50 washes applied correctly.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Feel goes to sublimation too:</b> zero hand — the fabric stays exactly as soft as it started. HTV adds a vinyl layer you can feel, and stacked colors add stiffness.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>HTV starts cheaper:</b> an entry cutter (~$200–500) plus a heat press. Sublimation needs a sublimation printer — entry setups run roughly $300–500 — plus sublimation paper and a press.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>The blank is the same flat 99¢ a unit either way</b> — athletic jerseys and poly performance tees for sublimation, cotton crews for HTV, every size one price.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"If the shirt is white poly, dye it in. If it's cotton or dark, <em>press the vinyl.</em>\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Sublimation" } },
+        "c3": { "type": "column", "settings": { "label": "HTV (Heat Transfer Vinyl)" } },
+        "r1": { "type": "row", "settings": { "label": "What it is", "cell_1": "Dye turned to gas, bonded into poly fibers", "cell_2": "Solid-color vinyl sheet, cut and heat-pressed on" } },
+        "r2": { "type": "row", "settings": { "label": "Fabric", "cell_1": "Polyester (~65%+) or poly-coated only", "cell_2": "Cotton, poly, blends, even nylon", "badge_2": true } },
+        "r3": { "type": "row", "settings": { "label": "Garment color", "cell_1": "White / light only — dye is transparent", "cell_2": "Any color — opaque, darks included", "badge_2": true } },
+        "r4": { "type": "row", "settings": { "label": "Colors & detail", "cell_1": "Unlimited — photos, gradients, all-over prints", "cell_2": "One color per layer; bold shapes and text", "badge_1": true } },
+        "r5": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Zero — dyed into the fabric", "cell_2": "Raised vinyl layer; stacks get stiff", "badge_1": true } },
+        "r6": { "type": "row", "settings": { "label": "Durability", "cell_1": "Life of the garment — won't crack or peel", "cell_2": "~50 washes pressed right; edges can lift as it ages", "badge_1": true } },
+        "r7": { "type": "row", "settings": { "label": "Equipment to start", "cell_1": "Sublimation printer (~$300–500) + paper + press", "cell_2": "Vinyl cutter (~$200–500) + heat press", "badge_2": true } },
+        "r8": { "type": "row", "settings": { "label": "From (per unit)", "sub": "By the pack", "cell_1": "$0.99", "cell_2": "$0.99" } }
+      },
+      "block_order": ["c1", "c2", "c3", "r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Dye Job vs <em>Vinyl</em>",
+        "intro": "<p>Both methods end at a heat press, but they put ink in very different places. Sublimation turns dye to gas and bonds it inside polyester fibers; HTV is a solid sheet of vinyl cut to shape and pressed onto the surface. Here's how they stack up.</p>",
+        "caption": "Sublimation vs HTV, head to head"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "Sublimation · Poly Performance", "blurb": "A lightweight poly performance tee — sublimation's home turf. The dye bonds into the knit with zero hand feel; the space-dye heather adds texture under an all-over print, and lighter panels print truest.", "sizes": "S–2XL", "tag": "Sublimation-Ready" } },
+        "p2": { "type": "pick", "settings": { "product": "za41-1047-undecorated-adult-sleeveless-jersey", "kicker": "Team Jerseys · Both Methods", "blurb": "An adult sleeveless jersey in a lightweight athletic knit — the garment class sublimation was built for. Full-bleed team designs go sublimation; single-color HTV numbers press on either way.", "sizes": "M–2XL", "tag": "Team Runs" } },
+        "p3": { "type": "pick", "settings": { "product": "za41-1204-sleeveless-athletic-jersey", "kicker": "HTV · Names & Numbers", "blurb": "A sleeveless athletic jersey in an Athletic Red/Black/White colorway through 3XL — HTV territory. Opaque vinyl doesn't care about the red and black panels; names and numbers press in one layer.", "sizes": "M–3XL", "tag": "Through 3XL" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "HTV · Cotton", "blurb": "A smooth cotton crew with the deepest stock on the floor. Cotton is where sublimation taps out and HTV shines — vinyl grips it predictably, wash after wash.", "sizes": "S–2XL", "tag": "Deepest Stock" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks for Either <em>Method, In Stock</em>",
+        "intro": "<p>Athletic jerseys and poly tees for the dye, cotton crews for the vinyl — on the floor in Hattiesburg, sold by the pack. Prices shown per unit — no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank is a flat <b>99¢/unit</b>, the same in every size and pack. Stock is liquidation overstock, so specific colors and sizes rotate — check each product for live availability, and check the listing for fiber content before you sublimate.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "Is sublimation better than HTV?", "answer": "<p>Neither is universally better — the blank decides. On white or light polyester, sublimation wins: unlimited colors, zero hand feel, and a print that lasts the life of the garment. On cotton, blends, or dark garments, HTV is the practical choice — it's opaque, works on almost any fabric, and starts on cheaper equipment. Poly athletic wear goes sublimation; cotton and darks go HTV.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "Why doesn't sublimation work on cotton or dark shirts?", "answer": "<p>Sublimation dye bonds to polyester molecules under heat — cotton fibers have nothing for it to grab, so prints on cotton wash out and fade fast. And because sublimation dyes are transparent with no white ink, they're invisible on dark fabric. The workaround for cotton is sublimation-coated HTV: a printable white vinyl you sublimate onto, then press to the garment — but at that point you're layering vinyl anyway.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Which lasts longer, sublimation or HTV?", "answer": "<p>Sublimation. The dye becomes part of the fiber itself, so there's nothing on the surface to crack, peel, or flake — the print typically lasts as long as the garment does. HTV sits on top of the fabric and is generally rated around 50 washes when applied at the right time, temperature, and pressure; edges and layered designs can lift sooner as the vinyl ages.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "What equipment do you need for sublimation vs HTV?", "answer": "<p>For HTV: a vinyl cutter (entry machines run roughly $200–500) and a heat press. For sublimation: a sublimation printer — entry setups built on converted inkjets run roughly $300–500, dedicated machines more — plus sublimation paper and a heat press. HTV is the cheaper door into the craft; sublimation pays off in durability and full-color range once you're printing poly regularly.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "What temperature and time do sublimation and HTV press at?", "answer": "<p>Sublimation runs hot and long: roughly 385–400°F for 40–60 seconds, which is what turns the dye to gas so it bonds into the polyester. HTV runs cooler and quicker: roughly 305–320°F for 10–15 seconds for standard vinyl, with low-temp formulas made for heat-sensitive synthetics. Always follow the specific transfer or vinyl maker's settings over any generic chart.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What blanks should I buy for sublimation or HTV?", "answer": "<p>For sublimation: light-colored polyester — athletic jerseys and performance tees are the classic canvas. For HTV: nearly anything, with smooth cotton crews the most forgiving surface. Buying by the pack at a flat 99¢ a unit keeps test presses cheap, and every size in the run costs the same.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per shirt: a flat 99¢ a unit, the same in every size and pack. Shown up front, no account, same price every size." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Press-Ready Blanks", "text": "Athletic jerseys and poly tees for the dye, smooth cotton for the vinyl — print-ready overstock with new pallets landing weekly." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Sublimation vs DTF", "summary": "The poly specialist against the any-fabric film.", "cta": "Compare methods", "url": "/pages/sublimation-vs-dtf" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "DTF vs HTV", "summary": "The other transfer matchup: printed film vs cut vinyl.", "cta": "Compare methods", "url": "/pages/dtf-vs-htv" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "What Is HTV?", "summary": "Heat transfer vinyl, defined — temps, tools, and when to use it.", "cta": "Read definition", "url": "/pages/what-is-htv" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Pick your <em>blank.</em>",
+        "subtext": "<p>Sublimation wants poly, HTV takes anything — either way the blank is a flat 99¢ a unit, every size one price, no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank Jerseys",
+        "cta_collection": "jerseys",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}

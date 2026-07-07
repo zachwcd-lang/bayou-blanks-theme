@@ -153,6 +153,16 @@
             "url": "/pages/dtf-vs-htv"
           }
         },
+        "e16": {
+          "type": "entry",
+          "settings": {
+            "cluster": "buying-guides",
+            "title": "Sublimation vs HTV",
+            "dek": "Dye it in or press it on: sublimation for permanent zero-feel prints on light poly, HTV for any fabric, any color — cotton and darks included. A flat 99¢ a unit.",
+            "cta": "Compare methods",
+            "url": "/pages/sublimation-vs-htv"
+          }
+        },
         "c1": {
           "type": "entry",
           "settings": {
@@ -390,6 +400,7 @@
         "e13",
         "e14",
         "e15",
+        "e16",
         "c1",
         "c2",
         "c3",
