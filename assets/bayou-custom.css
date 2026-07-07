@@ -18,7 +18,8 @@
   --bb-green-soft: #2D3B1E;       /* hover */
   --bb-moss: #5C7A3A;             /* links, stock dots, eyebrows, focus */
   --bb-moss-tint: rgba(92, 122, 58, 0.10);
-  --bb-gold: #B89B3E;             /* darkened for AA on white */
+  --bb-gold: #B89B3E;             /* accents/stars on white (large or graphical only — 2.7:1) */
+  --bb-gold-deep: #8A7430;        /* small gold TEXT on white/paper — 4.5:1, AA */
   --bb-gold-bright: #C9B96B;      /* gold on ink (footer) only */
   --bb-haze: rgba(21, 25, 15, 0.12);        /* hairlines */
   --bb-haze-strong: rgba(21, 25, 15, 0.28); /* input borders */
