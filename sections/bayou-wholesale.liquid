@@ -1,6 +1,6 @@
 {%- style -%}
   .bayou-wholesale {
-    background-color: var(--bb-ink, #1A2415);
+    background-color: {{ section.settings.background | default: '#FCFBF7' }};
     padding: 5.6rem 0;
   }
 
@@ -29,7 +29,7 @@
     font-size: 12px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(250, 248, 242, 0.6);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
     margin: 0 0 1.2rem;
   }
 
@@ -39,7 +39,7 @@
     font-size: 2.8rem;
     line-height: 1.1;
     letter-spacing: -0.025em;
-    color: var(--bb-paper, #FAF8F2);
+    color: var(--bb-text, #15190F);
     margin: 0 0 1.4rem;
   }
 
@@ -53,7 +53,7 @@
     font-family: var(--font-display, 'Inter', sans-serif);
     font-size: 1.5rem;
     line-height: 1.6;
-    color: rgba(250, 248, 242, 0.78);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
     max-width: 44rem;
     margin: 0 0 2.8rem;
   }
@@ -64,18 +64,18 @@
     font-weight: 500;
     font-size: 1.4rem;
     padding: 1.4rem 3rem;
-    background-color: var(--bb-paper, #FAF8F2);
-    color: var(--bb-ink, #1A2415);
+    background-color: var(--bb-green, #1A2415);
+    color: var(--bb-white, #FFFFFF);
     text-decoration: none;
     border-radius: var(--bb-radius-btn, 4px);
-    border: 1px solid var(--bb-paper, #FAF8F2);
+    border: 1px solid var(--bb-green, #1A2415);
     transition: background-color 0.2s ease, border-color 0.2s ease;
   }
 
   .bayou-wholesale__button:hover {
-    background-color: var(--bb-paper-deep, #F1ECDD);
-    border-color: var(--bb-paper-deep, #F1ECDD);
-    color: var(--bb-ink, #1A2415);
+    background-color: var(--bb-green-soft, #2D3B1E);
+    border-color: var(--bb-green-soft, #2D3B1E);
+    color: var(--bb-white, #FFFFFF);
   }
 
   /* --- Glass price panel (sanctioned glass surface) --- */
@@ -93,7 +93,7 @@
   }
 
   .bayou-wholesale__tier + .bayou-wholesale__tier {
-    border-top: 1px solid var(--bb-glass-border, rgba(250, 248, 242, 0.22));
+    border-top: 1px solid var(--bb-haze, rgba(21, 25, 15, 0.12));
   }
 
   .bayou-wholesale__tier-name {
@@ -101,7 +101,7 @@
     font-size: 12px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bb-paper, #FAF8F2);
+    color: var(--bb-text, #15190F);
   }
 
   .bayou-wholesale__tier-units {
@@ -109,13 +109,13 @@
     font-size: 12px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(250, 248, 242, 0.6);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
   }
 
   .bayou-wholesale__tier-price {
     font-family: var(--font-mono, 'IBM Plex Mono', monospace);
     font-size: 1.4rem;
-    color: var(--bb-paper, #FAF8F2);
+    color: var(--bb-text, #15190F);
     text-align: right;
   }
 
@@ -124,8 +124,8 @@
     font-size: 12px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bb-gold, #C9B96B);
-    border-top: 1px solid var(--bb-glass-border, rgba(250, 248, 242, 0.22));
+    color: var(--bb-gold, #B89B3E);
+    border-top: 1px solid var(--bb-haze, rgba(21, 25, 15, 0.12));
     padding: 1.6rem 0 1rem;
     margin: 0;
   }
@@ -154,7 +154,7 @@
     </div>
 
     {%- if section.blocks.size > 0 -%}
-      <div class="bayou-wholesale__panel bb-glass-dark">
+      <div class="bayou-wholesale__panel bb-glass">
         {%- for block in section.blocks -%}
           <div class="bayou-wholesale__tier" {{ block.shopify_attributes }}>
             <span class="bayou-wholesale__tier-name">{{ block.settings.name }}</span>
@@ -210,6 +210,12 @@
       "id": "footnote",
       "label": "Panel footnote (gold)",
       "default": "One flat price per unit — the same whether you buy a 4-pack or a pallet."
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Section background",
+      "default": "#FCFBF7"
     }
   ],
   "max_blocks": 4,
