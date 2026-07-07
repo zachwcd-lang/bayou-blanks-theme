@@ -280,10 +280,11 @@ textarea:focus {
   background: var(--bb-white);
 }
 
-/* --- Announcement bar / ticker base --- */
+/* --- Announcement bar: light, hairline bottom border --- */
 .announcement-bar {
-  background-color: var(--bb-ink) !important;
-  color: var(--bb-paper) !important;
+  background-color: var(--bb-paper) !important;
+  color: var(--bb-text) !important;
+  border-bottom: 1px solid var(--bb-haze);
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -292,7 +293,7 @@ textarea:focus {
 }
 
 .announcement-bar a {
-  color: var(--bb-paper) !important;
+  color: var(--bb-text) !important;
 }
 
 /* --- Sticky header: glass surface 1 of 4 ---
