@@ -67,9 +67,9 @@
         z-index: 4;
         padding: 1rem 1.5rem;
         border: 0;
-        border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+        border-top: 1px solid var(--bb-haze, rgba(21, 25, 15, 0.12));
         /* Shadow allowed: overlay element. */
-        box-shadow: 0 -6px 18px rgba(26, 36, 21, 0.08);
+        box-shadow: 0 -6px 18px rgba(21, 25, 15, 0.08);
         transform: translateY(110%);
         transition: transform 0.25s ease;
       }
@@ -87,7 +87,7 @@
     }
 
     .bayou-sticky-atc__label {
-      color: var(--bb-ink-soft, #2d3b1e);
+      color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -96,7 +96,8 @@
     .bayou-sticky-atc__price {
       font-size: 1.5rem;
       font-weight: 600;
-      color: var(--bb-ink, #1a2415);
+      color: var(--bb-text, #15190f);
+      font-variant-numeric: tabular-nums;
     }
 
     .bayou-sticky-atc__button {

@@ -1,26 +1,39 @@
 /* ==========================================================================
-   BAYOU BLANKS — Custom Theme Overrides
-   Cream paper + bayou-green ink. All-Inter typography, IBM Plex Mono spec
-   details. Flat paper surfaces, 1px hairlines, liquid glass on exactly four
-   surfaces: sticky header, hero proof chips, bulk price panel, mobile ATC.
-   Canonical spec: design/CLAUDE-CODE-PLAN.md
+   BAYOU BLANKS — Custom Theme Overrides — "Bright Ledger" (GIC Light)
+   White is the field, green is the signature. All-Inter typography, IBM Plex
+   Mono spec details. Flat white/paper surfaces, 1px haze hairlines, liquid
+   glass on exactly four light surfaces: sticky header, wholesale form card,
+   bulk price panel, PDP buy-box + sticky mobile ATC.
+   Spec: Linear doc "Storefront GIC-Light — Design Audit & System Spec" §3
    ========================================================================== */
 
-/* --- Design tokens --- */
+/* --- Design tokens (Bright Ledger, spec §3.1) --- */
 :root {
-  --bb-paper: #FAF8F2;
-  --bb-paper-deep: #F1ECDD;
-  --bb-ink: #1A2415;
-  --bb-ink-soft: #2D3B1E;
-  --bb-moss: #5C7A3A;
-  --bb-gold: #C9B96B;
-  --bb-haze: rgba(26, 36, 21, 0.14);
-  --bb-glass: rgba(250, 248, 242, 0.62);
-  --bb-glass-dark: rgba(250, 248, 242, 0.08);
-  --bb-glass-border: rgba(250, 248, 242, 0.22);
-  --bb-blur: 18px;
-  --bb-radius-btn: 6px;
-  --bb-radius-card: 16px;
+  --bb-white: #FFFFFF;            /* cards, glass base, buy-box */
+  --bb-paper: #FCFBF7;            /* default page bg */
+  --bb-paper-deep: #F4F1E8;       /* rare alternate bands */
+  --bb-text: #15190F;             /* body + headings; 16.9:1 on paper */
+  --bb-text-soft: rgba(21, 25, 15, 0.62);
+  --bb-green: #1A2415;            /* buttons, footer, active pills ONLY */
+  --bb-green-soft: #2D3B1E;       /* hover */
+  --bb-moss: #5C7A3A;             /* links, stock dots, eyebrows, focus */
+  --bb-moss-tint: rgba(92, 122, 58, 0.10);
+  --bb-gold: #B89B3E;             /* accents/stars on white (large or graphical only — 2.7:1) */
+  --bb-gold-deep: #8A7430;        /* small gold TEXT on white/paper — 4.5:1, AA */
+  --bb-gold-bright: #C9B96B;      /* gold on ink (footer) only */
+  --bb-haze: rgba(21, 25, 15, 0.12);        /* hairlines */
+  --bb-haze-strong: rgba(21, 25, 15, 0.28); /* input borders */
+  --bb-glass: rgba(255, 255, 255, 0.60);
+  --bb-glass-border: rgba(21, 25, 15, 0.08);
+  --bb-glass-edge: rgba(255, 255, 255, 0.65);
+  --bb-glass-dark: rgba(250, 248, 242, 0.08);       /* footer only */
+  --bb-glass-border-dark: rgba(250, 248, 242, 0.22); /* footer only */
+  --bb-blur: 20px;
+  --bb-radius-btn: 4px;
+  --bb-radius-card: 8px;
+  /* Legacy aliases — older section CSS still references these */
+  --bb-ink: var(--bb-green);
+  --bb-ink-soft: var(--bb-green-soft);
   --font-display: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -51,25 +64,32 @@
 /* --- Utilities --- */
 .bb-mono-label {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-/* The ONLY glass recipe. Light surfaces. */
+/* The ONLY glass recipe. Light surfaces (spec §3.3). Never animate blur. */
 .bb-glass {
-  background: var(--bb-glass);
-  backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-  -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-  border: 1px solid var(--bb-haze);
+  background: rgba(255, 255, 255, 0.92); /* fallback, no backdrop-filter */
+  border: 1px solid var(--bb-glass-border);
+  box-shadow: inset 0 1px 0 var(--bb-glass-edge);
 }
 
-/* Glass on dark (ink) surfaces. */
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .bb-glass {
+    background: var(--bb-glass);
+    backdrop-filter: blur(var(--bb-blur)) saturate(1.5);
+    -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.5);
+  }
+}
+
+/* Glass on dark (ink) surfaces — footer only. */
 .bb-glass-dark {
   background: var(--bb-glass-dark);
   backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
   -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-  border: 1px solid var(--bb-glass-border);
+  border: 1px solid var(--bb-glass-border-dark);
 }
 
 /* --- Typography --- */
@@ -79,7 +99,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   letter-spacing: 0;
-  color: var(--bb-ink);
+  color: var(--bb-text);
   background-color: var(--bb-paper);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -90,7 +110,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: -0.025em;
-  color: var(--bb-ink);
+  color: var(--bb-text);
 }
 
 h1, .h0, .h1 {
@@ -110,28 +130,28 @@ h2, h3, .h2, .h3 {
   text-transform: uppercase;
 }
 
-/* --- Links --- */
+/* --- Links: moss, per spec §3.1 --- */
 a {
-  color: var(--bb-ink-soft);
+  color: var(--bb-moss);
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--bb-moss);
+  color: var(--bb-green-soft);
 }
 
-/* --- Buttons: flat ink, 2px radius, mono labels --- */
+/* --- Buttons: flat green, 4px radius, mono labels --- */
 .button,
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
   font-family: var(--font-mono);
   font-weight: 500;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background-color: var(--bb-ink);
-  color: var(--bb-paper);
+  background-color: var(--bb-green);
+  color: var(--bb-white);
   border: none;
   border-radius: var(--bb-radius-btn);
   padding: 1.4rem 2.8rem;
@@ -143,22 +163,22 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:hover,
 .customer button:hover,
 button.shopify-payment-button__button--unbranded:hover {
-  background-color: var(--bb-ink-soft);
+  background-color: var(--bb-green-soft);
   transform: none;
   box-shadow: none;
 }
 
 .button--secondary {
   background-color: transparent;
-  color: var(--bb-ink);
-  border: 1px solid var(--bb-ink);
+  color: var(--bb-text);
+  border: 1px solid var(--bb-green);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
 
 .button--secondary:hover {
-  background-color: var(--bb-ink);
-  color: var(--bb-paper);
+  background-color: var(--bb-green);
+  color: var(--bb-white);
 }
 
 .button:after,
@@ -172,14 +192,14 @@ hr {
   border-top: 1px solid var(--bb-haze);
 }
 
-/* --- Cards: flat paper, hairline border, rounded tile (16px), no shadows.
+/* --- Cards: flat white, hairline border, rounded tile (8px), no shadows.
    The card clips its own corners; the photo bleeds full-width inside and
    stays square, so the rounding reads on the outer tile only. --- */
 .card,
 .card--card {
   border-radius: var(--bb-radius-card);
   overflow: hidden;
-  background: var(--bb-paper);
+  background: var(--bb-white);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   border: 1px solid var(--bb-haze);
@@ -191,7 +211,7 @@ hr {
 .card--card:hover {
   box-shadow: none;
   transform: none;
-  border-color: var(--bb-ink-soft);
+  border-color: var(--bb-haze-strong);
 }
 
 /* Image box inside the standard card: no box of its own — just the
@@ -200,7 +220,7 @@ hr {
   border: 0;
   border-bottom: 1px solid var(--bb-haze);
   border-radius: 0;
-  background: var(--bb-paper);
+  background: var(--bb-white);
   box-shadow: none;
 }
 
@@ -213,7 +233,7 @@ hr {
 }
 
 .card__heading a {
-  color: var(--bb-ink);
+  color: var(--bb-text);
   text-decoration: none;
   font-weight: 500;
   font-size: 1.6rem;
@@ -226,10 +246,10 @@ hr {
   font-family: var(--font-mono);
   font-weight: 400;
   font-variant-numeric: tabular-nums;
-  color: var(--bb-ink);
+  color: var(--bb-text);
 }
 
-/* --- Inputs: flat, hairline, 2px radius --- */
+/* --- Inputs: flat white, strong hairline, 4px radius --- */
 .field__input,
 .select__select,
 .search__input,
@@ -241,13 +261,13 @@ input[type="password"],
 input[type="tel"],
 input[type="number"],
 input[type="search"] {
-  border: 1px solid var(--bb-haze);
-  background: var(--bb-paper);
+  border: 1px solid var(--bb-haze-strong);
+  background: var(--bb-white);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   font-family: var(--font-body);
   border-radius: var(--bb-radius-btn);
-  color: var(--bb-ink);
+  color: var(--bb-text);
   transition: border-color 0.2s ease;
 }
 
@@ -256,24 +276,25 @@ input[type="search"] {
 .search__input:focus,
 .form__input:focus,
 textarea:focus {
-  border-color: var(--bb-ink);
+  border-color: var(--bb-moss);
   box-shadow: none;
-  background: var(--bb-paper);
+  background: var(--bb-white);
 }
 
-/* --- Announcement bar / ticker base --- */
+/* --- Announcement bar: light, hairline bottom border --- */
 .announcement-bar {
-  background-color: var(--bb-ink) !important;
-  color: var(--bb-paper) !important;
+  background-color: var(--bb-paper) !important;
+  color: var(--bb-text) !important;
+  border-bottom: 1px solid var(--bb-haze);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .announcement-bar a {
-  color: var(--bb-paper) !important;
+  color: var(--bb-text) !important;
 }
 
 /* --- Sticky header: glass surface 1 of 4 ---
@@ -307,7 +328,7 @@ textarea:focus {
 }
 
 .footer a:hover {
-  color: var(--bb-gold) !important;
+  color: var(--bb-gold-bright) !important; /* brighter gold on ink for AA */
 }
 
 .footer h2,
@@ -318,12 +339,12 @@ textarea:focus {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .footer .footer-block__newsletter .field__input {
   background: var(--bb-glass-dark);
-  border: 1px solid var(--bb-glass-border);
+  border: 1px solid var(--bb-glass-border-dark);
   color: var(--bb-paper);
   border-radius: var(--bb-radius-btn);
 }
@@ -335,7 +356,7 @@ textarea:focus {
 .footer .footer-block__newsletter .button,
 .footer .newsletter-form__button {
   background-color: var(--bb-paper);
-  color: var(--bb-ink);
+  color: var(--bb-text);
   border-radius: var(--bb-radius-btn);
 }
 
@@ -347,7 +368,7 @@ textarea:focus {
 .footer .copyright {
   font-family: var(--font-mono);
   color: rgba(250, 248, 242, 0.4);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -357,14 +378,14 @@ textarea:focus {
   font-weight: 600;
   font-size: 2.8rem;
   letter-spacing: -0.02em;
-  color: var(--bb-ink);
+  color: var(--bb-text);
 }
 
 .product__info-wrapper .price {
   font-family: var(--font-mono);
   font-size: 1.8rem;
   font-weight: 400;
-  color: var(--bb-ink);
+  color: var(--bb-text);
 }
 
 /* Variant pills: flat, 2px radius, mono */
@@ -373,7 +394,7 @@ variant-selects .product-form__input {
   border: 1px solid var(--bb-haze);
   border-radius: var(--bb-radius-btn);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 400;
@@ -410,10 +431,10 @@ variant-selects input:checked + .product-form__input {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding: 1.6rem 0;
   border-bottom: 1px solid var(--bb-haze);
-  color: var(--bb-ink);
+  color: var(--bb-text);
 }
 
 /* --- Cart --- */
@@ -453,7 +474,7 @@ variant-selects input:checked + .product-form__input {
   font-family: var(--font-mono);
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.08em;
 }
 
@@ -480,7 +501,7 @@ variant-selects input:checked + .product-form__input {
 /* --- Selection --- */
 ::selection {
   background-color: rgba(92, 122, 58, 0.25);
-  color: var(--bb-ink);
+  color: var(--bb-text);
 }
 
 /* --- Focus states --- */

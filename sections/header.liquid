@@ -71,30 +71,33 @@
     }
   }
 
-  /* --- Bayou Blanks: resting header is flat paper with a hairline bottom edge. --- */
+  /* --- Glass surface #1: always-on white glass header (spec §3.3). ---
+     Same surface at rest and on scroll — no background swap, no layout jump.
+     Solid near-white fallback where backdrop-filter is unsupported (Firefox
+     without the flag); -webkit- prefix covers Safari. Blur is never animated. */
   .header-wrapper,
   .header-wrapper.gradient {
-    background: var(--bb-paper);
-    transition: background-color 0.25s ease;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: inset 0 1px 0 var(--bb-glass-edge);
+  }
+
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .header-wrapper,
+    .header-wrapper.gradient {
+      background: var(--bb-glass);
+      backdrop-filter: blur(var(--bb-blur)) saturate(1.5);
+      -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.5);
+    }
   }
 
   .header-wrapper--border-bottom {
     border-bottom: 1px solid var(--bb-haze);
   }
 
-  /* Glass surface #1: on scroll the section element takes the sanctioned glass
-     recipe (tokens from bayou-custom.css); the wrapper goes transparent so the
-     glass shows through. Hairline stays on the wrapper, so no layout jump. */
+  /* Soft drop shadow only once content has scrolled beneath (sticky element:
+     shadow allowed). Background itself never changes. */
   .section-header.scrolled-past-header {
-    background: var(--bb-glass);
-    backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-    -webkit-backdrop-filter: blur(var(--bb-blur)) saturate(1.4);
-    box-shadow: 0 1px 12px rgba(26, 36, 21, 0.06); /* sticky element: shadow allowed */
-  }
-
-  .section-header.scrolled-past-header .header-wrapper,
-  .section-header.scrolled-past-header .header-wrapper.gradient {
-    background: transparent;
+    box-shadow: 0 1px 12px rgba(21, 25, 15, 0.06);
   }
 
   /* --- Wordmark: Inter 600, vertically centered in the bar. --- */
@@ -108,7 +111,7 @@
     font-weight: 600;
     letter-spacing: -0.02em;
     line-height: 1;
-    color: var(--bb-ink);
+    color: var(--bb-text);
   }
 
   .header__heading-link:hover .h2 {
@@ -130,11 +133,11 @@
   .header__inline-menu .header__menu-item span,
   .header__submenu .header__menu-item {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bb-ink);
+    color: var(--bb-text);
   }
 
   .header__inline-menu .header__menu-item:hover,
@@ -159,7 +162,7 @@
     font-size: 12px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bb-ink);
+    color: var(--bb-text);
   }
 
   /* Cart count bubble: ink chip, paper numeral, mono. */

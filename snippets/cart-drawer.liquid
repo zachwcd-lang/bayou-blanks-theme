@@ -18,14 +18,19 @@
 
   .bayou-line-math {
     margin: 0.4rem 0 0;
-    color: var(--bb-ink-soft, #2d3b1e);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
   }
 
-  .bayou-honesty-line {
+  .bayou-honesty-line,
+  .bayou-ships-line {
     display: block;
     margin: 0 0 0.8rem;
-    color: var(--bb-ink-soft, #2d3b1e);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
     text-align: center;
+  }
+
+  .bayou-ships-line {
+    margin-top: -0.4rem;
   }
 
   .bayou-payment-icons {
@@ -274,7 +279,7 @@
                             <p class="bayou-line-math bb-mono-label">
                               {{ bayou_pack_label | escape }} &middot;
                               {{ item.final_line_price | divided_by: bayou_total_units | money -}}
-                              /unit
+                              /unit &middot; {{ bayou_total_units }} units
                             </p>
                           {%- endif -%}
 
@@ -564,6 +569,7 @@
             is a snippet with no schema, so the default is hardcoded here.
           {% endcomment %}
           <span class="bayou-honesty-line bb-mono-label">LIQUIDATION STOCK &mdash; SOLD OUT IS GONE</span>
+          <span class="bayou-ships-line bb-mono-label">SHIPS FROM HATTIESBURG, MS</span>
           <div>
             {%- if cart.cart_level_discount_applications.size > 0 -%}
               <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">

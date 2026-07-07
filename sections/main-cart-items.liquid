@@ -20,20 +20,25 @@
 
   .bayou-line-math {
     margin: 0.4rem 0 0;
-    color: var(--bb-ink-soft, #2d3b1e);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
   }
 
   .bayou-cart-honesty {
     margin: 2rem 0 0;
     padding-top: 1.6rem;
-    border-top: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
+    border-top: 1px solid var(--bb-haze, rgba(21, 25, 15, 0.12));
     text-align: right;
   }
 
-  .bayou-cart-honesty__line {
+  .bayou-cart-honesty__line,
+  .bayou-cart-honesty__ships {
     display: block;
     margin: 0;
-    color: var(--bb-ink-soft, #2d3b1e);
+    color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
+  }
+
+  .bayou-cart-honesty__ships {
+    margin-top: 0.4rem;
   }
 
   .bayou-payment-icons {
@@ -227,7 +232,7 @@
                         <p class="bayou-line-math bb-mono-label">
                           {{ bayou_pack_label | escape }} &middot;
                           {{ item.final_line_price | divided_by: bayou_total_units | money -}}
-                          /unit
+                          /unit &middot; {{ bayou_total_units }} units
                         </p>
                       {%- endif -%}
 
@@ -514,6 +519,9 @@
         {% endcomment %}
         <div class="bayou-cart-honesty">
           <span class="bayou-cart-honesty__line bb-mono-label">{{ section.settings.bayou_honesty_text | escape }}</span>
+          {%- if section.settings.bayou_ships_text != blank -%}
+            <span class="bayou-cart-honesty__ships bb-mono-label">{{ section.settings.bayou_ships_text | escape }}</span>
+          {%- endif -%}
           {%- if shop.enabled_payment_types.size > 0 -%}
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="bayou-payment-icons list-unstyled" role="list">
@@ -551,6 +559,13 @@
       "label": "Honesty line",
       "info": "Shown above the cart subtotal. The cart drawer shows the same line.",
       "default": "LIQUIDATION STOCK — SOLD OUT IS GONE"
+    },
+    {
+      "type": "text",
+      "id": "bayou_ships_text",
+      "label": "Ships-from line",
+      "info": "Trust line under the honesty line. The cart drawer shows the same line.",
+      "default": "SHIPS FROM HATTIESBURG, MS"
     },
     {
       "type": "text",

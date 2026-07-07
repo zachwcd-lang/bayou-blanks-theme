@@ -8,7 +8,7 @@
         "ann1": {
           "type": "announcement",
           "settings": {
-            "text": "$2 tees. $4 hoodies. Real overstock, while it lasts.",
+            "text": "99¢ tees. $1.50 hoodies. Real overstock, while it lasts.",
             "link": "/collections/in-stock"
           }
         }
@@ -16,7 +16,7 @@
       "block_order": ["ann1"],
       "settings": {
         "auto_rotate": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "show_line_separator": false,
         "show_social": false,
         "enable_country_selector": false,

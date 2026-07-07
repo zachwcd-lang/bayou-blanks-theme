@@ -65,7 +65,7 @@
         "gallery_layout": "stacked",
         "media_size": "large",
         "constrain_to_viewport": true,
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -75,49 +75,44 @@
     "bayou-wholesale": {
       "type": "bayou-wholesale",
       "blocks": {
-        "feature-0": {
-          "type": "feature",
+        "tier_1": {
+          "type": "tier",
           "settings": {
-            "icon": "discount",
-            "text": "Flat 99¢/$1.50 Per-Unit Pricing"
+            "name": "Tees, tanks, jerseys & polos",
+            "units": "any size",
+            "price": "99¢/unit"
           }
         },
-        "feature-1": {
-          "type": "feature",
+        "tier_2": {
+          "type": "tier",
           "settings": {
-            "icon": "package",
-            "text": "No Minimum Orders"
+            "name": "Hoodies, fleece, sweats & outerwear",
+            "units": "any size",
+            "price": "$1.50/unit"
           }
         },
-        "feature-2": {
-          "type": "feature",
+        "tier_3": {
+          "type": "tier",
           "settings": {
-            "icon": "truck",
-            "text": "Fast Shipping from MS"
-          }
-        },
-        "feature-3": {
-          "type": "feature",
-          "settings": {
-            "icon": "shirt",
-            "text": "Print-Ready Blanks"
+            "name": "By the pack",
+            "units": "4 · 6 · 12",
+            "price": "per-unit pricing"
           }
         }
       },
       "block_order": [
-        "feature-0",
-        "feature-1",
-        "feature-2",
-        "feature-3"
+        "tier_1",
+        "tier_2",
+        "tier_3"
       ],
       "settings": {
-        "bg_color": "#1A2415",
-        "label": "For Businesses",
-        "heading": "Bulk & Wholesale Pricing",
-        "subtext": "Flat per-unit pricing — 99¢ tees, $1.50 fleece, the same in every size and pack — for screen printers, decorators, resellers, and teams. Premium Fanatics blanks shipped fast from Mississippi.",
-        "mode": "form",
-        "cta_heading": "Get a Custom Quote",
-        "cta_label": "Request Pricing"
+        "label": "For businesses",
+        "heading": "Need 100+ of this style?",
+        "text": "Same warehouse, better math. Case, half-pallet, and pallet pricing for printers, decorators, and resellers — shipped from Hattiesburg.",
+        "button_label": "Get bulk pricing",
+        "button_link": "/pages/contact",
+        "footnote": "One flat price per unit — the same whether you buy a 4-pack or a pallet.",
+        "background": "#FCFBF7"
       }
     },
     "related-products": {

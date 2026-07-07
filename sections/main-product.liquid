@@ -47,13 +47,47 @@
 
     #MainProduct-{{ section.id }} .bayou-product-subtitle {
       margin: 0.4rem 0 0;
-      color: var(--bb-ink-soft, #2d3b1e);
+      color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
+    }
+
+    /* Glass surface #4 (spec §3.3): the buy column is one glass panel. */
+    #MainProduct-{{ section.id }} .product__info-container.bayou-buybox {
+      padding: 2.4rem;
+      border-radius: var(--bb-radius-card, 8px);
+    }
+
+    @media screen and (max-width: 749px) {
+      #MainProduct-{{ section.id }} .product__info-container.bayou-buybox {
+        padding: 2rem 1.6rem;
+      }
+    }
+
+    /* Per-unit headline price (spec §3.4): the display number of the PDP. */
+    #MainProduct-{{ section.id }} .bayou-price__unit {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--bb-text, #15190f);
+      font-variant-numeric: tabular-nums;
+    }
+
+    #MainProduct-{{ section.id }} .bayou-price__unit-suffix {
+      margin-left: 0.4rem;
+      font-weight: 400;
+      color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
+    }
+
+    #MainProduct-{{ section.id }} .bayou-price__total {
+      margin: 0.4rem 0 0;
+      color: var(--bb-text-soft, rgba(21, 25, 15, 0.62));
     }
 
     #MainProduct-{{ section.id }} .bayou-spec-table {
       margin: 2rem 0 0;
       border: 1px solid var(--bb-haze, rgba(26, 36, 21, 0.14));
-      border-radius: var(--bb-radius-card, 4px);
+      border-radius: var(--bb-radius-card, 8px);
     }
 
     #MainProduct-{{ section.id }} .bayou-spec-table__row {
@@ -120,7 +154,7 @@
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
           id="ProductInfo-{{ section.id }}"
-          class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
+          class="product__info-container bayou-buybox bb-glass{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -187,12 +221,46 @@
                 {%- endif -%}
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
+                  {%- liquid
+                    # Per-unit headline (spec §3.4): parse the pack count from the selected
+                    # variant's Bundle Quantity option value (e.g. "4-Pack" → 4). This div is
+                    # re-rendered by product-info.js on variant change, so it stays live.
+                    assign bayou_price_variant = product.selected_or_first_available_variant
+                    assign bayou_price_bundle_name = section.settings.bayou_bundle_option_name | default: 'Bundle Quantity'
+                    assign bayou_price_bundle_down = bayou_price_bundle_name | downcase
+                    assign bayou_price_pack = 0
+                    assign bayou_price_pack_label = ''
+                    for option in product.options_with_values
+                      assign bayou_price_option_down = option.name | downcase
+                      if bayou_price_option_down == bayou_price_bundle_down
+                        assign bayou_price_index0 = option.position | minus: 1
+                        assign bayou_price_pack_label = bayou_price_variant.options[bayou_price_index0]
+                        assign bayou_price_pack = bayou_price_pack_label | split: '-' | first | plus: 0
+                        break
+                      endif
+                    endfor
                   -%}
+                  {%- if bayou_price_pack > 0 -%}
+                    <div class="bayou-price">
+                      <p class="bayou-price__unit">
+                        {{- bayou_price_variant.price | divided_by: bayou_price_pack | money -}}
+                        <span class="bayou-price__unit-suffix bb-mono-label">/unit</span>
+                      </p>
+                      <p class="bayou-price__total bb-mono-label">
+                        {{ bayou_price_pack_label }} &middot; {{ bayou_price_variant.price | money }} total
+                      </p>
+                    </div>
+                    <div class="visually-hidden">
+                      {%- render 'price', product: product, use_variant: true, show_badges: false -%}
+                    </div>
+                  {%- else -%}
+                    {%- render 'price',
+                      product: product,
+                      use_variant: true,
+                      show_badges: true,
+                      price_class: 'price--large'
+                    -%}
+                  {%- endif -%}
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">

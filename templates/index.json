@@ -82,14 +82,14 @@
     "live_hero": {
       "type": "bayou-tiktok-cta",
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "heading": "99¢ tees. $1.50 hoodies.",
         "handle_line": "@BAYOU.BLANKS · TIKTOK & WHATNOT",
         "subline": "Blank apparel at prices that don't exist anywhere else. Real Fanatics overstock, sold by the pack while it lasts. No account, no minimums. Buying in bulk? Talk to us.",
-        "button_label": "Buy in bulk",
-        "button_link": "#wholesale-lead-form",
-        "button_secondary_label": "Shop now",
-        "button_secondary_link": "/collections/in-stock",
+        "button_label": "Shop packs",
+        "button_link": "/collections/in-stock",
+        "button_secondary_label": "Get bulk pricing",
+        "button_secondary_link": "#wholesale-lead-form",
         "video_asset": "hattiesburg-hero.mov",
         "caption": "LIVE FROM THE WAREHOUSE, DAILY."
       }
@@ -155,7 +155,7 @@
         "eyebrow": "Bulk & wholesale",
         "heading": "Get wholesale pricing.",
         "intro": "Tell us where to reach you and what you're after. We'll send case-to-pallet pricing, usually same business day.",
-        "background": "#1A2415",
+        "background": "#FCFBF7",
         "show_proof": true,
         "success_heading": "We got it.",
         "manifest_label": "View entire manifest",

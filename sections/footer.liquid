@@ -74,23 +74,23 @@
     line-height: 1.7;
   }
 
-  /* --- Smallprint: mono 10px uppercase, paper at 40%. --- */
+  /* --- Smallprint: mono 12px uppercase, paper at 65% (AA on ink at 12px). --- */
   .footer__copyright,
   .footer__copyright .copyright__content {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(250, 248, 242, 0.4);
+    color: rgba(250, 248, 242, 0.65);
   }
 
   .footer .footer__copyright a {
-    color: rgba(250, 248, 242, 0.4) !important;
+    color: rgba(250, 248, 242, 0.65) !important;
   }
 
   .footer .footer__copyright a:hover {
-    color: var(--bb-gold) !important;
+    color: var(--bb-gold-bright, #C9B96B) !important; /* bright gold on ink; dark gold is for white */
   }
 
   /* --- Blog link: coming-soon stamp badge, revealed on click. --- */
@@ -100,11 +100,11 @@
     padding: 2px 7px 1px;
     border: 1px solid currentColor;
     font-family: var(--font-mono, 'IBM Plex Mono', monospace);
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--bb-gold, #C9B96B);
+    color: var(--bb-gold-bright, #C9B96B);
     vertical-align: 2px;
     opacity: 0;
     visibility: hidden;
@@ -608,8 +608,8 @@
       "type": "checkbox",
       "id": "use_default_strip",
       "label": "Use built-in bayou painting strip",
-      "info": "When no painting strip is picked, show the bundled bayou-water strip. Off by default — the bundled crop is low-res; pick a high-res 8:1 image instead.",
-      "default": false
+      "info": "When no painting strip is picked, show the bundled bayou-water strip. Untick to remove the strip entirely; pick a high-res 8:1 image above to replace it.",
+      "default": true
     },
     {
       "type": "text",
