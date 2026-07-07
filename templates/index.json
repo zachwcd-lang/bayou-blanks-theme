@@ -60,7 +60,7 @@
           "type": "tier",
           "settings": {
             "name": "By the pack",
-            "units": "4 · 6 · 8 · 12",
+            "units": "4 · 6 · 12",
             "price": "per-unit pricing"
           }
         }
@@ -167,8 +167,8 @@
   },
   "order": [
     "live_hero",
-    "bayou_wholesale",
     "lead_form",
+    "bayou_wholesale",
     "collection_cards",
     "live_channels"
   ]
