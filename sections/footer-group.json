@@ -42,8 +42,8 @@
         "footer-warehouse"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "use_default_strip": false,
+        "color_scheme": "scheme-3",
+        "use_default_strip": true,
         "smallprint_text": "THE BAYOU BLANKS COMPANY · EST. HATTIESBURG, MS · BACKED BY WEST COAST DEALS",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
