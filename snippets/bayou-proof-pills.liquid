@@ -1,10 +1,12 @@
 {%- comment -%}
   Bayou Blanks — social-proof pills (reusable).
-  Renders TikTok + Whatnot rating pills. Built for dark bayou sections
-  (cream-on-ink). Used in the live hero and on the contact/lead page.
+  Renders TikTok + Whatnot rating pills. Dark (cream-on-ink) is the default;
+  pass tone: 'light' for white pills on light surfaces (Bright Ledger).
+  Used in the live hero and on the contact/lead page.
 
   Accepts:
   - align: 'center' to center the row (default: left)
+  - tone: 'light' for light surfaces (default: dark)
   - tiktok_url, whatnot_url: profile links
 {%- endcomment -%}
 
@@ -77,7 +79,7 @@
   }
 
   .bb-proof__stars {
-    color: var(--bb-gold, #C9B96B);
+    color: var(--bb-gold-bright, #C9B96B);
     font-size: 12px;
     letter-spacing: 0.04em;
     flex: 0 0 auto;
@@ -96,9 +98,33 @@
     opacity: 0.4;
     margin: 0 0.1rem;
   }
+
+  /* --- Light variant: white pill on light surfaces. No backdrop blur —
+     glass blur stays capped at the four sanctioned surfaces. --- */
+  .bb-proof--light .bb-proof__pill {
+    border-color: var(--bb-haze, rgba(21, 25, 15, 0.12));
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: inset 0 1px 0 var(--bb-glass-edge, rgba(255, 255, 255, 0.65));
+    color: var(--bb-text, #15190F);
+  }
+
+  .bb-proof--light .bb-proof__pill:hover {
+    border-color: var(--bb-haze-strong, rgba(21, 25, 15, 0.28));
+    background: var(--bb-white, #FFFFFF);
+    color: var(--bb-text, #15190F);
+  }
+
+  .bb-proof--light .bb-proof__stars {
+    color: var(--bb-gold, #B89B3E);
+  }
+
+  .bb-proof--light .bb-proof__mark--w {
+    background: var(--bb-green, #1A2415);
+    color: var(--bb-white, #FFFFFF);
+  }
 {%- endstyle -%}
 
-<ul class="bb-proof{% if align == 'center' %} bb-proof--center{% endif %}" role="list">
+<ul class="bb-proof{% if align == 'center' %} bb-proof--center{% endif %}{% if tone == 'light' %} bb-proof--light{% endif %}" role="list">
   <li>
     <a class="bb-proof__pill" href="{{ tt }}" target="_blank" rel="noopener">
       <span class="bb-proof__mark" aria-hidden="true">
