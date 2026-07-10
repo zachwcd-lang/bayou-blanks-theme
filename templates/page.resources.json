@@ -382,6 +382,16 @@
             "cta": "Read",
             "url": "/pages/what-is-gsm-in-fabric"
           }
+        },
+        "g16": {
+          "type": "entry",
+          "settings": {
+            "cluster": "glossary",
+            "title": "What Is Sublimation Printing?",
+            "dek": "Heat turns dye to gas and bonds it inside polyester fibers — permanent, zero-feel, full-color prints. Light poly blanks only; here's why.",
+            "cta": "Read",
+            "url": "/pages/what-is-sublimation-printing"
+          }
         }
       },
       "block_order": [
@@ -422,7 +432,8 @@
         "g12",
         "g13",
         "g14",
-        "g15"
+        "g15",
+        "g16"
       ],
       "settings": {
         "vol": "Resources",

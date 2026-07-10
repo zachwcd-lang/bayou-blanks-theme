@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "hero": {
+      "type": "farm-hero",
+      "blocks": {
+        "s1": { "type": "stat", "settings": { "text": "<b>5 min</b> read" } },
+        "s2": { "type": "stat", "settings": { "text": "<b>385–400°F</b> press" } },
+        "s3": { "type": "stat", "settings": { "text": "<b>Zero</b> hand feel" } },
+        "s4": { "type": "stat", "settings": { "text": "Jerseys from <b>99¢/unit</b>" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "Fig. I — Glossary · Updated July 2026",
+        "heading": "What Is <em>Sublimation Printing</em>?",
+        "answer": "<p>Sublimation printing uses heat to turn solid dye into gas that bonds inside polyester fibers, so the design becomes part of the fabric itself. <strong>It delivers permanent, full-color, zero-feel prints that won't crack or peel</strong> — but it only works on polyester-rich fabrics in white or light colors.</p>",
+        "show_breadcrumbs": true,
+        "eyebrow_crumb": "Glossary",
+        "crop_anchor": "glossary",
+        "hub_handle": "resources"
+      }
+    },
+    "takeaways": {
+      "type": "farm-takeaways",
+      "blocks": {
+        "t1": { "type": "point", "settings": { "text": "<p><b>Sublimation is a dye process, not an ink layer:</b> at roughly 385–400°F the solid dye turns straight to gas, polyester's pores open, and the dye bonds inside the fiber. The print is in the fabric, not on it.</p>" } },
+        "t2": { "type": "point", "settings": { "text": "<p><b>Polyester-rich fabric only</b> — roughly 65%+ poly is the usual floor, and the higher the poly content, the more vibrant the result. On cotton the dye has nothing to bond to and washes out.</p>" } },
+        "t3": { "type": "point", "settings": { "text": "<p><b>Sublimation dyes are transparent and there is no white ink</b> — so blanks must be white or light-colored. Any white in your art is just the garment showing through.</p>" } },
+        "t4": { "type": "point", "settings": { "text": "<p><b>Because the dye lives inside the fiber,</b> the print has zero hand feel and won't crack, peel, or flake — it typically lasts as long as the garment itself.</p>" } },
+        "t5": { "type": "point", "settings": { "text": "<p><b>The starter kit is small:</b> a sublimation printer (a converted Epson EcoTank or a purpose-built Sawgrass), sublimation ink and paper, and a heat press run at about 385–400°F for 40–60 seconds. Entry cost is roughly $300–500.</p>" } },
+        "t6": { "type": "point", "settings": { "text": "<p><b>Bayou stocks poly and performance blanks</b> — athletic tees and jerseys by the pack from 99¢/unit. Stock is unbranded liquidation, so check each listing for fiber content before you sublimate.</p>" } }
+      },
+      "block_order": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "settings": {
+        "fig": "Fig. II — The Short Version",
+        "heading": "The <em>Short</em> Answer",
+        "quote": "<p>\"Every all-over-print jersey you've ever seen was sublimated. The dye doesn't sit on the shirt — it moves in. That's why it never cracks, and why it never works on cotton.\"</p>",
+        "quote_cite": "— The Press Room, Bayou Blanks"
+      }
+    },
+    "comparison": {
+      "type": "farm-comparison",
+      "blocks": {
+        "c1": { "type": "column", "settings": { "label": "Attribute" } },
+        "c2": { "type": "column", "settings": { "label": "Sublimation" } },
+        "c3": { "type": "column", "settings": { "label": "DTF" } },
+        "c4": { "type": "column", "settings": { "label": "HTV" } },
+        "r1": { "type": "row", "settings": { "label": "How it works", "cell_1": "Dye gassed into polyester fibers under heat — becomes part of the fabric", "badge_1": true, "cell_2": "Design printed on film, powder adhesive, heat-pressed onto the garment", "cell_3": "Solid-color vinyl cut, weeded, and heat-pressed on" } },
+        "r2": { "type": "row", "settings": { "label": "Fabrics", "cell_1": "Polyester-rich only (~65%+ poly)", "cell_2": "Any fabric — cotton, poly, blends", "cell_3": "Any fabric — cotton, poly, blends, nylon", "badge_3": true } },
+        "r3": { "type": "row", "settings": { "label": "Garment colors", "cell_1": "White or light only — dyes are transparent", "cell_2": "Any color — white underbase in the film", "badge_2": true, "cell_3": "Any color — vinyl is opaque" } },
+        "r4": { "type": "row", "settings": { "label": "Hand feel", "cell_1": "Zero — dye is inside the fiber", "badge_1": true, "cell_2": "Thin flexible film, slightly raised", "cell_3": "Vinyl layer; stacks stiffer with multiple colors" } },
+        "r5": { "type": "row", "settings": { "label": "Durability", "cell_1": "Life of the garment — won't crack or peel", "badge_1": true, "cell_2": "50–100 washes applied correctly", "cell_3": "~50 washes applied correctly; edges can lift with age" } },
+        "r6": { "type": "row", "settings": { "label": "Best for", "cell_1": "All-over photo prints on light poly — jerseys, performance wear", "cell_2": "Full-color art on anything, small runs", "cell_3": "Names, numbers, and solid-color graphics" } },
+        "r7": { "type": "row", "settings": { "label": "At Bayou", "sub": "By the pack", "cell_1": "Poly athletic tees and jerseys from 99¢/unit", "cell_2": "Any tee from 99¢/unit", "cell_3": "Any tee from 99¢/unit" } }
+      },
+      "block_order": ["c1", "c2", "c3", "c4", "r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      "settings": {
+        "fig": "Fig. III — Side By Side",
+        "heading": "Sublimation vs <em>DTF</em> vs HTV",
+        "intro": "<p>Sublimation is the permanence method with the strictest fabric rules; DTF and HTV are the go-anywhere transfer methods. Here's where each actually wins — by fabric, garment color, feel, and durability.</p>",
+        "caption": "Sublimation vs DTF and HTV at a glance"
+      }
+    },
+    "picks": {
+      "type": "farm-picks",
+      "blocks": {
+        "p1": { "type": "pick", "settings": { "product": "undecorated-athletic-short-sleeve-space-dye-tee", "kicker": "Poly Performance · The Canvas", "blurb": "Space Dye Athletic Tee — the sublimation canvas of the catalog: lightweight poly performance fabric that takes gassed dye the way this method wants.", "sizes": "S–2XL", "tag": "Sublimation Canvas" } },
+        "p2": { "type": "pick", "settings": { "product": "za41-1047-undecorated-adult-sleeveless-jersey", "kicker": "Lightweight Jersey · Athletic", "blurb": "Sleeveless Jersey (ZA41-1047) — lightweight jersey fabric built for athletic decoration. Check the listing for fiber content, then sublimate the light colorways.", "sizes": "M–2XL", "tag": "Team Blank" } },
+        "p3": { "type": "pick", "settings": { "product": "za41-1204-sleeveless-athletic-jersey", "kicker": "Dark Colorway · The Caveat", "blurb": "Sleeveless Athletic Jersey (ZA41-1204) — the honest caveat pick: its red/black colorway is too dark for transparent sublimation dye. Press names and numbers in HTV or DTF instead.", "sizes": "M–3XL", "tag": "HTV/DTF Pick" } },
+        "p4": { "type": "pick", "settings": { "product": "undecorated-adult-short-sleeve-tee-1", "kicker": "Cotton Crew · The Other Caveat", "blurb": "Yellow Strike Crew Neck Tee — the cotton caveat: sublimation dye won't bond to cotton. Print this one with DTF or screens and save your sublimation paper for the poly blanks.", "sizes": "Adult sizes", "tag": "Not For Sublimation" } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "fig": "Fig. IV — Our Picks",
+        "heading": "Blanks Built For <em>The Dye</em>",
+        "intro": "<p>Real in-stock poly and performance blanks that sublimation actually works on — plus two honest caveat picks so you don't waste transfer paper. Prices shown per unit, no account.</p>",
+        "products_to_show": 4,
+        "note": "<p>Every blank is sold by the pack at a flat <b>99¢/unit</b>, the same price in every size and pack. Stock is unbranded liquidation overstock — <b>check each listing for fiber content and colorway</b> before you sublimate.</p>"
+      }
+    },
+    "faq": {
+      "type": "farm-faq",
+      "blocks": {
+        "q1": { "type": "qa", "settings": { "question": "What is sublimation printing?", "answer": "<p>Sublimation printing is a decoration method where solid dye is turned directly into gas by heat and bonded into polyester fibers. The design is printed with sublimation ink onto special transfer paper, then heat-pressed onto the blank; the dye becomes part of the fabric rather than a layer sitting on top. The result is a permanent, full-color print with zero hand feel.</p>" } },
+        "q2": { "type": "qa", "settings": { "question": "How does sublimation printing work, step by step?", "answer": "<p>The design is printed mirrored onto sublimation paper using sublimation ink. The paper is placed face-down on the blank and pressed at roughly 385–400°F for 40–60 seconds. At that temperature the solid dye sublimates — turns straight to gas — while the heat opens the polyester's pores. The gaseous dye flows in and bonds with the polymer; when the press lifts and the fabric cools, the pores close and the dye is locked inside the fiber permanently.</p>" } },
+        "q3": { "type": "qa", "settings": { "question": "Does sublimation work on cotton?", "answer": "<p>No — sublimation dye bonds to polymers, and cotton has none, so the dye sits loose and washes out. Workarounds exist (poly coating sprays and sublimation-coated HTV that you press onto cotton first), but you're really sublimating onto an added poly layer, which changes the feel and durability. For cotton blanks, DTF or screen printing is the honest answer.</p>" } },
+        "q4": { "type": "qa", "settings": { "question": "Why do sublimation blanks have to be white or light-colored?", "answer": "<p>Sublimation dyes are transparent and there is no white sublimation ink, so the garment color shows through everything you print. On a white or light blank the colors read true and any white in your art is simply the fabric. On a dark blank the design effectively disappears. If you need to decorate darks, use DTF or HTV, which lay down opaque layers.</p>" } },
+        "q5": { "type": "qa", "settings": { "question": "How long does a sublimation print last?", "answer": "<p>Typically as long as the garment itself. Because the dye is bonded inside the fiber rather than layered on top, there is no film or ink layer to crack, peel, or flake off — the usual failure modes of other methods. Wash-for-wash it's the most permanent of the common decoration methods on the fabrics it works on.</p>" } },
+        "q6": { "type": "qa", "settings": { "question": "What do I need to start sublimation printing, and what does it cost?", "answer": "<p>Four things: a sublimation printer (crafters often convert an Epson EcoTank; purpose-built Sawgrass printers start around $600), sublimation ink, sublimation transfer paper, and a heat press that reliably holds 385–400°F. With a converted printer, entry cost runs roughly $300–500 all-in. The same setup also decorates poly-coated hard goods like mugs and tumblers.</p>" } },
+        "q7": { "type": "qa", "settings": { "question": "What blanks does Bayou Blanks stock for sublimation?", "answer": "<p>Bayou stocks undecorated poly and performance blanks — athletic tees and sleeveless jerseys — sold by the pack at a flat 99¢/unit, the same price in every size, no account required. Stock is liquidation overstock inspected in our Hattiesburg, Mississippi warehouse; it's unbranded, so check each listing's fiber content and pick light colorways before you sublimate.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7"],
+      "settings": {
+        "fig": "Fig. V — From The Press Room",
+        "heading": "Frequently <em>Asked</em>",
+        "show_schema_note": true,
+        "open_first": true
+      }
+    },
+    "trust": {
+      "type": "farm-trust",
+      "blocks": {
+        "w1": { "type": "cell", "settings": { "icon": "price", "heading": "Per-Unit Pricing", "text": "The real cost per blank — a flat 99¢/unit on tees and jerseys, shown up front, no account, the same price in every size and pack." } },
+        "w2": { "type": "cell", "settings": { "icon": "box", "heading": "Poly & Performance Depth", "text": "Athletic tees and sleeveless jerseys in real overstock depth — the poly-rich, light-colorway blanks sublimation actually needs." } },
+        "w3": { "type": "cell", "settings": { "icon": "truck", "heading": "Ships From Hattiesburg", "text": "Packed and shipped from our Mississippi warehouse — central, fast, and real people on the floor." } },
+        "w4": { "type": "cell", "settings": { "icon": "sizes", "heading": "Open To Anyone", "text": "No account, no resale certificate, no business required — buy a single pack at the same per-unit price." } }
+      },
+      "block_order": ["w1", "w2", "w3", "w4"],
+      "settings": {
+        "fig": "Fig. VI — Why Bayou",
+        "heading": "Why Buy Your Blanks <em>From Bayou</em>"
+      }
+    },
+    "related": {
+      "type": "farm-related",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "category": "Buying Guide", "title": "Sublimation vs DTF", "summary": "The head-to-head: dye-in-the-fiber vs print-on-a-film, and when each wins.", "cta": "Read", "url": "/pages/sublimation-vs-dtf" } },
+        "l2": { "type": "link", "settings": { "category": "Buying Guide", "title": "Sublimation vs HTV", "summary": "Permanent zero-feel prints vs cut vinyl that works on anything.", "cta": "Read", "url": "/pages/sublimation-vs-htv" } },
+        "l3": { "type": "link", "settings": { "category": "Glossary", "title": "What Is Screen Printing?", "summary": "The other method anchor — ink through a stencil, king of bulk runs.", "cta": "Read", "url": "/pages/what-is-screen-printing" } },
+        "l4": { "type": "link", "settings": { "category": "The Almanac", "title": "Browse All Resources", "summary": "Back to the Bayou Almanac hub.", "cta": "Browse", "url": "/pages/resources" } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4"],
+      "settings": {
+        "fig": "Fig. VII — Keep Reading",
+        "heading": "More From The <em>Almanac</em>"
+      }
+    },
+    "cta": {
+      "type": "farm-cta",
+      "settings": {
+        "eyebrow": "Fig. VIII — Start Your Run",
+        "heading": "Shop poly blanks <em>built for the dye.</em>",
+        "subtext": "<p>Athletic tees and sleeveless jerseys by the pack at a flat 99¢/unit — no account, inspected and shipped from Hattiesburg.</p>",
+        "ghost_price": "$0.99",
+        "background": "paper",
+        "cta_label": "Shop Blank Jerseys",
+        "cta_collection": "jerseys",
+        "cta2_label": "Buy Bulk",
+        "cta2_url": "/pages/contact"
+      }
+    }
+  },
+  "order": ["hero", "takeaways", "comparison", "picks", "faq", "trust", "related", "cta"]
+}
